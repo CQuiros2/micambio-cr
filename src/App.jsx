@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
+import Calculadora from "./components/Calculadora";
 import TipoCambio from "./components/TipoCambio";
 import Combustible from "./components/Combustible";
 import Curiosity from "./components/Curiosity";
@@ -24,6 +25,8 @@ export default function App() {
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--bg)" }}>
       <Header isDark={isDark} toggleTheme={toggleTheme} />
       <main className="flex-1 flex flex-col">
+        <Calculadora />
+        <div style={{ borderTop: "1px solid var(--border)" }} />
         <TipoCambio />
         <div style={{ borderTop: "1px solid var(--border)" }} />
         <Combustible />
