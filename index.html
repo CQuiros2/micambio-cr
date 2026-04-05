@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>micambio-temp</title>
+    <title>MiCambio.cr — Tipo de cambio y combustibles en Costa Rica</title>
+    <!-- Evitar flash de tema: aplica dark antes de que React monte -->
+    <script>
+      (function () {
+        var s = localStorage.getItem("theme");
+        if (s === "light") return;
+        document.documentElement.classList.add("dark");
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

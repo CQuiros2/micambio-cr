@@ -1,146 +1,111 @@
-const MOCK_COMBUSTIBLES = [
-  {
-    tipo: "super",
-    label: "Gasolina Super",
-    precio: 633,
-    anterior: 628,
-    icono: "⛽",
-    color: {
-      bg: "bg-amber-50",
-      border: "border-amber-200",
-      badge: "bg-amber-100 text-amber-800",
-      precio: "text-amber-700",
-      icon: "bg-amber-100 text-amber-600",
-    },
-  },
-  {
-    tipo: "regular",
-    label: "Gasolina Regular",
-    precio: 607,
-    anterior: 593,
-    icono: "⛽",
-    color: {
-      bg: "bg-orange-50",
-      border: "border-orange-200",
-      badge: "bg-orange-100 text-orange-800",
-      precio: "text-orange-700",
-      icon: "bg-orange-100 text-orange-600",
-    },
-  },
-  {
-    tipo: "diesel",
-    label: "Diésel",
-    precio: 530,
-    anterior: 549,
-    icono: "🚛",
-    color: {
-      bg: "bg-slate-50",
-      border: "border-slate-200",
-      badge: "bg-slate-100 text-slate-700",
-      precio: "text-slate-700",
-      icon: "bg-slate-100 text-slate-600",
-    },
-  },
-  {
-    tipo: "gaslp",
-    label: "Gas LP",
-    precio: 242,
-    anterior: 242,
-    icono: "🔥",
-    color: {
-      bg: "bg-sky-50",
-      border: "border-sky-200",
-      badge: "bg-sky-100 text-sky-800",
-      precio: "text-sky-700",
-      icon: "bg-sky-100 text-sky-500",
-    },
-  },
-];
+import combustibleData from "../data/combustible.json";
 
-function VariacionBadge({ precio, anterior }) {
-  const diff = precio - anterior;
-  if (diff === 0) {
+const { precios, ultimaActualizacion } = combustibleData;
+
+const COMBUSTIBLE_CONFIG = {
+  super:   { label: "Gasolina Super",   color: "#3b82f6" },
+  regular: { label: "Gasolina Regular", color: "#22c55e" },
+  diesel:  { label: "Diésel",           color: "#f59e0b" },
+  gaslp:   { label: "Gas LP",           color: "#f97316" },
+};
+
+function VariacionBadge({ variacion }) {
+  if (variacion === null || variacion === undefined) return null;
+  if (variacion === 0) {
     return (
-      <span className="inline-flex items-center gap-1 text-xs font-medium text-gray-500 bg-gray-100 rounded-full px-2.5 py-1">
-        <span>→</span> Sin cambio
+      <span className="text-xs font-medium" style={{ color: "var(--text-2)" }}>
+        Sin cambio
       </span>
     );
   }
-  const sube = diff > 0;
+  const sube = variacion > 0;
   return (
-    <span
-      className={`inline-flex items-center gap-1 text-xs font-semibold rounded-full px-2.5 py-1 ${
-        sube
-          ? "bg-red-100 text-red-600"
-          : "bg-emerald-100 text-emerald-600"
-      }`}
-    >
-      <span>{sube ? "↑" : "↓"}</span>
-      {sube ? "+" : ""}
-      {diff} vs anterior
+    <span className="flex items-center gap-1 text-sm font-semibold" style={{ color: sube ? "#ef4444" : "#22c55e" }}>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+        {sube
+          ? <path d="M6 1l4 5H2z" />
+          : <path d="M6 11L2 6h8z" />}
+      </svg>
+      {sube ? "+" : ""}{variacion} vs anterior
     </span>
   );
 }
 
 export default function Combustible() {
+  const fechaActualizacion = ultimaActualizacion
+    ? new Date(ultimaActualizacion).toLocaleDateString("es-CR", { day: "numeric", month: "short", year: "numeric" })
+    : null;
+
   return (
-    <section className="px-4 sm:px-6 py-8 max-w-5xl mx-auto w-full">
+    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-10">
       {/* Encabezado */}
-      <div className="flex items-start justify-between mb-5 gap-4 flex-wrap">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-6">
         <div>
-          <h2 className="text-xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-lg font-bold" style={{ color: "var(--text-1)" }}>
             Combustibles
           </h2>
-          <p className="text-sm text-gray-500 mt-0.5">
+          <p className="text-sm mt-0.5" style={{ color: "var(--text-2)" }}>
             Precio en colones por litro · Tarifa ARESEP vigente
           </p>
         </div>
-        <div className="flex items-center gap-1.5 text-xs text-gray-500 bg-gray-50 border border-gray-200 rounded-full px-3 py-1.5">
-          <span>🗓️</span>
+        <p className="text-xs font-medium" style={{ color: "var(--text-2)" }}>
           ARESEP actualiza cada 2do viernes del mes
-        </div>
+        </p>
       </div>
 
       {/* Cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {MOCK_COMBUSTIBLES.map((c) => (
-          <div
-            key={c.tipo}
-            className={`rounded-2xl border p-5 flex flex-col gap-3 ${c.color.bg} ${c.color.border} shadow-sm hover:shadow-md transition-shadow`}
-          >
-            {/* Icono + label */}
-            <div className="flex items-center justify-between">
-              <span
-                className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl ${c.color.icon}`}
-              >
-                {c.icono}
-              </span>
-              <span
-                className={`text-xs font-semibold rounded-full px-2.5 py-1 ${c.color.badge}`}
-              >
-                {c.label}
-              </span>
-            </div>
+        {Object.entries(COMBUSTIBLE_CONFIG).map(([tipo, { label, color }]) => {
+          const info = precios[tipo];
+          if (!info) return null;
+          return (
+            <div
+              key={tipo}
+              className="rounded-xl p-5 flex flex-col gap-4"
+              style={{
+                backgroundColor: "var(--surface)",
+                border: "1px solid var(--border)",
+              }}
+            >
+              {/* Label + barra de color */}
+              <div className="flex items-center justify-between">
+                <span
+                  className="text-xs font-bold uppercase tracking-widest"
+                  style={{ color }}
+                >
+                  {label}
+                </span>
+                <div
+                  className="w-2 h-2 rounded-full flex-shrink-0"
+                  style={{ backgroundColor: color }}
+                />
+              </div>
 
-            {/* Precio */}
-            <div>
-              <p className="text-xs text-gray-400 font-medium uppercase tracking-wide mb-1">
-                Precio / litro
-              </p>
-              <p className={`text-4xl font-bold leading-none tabular-nums ${c.color.precio}`}>
-                ₡{c.precio}
-              </p>
-            </div>
+              {/* Precio */}
+              <div>
+                <p className="text-xs mb-1 font-medium uppercase tracking-wide" style={{ color: "var(--text-2)" }}>
+                  Precio / litro
+                </p>
+                <span
+                  className="text-5xl font-black tabular-nums leading-none"
+                  style={{ color }}
+                >
+                  ₡{info.precio}
+                </span>
+              </div>
 
-            {/* Variación */}
-            <VariacionBadge precio={c.precio} anterior={c.anterior} />
-          </div>
-        ))}
+              {/* Variación */}
+              <VariacionBadge variacion={info.variacion} />
+            </div>
+          );
+        })}
       </div>
 
-      <p className="text-xs text-gray-400 mt-3 text-right">
-        * Datos de ejemplo — se conectarán a ARESEP en producción
-      </p>
+      {fechaActualizacion && (
+        <p className="mt-3 text-right text-xs" style={{ color: "var(--text-2)" }}>
+          Actualizado: {fechaActualizacion} · Fuente: ARESEP
+        </p>
+      )}
     </section>
   );
 }

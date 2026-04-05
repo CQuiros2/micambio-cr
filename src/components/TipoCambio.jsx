@@ -1,184 +1,255 @@
-const MOCK_BANCOS = [
-  {
-    entidad: "Banco Nacional",
-    sigla: "BN",
-    compra: 493.25,
-    venta: 501.50,
-    actualizacion: "Hoy 10:15",
-    logo: "🏦",
-  },
-  {
-    entidad: "Banco de Costa Rica",
-    sigla: "BCR",
-    compra: 492.00,
-    venta: 502.75,
-    actualizacion: "Hoy 10:00",
-    logo: "🏦",
-  },
-  {
-    entidad: "BAC Credomatic",
-    sigla: "BAC",
-    compra: 491.50,
-    venta: 503.00,
-    actualizacion: "Hoy 09:45",
-    logo: "🏦",
-  },
-  {
-    entidad: "Scotiabank",
-    sigla: "SCO",
-    compra: 490.75,
-    venta: 504.25,
-    actualizacion: "Hoy 09:30",
-    logo: "🏦",
-  },
-  {
-    entidad: "Davivienda",
-    sigla: "DAV",
-    compra: 489.00,
-    venta: 505.50,
-    actualizacion: "Hoy 09:15",
-    logo: "🏦",
-  },
-];
+import { useState } from "react";
+import tcData from "../data/tipo-cambio.json";
 
-export default function TipoCambio() {
-  const maxCompra = Math.max(...MOCK_BANCOS.map((b) => b.compra));
-  const minVenta = Math.min(...MOCK_BANCOS.map((b) => b.venta));
+const { entidades, mejorCompra, mejorVenta, historico } = tcData;
+
+// Sparkline: usa historico real si existe, si no mock representativo de CR
+const MOCK_TC = [514,511,509,513,507,502,498,500,495,491,488,485,482,479,476,473,470,468,465,463,461,460,458,456];
+const sparkValues =
+  historico.length > 0 ? historico.map((d) => d.compra).filter(Boolean) : MOCK_TC;
+
+// ── Sparkline SVG ─────────────────────────────────────────────────────────────
+function Sparkline({ values }) {
+  if (!values || values.length < 2) return null;
+  const W = 200, H = 52, PAD = 3;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const pts = values.map((v, i) => {
+    const x = PAD + (i / (values.length - 1)) * (W - PAD * 2);
+    const y = PAD + ((max - v) / range) * (H - PAD * 2);
+    return [x, y];
+  });
+  const line = pts.map(([x, y]) => `${x},${y}`).join(" ");
+  const area =
+    `${pts[0][0]},${H} ` + line + ` ${pts[pts.length - 1][0]},${H}`;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} preserveAspectRatio="none" className="overflow-visible">
+      <defs>
+        <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.25" />
+          <stop offset="100%" stopColor="var(--accent)" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <polygon points={area} fill="url(#sg)" />
+      <polyline points={line} fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// ── Logo de banco con Clearbit + fallback de iniciales ────────────────────────
+function BankLogo({ nombre, slug }) {
+  const [failed, setFailed] = useState(false);
+  const initials = nombre
+    .split(" ")
+    .filter((w) => w.length > 2)
+    .slice(0, 2)
+    .map((w) => w[0].toUpperCase())
+    .join("");
+
+  if (failed || !slug) {
+    return (
+      <div
+        className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 text-[11px] font-bold"
+        style={{ background: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
+      >
+        {initials}
+      </div>
+    );
+  }
+  return (
+    <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center flex-shrink-0 overflow-hidden border border-black/[0.06]">
+      <img
+        src={`https://logo.clearbit.com/${slug}`}
+        alt={nombre}
+        className="w-6 h-6 object-contain"
+        onError={() => setFailed(true)}
+      />
+    </div>
+  );
+}
+
+// ── Tabla agrupada ────────────────────────────────────────────────────────────
+function TablaEntidades() {
+  // Agrupar por tipoEntidad preservando orden de aparición
+  const grupos = [];
+  const visto = {};
+  for (const e of entidades) {
+    if (!visto[e.tipoEntidad]) {
+      visto[e.tipoEntidad] = true;
+      grupos.push({ tipo: e.tipoEntidad, items: [] });
+    }
+    grupos[grupos.length - 1].items.push(e);
+  }
 
   return (
-    <section className="px-4 sm:px-6 py-8 max-w-5xl mx-auto w-full">
-      {/* Encabezado */}
-      <div className="flex items-start justify-between mb-5 gap-4 flex-wrap">
+    <div
+      className="rounded-xl overflow-hidden"
+      style={{ border: "1px solid var(--border)" }}
+    >
+      <div className="overflow-x-auto">
+        <table className="w-full text-sm" style={{ borderCollapse: "collapse" }}>
+          <thead>
+            <tr style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--surface)" }}>
+              <th className="text-left px-4 py-3 font-semibold text-xs uppercase tracking-wide" style={{ color: "var(--text-2)" }}>
+                Entidad
+              </th>
+              <th className="text-right px-4 py-3 font-semibold text-xs uppercase tracking-wide" style={{ color: "var(--text-2)" }}>
+                Compra
+              </th>
+              <th className="text-right px-4 py-3 font-semibold text-xs uppercase tracking-wide" style={{ color: "var(--text-2)" }}>
+                Venta
+              </th>
+              <th className="text-right px-4 py-3 font-semibold text-xs uppercase tracking-wide hidden sm:table-cell" style={{ color: "var(--text-2)" }}>
+                Diferencial
+              </th>
+              <th className="text-right px-4 py-3 font-semibold text-xs uppercase tracking-wide hidden lg:table-cell" style={{ color: "var(--text-2)" }}>
+                Actualización
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {grupos.map(({ tipo, items }) => (
+              <>
+                {/* Encabezado de grupo */}
+                <tr key={`h-${tipo}`} style={{ backgroundColor: "var(--accent-dim)", borderBottom: "1px solid var(--accent-border)" }}>
+                  <td colSpan={5} className="px-4 py-1.5 text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--accent)" }}>
+                    {tipo}
+                  </td>
+                </tr>
+                {/* Filas de entidades */}
+                {items.map((e) => {
+                  const esMejorCompra = e.compra === mejorCompra.valor;
+                  const esMejorVenta  = e.venta  === mejorVenta.valor;
+                  return (
+                    <tr
+                      key={e.nombre}
+                      className="transition-colors hover:bg-black/[0.02] dark:hover:bg-white/[0.02]"
+                      style={{ borderBottom: "1px solid var(--border)" }}
+                    >
+                      {/* Logo + nombre */}
+                      <td className="px-4 py-3">
+                        <div className="flex items-center gap-3">
+                          <BankLogo nombre={e.nombre} slug={e.slug} />
+                          <span className="font-medium text-sm leading-tight" style={{ color: "var(--text-1)" }}>
+                            {e.nombre}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* Compra */}
+                      <td className="px-4 py-3 text-right">
+                        <div className="flex items-center justify-end gap-2">
+                          {esMejorCompra && (
+                            <span className="hidden sm:inline text-[10px] font-semibold rounded-full px-2 py-0.5" style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}>
+                              Mejor compra
+                            </span>
+                          )}
+                          <span
+                            className="tabular-nums font-semibold text-sm"
+                            style={{ color: esMejorCompra ? "var(--accent)" : "var(--text-1)" }}
+                          >
+                            ₡{e.compra.toFixed(2)}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* Venta */}
+                      <td className="px-4 py-3 text-right">
+                        <div className="flex items-center justify-end gap-2">
+                          {esMejorVenta && (
+                            <span className="hidden sm:inline text-[10px] font-semibold rounded-full px-2 py-0.5 bg-blue-500/10 text-blue-500 border border-blue-500/20">
+                              Mejor venta
+                            </span>
+                          )}
+                          <span
+                            className="tabular-nums font-semibold text-sm"
+                            style={{ color: esMejorVenta ? "#3b82f6" : "var(--text-1)" }}
+                          >
+                            ₡{e.venta.toFixed(2)}
+                          </span>
+                        </div>
+                      </td>
+
+                      {/* Diferencial */}
+                      <td className="px-4 py-3 text-right hidden sm:table-cell">
+                        <span
+                          className="tabular-nums text-xs font-mono px-2 py-1 rounded"
+                          style={{ backgroundColor: "var(--surface)", color: "var(--text-2)", border: "1px solid var(--border)" }}
+                        >
+                          ₡{e.diferencial.toFixed(2)}
+                        </span>
+                      </td>
+
+                      {/* Actualización */}
+                      <td className="px-4 py-3 text-right hidden lg:table-cell">
+                        <span className="text-xs" style={{ color: "var(--text-2)" }}>
+                          {e.ultimaActualizacion}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+// ── Componente principal ──────────────────────────────────────────────────────
+export default function TipoCambio() {
+  return (
+    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-10">
+      {/* Hero */}
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-8">
         <div>
-          <h2 className="text-xl font-bold text-gray-900 leading-tight">
-            Tipo de cambio
-          </h2>
-          <p className="text-sm text-gray-500 mt-0.5">
-            Colones por dólar (USD/CRC) · Actualizado hoy
+          <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: "var(--text-2)" }}>
+            Mejor compra · USD/CRC
+          </p>
+          <div className="flex items-baseline gap-3">
+            <span
+              className="text-6xl font-black tabular-nums tracking-tight leading-none"
+              style={{ color: "var(--text-1)" }}
+            >
+              ₡{mejorCompra.valor.toFixed(2)}
+            </span>
+          </div>
+          <p className="mt-1.5 text-sm" style={{ color: "var(--text-2)" }}>
+            {mejorCompra.nombre}
           </p>
         </div>
-        <div className="flex gap-3 text-xs flex-wrap">
-          <span className="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-full px-3 py-1 font-medium">
-            <span className="w-2 h-2 rounded-full bg-emerald-400" />
+
+        {/* Sparkline */}
+        <div className="sm:pb-1">
+          <p className="text-[11px] mb-1 text-right" style={{ color: "var(--text-2)" }}>
+            Últimos 2 años
+          </p>
+          <Sparkline values={sparkValues} />
+        </div>
+      </div>
+
+      {/* Encabezado sección */}
+      <div className="flex items-center justify-between mb-4">
+        <h2 className="text-lg font-bold" style={{ color: "var(--text-1)" }}>
+          Tipo de cambio en ventanilla
+        </h2>
+        <div className="flex gap-3 text-xs">
+          <span className="rounded-full px-2.5 py-1 font-medium" style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}>
             Mejor compra
           </span>
-          <span className="flex items-center gap-1.5 bg-blue-50 border border-blue-200 text-blue-700 rounded-full px-3 py-1 font-medium">
-            <span className="w-2 h-2 rounded-full bg-blue-400" />
+          <span className="rounded-full px-2.5 py-1 font-medium bg-blue-500/10 text-blue-500 border border-blue-500/20">
             Mejor venta
           </span>
         </div>
       </div>
 
-      {/* Tabla */}
-      <div className="rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="bg-gray-50 border-b border-gray-200">
-                <th className="text-left px-5 py-3.5 font-semibold text-gray-600">
-                  Entidad
-                </th>
-                <th className="text-right px-5 py-3.5 font-semibold text-gray-600">
-                  Compra
-                </th>
-                <th className="text-right px-5 py-3.5 font-semibold text-gray-600">
-                  Venta
-                </th>
-                <th className="text-right px-5 py-3.5 font-semibold text-gray-600 hidden sm:table-cell">
-                  Diferencial
-                </th>
-                <th className="text-right px-5 py-3.5 font-semibold text-gray-600 hidden md:table-cell">
-                  Actualización
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {MOCK_BANCOS.map((banco, i) => {
-                const esMejorCompra = banco.compra === maxCompra;
-                const esMejorVenta = banco.venta === minVenta;
-                const diferencial = (banco.venta - banco.compra).toFixed(2);
+      <TablaEntidades />
 
-                return (
-                  <tr
-                    key={banco.sigla}
-                    className={`border-b border-gray-100 last:border-0 transition-colors hover:bg-gray-50 ${
-                      i % 2 === 0 ? "bg-white" : "bg-gray-50/40"
-                    }`}
-                  >
-                    {/* Entidad */}
-                    <td className="px-5 py-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center flex-shrink-0">
-                          <span className="text-white font-bold text-xs">
-                            {banco.sigla.slice(0, 2)}
-                          </span>
-                        </div>
-                        <div>
-                          <p className="font-medium text-gray-900 leading-tight">
-                            {banco.entidad}
-                          </p>
-                          <p className="text-xs text-gray-400">{banco.sigla}</p>
-                        </div>
-                      </div>
-                    </td>
-
-                    {/* Compra */}
-                    <td className="px-5 py-4 text-right">
-                      <div className="flex items-center justify-end gap-2">
-                        {esMejorCompra && (
-                          <span className="text-xs font-semibold bg-emerald-100 text-emerald-700 rounded-full px-2 py-0.5 hidden sm:inline">
-                            Mejor compra
-                          </span>
-                        )}
-                        <span
-                          className={`font-semibold tabular-nums ${
-                            esMejorCompra ? "text-emerald-600" : "text-gray-900"
-                          }`}
-                        >
-                          ₡{banco.compra.toFixed(2)}
-                        </span>
-                      </div>
-                    </td>
-
-                    {/* Venta */}
-                    <td className="px-5 py-4 text-right">
-                      <div className="flex items-center justify-end gap-2">
-                        {esMejorVenta && (
-                          <span className="text-xs font-semibold bg-blue-100 text-blue-700 rounded-full px-2 py-0.5 hidden sm:inline">
-                            Mejor venta
-                          </span>
-                        )}
-                        <span
-                          className={`font-semibold tabular-nums ${
-                            esMejorVenta ? "text-blue-600" : "text-gray-900"
-                          }`}
-                        >
-                          ₡{banco.venta.toFixed(2)}
-                        </span>
-                      </div>
-                    </td>
-
-                    {/* Diferencial */}
-                    <td className="px-5 py-4 text-right hidden sm:table-cell">
-                      <span className="text-gray-500 tabular-nums font-mono text-xs bg-gray-100 rounded-md px-2 py-1">
-                        ₡{diferencial}
-                      </span>
-                    </td>
-
-                    {/* Actualización */}
-                    <td className="px-5 py-4 text-right hidden md:table-cell">
-                      <span className="text-gray-400 text-xs">{banco.actualizacion}</span>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <p className="text-xs text-gray-400 mt-3 text-right">
-        * Datos de ejemplo — se conectarán al BCCR en producción
+      <p className="mt-3 text-right text-xs" style={{ color: "var(--text-2)" }}>
+        Fuente: BCCR · Tipo de cambio anunciado en ventanilla
       </p>
     </section>
   );

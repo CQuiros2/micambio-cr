@@ -1,131 +1,143 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const CURIOSIDADES = [
   {
     id: 1,
-    icono: "📈",
-    texto:
-      "Hace un año el dólar se compraba a ₡510 en el BN. Hoy se compra a ₡493 — una caída de ₡17.",
     categoria: "Tipo de cambio",
+    texto: "Hace un año el dólar se compraba a ₡510 en el Banco Nacional. Hoy se compra a ₡456 — una caída de ₡54 en 12 meses.",
   },
   {
     id: 2,
-    icono: "⛽",
-    texto:
-      "La gasolina súper bajó ₡95 en los últimos 12 meses: de ₡728 pasó a ₡633 por litro.",
     categoria: "Combustibles",
+    texto: "La gasolina súper bajó ₡95 en los últimos 12 meses: pasó de ₡728 a ₡633 por litro según ARESEP.",
   },
   {
     id: 3,
-    icono: "🚛",
-    texto:
-      "El diésel acumula una baja de ₡108 en el último año, pasando de ₡638 a ₡530 por litro.",
     categoria: "Combustibles",
+    texto: "El diésel acumula una baja de ₡108 en el último año: de ₡638 bajó a ₡530 por litro.",
   },
   {
     id: 4,
-    icono: "💡",
-    texto:
-      "El diferencial cambiario (diferencia entre compra y venta) varía entre ₡8 y ₡17 según el banco.",
     categoria: "Dato curioso",
+    texto: "El diferencial cambiario (diferencia entre compra y venta) varía entre ₡6 y ₡24 según la entidad financiera.",
   },
   {
     id: 5,
-    icono: "🔥",
-    texto:
-      "El Gas LP no ha cambiado de precio en los últimos dos meses: sigue en ₡242 por litro.",
     categoria: "Combustibles",
+    texto: "El Gas LP mantiene su precio en ₡242 por litro, sin cambios en los últimos dos meses.",
   },
   {
     id: 6,
-    icono: "🏦",
-    texto:
-      "El Banco Nacional ofrece el mejor tipo de compra del dólar entre los bancos estatales.",
     categoria: "Tipo de cambio",
+    texto: "Las casas de cambio suelen ofrecer mejor tipo de compra que los bancos, pero con mayor diferencial de venta.",
   },
 ];
 
-const CATEGORIA_COLORS = {
-  "Tipo de cambio": "bg-blue-100 text-blue-700",
-  Combustibles: "bg-amber-100 text-amber-700",
-  "Dato curioso": "bg-purple-100 text-purple-700",
+const CAT_STYLES = {
+  "Tipo de cambio": { bg: "rgba(59,130,246,0.1)",  color: "#3b82f6", border: "rgba(59,130,246,0.25)" },
+  "Combustibles":   { bg: "rgba(245,158,11,0.1)",  color: "#f59e0b", border: "rgba(245,158,11,0.25)" },
+  "Dato curioso":   { bg: "rgba(168,85,247,0.1)",  color: "#a855f7", border: "rgba(168,85,247,0.25)" },
 };
 
 export default function Curiosity() {
   const [actual, setActual] = useState(0);
-  const [animando, setAnimando] = useState(false);
-
-  useEffect(() => {
-    const intervalo = setInterval(() => {
-      setAnimando(true);
-      setTimeout(() => {
-        setActual((prev) => (prev + 1) % CURIOSIDADES.length);
-        setAnimando(false);
-      }, 300);
-    }, 5000);
-    return () => clearInterval(intervalo);
-  }, []);
-
-  const curiosidad = CURIOSIDADES[actual];
+  const [fade, setFade] = useState(true);
+  const timerRef = useRef(null);
 
   const irA = (idx) => {
     if (idx === actual) return;
-    setAnimando(true);
+    setFade(false);
     setTimeout(() => {
       setActual(idx);
-      setAnimando(false);
-    }, 200);
+      setFade(true);
+    }, 220);
   };
 
-  return (
-    <section className="px-4 sm:px-6 py-8 max-w-5xl mx-auto w-full">
-      <div className="rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 to-blue-50 overflow-hidden shadow-sm">
-        <div className="px-6 pt-5 pb-2 flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-indigo-600 uppercase tracking-wider">
-            ¿Sabías que…?
-          </h2>
-          <span
-            className={`text-xs font-medium rounded-full px-2.5 py-1 ${
-              CATEGORIA_COLORS[curiosidad.categoria] ?? "bg-gray-100 text-gray-600"
-            }`}
-          >
-            {curiosidad.categoria}
-          </span>
-        </div>
+  // Reinicia el timer cuando el usuario hace click manual
+  const irAManual = (idx) => {
+    clearInterval(timerRef.current);
+    irA(idx);
+    timerRef.current = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setActual((prev) => (prev + 1) % CURIOSIDADES.length);
+        setFade(true);
+      }, 220);
+    }, 5000);
+  };
 
-        {/* Contenido animado */}
-        <div
-          className={`px-6 py-4 transition-all duration-300 ${
-            animando ? "opacity-0 translate-y-1" : "opacity-100 translate-y-0"
-          }`}
-        >
-          <div className="flex items-start gap-4">
-            <span className="text-4xl flex-shrink-0 mt-0.5 select-none">
-              {curiosidad.icono}
+  useEffect(() => {
+    timerRef.current = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setActual((prev) => (prev + 1) % CURIOSIDADES.length);
+        setFade(true);
+      }, 220);
+    }, 5000);
+    return () => clearInterval(timerRef.current);
+  }, []);
+
+  const c = CURIOSIDADES[actual];
+  const catStyle = CAT_STYLES[c.categoria] ?? CAT_STYLES["Dato curioso"];
+
+  return (
+    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-10">
+      <div
+        className="rounded-xl overflow-hidden"
+        style={{ backgroundColor: "var(--surface)", border: "1px solid var(--border)" }}
+      >
+        {/* Barra superior con color de categoría */}
+        <div className="h-0.5 w-full" style={{ backgroundColor: catStyle.color, opacity: 0.6 }} />
+
+        {/* Contenido */}
+        <div className="px-6 pt-5 pb-3">
+          {/* Header */}
+          <div className="flex items-center justify-between mb-4">
+            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-2)" }}>
+              ¿Sabías que…?
             </span>
-            <p className="text-gray-800 text-base sm:text-lg font-medium leading-snug">
-              {curiosidad.texto}
+            <span
+              className="text-xs font-semibold rounded-full px-2.5 py-1"
+              style={{ backgroundColor: catStyle.bg, color: catStyle.color, border: `1px solid ${catStyle.border}` }}
+            >
+              {c.categoria}
+            </span>
+          </div>
+
+          {/* Texto con fade */}
+          <div
+            className="min-h-[3.5rem]"
+            style={{
+              opacity: fade ? 1 : 0,
+              transform: fade ? "translateY(0)" : "translateY(4px)",
+              transition: "opacity 220ms ease, transform 220ms ease",
+            }}
+          >
+            <p className="text-base sm:text-lg font-medium leading-snug" style={{ color: "var(--text-1)" }}>
+              {c.texto}
             </p>
           </div>
         </div>
 
-        {/* Dots + contador */}
+        {/* Dots */}
         <div className="px-6 pb-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             {CURIOSIDADES.map((_, i) => (
               <button
                 key={i}
-                onClick={() => irA(i)}
-                aria-label={`Ir a curiosidad ${i + 1}`}
-                className={`rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 ${
-                  i === actual
-                    ? "w-5 h-2 bg-indigo-500"
-                    : "w-2 h-2 bg-indigo-200 hover:bg-indigo-300"
-                }`}
+                onClick={() => irAManual(i)}
+                aria-label={`Curiosidad ${i + 1}`}
+                className="rounded-full focus:outline-none transition-all duration-300"
+                style={{
+                  width: i === actual ? "20px" : "8px",
+                  height: "8px",
+                  backgroundColor: i === actual ? catStyle.color : "var(--border)",
+                  opacity: i === actual ? 1 : 0.6,
+                }}
               />
             ))}
           </div>
-          <span className="text-xs text-indigo-400 tabular-nums">
+          <span className="text-xs tabular-nums" style={{ color: "var(--text-2)" }}>
             {actual + 1} / {CURIOSIDADES.length}
           </span>
         </div>
