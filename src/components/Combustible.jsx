@@ -37,9 +37,9 @@ export default function Combustible() {
     : null;
 
   return (
-    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-10">
+    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
       {/* Encabezado */}
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-1.5 mb-5">
         <div>
           <h2 className="text-lg font-bold" style={{ color: "var(--text-1)" }}>
             Combustibles
@@ -53,42 +53,36 @@ export default function Combustible() {
         </p>
       </div>
 
-      {/* Cards */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      {/* Cards — 2 col en móvil, 4 col en desktop */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
         {Object.entries(COMBUSTIBLE_CONFIG).map(([tipo, { label, color }]) => {
           const info = precios[tipo];
           if (!info) return null;
           return (
             <div
               key={tipo}
-              className="rounded-xl p-5 flex flex-col gap-4"
-              style={{
-                backgroundColor: "var(--surface)",
-                border: "1px solid var(--border)",
-              }}
+              className="rounded-xl p-4 sm:p-5 flex flex-col gap-3 sm:gap-4"
+              style={{ backgroundColor: "var(--surface)", border: "1px solid var(--border)" }}
             >
-              {/* Label + barra de color */}
-              <div className="flex items-center justify-between">
+              {/* Label + punto de color */}
+              <div className="flex items-center justify-between gap-2">
                 <span
-                  className="text-xs font-bold uppercase tracking-widest"
-                  style={{ color }}
+                  className="font-bold uppercase tracking-widest leading-tight"
+                  style={{ color, fontSize: 11 }}
                 >
                   {label}
                 </span>
-                <div
-                  className="w-2 h-2 rounded-full flex-shrink-0"
-                  style={{ backgroundColor: color }}
-                />
+                <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
               </div>
 
-              {/* Precio */}
+              {/* Precio — más pequeño en móvil */}
               <div>
-                <p className="text-xs mb-1 font-medium uppercase tracking-wide" style={{ color: "var(--text-2)" }}>
+                <p className="font-medium uppercase tracking-wide mb-1" style={{ color: "var(--text-2)", fontSize: 10 }}>
                   Precio / litro
                 </p>
                 <span
-                  className="text-5xl font-black tabular-nums leading-none"
-                  style={{ color }}
+                  className="tabular-nums font-black leading-none block"
+                  style={{ color, fontSize: "clamp(32px, 7vw, 48px)" }}
                 >
                   ₡{info.precio}
                 </span>
