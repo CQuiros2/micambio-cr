@@ -1,0 +1,265 @@
+{
+  "ultimaActualizacion": "2026-04-04T23:58:35.775Z",
+  "precios": {
+    "super": {
+      "label": "Gasolina Super",
+      "precio": 633,
+      "variacion": 5
+    },
+    "regular": {
+      "label": "Gasolina Regular",
+      "precio": 607,
+      "variacion": 14
+    },
+    "diesel": {
+      "label": "Diésel",
+      "precio": 530,
+      "variacion": 17
+    },
+    "gaslp": {
+      "label": "Gas LP",
+      "precio": 242,
+      "variacion": 0
+    }
+  },
+  "historico": [
+    {
+      "fecha": "2024-04-11",
+      "super": 728,
+      "regular": 691,
+      "diesel": 638,
+      "gaslp": 284
+    },
+    {
+      "fecha": "2024-05-07",
+      "super": 727,
+      "regular": 690,
+      "diesel": 638,
+      "gaslp": 284
+    },
+    {
+      "fecha": "2024-06-10",
+      "super": 737,
+      "regular": 722,
+      "diesel": 611,
+      "gaslp": 265
+    },
+    {
+      "fecha": "2024-07-12",
+      "super": 734,
+      "regular": 706,
+      "diesel": 600,
+      "gaslp": 263
+    },
+    {
+      "fecha": "2024-07-31",
+      "super": 736,
+      "regular": 708,
+      "diesel": 601,
+      "gaslp": 263
+    },
+    {
+      "fecha": "2024-08-07",
+      "super": 718,
+      "regular": 686,
+      "diesel": 619,
+      "gaslp": 280
+    },
+    {
+      "fecha": "2024-08-22",
+      "super": 718,
+      "regular": 686,
+      "diesel": 619,
+      "gaslp": 280
+    },
+    {
+      "fecha": "2024-08-30",
+      "super": 720,
+      "regular": 688,
+      "diesel": 597,
+      "gaslp": 275
+    },
+    {
+      "fecha": "2024-10-09",
+      "super": 700,
+      "regular": 667,
+      "diesel": 565,
+      "gaslp": 266
+    },
+    {
+      "fecha": "2024-11-07",
+      "super": 686,
+      "regular": 669,
+      "diesel": 565,
+      "gaslp": 260
+    },
+    {
+      "fecha": "2024-11-14",
+      "super": 685,
+      "regular": 668,
+      "diesel": 565,
+      "gaslp": 260
+    },
+    {
+      "fecha": "2024-12-09",
+      "super": 669,
+      "regular": 660,
+      "diesel": 556,
+      "gaslp": 272
+    },
+    {
+      "fecha": "2025-01-22",
+      "super": 666,
+      "regular": 648,
+      "diesel": 560,
+      "gaslp": 266
+    },
+    {
+      "fecha": "2025-01-28",
+      "super": 666,
+      "regular": 648,
+      "diesel": 560,
+      "gaslp": 266
+    },
+    {
+      "fecha": "2025-02-05",
+      "super": 669,
+      "regular": 651,
+      "diesel": 561,
+      "gaslp": 266
+    },
+    {
+      "fecha": "2025-03-17",
+      "super": 682,
+      "regular": 671,
+      "diesel": 592,
+      "gaslp": 285
+    },
+    {
+      "fecha": "2025-04-09",
+      "super": 673,
+      "regular": 642,
+      "diesel": 569,
+      "gaslp": 278
+    },
+    {
+      "fecha": "2025-04-28",
+      "super": 672,
+      "regular": 643,
+      "diesel": 569,
+      "gaslp": 278
+    },
+    {
+      "fecha": "2025-05-07",
+      "super": 672,
+      "regular": 643,
+      "diesel": 569,
+      "gaslp": 278
+    },
+    {
+      "fecha": "2025-06-05",
+      "super": 665,
+      "regular": 643,
+      "diesel": 530,
+      "gaslp": 274
+    },
+    {
+      "fecha": "2025-07-08",
+      "super": 669,
+      "regular": 653,
+      "diesel": 527,
+      "gaslp": 262
+    },
+    {
+      "fecha": "2025-07-31",
+      "super": 666,
+      "regular": 651,
+      "diesel": 525,
+      "gaslp": 262
+    },
+    {
+      "fecha": "2025-08-06",
+      "super": 664,
+      "regular": 643,
+      "diesel": 557,
+      "gaslp": 265
+    },
+    {
+      "fecha": "2025-09-01",
+      "super": 663,
+      "regular": 649,
+      "diesel": 564,
+      "gaslp": 258
+    },
+    {
+      "fecha": "2025-09-28",
+      "super": 663,
+      "regular": 649,
+      "diesel": 565,
+      "gaslp": 258
+    },
+    {
+      "fecha": "2025-10-13",
+      "super": 677,
+      "regular": 662,
+      "diesel": 556,
+      "gaslp": 253
+    },
+    {
+      "fecha": "2025-11-03",
+      "super": 674,
+      "regular": 659,
+      "diesel": 555,
+      "gaslp": 253
+    },
+    {
+      "fecha": "2025-11-10",
+      "super": 677,
+      "regular": 662,
+      "diesel": 556,
+      "gaslp": 253
+    },
+    {
+      "fecha": "2025-12-09",
+      "super": 643,
+      "regular": 635,
+      "diesel": 557,
+      "gaslp": 244
+    },
+    {
+      "fecha": "2025-12-31",
+      "super": 639,
+      "regular": 632,
+      "diesel": 549,
+      "gaslp": 244
+    },
+    {
+      "fecha": "2026-01-21",
+      "super": 636,
+      "regular": 609,
+      "diesel": 541,
+      "gaslp": 246
+    },
+    {
+      "fecha": "2026-02-04",
+      "super": 626,
+      "regular": 591,
+      "diesel": 512,
+      "gaslp": 242
+    },
+    {
+      "fecha": "2026-02-11",
+      "super": 628,
+      "regular": 593,
+      "diesel": 513,
+      "gaslp": 242
+    },
+    {
+      "fecha": "2026-03-13",
+      "super": 633,
+      "regular": 607,
+      "diesel": 530,
+      "gaslp": 242
+    }
+  ]
+}

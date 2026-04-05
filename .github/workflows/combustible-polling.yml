@@ -1,0 +1,55 @@
+name: Combustibles – Polling Mensual
+
+on:
+  schedule:
+    # Segundo viernes de cada mes a las 14:00 UTC (8:00am hora Costa Rica, UTC-6)
+    # El 2do viernes siempre cae en los días 8–14 del mes.
+    - cron: "0 14 8-14 * 5"
+  workflow_dispatch: # permite ejecución manual desde GitHub
+
+permissions:
+  contents: write # necesario para hacer git push de los JSON actualizados
+
+jobs:
+  poll-combustible:
+    name: Actualizar precios de combustible
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar scraper
+        run: node scripts/scrape-combustible-diario.js
+
+      - name: Verificar si hubo cambios
+        id: diff
+        run: |
+          if git diff --quiet src/data/combustible.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sin cambios en combustible.json — ARESEP aún no publicó nueva tarifa."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Nueva tarifa de ARESEP detectada — se hará commit."
+          fi
+
+      - name: Commit y push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/combustible.json
+          git commit -m "data(combustible): actualiza tarifas ARESEP $(date -u +'%Y-%m-%d')"
+          git push

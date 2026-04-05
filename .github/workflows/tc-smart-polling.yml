@@ -1,0 +1,59 @@
+name: Tipo de Cambio – Smart Polling
+
+on:
+  schedule:
+    # Cada 10 minutos, lunes a viernes, entre 13:00 y 23:50 UTC
+    # Equivale a 7:00am–5:50pm hora Costa Rica (UTC-6)
+    - cron: "*/10 13-23 * * 1-5"
+  workflow_dispatch: # permite ejecución manual desde GitHub
+
+permissions:
+  contents: write # necesario para hacer git push de los JSON actualizados
+
+jobs:
+  poll-tc:
+    name: Actualizar tipo de cambio
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          # Fetch completo para que el push no falle por historial desactualizado
+          fetch-depth: 1
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar scraper
+        env:
+          BCCR_EMAIL: ${{ secrets.BCCR_EMAIL }}
+          BCCR_TOKEN: ${{ secrets.BCCR_TOKEN }}
+        run: node scripts/scrape-tc-diario.js
+
+      - name: Verificar si hubo cambios
+        id: diff
+        run: |
+          if git diff --quiet src/data/tipo-cambio.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Sin cambios en tipo-cambio.json — no se hace commit."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Cambios detectados en tipo-cambio.json — se hará commit."
+          fi
+
+      - name: Commit y push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/tipo-cambio.json
+          git commit -m "data(tc): actualiza tipo de cambio $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

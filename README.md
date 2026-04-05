@@ -1,16 +1,67 @@
-# React + Vite
+# micambio-cr
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación React para consultar el tipo de cambio en Costa Rica.
 
-Currently, two official plugins are available:
+## Desarrollo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Scripts de datos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### `scripts/scrape-tc-inicial.js`
 
-## Expanding the ESLint configuration
+Descarga el historial de tipo de cambio (compra/venta) del BCCR para los últimos 2 años y lo guarda en `src/data/tipo-cambio.json`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Requisito previo: obtener credenciales del BCCR**
+
+1. Ingresá a [https://gee.bccr.fi.cr/Indicadores/Suscripciones/Home/ObtenerToken](https://gee.bccr.fi.cr/Indicadores/Suscripciones/Home/ObtenerToken)
+2. Registrá tu correo electrónico para recibir un token de acceso
+3. Revisá tu bandeja de entrada — el BCCR te enviará el token por correo
+
+**Uso del script**
+
+Con variables de entorno (recomendado):
+
+```bash
+BCCR_EMAIL=tu@correo.com BCCR_TOKEN=TUTOKEN node scripts/scrape-tc-inicial.js
+```
+
+O editando el script directamente: reemplazá `johndoe@gmail.com` y `JOHNDOE` con tus credenciales reales en las líneas:
+
+```js
+const EMAIL = process.env.BCCR_EMAIL ?? "johndoe@gmail.com";
+const TOKEN = process.env.BCCR_TOKEN ?? "JOHNDOE";
+```
+
+**Salida**
+
+El script genera `src/data/tipo-cambio.json` con esta estructura:
+
+```json
+{
+  "ultimaActualizacion": "2024-04-04T00:00:00.000Z",
+  "bancos": [],
+  "historico": [
+    { "fecha": "2022-04-04", "compra": 530.50, "venta": 540.00 },
+    ...
+  ]
+}
+```
+
+Al finalizar imprime cuántos registros se obtuvieron y la fecha del más reciente.
+
+## Construcción
+
+```bash
+npm run build
+```
+
+## Stack
+
+- [React 19](https://react.dev/) + [Vite](https://vite.dev/)
+- [Tailwind CSS v3](https://tailwindcss.com/)
+- [Axios](https://axios-http.com/)
+- Datos: [API BCCR](https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx)
