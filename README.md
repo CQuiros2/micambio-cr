@@ -13,27 +13,25 @@ npm run dev
 
 ### `scripts/scrape-tc-inicial.js`
 
-Descarga el historial de tipo de cambio (compra/venta) del BCCR para los últimos 2 años y lo guarda en `src/data/tipo-cambio.json`.
+Descarga el historial oficial de tipo de cambio (compra/venta BCCR, indicadores 317 y 318) para los últimos 2 años y lo guarda en `src/data/tipo-cambio.json`.
 
-**Requisito previo: obtener credenciales del BCCR**
+Usa la API nueva del SDDE del BCCR con token Bearer:
 
-1. Ingresá a [https://gee.bccr.fi.cr/Indicadores/Suscripciones/Home/ObtenerToken](https://gee.bccr.fi.cr/Indicadores/Suscripciones/Home/ObtenerToken)
-2. Registrá tu correo electrónico para recibir un token de acceso
-3. Revisá tu bandeja de entrada — el BCCR te enviará el token por correo
+- Base URL: `https://apim.bccr.fi.cr/SDDE/api/Bccr.GE.SDDE.Publico.Indicadores.API`
+- Variable requerida: `BCCR_API_TOKEN`
 
 **Uso del script**
 
-Con variables de entorno (recomendado):
+Local, leyendo `.env.local` con Node 20:
 
 ```bash
-BCCR_EMAIL=tu@correo.com BCCR_TOKEN=TUTOKEN node scripts/scrape-tc-inicial.js
+npm run scrape:tc:inicial
 ```
 
-O editando el script directamente: reemplazá `johndoe@gmail.com` y `JOHNDOE` con tus credenciales reales en las líneas:
+Sin usar `npm`, equivalente:
 
-```js
-const EMAIL = process.env.BCCR_EMAIL ?? "johndoe@gmail.com";
-const TOKEN = process.env.BCCR_TOKEN ?? "JOHNDOE";
+```bash
+node --env-file=.env.local scripts/scrape-tc-inicial.js
 ```
 
 **Salida**
@@ -53,6 +51,30 @@ El script genera `src/data/tipo-cambio.json` con esta estructura:
 
 Al finalizar imprime cuántos registros se obtuvieron y la fecha del más reciente.
 
+### `scripts/scrape-tc-diario.js`
+
+Actualiza solo el histórico oficial reciente de `tipo-cambio.json` usando la API nueva del SDDE y el mismo `BCCR_API_TOKEN`.
+
+```bash
+npm run scrape:tc:diario
+```
+
+### `scripts/scrape-tc-ventanilla.js`
+
+Sigue temporalmente por scraping desde la página de ventanilla del BCCR.
+
+Este flujo todavía no fue migrado a la API nueva para evitar riesgo sobre:
+
+- entidades por categoría
+- diferencial por entidad
+- timestamps de actualización por entidad
+- shape actual que consume la app
+
+En esta etapa:
+
+- tipo oficial diario e histórico: API nueva SDDE con Bearer token
+- ventanilla por entidad: scraping legado, intacto
+
 ## Construcción
 
 ```bash
@@ -64,4 +86,4 @@ npm run build
 - [React 19](https://react.dev/) + [Vite](https://vite.dev/)
 - [Tailwind CSS v3](https://tailwindcss.com/)
 - [Axios](https://axios-http.com/)
-- Datos: [API BCCR](https://gee.bccr.fi.cr/Indicadores/Suscripciones/WS/wsindicadoreseconomicos.asmx)
+- Datos oficiales: API SDDE del BCCR + scraping temporal de ventanilla

@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-05T01:29:19.618Z",
+  "ultimaActualizacion": "2026-04-06T23:52:51.567Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -343,5 +343,46 @@
     "nombre": "ARI Casa de Cambio Internacional S.A.",
     "valor": 467.93
   },
-  "historico": []
+  "historico": [
+    {
+      "fecha": "2026-03-30",
+      "compra": 461.92,
+      "venta": 467.22
+    },
+    {
+      "fecha": "2026-03-31",
+      "compra": 462.08,
+      "venta": 467.85
+    },
+    {
+      "fecha": "2026-04-01",
+      "compra": 462.32,
+      "venta": 467.52
+    },
+    {
+      "fecha": "2026-04-02",
+      "compra": 461.9,
+      "venta": 468.77
+    },
+    {
+      "fecha": "2026-04-03",
+      "compra": 461.9,
+      "venta": 468.77
+    },
+    {
+      "fecha": "2026-04-04",
+      "compra": 461.9,
+      "venta": 468.77
+    },
+    {
+      "fecha": "2026-04-05",
+      "compra": 461.9,
+      "venta": 468.77
+    },
+    {
+      "fecha": "2026-04-06",
+      "compra": 461.9,
+      "venta": 468.77
+    }
+  ]
 }
