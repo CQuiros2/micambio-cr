@@ -1,10 +1,8 @@
-import { useState, useEffect, useRef } from "react";
-
 const CURIOSIDADES = [
   {
     id: 1,
     categoria: "Tipo de cambio",
-    texto: "Hace un año el dólar se compraba a ₡510 en el Banco Nacional. Hoy se compra a ₡456 — una caída de ₡54 en 12 meses.",
+    texto: "Hace un año el dólar se compraba a ₡510 en el Banco Nacional. Hoy se compra a ₡456, una caída de ₡54 en 12 meses.",
   },
   {
     id: 2,
@@ -18,8 +16,8 @@ const CURIOSIDADES = [
   },
   {
     id: 4,
-    categoria: "Dato curioso",
-    texto: "El diferencial cambiario (diferencia entre compra y venta) varía entre ₡6 y ₡24 según la entidad financiera.",
+    categoria: "Dato operativo",
+    texto: "El diferencial cambiario varía entre ₡6 y ₡24 según la entidad financiera.",
   },
   {
     id: 5,
@@ -29,117 +27,52 @@ const CURIOSIDADES = [
   {
     id: 6,
     categoria: "Tipo de cambio",
-    texto: "Las casas de cambio suelen ofrecer mejor tipo de compra que los bancos, pero con mayor diferencial de venta.",
+    texto: "Las casas de cambio suelen ofrecer mejor tipo de compra que varios bancos, pero con mayor diferencial de venta.",
   },
 ];
 
 const CAT_STYLES = {
-  "Tipo de cambio": { bg: "rgba(59,130,246,0.1)",  color: "#3b82f6", border: "rgba(59,130,246,0.25)" },
-  "Combustibles":   { bg: "rgba(245,158,11,0.1)",  color: "#f59e0b", border: "rgba(245,158,11,0.25)" },
-  "Dato curioso":   { bg: "rgba(168,85,247,0.1)",  color: "#a855f7", border: "rgba(168,85,247,0.25)" },
+  "Tipo de cambio": { color: "var(--blue)", bg: "var(--blue-dim)", border: "var(--blue-border)" },
+  "Combustibles": { color: "var(--warning)", bg: "rgba(183,121,31,0.10)", border: "rgba(183,121,31,0.20)" },
+  "Dato operativo": { color: "var(--accent)", bg: "var(--accent-dim)", border: "var(--accent-border)" },
 };
 
+const tickerItems = [...CURIOSIDADES, ...CURIOSIDADES];
+
 export default function Curiosity() {
-  const [actual, setActual] = useState(0);
-  const [fade, setFade] = useState(true);
-  const timerRef = useRef(null);
-
-  const irA = (idx) => {
-    if (idx === actual) return;
-    setFade(false);
-    setTimeout(() => {
-      setActual(idx);
-      setFade(true);
-    }, 220);
-  };
-
-  // Reinicia el timer cuando el usuario hace click manual
-  const irAManual = (idx) => {
-    clearInterval(timerRef.current);
-    irA(idx);
-    timerRef.current = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setActual((prev) => (prev + 1) % CURIOSIDADES.length);
-        setFade(true);
-      }, 220);
-    }, 5000);
-  };
-
-  useEffect(() => {
-    timerRef.current = setInterval(() => {
-      setFade(false);
-      setTimeout(() => {
-        setActual((prev) => (prev + 1) % CURIOSIDADES.length);
-        setFade(true);
-      }, 220);
-    }, 5000);
-    return () => clearInterval(timerRef.current);
-  }, []);
-
-  const c = CURIOSIDADES[actual];
-  const catStyle = CAT_STYLES[c.categoria] ?? CAT_STYLES["Dato curioso"];
-
   return (
-    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-10">
-      <div
-        className="rounded-xl overflow-hidden"
-        style={{ backgroundColor: "var(--surface)", border: "1px solid var(--border)" }}
-      >
-        {/* Barra superior con color de categoría */}
-        <div className="h-0.5 w-full" style={{ backgroundColor: catStyle.color, opacity: 0.6 }} />
-
-        {/* Contenido */}
-        <div className="px-6 pt-5 pb-3">
-          {/* Header */}
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--text-2)" }}>
-              ¿Sabías que…?
-            </span>
-            <span
-              className="text-xs font-semibold rounded-full px-2.5 py-1"
-              style={{ backgroundColor: catStyle.bg, color: catStyle.color, border: `1px solid ${catStyle.border}` }}
-            >
-              {c.categoria}
-            </span>
-          </div>
-
-          {/* Texto con fade */}
-          <div
-            className="min-h-[3.5rem]"
-            style={{
-              opacity: fade ? 1 : 0,
-              transform: fade ? "translateY(0)" : "translateY(4px)",
-              transition: "opacity 220ms ease, transform 220ms ease",
-            }}
-          >
-            <p className="text-base sm:text-lg font-medium leading-snug" style={{ color: "var(--text-1)" }}>
-              {c.texto}
-            </p>
-          </div>
+    <section className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
+      <div className="terminal-panel rounded-2xl overflow-hidden">
+        <div
+          className="flex items-center gap-3 px-4 sm:px-5 py-3 border-b"
+          style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
+        >
+          <span className="eyebrow">Radar de mercado</span>
+          <span className="text-xs" style={{ color: "var(--text-3)" }}>
+            Indicadores rápidos para contexto diario
+          </span>
         </div>
 
-        {/* Dots */}
-        <div className="px-6 pb-5 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            {CURIOSIDADES.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => irAManual(i)}
-                aria-label={`Curiosidad ${i + 1}`}
-                className="rounded-full focus:outline-none transition-all duration-300"
-                style={{
-                  width: i === actual ? "20px" : "8px",
-                  height: "8px",
-                  backgroundColor: i === actual ? catStyle.color : "var(--border)",
-                  opacity: i === actual ? 1 : 0.6,
-                }}
-              />
-            ))}
+        <div className="ticker-mask px-0 py-3" style={{ backgroundColor: "var(--surface)" }}>
+          <div className="ticker-track">
+            {tickerItems.map((item, idx) => {
+              const style = CAT_STYLES[item.categoria] ?? CAT_STYLES["Dato operativo"];
+              return (
+                <div key={`${item.id}-${idx}`} className="flex items-center gap-3 px-4 sm:px-5 whitespace-nowrap">
+                  <span
+                    className="inline-flex rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]"
+                    style={{ color: style.color, backgroundColor: style.bg, border: `1px solid ${style.border}` }}
+                  >
+                    {item.categoria}
+                  </span>
+                  <span className="text-sm" style={{ color: "var(--text-2)" }}>
+                    {item.texto}
+                  </span>
+                  <span style={{ color: "var(--border-strong)" }}>•</span>
+                </div>
+              );
+            })}
           </div>
-          <span className="text-xs tabular-nums" style={{ color: "var(--text-2)" }}>
-            {actual + 1} / {CURIOSIDADES.length}
-          </span>
         </div>
       </div>
     </section>

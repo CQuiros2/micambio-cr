@@ -10,7 +10,7 @@ export default function App() {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === "undefined") return true;
     const saved = localStorage.getItem("theme");
-    return saved ? saved === "dark" : true; // oscuro por defecto
+    return saved ? saved === "dark" : true;
   });
 
   useEffect(() => {
@@ -22,15 +22,15 @@ export default function App() {
   const toggleTheme = () => setIsDark((v) => !v);
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "var(--bg)" }}>
+    <div className="app-shell min-h-screen flex flex-col" style={{ backgroundColor: "var(--bg)" }}>
       <Header isDark={isDark} toggleTheme={toggleTheme} />
       <main className="flex-1 flex flex-col">
         <Calculadora />
-        <div style={{ borderTop: "1px solid var(--border)" }} />
+        <div className="section-divider" />
         <TipoCambio />
-        <div style={{ borderTop: "1px solid var(--border)" }} />
+        <div className="section-divider" />
         <Combustible />
-        <div style={{ borderTop: "1px solid var(--border)" }} />
+        <div className="section-divider" />
         <Curiosity />
       </main>
       <Footer />

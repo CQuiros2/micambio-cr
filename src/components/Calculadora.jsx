@@ -1,15 +1,13 @@
 import { useState, useMemo } from "react";
 import tcData from "../data/tipo-cambio.json";
 
-const { entidades } = tcData;
+const { entidades, mejorCompra, mejorVenta, historico, ultimaActualizacion } = tcData;
 
-// ── Formateo ──────────────────────────────────────────────────────────────────
 const fmtCRC = (n) =>
   new Intl.NumberFormat("es-CR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
 const fmtUSD = (n) =>
   new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
 
-// ── Modos ─────────────────────────────────────────────────────────────────────
 const MODOS = [
   {
     key: "vender",
@@ -21,13 +19,12 @@ const MODOS = [
   {
     key: "comprar",
     label: "Comprás dólares",
-    color: "#3b82f6",
-    dim: "rgba(59,130,246,0.10)",
-    border: "rgba(59,130,246,0.25)",
+    color: "var(--blue)",
+    dim: "var(--blue-dim)",
+    border: "var(--blue-border)",
   },
 ];
 
-// ── Ranking de 5 mejores (calculado una vez) ──────────────────────────────────
 const TOP_VENDER = [...entidades]
   .filter((e) => e.compra > 0)
   .sort((a, b) => b.compra - a.compra)
@@ -38,9 +35,149 @@ const TOP_COMPRAR = [...entidades]
   .sort((a, b) => a.venta - b.venta)
   .slice(0, 5);
 
-// ── Subcomponente: fila de banco en la lista ──────────────────────────────────
+const FAVICON_MAP = {
+  "bncr.fi.cr": "https://www.bncr.fi.cr/favicon.ico",
+  "bancobcr.com": "https://www.bancobcr.com/favicon.ico",
+  "bancopopular.fi.cr": "https://www.bancopopular.fi.cr/favicon.ico",
+  "bac.cr": "https://www.bac.cr/favicon.ico",
+  "davivienda.com": "https://www.davivienda.cr/favicon.ico",
+  "bancobct.com": "https://www.bct.fi.cr/favicon.ico",
+  "lafise.com": "https://www.lafise.com/favicon.ico",
+  "promerica.fi.cr": "https://www.promerica.fi.cr/favicon.ico",
+  "coopeande.com": "https://www.coopeande1.com/favicon.ico",
+  "coopecaja.fi.cr": "https://www.coopecaja.fi.cr/favicon.ico",
+  "coopenae.fi.cr": "https://www.coopenae.fi.cr/favicon.ico",
+};
+
+const MOCK_TC = [514, 511, 509, 513, 507, 502, 498, 500, 495, 491, 488, 485, 482, 479, 476, 473, 470, 468, 465, 463, 461, 460, 458, 456];
+const sparkValues =
+  historico.length > 0 ? historico.map((d) => d.compra).filter(Boolean) : MOCK_TC;
+
+function tiempoDesde(isoStr) {
+  if (!isoStr) return null;
+  const diff = Date.now() - new Date(isoStr).getTime();
+  const min = Math.floor(diff / 60_000);
+  if (min < 1) return "Actualizado hace menos de un minuto";
+  if (min < 60) return `Actualizado hace ${min} minuto${min !== 1 ? "s" : ""}`;
+  const h = Math.floor(min / 60);
+  return `Actualizado hace ${h} hora${h !== 1 ? "s" : ""}`;
+}
+
+function Sparkline({ values }) {
+  if (!values || values.length < 2) return null;
+  const W = 180;
+  const H = 42;
+  const PAD = 2;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const pts = values.map((v, i) => [
+    PAD + (i / (values.length - 1)) * (W - PAD * 2),
+    PAD + ((max - v) / range) * (H - PAD * 2),
+  ]);
+  const line = pts.map(([x, y]) => `${x},${y}`).join(" ");
+  const area = `${pts[0][0]},${H} ${line} ${pts.at(-1)[0]},${H}`;
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} preserveAspectRatio="none" aria-hidden>
+      <defs>
+        <linearGradient id="spark-gradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.18" />
+          <stop offset="100%" stopColor="var(--accent)" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+      <polygon points={area} fill="url(#spark-gradient)" />
+      <polyline points={line} fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function BankLogo({ nombre, slug, size = 30 }) {
+  const [failed, setFailed] = useState(false);
+  const faviconUrl = FAVICON_MAP[slug];
+  const initials = nombre
+    .split(" ")
+    .filter((w) => w.length > 2)
+    .slice(0, 2)
+    .map((w) => w[0].toUpperCase())
+    .join("");
+
+  if (!faviconUrl || failed) {
+    return (
+      <div
+        className="flex items-center justify-center flex-shrink-0 overflow-hidden"
+        style={{
+          width: size,
+          height: size,
+          borderRadius: 8,
+          background: "var(--surface-2)",
+          color: "var(--text-1)",
+          border: "1px solid var(--border)",
+          fontSize: size <= 24 ? 9 : 11,
+          fontWeight: 700,
+        }}
+      >
+        {initials}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className="flex items-center justify-center flex-shrink-0 overflow-hidden bg-white"
+      style={{ width: size, height: size, borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)" }}
+    >
+      <img
+        src={faviconUrl}
+        alt={nombre}
+        style={{ width: size - 8, height: size - 8, objectFit: "contain" }}
+        onError={() => setFailed(true)}
+      />
+    </div>
+  );
+}
+
+function WinnerCard({ label, sublabel, valor, nombre, slug, accent, accentDim, accentBorder, children }) {
+  return (
+    <article
+      className="terminal-panel rounded-2xl p-5 sm:p-6 flex flex-col gap-4"
+      style={{ borderColor: accentBorder }}
+    >
+      <div className="flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          <p className="eyebrow" style={{ color: accent }}>{label}</p>
+          <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--text-2)" }}>{sublabel}</p>
+        </div>
+        <BankLogo nombre={nombre} slug={slug} />
+      </div>
+
+      <div>
+        <p
+          className="metric-value font-black leading-none"
+          style={{ color: accent, fontSize: "clamp(38px, 5vw, 52px)" }}
+        >
+          ₡{valor.toFixed(2)}
+        </p>
+        <p className="mt-2 text-sm font-medium truncate" style={{ color: "var(--text-1)" }}>
+          {nombre}
+        </p>
+      </div>
+
+      <div className="flex items-center justify-between gap-3">
+        <span
+          className="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]"
+          style={{ backgroundColor: accentDim, color: accent, border: `1px solid ${accentBorder}` }}
+        >
+          {label}
+        </span>
+        {children}
+      </div>
+    </article>
+  );
+}
+
 function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
-  const accentColor = isVender ? "var(--accent)" : "#3b82f6";
+  const accentColor = isVender ? "var(--accent)" : "var(--blue)";
 
   const resultadoStr = useMemo(() => {
     if (!monto) return null;
@@ -49,53 +186,38 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
 
   return (
     <div
-      className="flex items-center justify-between py-2.5"
-      style={{ borderBottom: "1px solid var(--border)" }}
+      className="grid grid-cols-[auto_1fr_auto] items-center gap-3 px-3 py-3 rounded-xl"
+      style={{
+        backgroundColor: isFirst ? (isVender ? "var(--accent-dim)" : "var(--blue-dim)") : "var(--surface-2)",
+        border: `1px solid ${isFirst ? (isVender ? "var(--accent-border)" : "var(--blue-border)") : "var(--border)"}`,
+      }}
     >
-      {/* Posición + nombre */}
-      <div className="flex items-center gap-3 min-w-0">
-        <span
-          className="flex-shrink-0 w-5 text-center tabular-nums font-bold"
-          style={{
-            fontSize: 13,
-            color: isFirst ? accentColor : "var(--text-2)",
-          }}
-        >
-          {posicion}
-        </span>
-        <span
-          className="truncate font-medium"
-          style={{ color: "var(--text-1)", fontSize: 14 }}
-        >
+      <span
+        className="w-6 text-center font-bold tabular-nums"
+        style={{ fontSize: 12, color: isFirst ? accentColor : "var(--text-2)" }}
+      >
+        {posicion}
+      </span>
+      <div className="min-w-0">
+        <p className="truncate font-medium" style={{ color: "var(--text-1)", fontSize: 14 }}>
           {banco.nombre}
-        </span>
-      </div>
-
-      {/* Rate + resultado */}
-      <div className="text-right flex-shrink-0 pl-4">
-        <span
-          className="tabular-nums font-bold block"
-          style={{
-            fontSize: 15,
-            color: isFirst ? accentColor : "var(--text-1)",
-          }}
-        >
-          ₡{rate.toFixed(2)}
-        </span>
+        </p>
         {resultadoStr && (
-          <span
-            className="tabular-nums"
-            style={{ fontSize: 11, color: "var(--text-2)" }}
-          >
+          <p className="tabular-nums text-[11px]" style={{ color: "var(--text-2)" }}>
             {resultadoStr}
-          </span>
+          </p>
         )}
       </div>
+      <span
+        className="tabular-nums font-bold"
+        style={{ fontSize: 15, color: isFirst ? accentColor : "var(--text-1)" }}
+      >
+        ₡{rate.toFixed(2)}
+      </span>
     </div>
   );
 }
 
-// ── Componente principal ──────────────────────────────────────────────────────
 export default function Calculadora() {
   const [modo, setModo] = useState("vender");
   const [rawValor, setRawValor] = useState("");
@@ -104,38 +226,66 @@ export default function Calculadora() {
   const modoConfig = MODOS.find((m) => m.key === modo);
   const top5 = isVender ? TOP_VENDER : TOP_COMPRAR;
   const bestBanco = top5[0];
-
-  // Parsear el valor numérico del input
   const numValor = parseFloat(rawValor) || 0;
+  const updatedLabel = tiempoDesde(ultimaActualizacion);
 
-  // Resultado con el mejor banco
+  const cards = [
+    {
+      label: "Mayor compra",
+      sublabel: "Mejor para vender dólares hoy",
+      valor: mejorCompra.valor,
+      nombre: mejorCompra.nombre,
+      slug: entidades.find((e) => e.nombre === mejorCompra.nombre)?.slug,
+      accent: "var(--accent)",
+      accentDim: "var(--accent-dim)",
+      accentBorder: "var(--accent-border)",
+      footer: (
+        <div className="hidden sm:block opacity-75">
+          <p className="mb-1 text-[10px] uppercase tracking-[0.12em]" style={{ color: "var(--text-2)" }}>
+            Tendencia BCCR
+          </p>
+          <Sparkline values={sparkValues} />
+        </div>
+      ),
+    },
+    {
+      label: "Menor venta",
+      sublabel: "Mejor para comprar dólares hoy",
+      valor: mejorVenta.valor,
+      nombre: mejorVenta.nombre,
+      slug: entidades.find((e) => e.nombre === mejorVenta.nombre)?.slug,
+      accent: "var(--blue)",
+      accentDim: "var(--blue-dim)",
+      accentBorder: "var(--blue-border)",
+    },
+  ];
+
   const { resultadoStr, diferenciaStr } = useMemo(() => {
-    if (numValor <= 0 || !bestBanco)
+    if (numValor <= 0 || !bestBanco) {
       return { resultadoStr: null, diferenciaStr: null };
+    }
 
     if (isVender) {
       const mejor = numValor * bestBanco.compra;
-      const peor  = numValor * top5.at(-1).compra;
+      const peor = numValor * top5.at(-1).compra;
       return {
         resultadoStr: `₡${fmtCRC(mejor)}`,
-        diferenciaStr: `₡${fmtCRC(mejor - peor)} más que el 5to banco`,
-      };
-    } else {
-      const mejor = numValor / bestBanco.venta;
-      const peor  = numValor / top5.at(-1).venta;
-      return {
-        resultadoStr: `$${fmtUSD(mejor)}`,
-        diferenciaStr: `$${fmtUSD(mejor - peor)} más que el 5to banco`,
+        diferenciaStr: `₡${fmtCRC(mejor - peor)} más que el 5to mejor tipo`,
       };
     }
-  }, [numValor, isVender, bestBanco, top5]);
+
+    const mejor = numValor / bestBanco.venta;
+    const peor = numValor / top5.at(-1).venta;
+    return {
+      resultadoStr: `$${fmtUSD(mejor)}`,
+      diferenciaStr: `$${fmtUSD(mejor - peor)} más que el 5to mejor tipo`,
+    };
+  }, [bestBanco, isVender, numValor, top5]);
 
   const handleInput = (e) => {
-    // Permitir solo números y punto decimal
     const v = e.target.value.replace(/[^0-9.]/g, "");
-    // Evitar más de un punto
     const parts = v.split(".");
-    const clean = parts.length > 2 ? parts[0] + "." + parts.slice(1).join("") : v;
+    const clean = parts.length > 2 ? `${parts[0]}.${parts.slice(1).join("")}` : v;
     setRawValor(clean);
   };
 
@@ -145,150 +295,158 @@ export default function Calculadora() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
-      {/* Título */}
-      <div className="mb-5">
-        <h2 className="text-xl font-bold" style={{ color: "var(--text-1)" }}>
-          El mejor cambio hoy
-        </h2>
-        <p className="text-sm mt-0.5" style={{ color: "var(--text-2)" }}>
-          Calculá cuánto recibís según el banco
-        </p>
+    <section className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-6 pb-8 sm:pt-8 sm:pb-10">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between mb-5 sm:mb-6">
+        <div>
+          <p className="eyebrow mb-2">Monitor diario</p>
+          <h1 className="text-2xl sm:text-[28px] font-bold tracking-tight" style={{ color: "var(--text-1)" }}>
+            Mejor cambio del día
+          </h1>
+          <p className="mt-1 text-sm" style={{ color: "var(--text-2)" }}>
+            Decisión rápida para compra y venta de dólares en ventanilla.
+          </p>
+        </div>
+        {updatedLabel && (
+          <p className="text-xs sm:text-sm" style={{ color: "var(--text-3)" }}>
+            {updatedLabel}
+          </p>
+        )}
       </div>
 
-      <div
-        className="rounded-xl overflow-hidden"
-        style={{ backgroundColor: "var(--surface)", border: "1px solid var(--border)" }}
-      >
-        {/* Barra de acento superior */}
-        <div className="h-0.5 w-full" style={{ backgroundColor: modoConfig.color, opacity: 0.5 }} />
+      <div className="grid grid-cols-1 xl:grid-cols-[320px_minmax(0,1fr)] gap-4 sm:gap-5">
+        <div className="order-2 xl:order-1 flex flex-col gap-4">
+          {cards.map((card) => (
+            <WinnerCard key={card.label} {...card}>
+              {card.footer}
+            </WinnerCard>
+          ))}
+        </div>
 
-        <div className="p-4 sm:p-6">
-          {/* ── Toggle ─────────────────────────────────────────────────────── */}
+        <div className="order-1 xl:order-2 terminal-panel rounded-2xl overflow-hidden">
           <div
-            className="flex gap-1 p-1 rounded-lg mb-6"
-            style={{ backgroundColor: "var(--bg)", border: "1px solid var(--border)" }}
+            className="px-4 sm:px-6 py-4 border-b"
+            style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
           >
-            {MODOS.map((m) => (
-              <button
-                key={m.key}
-                onClick={() => handleModoChange(m.key)}
-                className="flex-1 py-2 px-3 rounded-md text-sm font-semibold transition-all focus:outline-none"
-                style={
-                  modo === m.key
-                    ? { backgroundColor: m.dim, color: m.color, border: `1px solid ${m.border}` }
-                    : { color: "var(--text-2)", border: "1px solid transparent" }
-                }
+            <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p className="eyebrow mb-2">Calculadora</p>
+                <h2 className="text-lg sm:text-xl font-bold" style={{ color: "var(--text-1)" }}>
+                  Simulador de cambio en ventanilla
+                </h2>
+              </div>
+              <div
+                className="inline-flex rounded-xl p-1 self-start"
+                style={{ backgroundColor: "var(--surface-3)", border: "1px solid var(--border)" }}
               >
-                {m.label}
-              </button>
-            ))}
+                {MODOS.map((m) => (
+                  <button
+                    key={m.key}
+                    onClick={() => handleModoChange(m.key)}
+                    className="px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
+                    style={
+                      modo === m.key
+                        ? { backgroundColor: "var(--surface)", color: m.color, boxShadow: "var(--shadow-soft)" }
+                        : { color: "var(--text-2)" }
+                    }
+                  >
+                    {m.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
-          {/* ── Layout principal: input + resultado / lista ─────────────────── */}
-          <div className="flex flex-col lg:flex-row gap-6">
-            {/* Columna izquierda: input + resultado */}
-            <div className="flex-1 flex flex-col gap-5">
-              {/* Input */}
-              <div>
-                <label
-                  className="block text-xs font-semibold uppercase tracking-wide mb-2"
-                  style={{ color: "var(--text-2)" }}
-                >
-                  {isVender ? "Ingresás dólares ($)" : "Ingresás colones (₡)"}
-                </label>
-                <div className="relative">
-                  {/* Símbolo */}
-                  <span
-                    className="absolute left-4 top-1/2 -translate-y-1/2 font-bold pointer-events-none select-none"
-                    style={{ color: modoConfig.color, fontSize: 28, lineHeight: 1 }}
+          <div className="p-4 sm:p-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_300px] gap-5 sm:gap-6">
+              <div className="flex flex-col gap-4 sm:gap-5">
+                <div>
+                  <label className="eyebrow mb-2 block">
+                    {isVender ? "Ingresás dólares" : "Ingresás colones"}
+                  </label>
+                  <div
+                    className="rounded-2xl px-4 sm:px-5 py-4 sm:py-5 relative"
+                    style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
                   >
-                    {isVender ? "$" : "₡"}
-                  </span>
-                  <input
-                    type="text"
-                    inputMode="decimal"
-                    value={rawValor}
-                    onChange={handleInput}
-                    placeholder="0"
-                    autoComplete="off"
-                    className="w-full rounded-lg font-black tabular-nums focus:outline-none"
-                    style={{
-                      paddingLeft: 52,
-                      paddingRight: 16,
-                      paddingTop: 18,
-                      paddingBottom: 18,
-                      fontSize: "clamp(28px, 6vw, 40px)",
-                      lineHeight: 1,
-                      backgroundColor: "var(--bg)",
-                      color: "var(--text-1)",
-                      border: `1.5px solid ${numValor > 0 ? modoConfig.color : "var(--border)"}`,
-                      caretColor: modoConfig.color,
-                    }}
-                  />
+                    <span
+                      className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 font-bold pointer-events-none"
+                      style={{ color: modoConfig.color, fontSize: 24 }}
+                    >
+                      {isVender ? "$" : "₡"}
+                    </span>
+                    <input
+                      type="text"
+                      inputMode="decimal"
+                      value={rawValor}
+                      onChange={handleInput}
+                      placeholder="0"
+                      autoComplete="off"
+                      className="w-full bg-transparent pl-8 sm:pl-10 pr-2 font-black metric-value focus:outline-none"
+                      style={{
+                        color: "var(--text-1)",
+                        fontSize: "clamp(34px, 6vw, 56px)",
+                        lineHeight: 1,
+                        caretColor: modoConfig.color,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div
+                  className="rounded-2xl p-4 sm:p-5"
+                  style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
+                >
+                  <p className="eyebrow mb-2">
+                    {isVender ? "Mejor resultado" : "Mayor cantidad de dólares"}
+                  </p>
+                  {numValor > 0 && resultadoStr ? (
+                    <>
+                      <p className="text-sm font-medium mb-2" style={{ color: "var(--text-2)" }}>
+                        {isVender ? "Recibís con" : "Comprás con"} {bestBanco.nombre}
+                      </p>
+                      <p
+                        className="metric-value font-black leading-none"
+                        style={{ color: modoConfig.color, fontSize: "clamp(36px, 5vw, 54px)" }}
+                      >
+                        {resultadoStr}
+                      </p>
+                      {diferenciaStr && (
+                        <p className="mt-3 text-sm" style={{ color: "var(--text-2)" }}>
+                          {diferenciaStr}
+                        </p>
+                      )}
+                    </>
+                  ) : (
+                    <p className="text-sm" style={{ color: "var(--text-2)" }}>
+                      Ingresá un monto para ver el mejor resultado del día.
+                    </p>
+                  )}
                 </div>
               </div>
 
-              {/* Resultado */}
-              <div
-                className="rounded-lg p-4"
-                style={{
-                  backgroundColor: "var(--bg)",
-                  border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}`,
-                  minHeight: 100,
-                }}
-              >
-                {numValor > 0 && resultadoStr ? (
-                  <>
-                    <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "var(--text-2)" }}>
-                      {isVender ? "Recibís" : "Comprás"} con {bestBanco.nombre}
-                    </p>
-                    <p
-                      className="font-black tabular-nums leading-none"
-                      style={{ color: modoConfig.color, fontSize: "clamp(32px, 5vw, 48px)" }}
-                    >
-                      {resultadoStr}
-                    </p>
-                    {diferenciaStr && (
-                      <p className="mt-2 text-xs" style={{ color: "var(--text-2)" }}>
-                        {diferenciaStr}
-                      </p>
-                    )}
-                  </>
-                ) : (
-                  <div className="h-full flex items-center justify-center py-2">
-                    <p style={{ color: "var(--text-2)", fontSize: 13 }}>
-                      Ingresá un monto para ver el resultado
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-
-            {/* Columna derecha: lista de 5 mejores */}
-            <div className="lg:w-72">
-              <p
-                className="text-xs font-semibold uppercase tracking-widest mb-1"
-                style={{ color: "var(--text-2)" }}
-              >
-                Los 5 mejores · {isVender ? "mayor compra" : "menor venta"}
-              </p>
-              <div>
-                {top5.map((banco, i) => (
-                  <BancoFila
-                    key={banco.nombre}
-                    banco={banco}
-                    posicion={i + 1}
-                    rate={isVender ? banco.compra : banco.venta}
-                    monto={numValor}
-                    isVender={isVender}
-                    isFirst={i === 0}
-                  />
-                ))}
-              </div>
-              <p className="mt-3 text-xs" style={{ color: "var(--text-2)" }}>
-                Incluye bancos, cooperativas y casas de cambio
-              </p>
+              <aside className="flex flex-col gap-3">
+                <div className="flex items-center justify-between">
+                  <p className="eyebrow">Top 5</p>
+                  <span className="text-xs" style={{ color: "var(--text-3)" }}>
+                    {isVender ? "Mayor compra" : "Menor venta"}
+                  </span>
+                </div>
+                <div className="flex flex-col gap-2.5">
+                  {top5.map((banco, i) => (
+                    <BancoFila
+                      key={banco.nombre}
+                      banco={banco}
+                      posicion={i + 1}
+                      rate={isVender ? banco.compra : banco.venta}
+                      monto={numValor}
+                      isVender={isVender}
+                      isFirst={i === 0}
+                    />
+                  ))}
+                </div>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--text-3)" }}>
+                  Incluye bancos, cooperativas y casas de cambio con tasas publicadas.
+                </p>
+              </aside>
             </div>
           </div>
         </div>

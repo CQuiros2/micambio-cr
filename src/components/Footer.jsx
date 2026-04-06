@@ -1,49 +1,58 @@
 export default function Footer() {
   const year = new Date().getFullYear();
+
   return (
-    <footer style={{ borderTop: "1px solid var(--border)" }}>
-      <div
-        className="max-w-5xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm"
-        style={{ color: "var(--text-2)" }}
-      >
-        {/* Logo texto */}
-        <div className="flex items-center gap-2">
-          <div
-            className="w-6 h-6 rounded-md flex items-center justify-center text-white text-xs font-bold"
-            style={{ background: "linear-gradient(135deg, var(--accent) 0%, #3b82f6 100%)" }}
-          >
-            ₡
+    <footer className="section-divider">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <div className="terminal-panel rounded-2xl px-5 py-5 sm:px-6 sm:py-6">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+            <div className="flex items-center gap-3">
+              <div
+                className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-sm font-bold"
+                style={{ background: "linear-gradient(135deg, var(--accent) 0%, var(--blue) 100%)" }}
+              >
+                ₡
+              </div>
+              <div>
+                <p className="font-bold tracking-tight" style={{ color: "var(--text-1)" }}>
+                  MICAMBIO<span style={{ color: "var(--accent)" }}>.CR</span>
+                </p>
+                <p className="text-sm" style={{ color: "var(--text-2)" }}>
+                  Monitor diario de referencia para tipo de cambio y combustibles.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-1 text-sm lg:text-right" style={{ color: "var(--text-2)" }}>
+              <p>
+                Datos oficiales:
+                {" "}
+                <a
+                  href="https://www.bccr.fi.cr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                  style={{ color: "var(--accent)" }}
+                >
+                  BCCR
+                </a>
+                {" · "}
+                <a
+                  href="https://aresep.go.cr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                  style={{ color: "var(--accent)" }}
+                >
+                  ARESEP
+                </a>
+              </p>
+              <p className="text-xs" style={{ color: "var(--text-3)" }}>
+                © {year}. Uso informativo. No sustituye confirmación directa con la entidad.
+              </p>
+            </div>
           </div>
-          <span className="font-semibold" style={{ color: "var(--text-1)" }}>
-            MiCambio<span style={{ color: "var(--accent)" }}>.cr</span>
-          </span>
         </div>
-
-        {/* Fuentes */}
-        <p className="text-xs text-center">
-          Datos oficiales:{" "}
-          <a
-            href="https://www.bccr.fi.cr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-            style={{ color: "var(--accent)" }}
-          >
-            BCCR
-          </a>
-          {" "}·{" "}
-          <a
-            href="https://aresep.go.cr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-            style={{ color: "var(--accent)" }}
-          >
-            ARESEP
-          </a>
-        </p>
-
-        <p className="text-xs">© {year} · Solo informativo</p>
       </div>
     </footer>
   );

@@ -1,68 +1,22 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import tcData from "../data/tipo-cambio.json";
 
-const { entidades, mejorCompra, mejorVenta, historico } = tcData;
+const { entidades, mejorCompra, mejorVenta } = tcData;
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-
-function tiempoDesde(isoStr) {
-  if (!isoStr) return null;
-  const diff = Date.now() - new Date(isoStr).getTime();
-  const min = Math.floor(diff / 60_000);
-  if (min < 1)  return "hace menos de un minuto";
-  if (min < 60) return `hace ${min} minuto${min !== 1 ? "s" : ""}`;
-  const h = Math.floor(min / 60);
-  return `hace ${h} hora${h !== 1 ? "s" : ""}`;
-}
-
-// ── Favicon map: slug → URL real ──────────────────────────────────────────────
-// Solo para entidades con URL de favicon conocida; el resto usa iniciales.
 const FAVICON_MAP = {
-  "bncr.fi.cr":         "https://www.bncr.fi.cr/favicon.ico",
-  "bancobcr.com":       "https://www.bancobcr.com/favicon.ico",
+  "bncr.fi.cr": "https://www.bncr.fi.cr/favicon.ico",
+  "bancobcr.com": "https://www.bancobcr.com/favicon.ico",
   "bancopopular.fi.cr": "https://www.bancopopular.fi.cr/favicon.ico",
-  "bac.cr":             "https://www.bac.cr/favicon.ico",
-  "davivienda.com":     "https://www.davivienda.cr/favicon.ico",
-  "bancobct.com":       "https://www.bct.fi.cr/favicon.ico",
-  "lafise.com":         "https://www.lafise.com/favicon.ico",
-  "promerica.fi.cr":    "https://www.promerica.fi.cr/favicon.ico",
-  "coopeande.com":      "https://www.coopeande1.com/favicon.ico",
-  "coopecaja.fi.cr":    "https://www.coopecaja.fi.cr/favicon.ico",
-  "coopenae.fi.cr":     "https://www.coopenae.fi.cr/favicon.ico",
+  "bac.cr": "https://www.bac.cr/favicon.ico",
+  "davivienda.com": "https://www.davivienda.cr/favicon.ico",
+  "bancobct.com": "https://www.bct.fi.cr/favicon.ico",
+  "lafise.com": "https://www.lafise.com/favicon.ico",
+  "promerica.fi.cr": "https://www.promerica.fi.cr/favicon.ico",
+  "coopeande.com": "https://www.coopeande1.com/favicon.ico",
+  "coopecaja.fi.cr": "https://www.coopecaja.fi.cr/favicon.ico",
+  "coopenae.fi.cr": "https://www.coopenae.fi.cr/favicon.ico",
 };
 
-// ── Sparkline SVG ─────────────────────────────────────────────────────────────
-const MOCK_TC = [514,511,509,513,507,502,498,500,495,491,488,485,482,479,476,473,470,468,465,463,461,460,458,456];
-const sparkValues =
-  historico.length > 0 ? historico.map((d) => d.compra).filter(Boolean) : MOCK_TC;
-
-function Sparkline({ values }) {
-  if (!values || values.length < 2) return null;
-  const W = 180, H = 48, PAD = 2;
-  const min = Math.min(...values);
-  const max = Math.max(...values);
-  const range = max - min || 1;
-  const pts = values.map((v, i) => [
-    PAD + (i / (values.length - 1)) * (W - PAD * 2),
-    PAD + ((max - v) / range) * (H - PAD * 2),
-  ]);
-  const line = pts.map(([x, y]) => `${x},${y}`).join(" ");
-  const area = `${pts[0][0]},${H} ${line} ${pts.at(-1)[0]},${H}`;
-  return (
-    <svg viewBox={`0 0 ${W} ${H}`} width={W} height={H} preserveAspectRatio="none" aria-hidden>
-      <defs>
-        <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="var(--accent)" stopOpacity="0.2" />
-          <stop offset="100%" stopColor="var(--accent)" stopOpacity="0" />
-        </linearGradient>
-      </defs>
-      <polygon points={area} fill="url(#sg)" />
-      <polyline points={line} fill="none" stroke="var(--accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
-// ── Logo con favicon real + fallback de iniciales ─────────────────────────────
 function BankLogo({ nombre, slug, size = 28 }) {
   const [failed, setFailed] = useState(false);
   const faviconUrl = FAVICON_MAP[slug];
@@ -73,19 +27,17 @@ function BankLogo({ nombre, slug, size = 28 }) {
     .map((w) => w[0].toUpperCase())
     .join("");
 
-  const radius = Math.round(size * 0.214); // ~6px para 28px, ~5px para 24px
-  const cls = `flex items-center justify-center flex-shrink-0 overflow-hidden`;
-
   if (!faviconUrl || failed) {
     return (
       <div
-        className={cls}
+        className="flex items-center justify-center flex-shrink-0 overflow-hidden"
         style={{
-          width: size, height: size,
-          borderRadius: radius,
-          background: "var(--accent-dim)",
-          color: "var(--accent)",
-          border: "1px solid var(--accent-border)",
+          width: size,
+          height: size,
+          borderRadius: 8,
+          background: "var(--surface-2)",
+          color: "var(--text-1)",
+          border: "1px solid var(--border)",
           fontSize: size <= 24 ? 9 : 11,
           fontWeight: 700,
         }}
@@ -94,10 +46,11 @@ function BankLogo({ nombre, slug, size = 28 }) {
       </div>
     );
   }
+
   return (
     <div
-      className={`${cls} bg-white`}
-      style={{ width: size, height: size, borderRadius: radius, border: "1px solid rgba(0,0,0,0.08)" }}
+      className="flex items-center justify-center flex-shrink-0 overflow-hidden bg-white"
+      style={{ width: size, height: size, borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)" }}
     >
       <img
         src={faviconUrl}
@@ -109,117 +62,11 @@ function BankLogo({ nombre, slug, size = 28 }) {
   );
 }
 
-// ── Hero: Ganadores del día ───────────────────────────────────────────────────
-function HeroGanadores() {
-  const tiempo = tiempoDesde(tcData.ultimaActualizacion);
-
-  const cards = [
-    {
-      label: "Mejor compra",
-      subtxt: "Comprá aquí",
-      valor: mejorCompra.valor,
-      nombre: mejorCompra.nombre,
-      slug: entidades.find((e) => e.nombre === mejorCompra.nombre)?.slug,
-      accent: "var(--accent)",
-      accentDim: "var(--accent-dim)",
-      accentBorder: "var(--accent-border)",
-    },
-    {
-      label: "Mejor venta",
-      subtxt: "Vendé aquí",
-      valor: mejorVenta.valor,
-      nombre: mejorVenta.nombre,
-      slug: entidades.find((e) => e.nombre === mejorVenta.nombre)?.slug,
-      accent: "#3b82f6",
-      accentDim: "rgba(59,130,246,0.10)",
-      accentBorder: "rgba(59,130,246,0.25)",
-    },
-  ];
-
-  return (
-    <div className="mb-8">
-      {/* Título */}
-      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-1 mb-4">
-        <h2 className="text-xl font-bold" style={{ color: "var(--text-1)" }}>
-          Ganadores del día
-        </h2>
-        {tiempo && (
-          <span className="text-xs" style={{ color: "var(--text-2)" }}>
-            Actualizado {tiempo}
-          </span>
-        )}
-      </div>
-
-      {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {cards.map((c) => (
-          <div
-            key={c.label}
-            className="rounded-xl p-5 sm:p-6 flex flex-col gap-3"
-            style={{
-              backgroundColor: "var(--surface)",
-              border: `1px solid ${c.accentBorder}`,
-            }}
-          >
-            {/* Label + logo */}
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: c.accent }}>
-                {c.label}
-              </span>
-              <BankLogo nombre={c.nombre} slug={c.slug} size={28} />
-            </div>
-
-            {/* Valor */}
-            <div>
-              <span
-                className="tabular-nums font-black leading-none block"
-                style={{ fontSize: "clamp(36px, 6vw, 56px)", color: c.accent }}
-              >
-                ₡{c.valor.toFixed(2)}
-              </span>
-              <p className="mt-1.5 text-sm font-medium truncate" style={{ color: "var(--text-2)" }}>
-                {c.nombre}
-              </p>
-            </div>
-
-            {/* Badge */}
-            <div>
-              <span
-                className="inline-block text-xs font-bold rounded-full px-3 py-1"
-                style={{ backgroundColor: c.accentDim, color: c.accent, border: `1px solid ${c.accentBorder}` }}
-              >
-                {c.subtxt}
-              </span>
-            </div>
-
-            {/* Sparkline solo en la card de compra */}
-            {c.label === "Mejor compra" && (
-              <div className="mt-1 opacity-70">
-                <p className="text-[10px] mb-1" style={{ color: "var(--text-2)" }}>
-                  Tendencia 2 años
-                </p>
-                <Sparkline values={sparkValues} />
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// ── Tabla ordenable ───────────────────────────────────────────────────────────
-const COLS = {
-  compra:       { label: "Compra",       numeric: true  },
-  venta:        { label: "Venta",        numeric: true  },
-  diferencial:  { label: "Diferencial",  numeric: true  },
-};
-
 function SortIcon({ active, dir }) {
   return (
-    <span className="inline-flex flex-col leading-none ml-1 select-none" style={{ fontSize: 8, gap: 0.5 }}>
-      <span style={{ color: active && dir === "asc"  ? "var(--accent)" : "var(--text-2)", opacity: active && dir === "asc"  ? 1 : 0.4 }}>▲</span>
-      <span style={{ color: active && dir === "desc" ? "var(--accent)" : "var(--text-2)", opacity: active && dir === "desc" ? 1 : 0.4 }}>▼</span>
+    <span className="inline-flex flex-col leading-none ml-1 align-middle" style={{ fontSize: 8, gap: 1 }}>
+      <span style={{ color: active && dir === "asc" ? "var(--accent)" : "var(--text-3)", opacity: active && dir === "asc" ? 1 : 0.45 }}>▲</span>
+      <span style={{ color: active && dir === "desc" ? "var(--accent)" : "var(--text-3)", opacity: active && dir === "desc" ? 1 : 0.45 }}>▼</span>
     </span>
   );
 }
@@ -235,178 +82,147 @@ function TablaEntidades() {
     );
   };
 
-  // Siempre lista plana cuando hay sort activo
-  const sorted = [...entidades].sort((a, b) => {
+  const filas = [...entidades].sort((a, b) => {
     const mult = sort.dir === "desc" ? -1 : 1;
     return mult * (a[sort.col] - b[sort.col]);
   });
 
-  // Agrupación solo cuando no hay sort (estado inicial nunca llega aquí con sort por defecto)
-  const grupos = [];
-  if (!sort.col) {
-    const visto = {};
-    for (const e of entidades) {
-      if (!visto[e.tipoEntidad]) { visto[e.tipoEntidad] = true; grupos.push({ tipo: e.tipoEntidad, items: [] }); }
-      grupos.at(-1).items.push(e);
-    }
-  }
-
-  const filas = sort.col ? sorted : entidades;
-
   return (
-    <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--border)" }}>
+    <div className="terminal-panel rounded-2xl overflow-hidden">
       <div className="overflow-x-auto">
-        <table className="w-full" style={{ borderCollapse: "collapse" }}>
+        <table className="w-full border-collapse">
           <thead>
-            <tr style={{ borderBottom: "1px solid var(--border)", backgroundColor: "var(--surface)" }}>
-              {/* Entidad — no ordenable */}
-              <th
-                className="text-left px-4 py-3 font-semibold uppercase tracking-wide"
-                style={{ color: "var(--text-2)", fontSize: 12 }}
-              >
-                Entidad
+            <tr style={{ backgroundColor: "var(--surface-2)", borderBottom: "1px solid var(--border)" }}>
+              <th className="text-left px-4 sm:px-5 py-3 sm:py-4">
+                <span className="eyebrow">Entidad</span>
               </th>
-
-              {/* Compra */}
               <th
-                className="text-right px-4 py-3 font-semibold uppercase tracking-wide cursor-pointer select-none"
-                style={{ color: sort.col === "compra" ? "var(--accent)" : "var(--text-2)", fontSize: 12 }}
+                className="text-right px-4 sm:px-5 py-3 sm:py-4 cursor-pointer select-none"
                 onClick={() => toggleSort("compra")}
               >
-                Compra <SortIcon active={sort.col === "compra"} dir={sort.dir} />
+                <span className="eyebrow" style={{ color: sort.col === "compra" ? "var(--accent)" : "var(--text-2)" }}>
+                  Compra <SortIcon active={sort.col === "compra"} dir={sort.dir} />
+                </span>
               </th>
-
-              {/* Venta */}
               <th
-                className="text-right px-4 py-3 font-semibold uppercase tracking-wide cursor-pointer select-none"
-                style={{ color: sort.col === "venta" ? "var(--accent)" : "var(--text-2)", fontSize: 12 }}
+                className="text-right px-4 sm:px-5 py-3 sm:py-4 cursor-pointer select-none"
                 onClick={() => toggleSort("venta")}
               >
-                Venta <SortIcon active={sort.col === "venta"} dir={sort.dir} />
+                <span className="eyebrow" style={{ color: sort.col === "venta" ? "var(--accent)" : "var(--text-2)" }}>
+                  Venta <SortIcon active={sort.col === "venta"} dir={sort.dir} />
+                </span>
               </th>
-
-              {/* Diferencial — oculto en móvil */}
               <th
-                className="text-right px-4 py-3 font-semibold uppercase tracking-wide cursor-pointer select-none hidden sm:table-cell"
-                style={{ color: sort.col === "diferencial" ? "var(--accent)" : "var(--text-2)", fontSize: 12 }}
+                className="text-right px-4 sm:px-5 py-3 sm:py-4 cursor-pointer select-none hidden sm:table-cell"
                 onClick={() => toggleSort("diferencial")}
               >
-                Difer. <SortIcon active={sort.col === "diferencial"} dir={sort.dir} />
+                <span className="eyebrow" style={{ color: sort.col === "diferencial" ? "var(--accent)" : "var(--text-2)" }}>
+                  Diferencial <SortIcon active={sort.col === "diferencial"} dir={sort.dir} />
+                </span>
               </th>
-
-              {/* Actualización — solo desktop */}
-              <th
-                className="text-right px-4 py-3 font-semibold uppercase tracking-wide hidden lg:table-cell"
-                style={{ color: "var(--text-2)", fontSize: 12 }}
-              >
-                Actualización
+              <th className="text-right px-4 sm:px-5 py-3 sm:py-4 hidden lg:table-cell">
+                <span className="eyebrow">Actualización</span>
               </th>
             </tr>
           </thead>
 
           <tbody>
-            {/* Fila de tipo si hay sort: mostrar un separador de categoría inline */}
             {filas.map((e, idx) => {
               const esMejorCompra = e.compra === mejorCompra.valor;
-              const esMejorVenta  = e.venta  === mejorVenta.valor;
+              const esMejorVenta = e.venta === mejorVenta.valor;
               const prevTipo = idx > 0 ? filas[idx - 1].tipoEntidad : null;
-              const showGroup = sort.col && e.tipoEntidad !== prevTipo;
+              const showGroup = e.tipoEntidad !== prevTipo;
 
               return (
-                <>
-                  {/* Separador de grupo (solo en vista ordenada) */}
+                <Fragment key={e.nombre}>
                   {showGroup && (
-                    <tr key={`g-${e.tipoEntidad}-${idx}`} style={{ backgroundColor: "var(--accent-dim)" }}>
+                    <tr style={{ backgroundColor: "var(--surface)" }}>
                       <td
                         colSpan={5}
-                        className="px-4 py-1 font-semibold uppercase tracking-wider"
-                        style={{ color: "var(--accent)", fontSize: 10, borderBottom: "1px solid var(--accent-border)" }}
+                        className="px-4 sm:px-5 pt-4 pb-2"
+                        style={{ borderBottom: "1px solid var(--border)" }}
                       >
-                        {e.tipoEntidad}
+                        <span
+                          className="inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]"
+                          style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)" }}
+                        >
+                          {e.tipoEntidad}
+                        </span>
                       </td>
                     </tr>
                   )}
 
                   <tr
-                    key={e.nombre}
-                    className="transition-colors hover:bg-black/[0.02] dark:hover:bg-white/[0.02]"
+                    className="hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
                     style={{ borderBottom: "1px solid var(--border)" }}
                   >
-                    {/* Logo + nombre */}
-                    <td className="px-4 py-3">
-                      <div className="flex items-center gap-2.5">
+                    <td className="px-4 sm:px-5 py-3.5">
+                      <div className="flex items-center gap-3 min-w-0">
                         <span className="hidden sm:flex">
-                          <BankLogo nombre={e.nombre} slug={e.slug} size={28} />
+                          <BankLogo nombre={e.nombre} slug={e.slug} size={30} />
                         </span>
                         <span className="flex sm:hidden">
                           <BankLogo nombre={e.nombre} slug={e.slug} size={24} />
                         </span>
-                        <span className="font-medium leading-tight" style={{ color: "var(--text-1)", fontSize: 15 }}>
-                          {e.nombre}
-                        </span>
+                        <div className="min-w-0">
+                          <p className="font-medium leading-tight truncate" style={{ color: "var(--text-1)", fontSize: 14 }}>
+                            {e.nombre}
+                          </p>
+                          <p className="text-xs truncate mt-0.5" style={{ color: "var(--text-3)" }}>
+                            {e.tipoEntidad}
+                          </p>
+                        </div>
                       </div>
                     </td>
 
-                    {/* Compra */}
-                    <td className="px-4 py-3 text-right">
+                    <td className="px-4 sm:px-5 py-3.5 text-right">
                       <div className="flex items-center justify-end gap-2">
                         {esMejorCompra && (
                           <span
-                            className="hidden sm:inline text-[10px] font-semibold rounded-full px-2 py-0.5"
+                            className="hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
                             style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
                           >
-                            Mejor compra
+                            Mejor
                           </span>
                         )}
-                        <span
-                          className="tabular-nums font-bold"
-                          style={{ color: esMejorCompra ? "var(--accent)" : "var(--text-1)", fontSize: 16 }}
-                        >
+                        <span className="metric-value font-bold" style={{ color: esMejorCompra ? "var(--accent)" : "var(--text-1)", fontSize: 16 }}>
                           ₡{e.compra.toFixed(2)}
                         </span>
                       </div>
                     </td>
 
-                    {/* Venta */}
-                    <td className="px-4 py-3 text-right">
+                    <td className="px-4 sm:px-5 py-3.5 text-right">
                       <div className="flex items-center justify-end gap-2">
                         {esMejorVenta && (
-                          <span className="hidden sm:inline text-[10px] font-semibold rounded-full px-2 py-0.5 bg-blue-500/10 text-blue-500 border border-blue-500/20">
-                            Mejor venta
+                          <span
+                            className="hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                            style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
+                          >
+                            Mejor
                           </span>
                         )}
-                        <span
-                          className="tabular-nums font-bold"
-                          style={{ color: esMejorVenta ? "#3b82f6" : "var(--text-1)", fontSize: 16 }}
-                        >
+                        <span className="metric-value font-bold" style={{ color: esMejorVenta ? "var(--blue)" : "var(--text-1)", fontSize: 16 }}>
                           ₡{e.venta.toFixed(2)}
                         </span>
                       </div>
                     </td>
 
-                    {/* Diferencial */}
-                    <td className="px-4 py-3 text-right hidden sm:table-cell">
+                    <td className="px-4 sm:px-5 py-3.5 text-right hidden sm:table-cell">
                       <span
-                        className="tabular-nums font-mono px-2 py-1 rounded"
-                        style={{
-                          backgroundColor: "var(--surface)",
-                          color: "var(--text-2)",
-                          border: "1px solid var(--border)",
-                          fontSize: 14,
-                        }}
+                        className="inline-flex rounded-lg px-2.5 py-1 metric-value"
+                        style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)", fontSize: 13 }}
                       >
                         ₡{e.diferencial.toFixed(2)}
                       </span>
                     </td>
 
-                    {/* Actualización */}
-                    <td className="px-4 py-3 text-right hidden lg:table-cell">
-                      <span style={{ color: "var(--text-2)", fontSize: 12 }}>
+                    <td className="px-4 sm:px-5 py-3.5 text-right hidden lg:table-cell">
+                      <span style={{ color: "var(--text-3)", fontSize: 12 }}>
                         {e.ultimaActualizacion}
                       </span>
                     </td>
                   </tr>
-                </>
+                </Fragment>
               );
             })}
           </tbody>
@@ -416,25 +232,31 @@ function TablaEntidades() {
   );
 }
 
-// ── Componente principal ──────────────────────────────────────────────────────
 export default function TipoCambio() {
   return (
-    <section className="max-w-5xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
-      <HeroGanadores />
+    <section className="max-w-6xl mx-auto w-full px-4 sm:px-6 py-8 sm:py-10">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-5">
+        <div>
+          <p className="eyebrow mb-2">Mercado</p>
+          <h2 className="text-xl sm:text-2xl font-bold tracking-tight" style={{ color: "var(--text-1)" }}>
+            Tipo de cambio en ventanilla
+          </h2>
+          <p className="mt-1 text-sm" style={{ color: "var(--text-2)" }}>
+            Comparación ordenable por entidad, categoría y diferencial.
+          </p>
+        </div>
 
-      {/* Encabezado tabla */}
-      <div className="flex items-center justify-between mb-3">
-        <h2 className="text-base font-bold" style={{ color: "var(--text-1)" }}>
-          Tipo de cambio en ventanilla
-        </h2>
-        <div className="flex gap-2 text-xs">
+        <div className="flex flex-wrap gap-2 text-xs">
           <span
-            className="rounded-full px-2.5 py-1 font-medium"
+            className="rounded-full px-2.5 py-1 font-medium uppercase tracking-[0.08em]"
             style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
           >
             Mejor compra
           </span>
-          <span className="rounded-full px-2.5 py-1 font-medium bg-blue-500/10 text-blue-500 border border-blue-500/20">
+          <span
+            className="rounded-full px-2.5 py-1 font-medium uppercase tracking-[0.08em]"
+            style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
+          >
             Mejor venta
           </span>
         </div>
@@ -442,8 +264,8 @@ export default function TipoCambio() {
 
       <TablaEntidades />
 
-      <p className="mt-3 text-right" style={{ color: "var(--text-2)", fontSize: 12 }}>
-        Fuente: BCCR · Tipo de cambio anunciado en ventanilla · Clic en columnas para ordenar
+      <p className="mt-3 text-right" style={{ color: "var(--text-3)", fontSize: 12 }}>
+        Fuente: BCCR. Clic en columnas para ordenar. Se mantienen logos o iniciales por entidad.
       </p>
     </section>
   );
