@@ -8,9 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "validate:data": "node scripts/validate-data.js",
     "scrape:tc": "node scripts/scrape-tc-ventanilla.js",
     "scrape:tc:diario": "node --env-file=.env.local scripts/scrape-tc-diario.js",
-    "scrape:tc:inicial": "node --env-file=.env.local scripts/scrape-tc-inicial.js"
+    "scrape:tc:inicial": "node --env-file=.env.local scripts/scrape-tc-inicial.js",
+    "scrape:combustible": "node scripts/scrape-combustible-diario.js"
   },
   "dependencies": {
     "axios": "^1.14.0",

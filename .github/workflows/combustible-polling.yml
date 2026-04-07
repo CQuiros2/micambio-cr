@@ -34,6 +34,9 @@ jobs:
       - name: Ejecutar scraper
         run: node scripts/scrape-combustible-diario.js
 
+      - name: Validar JSON de combustibles
+        run: node scripts/validate-data.js combustible
+
       - name: Verificar si hubo cambios
         id: diff
         run: |
