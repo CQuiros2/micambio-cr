@@ -337,8 +337,16 @@ export default function TipoCambio() {
 
       <TablaEntidades />
 
-      <p className="mt-3 text-right" style={{ color: "var(--text-3)", fontSize: 12 }}>
-        Fuente: BCCR
+      <p className="mt-3 text-right" style={{ fontSize: 12 }}>
+        <a
+          href="https://gee.bccr.fi.cr/IndicadoresEconomicos/Cuadros/frmConsultaTCVentanilla.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+          style={{ color: "var(--text-3)", textDecorationColor: "var(--border-strong)", textUnderlineOffset: 3 }}
+        >
+          Fuente: BCCR
+        </a>
       </p>
     </section>
   );
