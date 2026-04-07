@@ -83,12 +83,7 @@ function TablaEntidades() {
   return (
     <div className="terminal-panel rounded-2xl overflow-hidden" style={{ borderColor: "var(--border-strong)" }}>
       <div className="md:hidden border-b px-3 py-3" style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}>
-        <div className="flex items-center justify-between gap-2">
-          <p className="eyebrow">Ordenar por</p>
-          <span className="text-[11px]" style={{ color: "var(--text-3)" }}>
-            Sin scroll horizontal
-          </span>
-        </div>
+        <p className="eyebrow">Ordenar por</p>
         <div className="mt-3 flex flex-wrap gap-2">
           <SortButton active={sort.col === "compra"} onClick={() => toggleSort("compra")}>
             Compra
@@ -281,13 +276,25 @@ function TablaEntidades() {
                     </div>
                   </div>
 
+                  <p className="mt-2 text-xs" style={{ color: "var(--text-3)" }}>
+                    {e.tipoEntidad}
+                  </p>
+
                   <div className="mt-3 grid grid-cols-2 gap-2">
                     <MobileMetric label="Compra" value={formatCurrency(e.compra)} tone={esMejorCompra ? "accent" : "default"} />
                     <MobileMetric label="Venta" value={formatCurrency(e.venta)} tone={esMejorVenta ? "blue" : "default"} />
-                    <MobileMetric label="Diferencial" value={formatCurrency(e.diferencial)} tone="muted" />
                   </div>
-                  <div className="mt-2 flex justify-end">
-                    <p className="text-[11px] leading-none" style={{ color: "var(--text-3)" }}>
+
+                  <div className="mt-2 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2">
+                    <div className="terminal-inset rounded-xl px-3 py-2 min-w-0">
+                      <p className="eyebrow mb-1" style={{ fontSize: 10 }}>
+                        Diferencial
+                      </p>
+                      <p className="metric-value text-[13px] font-semibold leading-none" style={{ color: "var(--text-2)" }}>
+                        {formatCurrency(e.diferencial)}
+                      </p>
+                    </div>
+                    <p className="text-[11px] leading-none whitespace-nowrap" style={{ color: "var(--text-3)" }}>
                       {formatMobileUpdate(e.ultimaActualizacion)}
                     </p>
                   </div>
@@ -334,7 +341,7 @@ export default function TipoCambio() {
       <TablaEntidades />
 
       <p className="mt-3 text-right" style={{ color: "var(--text-3)", fontSize: 12 }}>
-        Fuente: BCCR. Clic en columnas para ordenar. En móvil se muestra una vista compacta sin scroll horizontal.
+        Fuente: BCCR
       </p>
     </section>
   );

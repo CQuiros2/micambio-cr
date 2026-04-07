@@ -273,7 +273,7 @@ export default function Calculadora() {
 
         <div className="p-4 sm:p-5 xl:p-6">
           <div className="grid grid-cols-1 xl:grid-cols-[292px_minmax(0,1fr)] gap-4 sm:gap-5">
-            <div className="order-2 xl:order-1 flex flex-col gap-3">
+            <div className="order-1 xl:order-1 flex flex-col gap-3">
               {cards.map((card) => (
                 <WinnerCard key={card.label} {...card}>
                   {card.footer}
@@ -281,7 +281,7 @@ export default function Calculadora() {
               ))}
             </div>
 
-            <div className="order-1 xl:order-2 terminal-panel rounded-[24px] overflow-hidden" style={{ borderColor: "var(--border-strong)" }}>
+            <div className="order-2 xl:order-2 terminal-panel rounded-[24px] overflow-hidden" style={{ borderColor: "var(--border-strong)" }}>
               <div
                 className="px-4 sm:px-5 py-4 border-b"
                 style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
