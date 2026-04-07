@@ -115,6 +115,11 @@ button, a, input {
   opacity: 0.6;
 }
 
+.panel-soft {
+  background-color: color-mix(in srgb, var(--surface) 82%, var(--surface-2) 18%);
+  border: 1px solid var(--border);
+}
+
 .eyebrow {
   color: var(--text-2);
   font-size: 11px;

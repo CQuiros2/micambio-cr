@@ -5,27 +5,27 @@ const { precios, ultimaActualizacion } = combustibleData;
 const COMBUSTIBLE_CONFIG = {
   super: {
     label: "Gasolina Super",
-    color: "#8e9aa6",
-    dim: "rgba(142,154,166,0.10)",
-    border: "rgba(142,154,166,0.22)",
+    color: "#96a2ad",
+    dim: "rgba(150,162,173,0.12)",
+    border: "rgba(150,162,173,0.24)",
   },
   regular: {
     label: "Gasolina Regular",
-    color: "#b33a32",
-    dim: "rgba(179,58,50,0.10)",
-    border: "rgba(179,58,50,0.22)",
+    color: "#b53e36",
+    dim: "rgba(181,62,54,0.11)",
+    border: "rgba(181,62,54,0.24)",
   },
   diesel: {
     label: "Diésel",
-    color: "#9a6a18",
-    dim: "rgba(154,106,24,0.10)",
-    border: "rgba(154,106,24,0.22)",
+    color: "#9d6e1c",
+    dim: "rgba(157,110,28,0.11)",
+    border: "rgba(157,110,28,0.24)",
   },
   gaslp: {
     label: "Gas LP",
-    color: "#9b5a2e",
-    dim: "rgba(155,90,46,0.10)",
-    border: "rgba(155,90,46,0.22)",
+    color: "#9e6138",
+    dim: "rgba(158,97,56,0.11)",
+    border: "rgba(158,97,56,0.24)",
   },
 };
 
@@ -84,7 +84,7 @@ export default function Combustible() {
           return (
             <article
               key={tipo}
-              className="terminal-panel rounded-2xl p-5 flex flex-col gap-4"
+              className="terminal-panel rounded-2xl p-4 sm:p-5 flex flex-col gap-4"
               style={{ borderColor: border }}
             >
               <div className="flex items-center justify-between gap-2">
@@ -101,7 +101,7 @@ export default function Combustible() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] mb-2" style={{ color: "var(--text-2)" }}>
                   Precio por litro
                 </p>
-                <p className="metric-value font-black leading-none" style={{ color, fontSize: "clamp(34px, 6vw, 48px)" }}>
+                <p className="metric-value font-black leading-none" style={{ color, fontSize: "clamp(32px, 6vw, 46px)" }}>
                   ₡{info.precio}
                 </p>
               </div>

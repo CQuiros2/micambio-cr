@@ -26,19 +26,28 @@ export function EntityIdentity({ name, size = 28, showName = true, compact = fal
   const initials = useMemo(() => getEntityInitials(name), [name]);
 
   const localLogos = Array.isArray(metadata.localLogo) ? metadata.localLogo : [];
-  const logoSources = [...localLogos, metadata.faviconUrl].filter(Boolean);
+  const remoteIcons = Array.isArray(metadata.iconCandidates) ? metadata.iconCandidates : [];
+  const logoSources = [...localLogos, ...remoteIcons].filter(Boolean);
   const currentLogo = logoSources[logoSourceIndex] ?? null;
   const borderRadius = size <= 24 ? 7 : 8;
+  const imageSize = Math.max(12, size - (size <= 24 ? 7 : 8));
 
   const logo = currentLogo ? (
     <div
-      className="flex items-center justify-center flex-shrink-0 overflow-hidden bg-white"
-      style={{ width: size, height: size, borderRadius, border: "1px solid rgba(0,0,0,0.08)" }}
+      className="flex items-center justify-center flex-shrink-0 overflow-hidden"
+      style={{
+        width: size,
+        height: size,
+        borderRadius,
+        border: "1px solid var(--border)",
+        backgroundColor: "var(--surface)",
+        boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.02)",
+      }}
     >
       <img
         src={currentLogo}
         alt={name}
-        style={{ width: size - 8, height: size - 8, objectFit: "contain" }}
+        style={{ width: imageSize, height: imageSize, objectFit: "contain", display: "block" }}
         onError={() => setLogoSourceIndex((prev) => prev + 1)}
       />
     </div>
@@ -70,7 +79,7 @@ export function EntityIdentity({ name, size = 28, showName = true, compact = fal
   }
 
   return (
-    <div className="flex items-center gap-3 min-w-0">
+    <div className="flex items-center gap-2.5 sm:gap-3 min-w-0">
       <EntityLink website={metadata.website} title={metadata.website ? `${name} · sitio oficial` : name}>
         {logo}
       </EntityLink>

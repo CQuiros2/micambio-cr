@@ -82,7 +82,7 @@ function Sparkline({ values }) {
 function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentBorder, children }) {
   return (
     <article
-      className="terminal-panel rounded-2xl p-4 sm:p-5 xl:p-6 flex flex-col gap-3 sm:gap-4"
+      className="panel-soft rounded-2xl p-4 sm:p-5 flex flex-col gap-3"
       style={{ borderColor: accentBorder }}
     >
       <div className="flex items-start justify-between gap-3">
@@ -96,7 +96,7 @@ function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentB
       <div>
         <p
           className="metric-value font-black leading-none"
-          style={{ color: accent, fontSize: "clamp(30px, 7vw, 50px)" }}
+          style={{ color: accent, fontSize: "clamp(30px, 7vw, 48px)" }}
         >
           ₡{valor.toFixed(2)}
         </p>
@@ -135,7 +135,7 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
 
   return (
     <div
-      className="grid grid-cols-[20px_minmax(0,1fr)_auto] items-center gap-2.5 px-3 py-2.5 rounded-xl"
+      className="grid grid-cols-[18px_minmax(0,1fr)_auto] items-center gap-2 px-2.5 sm:px-3 py-2.5 rounded-xl"
       style={{
         backgroundColor: isFirst ? (isVender ? "var(--accent-dim)" : "var(--blue-dim)") : "var(--surface-2)",
         border: `1px solid ${isFirst ? (isVender ? "var(--accent-border)" : "var(--blue-border)") : "var(--border)"}`,
@@ -143,7 +143,7 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
     >
       <span
         className="text-center font-bold tabular-nums"
-        style={{ fontSize: 11, color: isFirst ? accentColor : "var(--text-2)" }}
+        style={{ fontSize: 10, color: isFirst ? accentColor : "var(--text-2)" }}
       >
         {posicion}
       </span>
@@ -154,7 +154,7 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
           showName
           compact
           showDomain={false}
-          textClassName="truncate font-medium text-[13px] sm:text-[14px]"
+          textClassName="truncate font-medium text-[12px] sm:text-[14px]"
         />
         {resultadoStr && (
           <p className="tabular-nums text-[11px]" style={{ color: "var(--text-2)" }}>
@@ -164,7 +164,7 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
       </div>
       <span
         className="tabular-nums font-bold"
-        style={{ fontSize: 14, color: isFirst ? accentColor : "var(--text-1)" }}
+        style={{ fontSize: 13, color: isFirst ? accentColor : "var(--text-1)" }}
       >
         ₡{rate.toFixed(2)}
       </span>
@@ -272,8 +272,8 @@ export default function Calculadora() {
         </div>
 
         <div className="p-4 sm:p-5 xl:p-6">
-          <div className="grid grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4 sm:gap-5">
-            <div className="order-2 xl:order-1 flex flex-col gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 xl:grid-cols-[292px_minmax(0,1fr)] gap-4 sm:gap-5">
+            <div className="order-2 xl:order-1 flex flex-col gap-3">
               {cards.map((card) => (
                 <WinnerCard key={card.label} {...card}>
                   {card.footer}
@@ -316,8 +316,8 @@ export default function Calculadora() {
               </div>
 
               <div className="p-4 sm:p-5">
-                <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-4 sm:gap-5">
-                  <div className="flex flex-col gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_272px] gap-4 sm:gap-5">
+                  <div className="flex flex-col gap-3 sm:gap-4">
                     <div>
                       <label className="eyebrow mb-2 block">
                         {isVender ? "Ingresás dólares" : "Ingresás colones"}
@@ -342,7 +342,7 @@ export default function Calculadora() {
                           className="w-full bg-transparent pl-8 sm:pl-10 pr-2 font-black metric-value focus:outline-none"
                           style={{
                             color: "var(--text-1)",
-                            fontSize: "clamp(30px, 8vw, 54px)",
+                            fontSize: "clamp(28px, 8vw, 52px)",
                             lineHeight: 1,
                             caretColor: modoConfig.color,
                           }}
@@ -364,7 +364,7 @@ export default function Calculadora() {
                           </p>
                           <p
                             className="metric-value font-black leading-none"
-                            style={{ color: modoConfig.color, fontSize: "clamp(32px, 7vw, 52px)" }}
+                            style={{ color: modoConfig.color, fontSize: "clamp(30px, 7vw, 50px)" }}
                           >
                             {resultadoStr}
                           </p>
@@ -389,7 +389,7 @@ export default function Calculadora() {
                         {isVender ? "Mayor compra" : "Menor venta"}
                       </span>
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="panel-soft rounded-2xl p-2 sm:p-2.5 flex flex-col gap-2">
                       {top5.map((banco, i) => (
                         <BancoFila
                           key={banco.nombre}

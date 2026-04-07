@@ -30,16 +30,16 @@ function TablaEntidades() {
   });
 
   return (
-    <div className="terminal-panel rounded-2xl overflow-hidden">
+    <div className="terminal-panel rounded-2xl overflow-hidden" style={{ borderColor: "var(--border-strong)" }}>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
             <tr style={{ backgroundColor: "var(--surface-2)", borderBottom: "1px solid var(--border)" }}>
-              <th className="text-left px-4 sm:px-5 py-3 sm:py-4">
+              <th className="text-left px-4 sm:px-5 py-3 sm:py-3.5">
                 <span className="eyebrow">Entidad</span>
               </th>
               <th
-                className="text-right px-4 sm:px-5 py-3 sm:py-4 cursor-pointer select-none"
+                className="text-right px-4 sm:px-5 py-3 sm:py-3.5 cursor-pointer select-none"
                 onClick={() => toggleSort("compra")}
               >
                 <span className="eyebrow" style={{ color: sort.col === "compra" ? "var(--accent)" : "var(--text-2)" }}>
@@ -47,7 +47,7 @@ function TablaEntidades() {
                 </span>
               </th>
               <th
-                className="text-right px-4 sm:px-5 py-3 sm:py-4 cursor-pointer select-none"
+                className="text-right px-4 sm:px-5 py-3 sm:py-3.5 cursor-pointer select-none"
                 onClick={() => toggleSort("venta")}
               >
                 <span className="eyebrow" style={{ color: sort.col === "venta" ? "var(--accent)" : "var(--text-2)" }}>
@@ -55,14 +55,14 @@ function TablaEntidades() {
                 </span>
               </th>
               <th
-                className="text-right px-4 sm:px-5 py-3 sm:py-4 cursor-pointer select-none hidden sm:table-cell"
+                className="text-right px-4 sm:px-5 py-3 sm:py-3.5 cursor-pointer select-none hidden sm:table-cell"
                 onClick={() => toggleSort("diferencial")}
               >
                 <span className="eyebrow" style={{ color: sort.col === "diferencial" ? "var(--accent)" : "var(--text-2)" }}>
                   Diferencial <SortIcon active={sort.col === "diferencial"} dir={sort.dir} />
                 </span>
               </th>
-              <th className="text-right px-4 sm:px-5 py-3 sm:py-4 hidden lg:table-cell">
+              <th className="text-right px-4 sm:px-5 py-3 sm:py-3.5 hidden lg:table-cell">
                 <span className="eyebrow">Actualización</span>
               </th>
             </tr>
@@ -98,7 +98,7 @@ function TablaEntidades() {
                     className="hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
                     style={{ borderBottom: "1px solid var(--border)" }}
                   >
-                    <td className="px-4 sm:px-5 py-3.5">
+                    <td className="px-4 sm:px-5 py-3">
                       <EntityIdentity name={e.nombre} showName compact showDomain={false} size={30} textClassName="font-medium leading-tight truncate text-[14px]" />
                       <p className="text-xs truncate mt-0.5 ml-[42px]" style={{ color: "var(--text-3)" }}>
                         {e.tipoEntidad}
