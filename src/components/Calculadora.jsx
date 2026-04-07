@@ -84,6 +84,35 @@ function Sparkline({ values }) {
   );
 }
 
+function HighlightedActionText({ text }) {
+  const parts = text.split(/(vender|comprar)/i);
+
+  return (
+    <>
+      {parts.map((part, index) => {
+        const lower = part.toLowerCase();
+        if (lower === "vender") {
+          return (
+            <span key={`${part}-${index}`} className="font-semibold" style={{ color: "var(--accent)" }}>
+              {part}
+            </span>
+          );
+        }
+
+        if (lower === "comprar") {
+          return (
+            <span key={`${part}-${index}`} className="font-semibold" style={{ color: "var(--blue)" }}>
+              {part}
+            </span>
+          );
+        }
+
+        return <span key={`${part}-${index}`}>{part}</span>;
+      })}
+    </>
+  );
+}
+
 function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentBorder, motionClass = "", children }) {
   return (
     <article
@@ -93,7 +122,9 @@ function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentB
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="eyebrow" style={{ color: accent }}>{label}</p>
-          <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--text-2)" }}>{sublabel}</p>
+          <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--text-2)" }}>
+            <HighlightedActionText text={sublabel} />
+          </p>
         </div>
         <EntityIdentity name={nombre} size={28} showName={false} />
       </div>
