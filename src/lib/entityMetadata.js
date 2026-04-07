@@ -47,7 +47,10 @@ const ENTITY_METADATA_RAW = {
     website: "https://bienvenido.davivienda.cr/wps/portal/personasCR/nuevo",
     domain: "davivienda.cr",
     logoKey: "davivienda",
-    iconCandidates: [],
+    iconCandidates: [
+      "https://movil.davivienda.cr/assets-funcionalidades/images/icono-app-davivienda.png",
+      "https://www.davivienda.com/PersonasDaviviendaNewTheme/images/faviconDav.ico",
+    ],
   },
   "Banco Cathay de Costa Rica S.A.": {
     website: null,

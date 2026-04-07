@@ -376,7 +376,7 @@ export default function Calculadora() {
                         </>
                       ) : (
                         <p className="text-sm" style={{ color: "var(--text-2)" }}>
-                          Ingresá un monto para ver el mejor resultado del día.
+                          Ingresá el monto para ver cuál entidad te da el mejor resultado.
                         </p>
                       )}
                     </div>
