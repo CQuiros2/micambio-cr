@@ -3,10 +3,30 @@ import combustibleData from "../data/combustible.json";
 const { precios, ultimaActualizacion } = combustibleData;
 
 const COMBUSTIBLE_CONFIG = {
-  super: { label: "Gasolina Super", color: "#2457d6" },
-  regular: { label: "Gasolina Regular", color: "#0b6b57" },
-  diesel: { label: "Diésel", color: "#b7791f" },
-  gaslp: { label: "Gas LP", color: "#9a5b1b" },
+  super: {
+    label: "Gasolina Super",
+    color: "#8e9aa6",
+    dim: "rgba(142,154,166,0.10)",
+    border: "rgba(142,154,166,0.22)",
+  },
+  regular: {
+    label: "Gasolina Regular",
+    color: "#b33a32",
+    dim: "rgba(179,58,50,0.10)",
+    border: "rgba(179,58,50,0.22)",
+  },
+  diesel: {
+    label: "Diésel",
+    color: "#9a6a18",
+    dim: "rgba(154,106,24,0.10)",
+    border: "rgba(154,106,24,0.22)",
+  },
+  gaslp: {
+    label: "Gas LP",
+    color: "#9b5a2e",
+    dim: "rgba(155,90,46,0.10)",
+    border: "rgba(155,90,46,0.22)",
+  },
 };
 
 function VariacionBadge({ variacion, color }) {
@@ -22,7 +42,10 @@ function VariacionBadge({ variacion, color }) {
   const sube = variacion > 0;
 
   return (
-    <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.08em]" style={{ color: sube ? "#c2410c" : color }}>
+    <span
+      className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.08em]"
+      style={{ color: sube ? "#b4492c" : color }}
+    >
       <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden>
         {sube ? <path d="M6 1l4 5H2z" /> : <path d="M6 11L2 6h8z" />}
       </svg>
@@ -54,7 +77,7 @@ export default function Combustible() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-        {Object.entries(COMBUSTIBLE_CONFIG).map(([tipo, { label, color }]) => {
+        {Object.entries(COMBUSTIBLE_CONFIG).map(([tipo, { label, color, dim, border }]) => {
           const info = precios[tipo];
           if (!info) return null;
 
@@ -62,7 +85,7 @@ export default function Combustible() {
             <article
               key={tipo}
               className="terminal-panel rounded-2xl p-5 flex flex-col gap-4"
-              style={{ borderColor: "var(--border)" }}
+              style={{ borderColor: border }}
             >
               <div className="flex items-center justify-between gap-2">
                 <div>
@@ -74,7 +97,7 @@ export default function Combustible() {
                 <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
               </div>
 
-              <div className="terminal-inset rounded-2xl p-4">
+              <div className="rounded-2xl p-4" style={{ backgroundColor: dim, border: `1px solid ${border}` }}>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] mb-2" style={{ color: "var(--text-2)" }}>
                   Precio por litro
                 </p>

@@ -98,6 +98,23 @@ button, a, input {
   border: 1px solid var(--border);
 }
 
+.macro-panel {
+  position: relative;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 92%, var(--surface-2) 8%) 0%, var(--surface) 100%);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-panel);
+}
+
+.macro-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--blue) 45%, transparent 100%);
+  opacity: 0.6;
+}
+
 .eyebrow {
   color: var(--text-2);
   font-size: 11px;

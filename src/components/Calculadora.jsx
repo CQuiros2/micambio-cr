@@ -82,32 +82,39 @@ function Sparkline({ values }) {
 function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentBorder, children }) {
   return (
     <article
-      className="terminal-panel rounded-2xl p-5 sm:p-6 flex flex-col gap-4"
+      className="terminal-panel rounded-2xl p-4 sm:p-5 xl:p-6 flex flex-col gap-3 sm:gap-4"
       style={{ borderColor: accentBorder }}
     >
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <p className="eyebrow" style={{ color: accent }}>{label}</p>
           <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--text-2)" }}>{sublabel}</p>
         </div>
-        <EntityIdentity name={nombre} size={30} showName={false} />
+        <EntityIdentity name={nombre} size={28} showName={false} />
       </div>
 
       <div>
         <p
           className="metric-value font-black leading-none"
-          style={{ color: accent, fontSize: "clamp(38px, 5vw, 52px)" }}
+          style={{ color: accent, fontSize: "clamp(30px, 7vw, 50px)" }}
         >
           ₡{valor.toFixed(2)}
         </p>
-        <div className="mt-2">
-          <EntityIdentity name={nombre} size={24} showName compact showDomain={false} textClassName="text-sm font-medium truncate" />
+        <div className="mt-1.5">
+          <EntityIdentity
+            name={nombre}
+            size={22}
+            showName
+            compact
+            showDomain={false}
+            textClassName="text-sm font-medium truncate"
+          />
         </div>
       </div>
 
-      <div className="flex items-center justify-between gap-3">
+      <div className="flex items-center justify-between gap-2">
         <span
-          className="inline-flex items-center rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]"
+          className="inline-flex items-center rounded-full px-2.5 py-1 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.12em]"
           style={{ backgroundColor: accentDim, color: accent, border: `1px solid ${accentBorder}` }}
         >
           {label}
@@ -128,20 +135,27 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
 
   return (
     <div
-      className="grid grid-cols-[auto_1fr_auto] items-center gap-3 px-3 py-3 rounded-xl"
+      className="grid grid-cols-[20px_minmax(0,1fr)_auto] items-center gap-2.5 px-3 py-2.5 rounded-xl"
       style={{
         backgroundColor: isFirst ? (isVender ? "var(--accent-dim)" : "var(--blue-dim)") : "var(--surface-2)",
         border: `1px solid ${isFirst ? (isVender ? "var(--accent-border)" : "var(--blue-border)") : "var(--border)"}`,
       }}
     >
       <span
-        className="w-6 text-center font-bold tabular-nums"
-        style={{ fontSize: 12, color: isFirst ? accentColor : "var(--text-2)" }}
+        className="text-center font-bold tabular-nums"
+        style={{ fontSize: 11, color: isFirst ? accentColor : "var(--text-2)" }}
       >
         {posicion}
       </span>
       <div className="min-w-0">
-        <EntityIdentity name={banco.nombre} size={24} showName compact showDomain={false} textClassName="truncate font-medium text-[14px]" />
+        <EntityIdentity
+          name={banco.nombre}
+          size={22}
+          showName
+          compact
+          showDomain={false}
+          textClassName="truncate font-medium text-[13px] sm:text-[14px]"
+        />
         {resultadoStr && (
           <p className="tabular-nums text-[11px]" style={{ color: "var(--text-2)" }}>
             {resultadoStr}
@@ -150,7 +164,7 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
       </div>
       <span
         className="tabular-nums font-bold"
-        style={{ fontSize: 15, color: isFirst ? accentColor : "var(--text-1)" }}
+        style={{ fontSize: 14, color: isFirst ? accentColor : "var(--text-1)" }}
       >
         ₡{rate.toFixed(2)}
       </span>
@@ -234,157 +248,166 @@ export default function Calculadora() {
 
   return (
     <section className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-6 pb-8 sm:pt-8 sm:pb-10">
-      <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between mb-5 sm:mb-6">
-        <div>
-          <p className="eyebrow mb-2">Monitor diario</p>
-          <h1 className="text-2xl sm:text-[28px] font-bold tracking-tight" style={{ color: "var(--text-1)" }}>
-            Mejor cambio del día
-          </h1>
-          <p className="mt-1 text-sm" style={{ color: "var(--text-2)" }}>
-            Decisión rápida para compra y venta de dólares en ventanilla.
-          </p>
-        </div>
-        {updatedLabel && (
-          <p className="text-xs sm:text-sm" style={{ color: "var(--text-3)" }}>
-            {updatedLabel}
-          </p>
-        )}
-      </div>
-
-      <div className="grid grid-cols-1 xl:grid-cols-[320px_minmax(0,1fr)] gap-4 sm:gap-5">
-        <div className="order-2 xl:order-1 flex flex-col gap-4">
-          {cards.map((card) => (
-            <WinnerCard key={card.label} {...card}>
-              {card.footer}
-            </WinnerCard>
-          ))}
-        </div>
-
-        <div className="order-1 xl:order-2 terminal-panel rounded-2xl overflow-hidden">
-          <div
-            className="px-4 sm:px-6 py-4 border-b"
-            style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
-          >
-            <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-              <div>
-                <p className="eyebrow mb-2">Calculadora</p>
-                <h2 className="text-lg sm:text-xl font-bold" style={{ color: "var(--text-1)" }}>
-                  Simulador de cambio en ventanilla
-                </h2>
-              </div>
-              <div
-                className="inline-flex rounded-xl p-1 self-start"
-                style={{ backgroundColor: "var(--surface-3)", border: "1px solid var(--border)" }}
-              >
-                {MODOS.map((m) => (
-                  <button
-                    key={m.key}
-                    onClick={() => handleModoChange(m.key)}
-                    className="px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
-                    style={
-                      modo === m.key
-                        ? { backgroundColor: "var(--surface)", color: m.color, boxShadow: "var(--shadow-soft)" }
-                        : { color: "var(--text-2)" }
-                    }
-                  >
-                    {m.label}
-                  </button>
-                ))}
-              </div>
+      <div className="macro-panel rounded-[28px] overflow-hidden">
+        <div
+          className="px-4 sm:px-6 xl:px-7 pt-5 pb-4 sm:pt-6 sm:pb-5 border-b"
+          style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
+        >
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="eyebrow mb-2">Monitor diario</p>
+              <h1 className="text-[22px] sm:text-[28px] font-bold tracking-tight" style={{ color: "var(--text-1)" }}>
+                Mejor cambio del día
+              </h1>
+              <p className="mt-1 text-sm" style={{ color: "var(--text-2)" }}>
+                Referencia diaria para compra y venta de dólares en ventanilla.
+              </p>
             </div>
+            {updatedLabel && (
+              <p className="text-xs sm:text-sm" style={{ color: "var(--text-3)" }}>
+                {updatedLabel}
+              </p>
+            )}
           </div>
+        </div>
 
-          <div className="p-4 sm:p-6">
-            <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_300px] gap-5 sm:gap-6">
-              <div className="flex flex-col gap-4 sm:gap-5">
-                <div>
-                  <label className="eyebrow mb-2 block">
-                    {isVender ? "Ingresás dólares" : "Ingresás colones"}
-                  </label>
+        <div className="p-4 sm:p-5 xl:p-6">
+          <div className="grid grid-cols-1 xl:grid-cols-[300px_minmax(0,1fr)] gap-4 sm:gap-5">
+            <div className="order-2 xl:order-1 flex flex-col gap-3 sm:gap-4">
+              {cards.map((card) => (
+                <WinnerCard key={card.label} {...card}>
+                  {card.footer}
+                </WinnerCard>
+              ))}
+            </div>
+
+            <div className="order-1 xl:order-2 terminal-panel rounded-[24px] overflow-hidden" style={{ borderColor: "var(--border-strong)" }}>
+              <div
+                className="px-4 sm:px-5 py-4 border-b"
+                style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
+              >
+                <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+                  <div>
+                    <p className="eyebrow mb-2">Calculadora</p>
+                    <h2 className="text-lg sm:text-xl font-bold" style={{ color: "var(--text-1)" }}>
+                      Simulador de cambio en ventanilla
+                    </h2>
+                  </div>
                   <div
-                    className="rounded-2xl px-4 sm:px-5 py-4 sm:py-5 relative"
-                    style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
+                    className="inline-flex rounded-xl p-1 self-start"
+                    style={{ backgroundColor: "var(--surface-3)", border: "1px solid var(--border)" }}
                   >
-                    <span
-                      className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 font-bold pointer-events-none"
-                      style={{ color: modoConfig.color, fontSize: 24 }}
-                    >
-                      {isVender ? "$" : "₡"}
-                    </span>
-                    <input
-                      type="text"
-                      inputMode="decimal"
-                      value={rawValor}
-                      onChange={handleInput}
-                      placeholder="0"
-                      autoComplete="off"
-                      className="w-full bg-transparent pl-8 sm:pl-10 pr-2 font-black metric-value focus:outline-none"
-                      style={{
-                        color: "var(--text-1)",
-                        fontSize: "clamp(34px, 6vw, 56px)",
-                        lineHeight: 1,
-                        caretColor: modoConfig.color,
-                      }}
-                    />
+                    {MODOS.map((m) => (
+                      <button
+                        key={m.key}
+                        onClick={() => handleModoChange(m.key)}
+                        className="px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
+                        style={
+                          modo === m.key
+                            ? { backgroundColor: "var(--surface)", color: m.color, boxShadow: "var(--shadow-soft)" }
+                            : { color: "var(--text-2)" }
+                        }
+                      >
+                        {m.label}
+                      </button>
+                    ))}
                   </div>
                 </div>
-
-                <div
-                  className="rounded-2xl p-4 sm:p-5"
-                  style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
-                >
-                  <p className="eyebrow mb-2">
-                    {isVender ? "Mejor resultado" : "Mayor cantidad de dólares"}
-                  </p>
-                  {numValor > 0 && resultadoStr ? (
-                    <>
-                      <p className="text-sm font-medium mb-2" style={{ color: "var(--text-2)" }}>
-                        {isVender ? "Recibís con" : "Comprás con"} {bestBanco.nombre}
-                      </p>
-                      <p
-                        className="metric-value font-black leading-none"
-                        style={{ color: modoConfig.color, fontSize: "clamp(36px, 5vw, 54px)" }}
-                      >
-                        {resultadoStr}
-                      </p>
-                      {diferenciaStr && (
-                        <p className="mt-3 text-sm" style={{ color: "var(--text-2)" }}>
-                          {diferenciaStr}
-                        </p>
-                      )}
-                    </>
-                  ) : (
-                    <p className="text-sm" style={{ color: "var(--text-2)" }}>
-                      Ingresá un monto para ver el mejor resultado del día.
-                    </p>
-                  )}
-                </div>
               </div>
 
-              <aside className="flex flex-col gap-3">
-                <div className="flex items-center justify-between">
-                  <p className="eyebrow">Top 5</p>
-                  <span className="text-xs" style={{ color: "var(--text-3)" }}>
-                    {isVender ? "Mayor compra" : "Menor venta"}
-                  </span>
+              <div className="p-4 sm:p-5">
+                <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-4 sm:gap-5">
+                  <div className="flex flex-col gap-4">
+                    <div>
+                      <label className="eyebrow mb-2 block">
+                        {isVender ? "Ingresás dólares" : "Ingresás colones"}
+                      </label>
+                      <div
+                        className="rounded-2xl px-4 sm:px-5 py-4 relative"
+                        style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
+                      >
+                        <span
+                          className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 font-bold pointer-events-none"
+                          style={{ color: modoConfig.color, fontSize: 22 }}
+                        >
+                          {isVender ? "$" : "₡"}
+                        </span>
+                        <input
+                          type="text"
+                          inputMode="decimal"
+                          value={rawValor}
+                          onChange={handleInput}
+                          placeholder="0"
+                          autoComplete="off"
+                          className="w-full bg-transparent pl-8 sm:pl-10 pr-2 font-black metric-value focus:outline-none"
+                          style={{
+                            color: "var(--text-1)",
+                            fontSize: "clamp(30px, 8vw, 54px)",
+                            lineHeight: 1,
+                            caretColor: modoConfig.color,
+                          }}
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      className="rounded-2xl p-4 sm:p-5"
+                      style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
+                    >
+                      <p className="eyebrow mb-2">
+                        {isVender ? "Mejor resultado" : "Mayor cantidad de dólares"}
+                      </p>
+                      {numValor > 0 && resultadoStr ? (
+                        <>
+                          <p className="text-sm font-medium mb-2" style={{ color: "var(--text-2)" }}>
+                            {isVender ? "Recibís con" : "Comprás con"} {bestBanco.nombre}
+                          </p>
+                          <p
+                            className="metric-value font-black leading-none"
+                            style={{ color: modoConfig.color, fontSize: "clamp(32px, 7vw, 52px)" }}
+                          >
+                            {resultadoStr}
+                          </p>
+                          {diferenciaStr && (
+                            <p className="mt-3 text-sm" style={{ color: "var(--text-2)" }}>
+                              {diferenciaStr}
+                            </p>
+                          )}
+                        </>
+                      ) : (
+                        <p className="text-sm" style={{ color: "var(--text-2)" }}>
+                          Ingresá un monto para ver el mejor resultado del día.
+                        </p>
+                      )}
+                    </div>
+                  </div>
+
+                  <aside className="flex flex-col gap-3">
+                    <div className="flex items-center justify-between">
+                      <p className="eyebrow">Top 5</p>
+                      <span className="text-xs" style={{ color: "var(--text-3)" }}>
+                        {isVender ? "Mayor compra" : "Menor venta"}
+                      </span>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                      {top5.map((banco, i) => (
+                        <BancoFila
+                          key={banco.nombre}
+                          banco={banco}
+                          posicion={i + 1}
+                          rate={isVender ? banco.compra : banco.venta}
+                          monto={numValor}
+                          isVender={isVender}
+                          isFirst={i === 0}
+                        />
+                      ))}
+                    </div>
+                    <p className="text-xs leading-relaxed" style={{ color: "var(--text-3)" }}>
+                      Incluye bancos, cooperativas y casas de cambio con tasas publicadas.
+                    </p>
+                  </aside>
                 </div>
-                <div className="flex flex-col gap-2.5">
-                  {top5.map((banco, i) => (
-                    <BancoFila
-                      key={banco.nombre}
-                      banco={banco}
-                      posicion={i + 1}
-                      rate={isVender ? banco.compra : banco.venta}
-                      monto={numValor}
-                      isVender={isVender}
-                      isFirst={i === 0}
-                    />
-                  ))}
-                </div>
-                <p className="text-xs leading-relaxed" style={{ color: "var(--text-3)" }}>
-                  Incluye bancos, cooperativas y casas de cambio con tasas publicadas.
-                </p>
-              </aside>
+              </div>
             </div>
           </div>
         </div>
