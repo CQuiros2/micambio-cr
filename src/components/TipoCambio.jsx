@@ -161,7 +161,7 @@ function TablaEntidades() {
                   )}
 
                   <tr
-                    className="hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
+                    className="market-row-hover hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
                     style={{ borderBottom: "1px solid var(--border)" }}
                   >
                     <td className="px-4 sm:px-5 py-3">
@@ -175,7 +175,7 @@ function TablaEntidades() {
                       <div className="flex items-center justify-end gap-2">
                         {esMejorCompra && (
                           <span
-                            className="hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                            className="badge-soft hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
                             style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
                           >
                             Mejor
@@ -191,7 +191,7 @@ function TablaEntidades() {
                       <div className="flex items-center justify-end gap-2">
                         {esMejorVenta && (
                           <span
-                            className="hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                            className="badge-soft hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
                             style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
                           >
                             Mejor
@@ -245,8 +245,8 @@ function TablaEntidades() {
                 </div>
               )}
 
-              <article className="px-3 py-3" style={{ borderTop: showGroup ? "none" : "1px solid var(--border)" }}>
-                <div className="panel-soft rounded-2xl p-3">
+              <article className="px-3 py-3 motion-card-enter" style={{ borderTop: showGroup ? "none" : "1px solid var(--border)", animationDelay: `${Math.min(idx * 18, 180)}ms` }}>
+                <div className="panel-soft market-card-mobile rounded-2xl p-3">
                   <div className="flex items-start justify-between gap-3">
                     <EntityIdentity
                       name={e.nombre}
@@ -259,7 +259,7 @@ function TablaEntidades() {
                     <div className="flex flex-col items-end gap-1.5 shrink-0">
                       {esMejorCompra && (
                         <span
-                          className="rounded-full px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                          className="badge-soft rounded-full px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em]"
                           style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
                         >
                           Mejor compra
@@ -267,7 +267,7 @@ function TablaEntidades() {
                       )}
                       {esMejorVenta && (
                         <span
-                          className="rounded-full px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                          className="badge-soft rounded-full px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em]"
                           style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
                         >
                           Mejor venta

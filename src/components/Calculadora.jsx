@@ -79,10 +79,10 @@ function Sparkline({ values }) {
   );
 }
 
-function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentBorder, children }) {
+function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentBorder, motionClass = "", children }) {
   return (
     <article
-      className="panel-soft rounded-2xl p-4 sm:p-5 flex flex-col gap-3"
+      className={`panel-soft interactive-soft rounded-2xl p-4 sm:p-5 flex flex-col gap-3 motion-card-enter ${motionClass}`}
       style={{ borderColor: accentBorder }}
     >
       <div className="flex items-start justify-between gap-3">
@@ -135,10 +135,11 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
 
   return (
     <div
-      className="grid grid-cols-[18px_minmax(0,1fr)_auto] items-center gap-2 px-2.5 sm:px-3 py-2.5 rounded-xl"
+      className="top5-row grid grid-cols-[18px_minmax(0,1fr)_auto] items-center gap-2 px-2.5 sm:px-3 py-2.5 rounded-xl motion-card-enter"
       style={{
         backgroundColor: isFirst ? (isVender ? "var(--accent-dim)" : "var(--blue-dim)") : "var(--surface-2)",
         border: `1px solid ${isFirst ? (isVender ? "var(--accent-border)" : "var(--blue-border)") : "var(--border)"}`,
+        animationDelay: `${Math.min(posicion * 35, 180)}ms`,
       }}
     >
       <span
@@ -200,6 +201,7 @@ export default function Calculadora() {
           <Sparkline values={sparkValues} />
         </div>
       ),
+      motionClass: "motion-delay-1",
     },
     {
       label: "Menor venta",
@@ -209,6 +211,7 @@ export default function Calculadora() {
       accent: "var(--blue)",
       accentDim: "var(--blue-dim)",
       accentBorder: "var(--blue-border)",
+      motionClass: "motion-delay-2",
     },
   ];
 
@@ -248,7 +251,7 @@ export default function Calculadora() {
 
   return (
     <section className="max-w-6xl mx-auto w-full px-4 sm:px-6 pt-6 pb-8 sm:pt-8 sm:pb-10">
-      <div className="macro-panel rounded-[28px] overflow-hidden">
+      <div className="macro-panel motion-panel-enter rounded-[28px] overflow-hidden">
         <div
           className="px-4 sm:px-6 xl:px-7 pt-5 pb-4 sm:pt-6 sm:pb-5 border-b"
           style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}
@@ -301,7 +304,7 @@ export default function Calculadora() {
                       <button
                         key={m.key}
                         onClick={() => handleModoChange(m.key)}
-                        className="px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
+                        className="mode-pill px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
                         style={
                           modo === m.key
                             ? { backgroundColor: "var(--surface)", color: m.color, boxShadow: "var(--shadow-soft)" }
@@ -323,7 +326,7 @@ export default function Calculadora() {
                         {isVender ? "Ingresás dólares" : "Ingresás colones"}
                       </label>
                       <div
-                        className="rounded-2xl px-4 sm:px-5 py-4 relative"
+                        className="interactive-soft rounded-2xl px-4 sm:px-5 py-4 relative"
                         style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
                       >
                         <span
@@ -351,7 +354,7 @@ export default function Calculadora() {
                     </div>
 
                     <div
-                      className="rounded-2xl p-4 sm:p-5"
+                      className={`result-panel rounded-2xl p-4 sm:p-5 ${numValor > 0 && resultadoStr ? "result-panel-active" : ""}`}
                       style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
                     >
                       <p className="eyebrow mb-2">
@@ -363,7 +366,8 @@ export default function Calculadora() {
                             {isVender ? "Recibís con" : "Comprás con"} {bestBanco.nombre}
                           </p>
                           <p
-                            className="metric-value font-black leading-none"
+                            key={resultadoStr}
+                            className="result-value-enter metric-value font-black leading-none"
                             style={{ color: modoConfig.color, fontSize: "clamp(30px, 7vw, 50px)" }}
                           >
                             {resultadoStr}

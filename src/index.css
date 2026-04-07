@@ -22,6 +22,7 @@
   --warning:        #b7791f;
   --shadow-soft:    0 10px 30px rgba(15, 23, 32, 0.04);
   --shadow-panel:   0 1px 2px rgba(15, 23, 32, 0.04), 0 12px 32px rgba(15, 23, 32, 0.05);
+  --ease-premium:   cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .dark {
@@ -60,13 +61,14 @@ body {
 
 *, *::before, *::after {
   transition-property: background-color, border-color;
-  transition-duration: 150ms;
-  transition-timing-function: ease;
+  transition-duration: 160ms;
+  transition-timing-function: var(--ease-premium);
 }
 
 button, a, input {
   transition-property: color, background-color, border-color, opacity, box-shadow, transform;
-  transition-duration: 120ms;
+  transition-duration: 140ms;
+  transition-timing-function: var(--ease-premium);
 }
 
 ::selection {
@@ -133,6 +135,159 @@ button, a, input {
   letter-spacing: -0.04em;
 }
 
+@keyframes panel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes result-flash {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 14%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 8px transparent;
+  }
+}
+
+@keyframes value-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.motion-panel-enter {
+  animation: panel-enter 380ms var(--ease-premium) both;
+}
+
+.motion-card-enter {
+  animation: soft-fade-up 300ms var(--ease-premium) both;
+}
+
+.motion-delay-1 { animation-delay: 40ms; }
+.motion-delay-2 { animation-delay: 90ms; }
+.motion-delay-3 { animation-delay: 140ms; }
+
+.interactive-soft {
+  transition:
+    transform 180ms var(--ease-premium),
+    box-shadow 180ms var(--ease-premium),
+    border-color 180ms var(--ease-premium),
+    background-color 180ms var(--ease-premium);
+}
+
+.interactive-soft:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-panel);
+}
+
+.interactive-soft:focus-within {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-panel);
+}
+
+.result-panel {
+  transition:
+    border-color 180ms var(--ease-premium),
+    box-shadow 220ms var(--ease-premium),
+    background-color 180ms var(--ease-premium);
+}
+
+.result-panel-active {
+  animation: result-flash 420ms var(--ease-premium) 1;
+}
+
+.result-value-enter {
+  animation: value-fade 180ms var(--ease-premium) both;
+}
+
+.mode-pill {
+  transition:
+    color 140ms var(--ease-premium),
+    background-color 160ms var(--ease-premium),
+    box-shadow 180ms var(--ease-premium),
+    transform 160ms var(--ease-premium);
+}
+
+.mode-pill:hover {
+  transform: translateY(-1px);
+}
+
+.top5-row {
+  transition:
+    transform 160ms var(--ease-premium),
+    background-color 160ms var(--ease-premium),
+    border-color 160ms var(--ease-premium),
+    box-shadow 180ms var(--ease-premium);
+}
+
+.top5-row:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.market-row-hover {
+  transition:
+    background-color 160ms var(--ease-premium),
+    transform 160ms var(--ease-premium);
+}
+
+.market-card-mobile {
+  transition:
+    transform 180ms var(--ease-premium),
+    box-shadow 180ms var(--ease-premium),
+    border-color 180ms var(--ease-premium);
+}
+
+.market-card-mobile:hover,
+.market-card-mobile:focus-within {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
+}
+
+.badge-soft {
+  transition:
+    transform 140ms var(--ease-premium),
+    border-color 140ms var(--ease-premium),
+    background-color 140ms var(--ease-premium),
+    color 140ms var(--ease-premium);
+}
+
+.fuel-card {
+  transition:
+    transform 180ms var(--ease-premium),
+    box-shadow 180ms var(--ease-premium),
+    border-color 180ms var(--ease-premium),
+    background-color 180ms var(--ease-premium);
+}
+
+.fuel-card:hover,
+.fuel-card:focus-within {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-panel);
+}
+
 @keyframes ticker-scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -171,3 +326,23 @@ button, a, input {
 }
 
 .ticker-track:hover { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .interactive-soft:hover,
+  .interactive-soft:focus-within,
+  .top5-row:hover,
+  .market-card-mobile:hover,
+  .market-card-mobile:focus-within,
+  .fuel-card:hover,
+  .fuel-card:focus-within,
+  .mode-pill:hover {
+    transform: none;
+    box-shadow: inherit;
+  }
+}

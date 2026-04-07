@@ -84,8 +84,8 @@ export default function Combustible() {
           return (
             <article
               key={tipo}
-              className="terminal-panel rounded-2xl p-4 sm:p-5 flex flex-col gap-4"
-              style={{ borderColor: border }}
+              className="terminal-panel fuel-card motion-card-enter rounded-2xl p-4 sm:p-5 flex flex-col gap-4"
+              style={{ borderColor: border, animationDelay: `${Object.keys(COMBUSTIBLE_CONFIG).indexOf(tipo) * 45}ms` }}
             >
               <div className="flex items-center justify-between gap-2">
                 <div>
