@@ -26,6 +26,11 @@ const MODOS = [
   },
 ];
 
+const MONEDAS = [
+  { key: "usd", label: "Dólares", symbol: "$", placeholder: "100" },
+  { key: "crc", label: "Colones", symbol: "₡", placeholder: "50 000" },
+];
+
 const TOP_VENDER = [...entidades]
   .filter((e) => e.compra > 0)
   .sort((a, b) => b.compra - a.compra)
@@ -125,13 +130,74 @@ function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentB
   );
 }
 
-function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
+function parseMonto(raw) {
+  if (!raw) return 0;
+  const normalized = raw.replace(/\s+/g, "").replace(/,/g, ".");
+  const parsed = parseFloat(normalized);
+  return Number.isFinite(parsed) ? parsed : 0;
+}
+
+function getScenario({ isVender, inputCurrency }) {
+  if (isVender && inputCurrency === "usd") {
+    return {
+      inputLabel: "Ingresás dólares",
+      resultLabel: "Recibís en colones",
+      resultLead: "Recibís con",
+      outputKind: "crc",
+      comparisonKind: "more",
+    };
+  }
+
+  if (isVender && inputCurrency === "crc") {
+    return {
+      inputLabel: "Ingresás colones",
+      resultLabel: "Dólares que necesitás vender",
+      resultLead: "Necesitás vender con",
+      outputKind: "usd",
+      comparisonKind: "less",
+    };
+  }
+
+  if (!isVender && inputCurrency === "crc") {
+    return {
+      inputLabel: "Ingresás colones",
+      resultLabel: "Dólares que podés comprar",
+      resultLead: "Podés comprar con",
+      outputKind: "usd",
+      comparisonKind: "more",
+    };
+  }
+
+  return {
+    inputLabel: "Ingresás dólares",
+    resultLabel: "Colones que necesitás",
+    resultLead: "Necesitás con",
+    outputKind: "crc",
+    comparisonKind: "less",
+  };
+}
+
+function calculateOutcome({ amount, rate, isVender, inputCurrency }) {
+  if (!amount || !rate) return null;
+  if (isVender && inputCurrency === "usd") return amount * rate;
+  if (isVender && inputCurrency === "crc") return amount / rate;
+  if (!isVender && inputCurrency === "crc") return amount / rate;
+  return amount * rate;
+}
+
+function formatOutcome(value, kind) {
+  if (value === null || value === undefined) return null;
+  return kind === "usd" ? `$${fmtUSD(value)}` : `₡${fmtCRC(value)}`;
+}
+
+function BancoFila({ banco, posicion, rate, monto, isVender, isFirst, inputCurrency, scenario }) {
   const accentColor = isVender ? "var(--accent)" : "var(--blue)";
 
   const resultadoStr = useMemo(() => {
     if (!monto) return null;
-    return isVender ? `₡${fmtCRC(monto * rate)}` : `$${fmtUSD(monto / rate)}`;
-  }, [monto, rate, isVender]);
+    const result = calculateOutcome({ amount: monto, rate, isVender, inputCurrency });
+    return formatOutcome(result, scenario.outputKind);
+  }, [monto, rate, isVender, inputCurrency, scenario.outputKind]);
 
   return (
     <div
@@ -175,14 +241,17 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
 
 export default function Calculadora() {
   const [modo, setModo] = useState("vender");
+  const [monedaEntrada, setMonedaEntrada] = useState("usd");
   const [rawValor, setRawValor] = useState("");
 
   const isVender = modo === "vender";
   const modoConfig = MODOS.find((m) => m.key === modo);
+  const monedaConfig = MONEDAS.find((m) => m.key === monedaEntrada);
   const top5 = isVender ? TOP_VENDER : TOP_COMPRAR;
   const bestBanco = top5[0];
-  const numValor = parseFloat(rawValor) || 0;
+  const numValor = parseMonto(rawValor);
   const updatedLabel = tiempoDesde(ultimaActualizacion);
+  const scenario = getScenario({ isVender, inputCurrency: monedaEntrada });
 
   const cards = [
     {
@@ -220,32 +289,36 @@ export default function Calculadora() {
       return { resultadoStr: null, diferenciaStr: null };
     }
 
-    if (isVender) {
-      const mejor = numValor * bestBanco.compra;
-      const peor = numValor * top5.at(-1).compra;
-      return {
-        resultadoStr: `₡${fmtCRC(mejor)}`,
-        diferenciaStr: `₡${fmtCRC(mejor - peor)} más que el 5to mejor tipo`,
-      };
-    }
+    const mejorRate = isVender ? bestBanco.compra : bestBanco.venta;
+    const peorRate = isVender ? top5.at(-1).compra : top5.at(-1).venta;
+    const mejor = calculateOutcome({ amount: numValor, rate: mejorRate, isVender, inputCurrency: monedaEntrada });
+    const peor = calculateOutcome({ amount: numValor, rate: peorRate, isVender, inputCurrency: monedaEntrada });
+    const diferencia = scenario.comparisonKind === "less" ? peor - mejor : mejor - peor;
 
-    const mejor = numValor / bestBanco.venta;
-    const peor = numValor / top5.at(-1).venta;
     return {
-      resultadoStr: `$${fmtUSD(mejor)}`,
-      diferenciaStr: `$${fmtUSD(mejor - peor)} más que el 5to mejor tipo`,
+      resultadoStr: formatOutcome(mejor, scenario.outputKind),
+      diferenciaStr:
+        scenario.outputKind === "usd"
+          ? `$${fmtUSD(diferencia)} ${scenario.comparisonKind === "less" ? "menos" : "más"} que con el 5to mejor tipo`
+          : `₡${fmtCRC(diferencia)} ${scenario.comparisonKind === "less" ? "menos" : "más"} que con el 5to mejor tipo`,
     };
-  }, [bestBanco, isVender, numValor, top5]);
+  }, [bestBanco, isVender, monedaEntrada, numValor, scenario.comparisonKind, scenario.outputKind, top5]);
 
   const handleInput = (e) => {
-    const v = e.target.value.replace(/[^0-9.]/g, "");
-    const parts = v.split(".");
-    const clean = parts.length > 2 ? `${parts[0]}.${parts.slice(1).join("")}` : v;
+    const v = e.target.value.replace(/[^0-9.,\s]/g, "");
+    const normalized = v.replace(/,/g, ".");
+    const parts = normalized.split(".");
+    const clean = parts.length > 2 ? `${parts[0]}.${parts.slice(1).join("")}` : normalized;
     setRawValor(clean);
   };
 
   const handleModoChange = (key) => {
     setModo(key);
+    setRawValor("");
+  };
+
+  const handleMonedaChange = (key) => {
+    setMonedaEntrada(key);
     setRawValor("");
   };
 
@@ -296,24 +369,45 @@ export default function Calculadora() {
                       Simulador de cambio en ventanilla
                     </h2>
                   </div>
-                  <div
-                    className="inline-flex rounded-xl p-1 self-start"
-                    style={{ backgroundColor: "var(--surface-3)", border: "1px solid var(--border)" }}
-                  >
-                    {MODOS.map((m) => (
-                      <button
-                        key={m.key}
-                        onClick={() => handleModoChange(m.key)}
-                        className="mode-pill px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
-                        style={
-                          modo === m.key
-                            ? { backgroundColor: "var(--surface)", color: m.color, boxShadow: "var(--shadow-soft)" }
-                            : { color: "var(--text-2)" }
-                        }
-                      >
-                        {m.label}
-                      </button>
-                    ))}
+                  <div className="flex flex-col gap-2 self-start">
+                    <div
+                      className="inline-flex rounded-xl p-1"
+                      style={{ backgroundColor: "var(--surface-3)", border: "1px solid var(--border)" }}
+                    >
+                      {MODOS.map((m) => (
+                        <button
+                          key={m.key}
+                          onClick={() => handleModoChange(m.key)}
+                          className="mode-pill px-3 sm:px-4 py-2 rounded-lg text-sm font-semibold"
+                          style={
+                            modo === m.key
+                              ? { backgroundColor: "var(--surface)", color: m.color, boxShadow: "var(--shadow-soft)" }
+                              : { color: "var(--text-2)" }
+                          }
+                        >
+                          {m.label}
+                        </button>
+                      ))}
+                    </div>
+                    <div
+                      className="inline-flex rounded-xl p-1"
+                      style={{ backgroundColor: "var(--surface-3)", border: "1px solid var(--border)" }}
+                    >
+                      {MONEDAS.map((m) => (
+                        <button
+                          key={m.key}
+                          onClick={() => handleMonedaChange(m.key)}
+                          className="mode-pill px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold"
+                          style={
+                            monedaEntrada === m.key
+                              ? { backgroundColor: "var(--surface)", color: "var(--text-1)", boxShadow: "var(--shadow-soft)" }
+                              : { color: "var(--text-2)" }
+                          }
+                        >
+                          {m.label}
+                        </button>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -323,7 +417,7 @@ export default function Calculadora() {
                   <div className="flex flex-col gap-3 sm:gap-4">
                     <div>
                       <label className="eyebrow mb-2 block">
-                        {isVender ? "Ingresás dólares" : "Ingresás colones"}
+                        {scenario.inputLabel}
                       </label>
                       <div
                         className="interactive-soft rounded-2xl px-4 sm:px-5 py-4 relative"
@@ -333,14 +427,14 @@ export default function Calculadora() {
                           className="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 font-bold pointer-events-none"
                           style={{ color: modoConfig.color, fontSize: 22 }}
                         >
-                          {isVender ? "$" : "₡"}
+                          {monedaConfig.symbol}
                         </span>
                         <input
                           type="text"
                           inputMode="decimal"
                           value={rawValor}
                           onChange={handleInput}
-                          placeholder="0"
+                          placeholder={monedaConfig.placeholder}
                           autoComplete="off"
                           className="w-full bg-transparent pl-8 sm:pl-10 pr-2 font-black metric-value focus:outline-none"
                           style={{
@@ -358,12 +452,12 @@ export default function Calculadora() {
                       style={{ backgroundColor: "var(--surface-2)", border: `1px solid ${numValor > 0 ? modoConfig.border : "var(--border)"}` }}
                     >
                       <p className="eyebrow mb-2">
-                        {isVender ? "Mejor resultado" : "Mayor cantidad de dólares"}
+                        {scenario.resultLabel}
                       </p>
                       {numValor > 0 && resultadoStr ? (
                         <>
                           <p className="text-sm font-medium mb-2" style={{ color: "var(--text-2)" }}>
-                            {isVender ? "Recibís con" : "Comprás con"} {bestBanco.nombre}
+                            {scenario.resultLead} {bestBanco.nombre}
                           </p>
                           <p
                             key={resultadoStr}
@@ -380,7 +474,9 @@ export default function Calculadora() {
                         </>
                       ) : (
                         <p className="text-sm" style={{ color: "var(--text-2)" }}>
-                          Ingresá el monto para ver cuál entidad te da el mejor resultado.
+                          {monedaEntrada === "usd"
+                            ? "Ingresá el monto en dólares para ver cuál entidad te da el mejor resultado."
+                            : "Ingresá el monto en colones para ver cuál entidad te da el mejor resultado."}
                         </p>
                       )}
                     </div>
@@ -403,6 +499,8 @@ export default function Calculadora() {
                           monto={numValor}
                           isVender={isVender}
                           isFirst={i === 0}
+                          inputCurrency={monedaEntrada}
+                          scenario={scenario}
                         />
                       ))}
                     </div>
