@@ -314,12 +314,10 @@ export default function Calculadora() {
 
   const handleModoChange = (key) => {
     setModo(key);
-    setRawValor("");
   };
 
   const handleMonedaChange = (key) => {
     setMonedaEntrada(key);
-    setRawValor("");
   };
 
   return (
