@@ -164,11 +164,8 @@ function TablaEntidades() {
                     className="market-row-hover hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
                     style={{ borderBottom: "1px solid var(--border)" }}
                   >
-                    <td className="px-4 sm:px-5 py-3">
+                    <td className="px-4 sm:px-5 py-2.5">
                       <EntityIdentity name={e.nombre} showName compact showDomain={false} size={30} textClassName="font-medium leading-tight truncate text-[14px]" />
-                      <p className="text-xs truncate mt-0.5 ml-[42px]" style={{ color: "var(--text-3)" }}>
-                        {e.tipoEntidad}
-                      </p>
                     </td>
 
                     <td className="px-4 sm:px-5 py-3.5 text-right">
