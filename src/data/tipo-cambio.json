@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-07T03:14:27.359Z",
+  "ultimaActualizacion": "2026-04-07T14:27:27.627Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -197,7 +197,7 @@
       "compra": 455,
       "venta": 473,
       "diferencial": 18,
-      "ultimaActualizacion": "06/04/2026 12:02 p.m."
+      "ultimaActualizacion": "07/04/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 463.06,
-      "venta": 468.93,
+      "compra": 462.48,
+      "venta": 468.35,
       "diferencial": 5.87,
-      "ultimaActualizacion": "06/04/2026 04:09 p.m."
+      "ultimaActualizacion": "07/04/2026 08:24 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 461,
       "venta": 479,
       "diferencial": 18,
-      "ultimaActualizacion": "06/04/2026 01:12 p.m."
+      "ultimaActualizacion": "07/04/2026 01:10 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 457,
       "venta": 471,
       "diferencial": 14,
-      "ultimaActualizacion": "06/04/2026 01:34 p.m."
+      "ultimaActualizacion": "07/04/2026 08:24 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 457,
       "venta": 471,
       "diferencial": 14,
-      "ultimaActualizacion": "06/04/2026 04:34 p.m."
+      "ultimaActualizacion": "07/04/2026 07:56 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 463.06
+    "valor": 462.48
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 468.93
+    "valor": 468.35
   },
   "historico": [
     {
@@ -383,6 +383,11 @@
       "fecha": "2026-04-06",
       "compra": 461.9,
       "venta": 468.77
+    },
+    {
+      "fecha": "2026-04-07",
+      "compra": 461.13,
+      "venta": 466.67
     }
   ]
 }
