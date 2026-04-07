@@ -49,6 +49,12 @@ const ENTITY_METADATA_RAW = {
     logoKey: "davivienda",
     iconCandidates: [],
   },
+  "Banco Cathay de Costa Rica S.A.": {
+    website: null,
+    domain: null,
+    logoKey: "banco-cathay",
+    iconCandidates: [],
+  },
   "Banco General (Costa Rica) S.A.": {
     website: "https://www.bgeneral.com/",
     domain: "bgeneral.com",

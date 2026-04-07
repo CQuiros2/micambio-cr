@@ -5,9 +5,9 @@ const { precios, ultimaActualizacion } = combustibleData;
 const COMBUSTIBLE_CONFIG = {
   super: {
     label: "Gasolina Super",
-    color: "#96a2ad",
-    dim: "rgba(150,162,173,0.12)",
-    border: "rgba(150,162,173,0.24)",
+    color: "#3f659c",
+    dim: "rgba(63,101,156,0.11)",
+    border: "rgba(63,101,156,0.24)",
   },
   regular: {
     label: "Gasolina Regular",
@@ -17,15 +17,15 @@ const COMBUSTIBLE_CONFIG = {
   },
   diesel: {
     label: "Diésel",
-    color: "#9d6e1c",
-    dim: "rgba(157,110,28,0.11)",
-    border: "rgba(157,110,28,0.24)",
+    color: "#2d7a5b",
+    dim: "rgba(45,122,91,0.11)",
+    border: "rgba(45,122,91,0.24)",
   },
   gaslp: {
     label: "Gas LP",
-    color: "#9e6138",
-    dim: "rgba(158,97,56,0.11)",
-    border: "rgba(158,97,56,0.24)",
+    color: "#9a5b34",
+    dim: "rgba(154,91,52,0.11)",
+    border: "rgba(154,91,52,0.24)",
   },
 };
 

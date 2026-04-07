@@ -1,5 +1,7 @@
 export default function Footer() {
   const year = new Date().getFullYear();
+  const githubUrl = "https://github.com/CQuiros2";
+  const portfolioUrl = "https://github.com/CQuiros2?tab=repositories";
 
   return (
     <footer className="section-divider">
@@ -45,6 +47,29 @@ export default function Footer() {
                   style={{ color: "var(--accent)" }}
                 >
                   ARESEP
+                </a>
+              </p>
+              <p className="text-xs" style={{ color: "var(--text-3)" }}>
+                Sitio desarrollado por Cristian Quirós.
+                {" "}
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                  style={{ color: "var(--text-2)" }}
+                >
+                  GitHub
+                </a>
+                {" · "}
+                <a
+                  href={portfolioUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                  style={{ color: "var(--text-2)" }}
+                >
+                  Portafolio
                 </a>
               </p>
               <p className="text-xs" style={{ color: "var(--text-3)" }}>

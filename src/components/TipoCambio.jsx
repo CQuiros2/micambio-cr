@@ -4,12 +4,55 @@ import { EntityIdentity } from "./EntityIdentity";
 
 const { entidades, mejorCompra, mejorVenta } = tcData;
 
+function formatCurrency(value) {
+  return `₡${value.toFixed(2)}`;
+}
+
 function SortIcon({ active, dir }) {
   return (
     <span className="inline-flex flex-col leading-none ml-1 align-middle" style={{ fontSize: 8, gap: 1 }}>
       <span style={{ color: active && dir === "asc" ? "var(--accent)" : "var(--text-3)", opacity: active && dir === "asc" ? 1 : 0.45 }}>▲</span>
       <span style={{ color: active && dir === "desc" ? "var(--accent)" : "var(--text-3)", opacity: active && dir === "desc" ? 1 : 0.45 }}>▼</span>
     </span>
+  );
+}
+
+function SortButton({ active, children, onClick }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="rounded-full px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.1em]"
+      style={{
+        color: active ? "var(--text-1)" : "var(--text-2)",
+        backgroundColor: active ? "var(--surface-3)" : "var(--surface-2)",
+        border: `1px solid ${active ? "var(--border-strong)" : "var(--border)"}`,
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
+function MobileMetric({ label, value, tone = "default" }) {
+  const color =
+    tone === "accent"
+      ? "var(--accent)"
+      : tone === "blue"
+        ? "var(--blue)"
+        : tone === "muted"
+          ? "var(--text-2)"
+          : "var(--text-1)";
+
+  return (
+    <div className="terminal-inset rounded-xl px-3 py-2.5 min-w-0">
+      <p className="eyebrow mb-1" style={{ fontSize: 10 }}>
+        {label}
+      </p>
+      <p className="metric-value text-[15px] font-bold leading-none truncate" style={{ color }}>
+        {value}
+      </p>
+    </div>
   );
 }
 
@@ -31,7 +74,27 @@ function TablaEntidades() {
 
   return (
     <div className="terminal-panel rounded-2xl overflow-hidden" style={{ borderColor: "var(--border-strong)" }}>
-      <div className="overflow-x-auto">
+      <div className="md:hidden border-b px-3 py-3" style={{ borderColor: "var(--border)", backgroundColor: "var(--surface-2)" }}>
+        <div className="flex items-center justify-between gap-2">
+          <p className="eyebrow">Ordenar por</p>
+          <span className="text-[11px]" style={{ color: "var(--text-3)" }}>
+            Sin scroll horizontal
+          </span>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <SortButton active={sort.col === "compra"} onClick={() => toggleSort("compra")}>
+            Compra
+          </SortButton>
+          <SortButton active={sort.col === "venta"} onClick={() => toggleSort("venta")}>
+            Venta
+          </SortButton>
+          <SortButton active={sort.col === "diferencial"} onClick={() => toggleSort("diferencial")}>
+            Diferencial
+          </SortButton>
+        </div>
+      </div>
+
+      <div className="hidden md:block overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
             <tr style={{ backgroundColor: "var(--surface-2)", borderBottom: "1px solid var(--border)" }}>
@@ -116,7 +179,7 @@ function TablaEntidades() {
                           </span>
                         )}
                         <span className="metric-value font-bold" style={{ color: esMejorCompra ? "var(--accent)" : "var(--text-1)", fontSize: 16 }}>
-                          ₡{e.compra.toFixed(2)}
+                          {formatCurrency(e.compra)}
                         </span>
                       </div>
                     </td>
@@ -132,7 +195,7 @@ function TablaEntidades() {
                           </span>
                         )}
                         <span className="metric-value font-bold" style={{ color: esMejorVenta ? "var(--blue)" : "var(--text-1)", fontSize: 16 }}>
-                          ₡{e.venta.toFixed(2)}
+                          {formatCurrency(e.venta)}
                         </span>
                       </div>
                     </td>
@@ -142,7 +205,7 @@ function TablaEntidades() {
                         className="inline-flex rounded-lg px-2.5 py-1 metric-value"
                         style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)", fontSize: 13 }}
                       >
-                        ₡{e.diferencial.toFixed(2)}
+                        {formatCurrency(e.diferencial)}
                       </span>
                     </td>
 
@@ -157,6 +220,70 @@ function TablaEntidades() {
             })}
           </tbody>
         </table>
+      </div>
+
+      <div className="md:hidden">
+        {filas.map((e, idx) => {
+          const esMejorCompra = e.compra === mejorCompra.valor;
+          const esMejorVenta = e.venta === mejorVenta.valor;
+          const prevTipo = idx > 0 ? filas[idx - 1].tipoEntidad : null;
+          const showGroup = e.tipoEntidad !== prevTipo;
+
+          return (
+            <Fragment key={e.nombre}>
+              {showGroup && (
+                <div className="px-3 pt-4 pb-2" style={{ backgroundColor: "var(--surface)" }}>
+                  <span
+                    className="inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]"
+                    style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)" }}
+                  >
+                    {e.tipoEntidad}
+                  </span>
+                </div>
+              )}
+
+              <article className="px-3 py-3" style={{ borderTop: showGroup ? "none" : "1px solid var(--border)" }}>
+                <div className="panel-soft rounded-2xl p-3">
+                  <div className="flex items-start justify-between gap-3">
+                    <EntityIdentity
+                      name={e.nombre}
+                      showName
+                      compact
+                      showDomain={false}
+                      size={32}
+                      textClassName="font-semibold leading-tight text-[13px]"
+                    />
+                    <div className="flex flex-col items-end gap-1.5 shrink-0">
+                      {esMejorCompra && (
+                        <span
+                          className="rounded-full px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                          style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
+                        >
+                          Mejor compra
+                        </span>
+                      )}
+                      {esMejorVenta && (
+                        <span
+                          className="rounded-full px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                          style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
+                        >
+                          Mejor venta
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="mt-3 grid grid-cols-2 gap-2">
+                    <MobileMetric label="Compra" value={formatCurrency(e.compra)} tone={esMejorCompra ? "accent" : "default"} />
+                    <MobileMetric label="Venta" value={formatCurrency(e.venta)} tone={esMejorVenta ? "blue" : "default"} />
+                    <MobileMetric label="Diferencial" value={formatCurrency(e.diferencial)} tone="muted" />
+                    <MobileMetric label="Actualización" value={e.ultimaActualizacion} tone="muted" />
+                  </div>
+                </div>
+              </article>
+            </Fragment>
+          );
+        })}
       </div>
     </div>
   );
@@ -195,7 +322,7 @@ export default function TipoCambio() {
       <TablaEntidades />
 
       <p className="mt-3 text-right" style={{ color: "var(--text-3)", fontSize: 12 }}>
-        Fuente: BCCR. Clic en columnas para ordenar. Se mantienen logos o iniciales por entidad.
+        Fuente: BCCR. Clic en columnas para ordenar. En móvil se muestra una vista compacta sin scroll horizontal.
       </p>
     </section>
   );
