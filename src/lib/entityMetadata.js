@@ -1,9 +1,11 @@
 const ENTITY_METADATA_RAW = {
   "Banco de Costa Rica": {
-    website: "https://www.bancobcr.com/",
+    website: "https://www.bancobcr.com/wps/portal/bcr",
     domain: "bancobcr.com",
     logoKey: "banco-de-costa-rica",
-    iconCandidates: [],
+    iconCandidates: [
+      "https://www.bancobcr.com/wps/contenthandler/bcr/!ut/p/digest!pQ8bHFqZs4DBjS_P5S7Lrw/dav/fs-type1/themes/BCR/images/favicon.ico",
+    ],
   },
   "Banco Nacional de Costa Rica": {
     website: "https://www.bncr.fi.cr/",
@@ -32,17 +34,17 @@ const ENTITY_METADATA_RAW = {
     ],
   },
   "Banco BCT S.A.": {
-    website: "https://bancobct.com/",
+    website: "https://www.bancobct.com/",
     domain: "bancobct.com",
     logoKey: "bct",
     iconCandidates: [
-      "https://bancobct.com/wp-content/uploads/2025/03/cropped-favicon-3-32x32.png",
-      "https://bancobct.com/wp-content/uploads/2025/03/cropped-favicon-3-180x180.png",
-      "https://bancobct.com/wp-content/uploads/2025/03/cropped-favicon-3-192x192.png",
+      "https://www.bancobct.com/wp-content/uploads/2025/03/cropped-favicon-3-32x32.png",
+      "https://www.bancobct.com/wp-content/uploads/2025/03/cropped-favicon-3-180x180.png",
+      "https://www.bancobct.com/wp-content/uploads/2025/03/cropped-favicon-3-192x192.png",
     ],
   },
   "Banco Davivienda (Costa Rica) S.A": {
-    website: "https://www.davivienda.cr/",
+    website: "https://bienvenido.davivienda.cr/wps/portal/personasCR/nuevo",
     domain: "davivienda.cr",
     logoKey: "davivienda",
     iconCandidates: [],
@@ -102,8 +104,8 @@ const ENTITY_METADATA_RAW = {
     iconCandidates: [],
   },
   "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo": {
-    website: "https://www.grupomutual.fi.cr/",
-    domain: "grupomutual.fi.cr",
+    website: "https://www.mucap.fi.cr/Home/TasasInteres",
+    domain: "mucap.fi.cr",
     logoKey: "grupo-mutual",
     iconCandidates: [],
   },
@@ -147,6 +149,30 @@ const ENTITY_METADATA_RAW = {
     iconCandidates: [
       "https://www.coopenae.fi.cr/favicon.ico?favicon.0g6.3hmc2b0im.ico",
     ],
+  },
+  "Cooperativa San Marcos R.L.": {
+    website: "https://csm.fi.cr/",
+    domain: "csm.fi.cr",
+    logoKey: "cooperativa-san-marcos",
+    iconCandidates: [
+      "https://i0.wp.com/csm.fi.cr/wp-content/uploads/2021/08/cropped-favicon.png?fit=32%2C32&#038;ssl=1",
+      "https://i0.wp.com/csm.fi.cr/wp-content/uploads/2021/08/cropped-favicon.png?fit=180%2C180&#038;ssl=1",
+      "https://i0.wp.com/csm.fi.cr/wp-content/uploads/2021/08/cropped-favicon.png?fit=192%2C192&#038;ssl=1",
+    ],
+  },
+  "Coopemep R.L.": {
+    website: "https://www.coopemep.com/inicio",
+    domain: "coopemep.com",
+    logoKey: "coopemep",
+    iconCandidates: [
+      "https://www.coopemep.com/PORTAL_COOPEMEP_TEMA-theme/images/favicon.ico",
+    ],
+  },
+  "Cooperativa Coopealianza R.L.": {
+    website: "https://coopealianza.fi.cr/",
+    domain: "coopealianza.fi.cr",
+    logoKey: "coopealianza",
+    iconCandidates: [],
   },
   "Airpak Casa de Cambio": {
     website: "https://airpak.cr/",
@@ -192,6 +218,24 @@ const ENTITY_METADATA_RAW = {
       "https://48395929.fs1.hubspotusercontent-na1.net/hubfs/48395929/logoBNCR.png",
     ],
   },
+  "Mercado Valores de Costa Rica Puesto de Bolsa": {
+    website: "https://www.mvalores.fi.cr/",
+    domain: "mvalores.fi.cr",
+    logoKey: "mercado-valores",
+    iconCandidates: [
+      "https://cdn.prod.website-files.com/67e225335766d56c7cd36564/683a4ef59ae23a57b56556bb_Favicon-MValores_32px.png",
+      "https://cdn.prod.website-files.com/67e225335766d56c7cd36564/683a4f50de0a388c0ca93db0_Favicon-MValores_96px%201.png",
+    ],
+  },
+  "PB Inversiones SAMA": {
+    website: "https://gruposama.fi.cr/",
+    domain: "gruposama.fi.cr",
+    logoKey: "pb-inversiones-sama",
+    iconCandidates: [
+      "https://gruposama.fi.cr/wp-content/uploads/2017/06/cropped-sama-favicon-150x150.png",
+      "https://gruposama.fi.cr/wp-content/uploads/2017/06/cropped-sama-favicon-300x300.png",
+    ],
+  },
   "Popular Valores, Puesto de Bolsa": {
     website: "https://www.bancopopular.fi.cr/popular-valores",
     domain: "bancopopular.fi.cr",
@@ -210,6 +254,15 @@ const ENTITY_METADATA_RAW = {
       "https://prival.com/wp-content/uploads/2025/08/cropped-favicon-prival-32x32.webp",
       "https://prival.com/wp-content/uploads/2025/08/cropped-favicon-prival-180x180.webp",
       "https://prival.com/wp-content/uploads/2025/08/cropped-favicon-prival-192x192.webp",
+    ],
+  },
+  "Financiera Comeca S.A.": {
+    website: "https://www.fincomeca.fi.cr/",
+    domain: "fincomeca.fi.cr",
+    logoKey: "financiera-comeca",
+    iconCandidates: [
+      "https://www.fincomeca.fi.cr/images/logo/isotipo-pc.png",
+      "https://www.fincomeca.fi.cr/images/logo/isotipo-mac.png",
     ],
   },
 };
