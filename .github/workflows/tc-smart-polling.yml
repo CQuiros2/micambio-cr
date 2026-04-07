@@ -32,7 +32,10 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
-      - name: Ejecutar scraper
+      - name: Actualizar ventanilla BCCR
+        run: node scripts/scrape-tc-ventanilla.js
+
+      - name: Actualizar tipo oficial diario BCCR
         env:
           BCCR_API_TOKEN: ${{ secrets.BCCR_API_TOKEN }}
         run: node scripts/scrape-tc-diario.js

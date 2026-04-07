@@ -110,8 +110,8 @@ const ENTITY_METADATA_RAW = {
     iconCandidates: [],
   },
   "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo": {
-    website: "https://www.mucap.fi.cr/Home/TasasInteres",
-    domain: "mucap.fi.cr",
+    website: "https://www.grupomutual.fi.cr/",
+    domain: "grupomutual.fi.cr",
     logoKey: "grupo-mutual",
     iconCandidates: [],
   },
@@ -243,14 +243,10 @@ const ENTITY_METADATA_RAW = {
     ],
   },
   "Popular Valores, Puesto de Bolsa": {
-    website: "https://www.bancopopular.fi.cr/popular-valores",
-    domain: "bancopopular.fi.cr",
+    website: "https://www.popularvalores.com/",
+    domain: "popularvalores.com",
     logoKey: "popular-valores",
-    iconCandidates: [
-      "https://www.bancopopular.fi.cr/wp-content/themes/bp/assets/img/favicon.svg",
-      "https://www.bancopopular.fi.cr/wp-content/uploads/2026/03/LOGOS-BANCO-POPULAR-actualizcion-2024-abreviado-1-300x300.png",
-      "https://www.bancopopular.fi.cr/wp-content/uploads/2026/03/LOGOS-BANCO-POPULAR-actualizcion-2024-abreviado-1-300x300.png",
-    ],
+    iconCandidates: [],
   },
   "PRIVAL Securities Puesto de Bolsa S.A": {
     website: "https://prival.com/",
