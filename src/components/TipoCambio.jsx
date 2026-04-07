@@ -135,87 +135,70 @@ function TablaEntidades() {
           </thead>
 
           <tbody>
-            {filas.map((e, idx) => {
+            {filas.map((e) => {
               const esMejorCompra = e.compra === mejorCompra.valor;
               const esMejorVenta = e.venta === mejorVenta.valor;
-              const prevTipo = idx > 0 ? filas[idx - 1].tipoEntidad : null;
-              const showGroup = e.tipoEntidad !== prevTipo;
 
               return (
-                <Fragment key={e.nombre}>
-                  {showGroup && (
-                    <tr style={{ backgroundColor: "var(--surface)" }}>
-                      <td
-                        colSpan={5}
-                        className="px-4 sm:px-5 pt-4 pb-2"
-                        style={{ borderBottom: "1px solid var(--border)" }}
-                      >
+                <tr
+                  key={e.nombre}
+                  className="market-row-hover hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
+                  style={{ borderBottom: "1px solid var(--border)" }}
+                >
+                  <td className="px-4 sm:px-5 py-3">
+                    <EntityIdentity name={e.nombre} showName compact showDomain={false} size={30} textClassName="font-medium leading-tight truncate text-[14px]" />
+                    <p className="mt-0.5 ml-[42px] truncate text-[11px]" style={{ color: "var(--text-3)" }}>
+                      {e.tipoEntidad}
+                    </p>
+                  </td>
+
+                  <td className="px-4 sm:px-5 py-3.5 text-right">
+                    <div className="flex items-center justify-end gap-2">
+                      {esMejorCompra && (
                         <span
-                          className="inline-flex items-center rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em]"
-                          style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)" }}
+                          className="badge-soft hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                          style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
                         >
-                          {e.tipoEntidad}
+                          Mejor
                         </span>
-                      </td>
-                    </tr>
-                  )}
-
-                  <tr
-                    className="market-row-hover hover:bg-black/[0.015] dark:hover:bg-white/[0.02]"
-                    style={{ borderBottom: "1px solid var(--border)" }}
-                  >
-                    <td className="px-4 sm:px-5 py-2.5">
-                      <EntityIdentity name={e.nombre} showName compact showDomain={false} size={30} textClassName="font-medium leading-tight truncate text-[14px]" />
-                    </td>
-
-                    <td className="px-4 sm:px-5 py-3.5 text-right">
-                      <div className="flex items-center justify-end gap-2">
-                        {esMejorCompra && (
-                          <span
-                            className="badge-soft hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
-                            style={{ backgroundColor: "var(--accent-dim)", color: "var(--accent)", border: "1px solid var(--accent-border)" }}
-                          >
-                            Mejor
-                          </span>
-                        )}
-                        <span className="metric-value font-bold" style={{ color: esMejorCompra ? "var(--accent)" : "var(--text-1)", fontSize: 16 }}>
-                          {formatCurrency(e.compra)}
-                        </span>
-                      </div>
-                    </td>
-
-                    <td className="px-4 sm:px-5 py-3.5 text-right">
-                      <div className="flex items-center justify-end gap-2">
-                        {esMejorVenta && (
-                          <span
-                            className="badge-soft hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
-                            style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
-                          >
-                            Mejor
-                          </span>
-                        )}
-                        <span className="metric-value font-bold" style={{ color: esMejorVenta ? "var(--blue)" : "var(--text-1)", fontSize: 16 }}>
-                          {formatCurrency(e.venta)}
-                        </span>
-                      </div>
-                    </td>
-
-                    <td className="px-4 sm:px-5 py-3.5 text-right hidden sm:table-cell">
-                      <span
-                        className="inline-flex rounded-lg px-2.5 py-1 metric-value"
-                        style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)", fontSize: 13 }}
-                      >
-                        {formatCurrency(e.diferencial)}
+                      )}
+                      <span className="metric-value font-bold" style={{ color: esMejorCompra ? "var(--accent)" : "var(--text-1)", fontSize: 16 }}>
+                        {formatCurrency(e.compra)}
                       </span>
-                    </td>
+                    </div>
+                  </td>
 
-                    <td className="px-4 sm:px-5 py-3.5 text-right hidden lg:table-cell">
-                      <span style={{ color: "var(--text-3)", fontSize: 12 }}>
-                        {e.ultimaActualizacion}
+                  <td className="px-4 sm:px-5 py-3.5 text-right">
+                    <div className="flex items-center justify-end gap-2">
+                      {esMejorVenta && (
+                        <span
+                          className="badge-soft hidden sm:inline-flex rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-[0.1em]"
+                          style={{ backgroundColor: "var(--blue-dim)", color: "var(--blue)", border: "1px solid var(--blue-border)" }}
+                        >
+                          Mejor
+                        </span>
+                      )}
+                      <span className="metric-value font-bold" style={{ color: esMejorVenta ? "var(--blue)" : "var(--text-1)", fontSize: 16 }}>
+                        {formatCurrency(e.venta)}
                       </span>
-                    </td>
-                  </tr>
-                </Fragment>
+                    </div>
+                  </td>
+
+                  <td className="px-4 sm:px-5 py-3.5 text-right hidden sm:table-cell">
+                    <span
+                      className="inline-flex rounded-lg px-2.5 py-1 metric-value"
+                      style={{ backgroundColor: "var(--surface-2)", color: "var(--text-2)", border: "1px solid var(--border)", fontSize: 13 }}
+                    >
+                      {formatCurrency(e.diferencial)}
+                    </span>
+                  </td>
+
+                  <td className="px-4 sm:px-5 py-3.5 text-right hidden lg:table-cell">
+                    <span style={{ color: "var(--text-3)", fontSize: 12 }}>
+                      {e.ultimaActualizacion}
+                    </span>
+                  </td>
+                </tr>
               );
             })}
           </tbody>
