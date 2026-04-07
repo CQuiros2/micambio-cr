@@ -1,66 +1,8 @@
 import { Fragment, useState } from "react";
 import tcData from "../data/tipo-cambio.json";
+import { EntityIdentity } from "./EntityIdentity";
 
 const { entidades, mejorCompra, mejorVenta } = tcData;
-
-const FAVICON_MAP = {
-  "bncr.fi.cr": "https://www.bncr.fi.cr/favicon.ico",
-  "bancobcr.com": "https://www.bancobcr.com/favicon.ico",
-  "bancopopular.fi.cr": "https://www.bancopopular.fi.cr/favicon.ico",
-  "bac.cr": "https://www.bac.cr/favicon.ico",
-  "davivienda.com": "https://www.davivienda.cr/favicon.ico",
-  "bancobct.com": "https://www.bct.fi.cr/favicon.ico",
-  "lafise.com": "https://www.lafise.com/favicon.ico",
-  "promerica.fi.cr": "https://www.promerica.fi.cr/favicon.ico",
-  "coopeande.com": "https://www.coopeande1.com/favicon.ico",
-  "coopecaja.fi.cr": "https://www.coopecaja.fi.cr/favicon.ico",
-  "coopenae.fi.cr": "https://www.coopenae.fi.cr/favicon.ico",
-};
-
-function BankLogo({ nombre, slug, size = 28 }) {
-  const [failed, setFailed] = useState(false);
-  const faviconUrl = FAVICON_MAP[slug];
-  const initials = nombre
-    .split(" ")
-    .filter((w) => w.length > 2)
-    .slice(0, 2)
-    .map((w) => w[0].toUpperCase())
-    .join("");
-
-  if (!faviconUrl || failed) {
-    return (
-      <div
-        className="flex items-center justify-center flex-shrink-0 overflow-hidden"
-        style={{
-          width: size,
-          height: size,
-          borderRadius: 8,
-          background: "var(--surface-2)",
-          color: "var(--text-1)",
-          border: "1px solid var(--border)",
-          fontSize: size <= 24 ? 9 : 11,
-          fontWeight: 700,
-        }}
-      >
-        {initials}
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className="flex items-center justify-center flex-shrink-0 overflow-hidden bg-white"
-      style={{ width: size, height: size, borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)" }}
-    >
-      <img
-        src={faviconUrl}
-        alt={nombre}
-        style={{ width: size - 6, height: size - 6, objectFit: "contain" }}
-        onError={() => setFailed(true)}
-      />
-    </div>
-  );
-}
 
 function SortIcon({ active, dir }) {
   return (
@@ -157,22 +99,10 @@ function TablaEntidades() {
                     style={{ borderBottom: "1px solid var(--border)" }}
                   >
                     <td className="px-4 sm:px-5 py-3.5">
-                      <div className="flex items-center gap-3 min-w-0">
-                        <span className="hidden sm:flex">
-                          <BankLogo nombre={e.nombre} slug={e.slug} size={30} />
-                        </span>
-                        <span className="flex sm:hidden">
-                          <BankLogo nombre={e.nombre} slug={e.slug} size={24} />
-                        </span>
-                        <div className="min-w-0">
-                          <p className="font-medium leading-tight truncate" style={{ color: "var(--text-1)", fontSize: 14 }}>
-                            {e.nombre}
-                          </p>
-                          <p className="text-xs truncate mt-0.5" style={{ color: "var(--text-3)" }}>
-                            {e.tipoEntidad}
-                          </p>
-                        </div>
-                      </div>
+                      <EntityIdentity name={e.nombre} showName compact showDomain={false} size={30} textClassName="font-medium leading-tight truncate text-[14px]" />
+                      <p className="text-xs truncate mt-0.5 ml-[42px]" style={{ color: "var(--text-3)" }}>
+                        {e.tipoEntidad}
+                      </p>
                     </td>
 
                     <td className="px-4 sm:px-5 py-3.5 text-right">

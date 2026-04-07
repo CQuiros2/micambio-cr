@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import tcData from "../data/tipo-cambio.json";
+import { EntityIdentity } from "./EntityIdentity";
 
 const { entidades, mejorCompra, mejorVenta, historico, ultimaActualizacion } = tcData;
 
@@ -34,20 +35,6 @@ const TOP_COMPRAR = [...entidades]
   .filter((e) => e.venta > 0)
   .sort((a, b) => a.venta - b.venta)
   .slice(0, 5);
-
-const FAVICON_MAP = {
-  "bncr.fi.cr": "https://www.bncr.fi.cr/favicon.ico",
-  "bancobcr.com": "https://www.bancobcr.com/favicon.ico",
-  "bancopopular.fi.cr": "https://www.bancopopular.fi.cr/favicon.ico",
-  "bac.cr": "https://www.bac.cr/favicon.ico",
-  "davivienda.com": "https://www.davivienda.cr/favicon.ico",
-  "bancobct.com": "https://www.bct.fi.cr/favicon.ico",
-  "lafise.com": "https://www.lafise.com/favicon.ico",
-  "promerica.fi.cr": "https://www.promerica.fi.cr/favicon.ico",
-  "coopeande.com": "https://www.coopeande1.com/favicon.ico",
-  "coopecaja.fi.cr": "https://www.coopecaja.fi.cr/favicon.ico",
-  "coopenae.fi.cr": "https://www.coopenae.fi.cr/favicon.ico",
-};
 
 const MOCK_TC = [514, 511, 509, 513, 507, 502, 498, 500, 495, 491, 488, 485, 482, 479, 476, 473, 470, 468, 465, 463, 461, 460, 458, 456];
 const sparkValues =
@@ -92,52 +79,7 @@ function Sparkline({ values }) {
   );
 }
 
-function BankLogo({ nombre, slug, size = 30 }) {
-  const [failed, setFailed] = useState(false);
-  const faviconUrl = FAVICON_MAP[slug];
-  const initials = nombre
-    .split(" ")
-    .filter((w) => w.length > 2)
-    .slice(0, 2)
-    .map((w) => w[0].toUpperCase())
-    .join("");
-
-  if (!faviconUrl || failed) {
-    return (
-      <div
-        className="flex items-center justify-center flex-shrink-0 overflow-hidden"
-        style={{
-          width: size,
-          height: size,
-          borderRadius: 8,
-          background: "var(--surface-2)",
-          color: "var(--text-1)",
-          border: "1px solid var(--border)",
-          fontSize: size <= 24 ? 9 : 11,
-          fontWeight: 700,
-        }}
-      >
-        {initials}
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className="flex items-center justify-center flex-shrink-0 overflow-hidden bg-white"
-      style={{ width: size, height: size, borderRadius: 8, border: "1px solid rgba(0,0,0,0.08)" }}
-    >
-      <img
-        src={faviconUrl}
-        alt={nombre}
-        style={{ width: size - 8, height: size - 8, objectFit: "contain" }}
-        onError={() => setFailed(true)}
-      />
-    </div>
-  );
-}
-
-function WinnerCard({ label, sublabel, valor, nombre, slug, accent, accentDim, accentBorder, children }) {
+function WinnerCard({ label, sublabel, valor, nombre, accent, accentDim, accentBorder, children }) {
   return (
     <article
       className="terminal-panel rounded-2xl p-5 sm:p-6 flex flex-col gap-4"
@@ -148,7 +90,7 @@ function WinnerCard({ label, sublabel, valor, nombre, slug, accent, accentDim, a
           <p className="eyebrow" style={{ color: accent }}>{label}</p>
           <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--text-2)" }}>{sublabel}</p>
         </div>
-        <BankLogo nombre={nombre} slug={slug} />
+        <EntityIdentity name={nombre} size={30} showName={false} />
       </div>
 
       <div>
@@ -158,9 +100,9 @@ function WinnerCard({ label, sublabel, valor, nombre, slug, accent, accentDim, a
         >
           ₡{valor.toFixed(2)}
         </p>
-        <p className="mt-2 text-sm font-medium truncate" style={{ color: "var(--text-1)" }}>
-          {nombre}
-        </p>
+        <div className="mt-2">
+          <EntityIdentity name={nombre} size={24} showName compact showDomain={false} textClassName="text-sm font-medium truncate" />
+        </div>
       </div>
 
       <div className="flex items-center justify-between gap-3">
@@ -199,9 +141,7 @@ function BancoFila({ banco, posicion, rate, monto, isVender, isFirst }) {
         {posicion}
       </span>
       <div className="min-w-0">
-        <p className="truncate font-medium" style={{ color: "var(--text-1)", fontSize: 14 }}>
-          {banco.nombre}
-        </p>
+        <EntityIdentity name={banco.nombre} size={24} showName compact showDomain={false} textClassName="truncate font-medium text-[14px]" />
         {resultadoStr && (
           <p className="tabular-nums text-[11px]" style={{ color: "var(--text-2)" }}>
             {resultadoStr}
@@ -235,7 +175,6 @@ export default function Calculadora() {
       sublabel: "Mejor para vender dólares hoy",
       valor: mejorCompra.valor,
       nombre: mejorCompra.nombre,
-      slug: entidades.find((e) => e.nombre === mejorCompra.nombre)?.slug,
       accent: "var(--accent)",
       accentDim: "var(--accent-dim)",
       accentBorder: "var(--accent-border)",
@@ -253,7 +192,6 @@ export default function Calculadora() {
       sublabel: "Mejor para comprar dólares hoy",
       valor: mejorVenta.valor,
       nombre: mejorVenta.nombre,
-      slug: entidades.find((e) => e.nombre === mejorVenta.nombre)?.slug,
       accent: "var(--blue)",
       accentDim: "var(--blue-dim)",
       accentBorder: "var(--blue-border)",
