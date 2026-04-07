@@ -8,6 +8,14 @@ function formatCurrency(value) {
   return `₡${value.toFixed(2)}`;
 }
 
+function formatMobileUpdate(value) {
+  if (typeof value !== "string") return value;
+  const match = value.match(/^(\d{2})\/(\d{2})\/(\d{4})\s+(\d{1,2}:\d{2}\s+[ap]\.m\.)$/i);
+  if (!match) return value;
+  const [, day, month, , time] = match;
+  return `${day}/${month} · ${time.toLowerCase()}`;
+}
+
 function SortIcon({ active, dir }) {
   return (
     <span className="inline-flex flex-col leading-none ml-1 align-middle" style={{ fontSize: 8, gap: 1 }}>
@@ -277,7 +285,11 @@ function TablaEntidades() {
                     <MobileMetric label="Compra" value={formatCurrency(e.compra)} tone={esMejorCompra ? "accent" : "default"} />
                     <MobileMetric label="Venta" value={formatCurrency(e.venta)} tone={esMejorVenta ? "blue" : "default"} />
                     <MobileMetric label="Diferencial" value={formatCurrency(e.diferencial)} tone="muted" />
-                    <MobileMetric label="Actualización" value={e.ultimaActualizacion} tone="muted" />
+                  </div>
+                  <div className="mt-2 flex justify-end">
+                    <p className="text-[11px] leading-none" style={{ color: "var(--text-3)" }}>
+                      {formatMobileUpdate(e.ultimaActualizacion)}
+                    </p>
                   </div>
                 </div>
               </article>
