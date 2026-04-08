@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-08T20:25:51.197Z",
+  "ultimaActualizacion": "2026-04-08T21:07:28.592Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 456,
-      "venta": 472,
+      "compra": 455,
+      "venta": 471,
       "diferencial": 16,
-      "ultimaActualizacion": "27/03/2026 01:05 p.m."
+      "ultimaActualizacion": "08/04/2026 02:41 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
