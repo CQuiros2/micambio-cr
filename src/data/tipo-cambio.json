@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-04-08T21:56:54.978Z",
+  "ultimaActualizacion": "2026-04-08T22:35:51.419Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 458,
-      "venta": 472,
+      "compra": 457,
+      "venta": 471,
       "diferencial": 14,
-      "ultimaActualizacion": "06/04/2026 01:17 p.m."
+      "ultimaActualizacion": "08/04/2026 04:22 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
