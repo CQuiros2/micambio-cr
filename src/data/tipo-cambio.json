@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-09T19:47:14.204Z",
+  "ultimaActualizacion": "2026-04-09T20:35:28.206Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -44,15 +44,15 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "09/04/2026 01:07 p.m."
+      "ultimaActualizacion": "09/04/2026 01:21 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
       "compra": 457,
-      "venta": 471.5,
-      "diferencial": 14.5,
+      "venta": 469.5,
+      "diferencial": 12.5,
       "ultimaActualizacion": "09/04/2026 01:07 p.m."
     },
     {
@@ -78,8 +78,8 @@
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
       "compra": 454,
-      "venta": 471,
-      "diferencial": 17,
+      "venta": 470,
+      "diferencial": 16,
       "ultimaActualizacion": "09/04/2026 12:55 p.m."
     },
     {
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 454,
-      "venta": 472,
+      "compra": 453,
+      "venta": 471,
       "diferencial": 18,
-      "ultimaActualizacion": "08/04/2026 10:08 p.m."
+      "ultimaActualizacion": "09/04/2026 02:23 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 453,
-      "venta": 471,
+      "compra": 452,
+      "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "08/04/2026 01:03 p.m."
+      "ultimaActualizacion": "09/04/2026 01:52 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
