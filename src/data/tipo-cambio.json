@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-09T21:26:17.032Z",
+  "ultimaActualizacion": "2026-04-09T22:03:59.093Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 380.82,
+      "compra": 381.05,
       "venta": 549.3,
-      "diferencial": 168.48,
-      "ultimaActualizacion": "09/04/2026 12:02 p.m."
+      "diferencial": 168.25,
+      "ultimaActualizacion": "09/04/2026 03:42 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
