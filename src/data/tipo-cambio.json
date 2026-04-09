@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-09T22:56:52.583Z",
+  "ultimaActualizacion": "2026-04-09T23:35:02.523Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 454,
-      "venta": 472,
+      "compra": 453,
+      "venta": 471,
       "diferencial": 18,
-      "ultimaActualizacion": "24/03/2026 05:21 p.m."
+      "ultimaActualizacion": "09/04/2026 05:25 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 454,
-      "venta": 472,
+      "compra": 452,
+      "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "30/03/2026 08:39 a.m."
+      "ultimaActualizacion": "09/04/2026 05:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 381.05,
-      "venta": 549.3,
-      "diferencial": 168.25,
-      "ultimaActualizacion": "09/04/2026 03:42 p.m."
+      "compra": 380.18,
+      "venta": 548.05,
+      "diferencial": 167.87,
+      "ultimaActualizacion": "09/04/2026 05:02 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
