@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-09T17:32:46.365Z",
+  "ultimaActualizacion": "2026-04-09T18:35:19.602Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 460,
-      "venta": 468,
-      "diferencial": 8,
-      "ultimaActualizacion": "08/04/2026 03:30 p.m."
+      "compra": 458.5,
+      "venta": 467,
+      "diferencial": 8.5,
+      "ultimaActualizacion": "09/04/2026 12:27 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 461.07,
-      "venta": 466.94,
+      "compra": 460.28,
+      "venta": 466.15,
       "diferencial": 5.87,
-      "ultimaActualizacion": "08/04/2026 12:50 p.m."
+      "ultimaActualizacion": "09/04/2026 12:06 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 380.41,
-      "venta": 548.71,
-      "diferencial": 168.3,
-      "ultimaActualizacion": "08/04/2026 09:02 p.m."
+      "compra": 380.82,
+      "venta": 549.3,
+      "diferencial": 168.48,
+      "ultimaActualizacion": "09/04/2026 12:02 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 466.94
+    "valor": 466.15
   },
   "historico": [
     {
