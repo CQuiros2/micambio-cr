@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-10T20:05:48.571Z",
+  "ultimaActualizacion": "2026-04-10T20:52:04.113Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 453,
-      "venta": 471,
+      "compra": 451,
+      "venta": 469,
       "diferencial": 18,
-      "ultimaActualizacion": "09/04/2026 09:08 p.m."
+      "ultimaActualizacion": "10/04/2026 02:18 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 458,
-      "venta": 471,
+      "compra": 455,
+      "venta": 468,
       "diferencial": 13,
-      "ultimaActualizacion": "24/03/2026 03:10 p.m."
+      "ultimaActualizacion": "10/04/2026 02:28 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 459.56,
-      "venta": 465.43,
+      "compra": 459.08,
+      "venta": 464.95,
       "diferencial": 5.87,
-      "ultimaActualizacion": "10/04/2026 12:58 p.m."
+      "ultimaActualizacion": "10/04/2026 02:32 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 465.43
+    "valor": 464.95
   },
   "historico": [
     {
