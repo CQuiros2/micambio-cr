@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-10T22:52:05.537Z",
+  "ultimaActualizacion": "2026-04-10T23:28:12.515Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 453,
-      "venta": 471,
+      "compra": 452,
+      "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "09/04/2026 05:25 p.m."
+      "ultimaActualizacion": "10/04/2026 05:19 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 458.5,
-      "venta": 467,
-      "diferencial": 8.5,
-      "ultimaActualizacion": "09/04/2026 12:27 p.m."
+      "compra": 456,
+      "venta": 466,
+      "diferencial": 10,
+      "ultimaActualizacion": "10/04/2026 04:59 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -197,7 +197,7 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 04:47 p.m."
+      "ultimaActualizacion": "10/04/2026 05:03 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
