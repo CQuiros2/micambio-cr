@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-13T14:28:38.864Z",
+  "ultimaActualizacion": "2026-04-13T15:56:44.664Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "10/04/2026 12:38 p.m."
+      "ultimaActualizacion": "13/04/2026 08:31 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "10/04/2026 01:26 p.m."
+      "ultimaActualizacion": "13/04/2026 08:38 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 452,
-      "venta": 470,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 08:45 a.m."
+      "ultimaActualizacion": "13/04/2026 09:00 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -131,19 +131,19 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 452,
-      "venta": 472,
-      "diferencial": 20,
-      "ultimaActualizacion": "10/04/2026 02:54 p.m."
+      "compra": 453,
+      "venta": 471,
+      "diferencial": 18,
+      "ultimaActualizacion": "13/04/2026 09:30 a.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 456,
-      "venta": 466,
-      "diferencial": 10,
-      "ultimaActualizacion": "12/04/2026 06:19 a.m."
+      "compra": 456.5,
+      "venta": 465,
+      "diferencial": 8.5,
+      "ultimaActualizacion": "13/04/2026 09:09 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -230,10 +230,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 458,
-      "venta": 471,
+      "compra": 455,
+      "venta": 468,
       "diferencial": 13,
-      "ultimaActualizacion": "25/03/2026 03:08 p.m."
+      "ultimaActualizacion": "13/04/2026 09:38 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -320,19 +320,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 457,
-      "venta": 471,
+      "compra": 455,
+      "venta": 469,
       "diferencial": 14,
-      "ultimaActualizacion": "30/03/2026 09:21 a.m."
+      "ultimaActualizacion": "13/04/2026 09:54 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 457,
-      "venta": 471,
+      "compra": 454,
+      "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "07/04/2026 09:04 a.m."
+      "ultimaActualizacion": "13/04/2026 09:27 a.m."
     }
   ],
   "mejorCompra": {
