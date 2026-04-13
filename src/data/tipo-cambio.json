@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-13T18:13:58.800Z",
+  "ultimaActualizacion": "2026-04-13T19:40:18.229Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 455,
-      "venta": 469,
+      "compra": 454,
+      "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "10/04/2026 01:52 p.m."
+      "ultimaActualizacion": "13/04/2026 01:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 451,
-      "venta": 469,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 12:26 p.m."
+      "ultimaActualizacion": "13/04/2026 12:55 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,19 +77,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 453,
-      "venta": 469,
+      "compra": 452,
+      "venta": 468,
       "diferencial": 16,
-      "ultimaActualizacion": "10/04/2026 01:03 p.m."
+      "ultimaActualizacion": "13/04/2026 01:12 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 452,
-      "venta": 470,
+      "compra": 451,
+      "venta": 469,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 04:18 p.m."
+      "ultimaActualizacion": "13/04/2026 01:36 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 452,
-      "venta": 470,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "09/04/2026 05:15 p.m."
+      "ultimaActualizacion": "13/04/2026 01:26 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 451,
-      "venta": 469,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 12:32 p.m."
+      "ultimaActualizacion": "13/04/2026 12:59 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
