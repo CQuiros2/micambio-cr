@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-11T00:00:06.973Z",
+  "ultimaActualizacion": "2026-04-13T14:28:38.864Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -125,7 +125,7 @@
       "compra": 451,
       "venta": 469,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 02:18 p.m."
+      "ultimaActualizacion": "10/04/2026 09:33 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -143,7 +143,7 @@
       "compra": 456,
       "venta": 466,
       "diferencial": 10,
-      "ultimaActualizacion": "10/04/2026 04:59 p.m."
+      "ultimaActualizacion": "12/04/2026 06:19 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -197,7 +197,7 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 05:03 p.m."
+      "ultimaActualizacion": "13/04/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 459.08,
-      "venta": 464.95,
+      "compra": 458.1,
+      "venta": 463.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "10/04/2026 02:32 p.m."
+      "ultimaActualizacion": "13/04/2026 08:13 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 379.17,
+      "compra": 380.09,
       "venta": 546.59,
-      "diferencial": 167.42,
-      "ultimaActualizacion": "10/04/2026 03:02 p.m."
+      "diferencial": 166.5,
+      "ultimaActualizacion": "11/04/2026 11:12 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 458,
       "venta": 476,
       "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 01:00 p.m."
+      "ultimaActualizacion": "13/04/2026 12:19 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,16 +296,16 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "10/04/2026 01:04 p.m."
+      "ultimaActualizacion": "13/04/2026 08:25 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 452,
+      "compra": 455,
       "venta": 470,
-      "diferencial": 18,
-      "ultimaActualizacion": "10/04/2026 12:48 p.m."
+      "diferencial": 15,
+      "ultimaActualizacion": "13/04/2026 08:18 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "10/04/2026 01:12 p.m."
+      "ultimaActualizacion": "13/04/2026 07:39 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 459.08
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 459
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 464.95
+    "valor": 463.97
   },
   "historico": [
     {
@@ -406,6 +406,16 @@
     },
     {
       "fecha": "2026-04-11",
+      "compra": 458.94,
+      "venta": 465.15
+    },
+    {
+      "fecha": "2026-04-12",
+      "compra": 458.94,
+      "venta": 465.15
+    },
+    {
+      "fecha": "2026-04-13",
       "compra": 458.94,
       "venta": 465.15
     }
