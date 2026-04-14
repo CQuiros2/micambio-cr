@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-14T23:05:42.348Z",
+  "ultimaActualizacion": "2026-04-14T23:55:13.493Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 453,
+      "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "14/04/2026 01:44 p.m."
+      "ultimaActualizacion": "14/04/2026 05:35 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 456.01,
-      "venta": 461.88,
+      "compra": 455.75,
+      "venta": 461.62,
       "diferencial": 5.87,
-      "ultimaActualizacion": "14/04/2026 01:55 p.m."
+      "ultimaActualizacion": "14/04/2026 05:47 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 461.88
+    "valor": 461.62
   },
   "historico": [
     {
