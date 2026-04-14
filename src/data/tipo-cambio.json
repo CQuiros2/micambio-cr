@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-14T19:42:35.382Z",
+  "ultimaActualizacion": "2026-04-14T20:36:14.765Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 451,
-      "venta": 469,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "13/04/2026 07:33 p.m."
+      "ultimaActualizacion": "14/04/2026 02:08 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 453,
-      "venta": 468,
+      "compra": 451,
+      "venta": 466,
       "diferencial": 15,
-      "ultimaActualizacion": "13/04/2026 02:55 p.m."
+      "ultimaActualizacion": "14/04/2026 02:35 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 454,
-      "venta": 468,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "10/04/2026 04:11 p.m."
+      "ultimaActualizacion": "14/04/2026 01:44 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 456.12,
-      "venta": 461.99,
+      "compra": 456.01,
+      "venta": 461.88,
       "diferencial": 5.87,
-      "ultimaActualizacion": "14/04/2026 12:05 p.m."
+      "ultimaActualizacion": "14/04/2026 01:55 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 461.99
+    "valor": 461.88
   },
   "historico": [
     {
