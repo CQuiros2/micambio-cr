@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-14T20:36:14.765Z",
+  "ultimaActualizacion": "2026-04-14T21:29:24.318Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 454,
-      "venta": 468,
+      "compra": 453,
+      "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "13/04/2026 01:27 p.m."
+      "ultimaActualizacion": "14/04/2026 02:42 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 454.5,
-      "venta": 467,
+      "compra": 453.5,
+      "venta": 466,
       "diferencial": 12.5,
-      "ultimaActualizacion": "14/04/2026 12:36 p.m."
+      "ultimaActualizacion": "14/04/2026 02:54 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 451,
-      "venta": 467,
+      "compra": 450,
+      "venta": 466,
       "diferencial": 16,
-      "ultimaActualizacion": "14/04/2026 12:49 p.m."
+      "ultimaActualizacion": "14/04/2026 03:12 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 455,
-      "venta": 469.5,
+      "compra": 454.5,
+      "venta": 469,
       "diferencial": 14.5,
-      "ultimaActualizacion": "13/04/2026 10:10 a.m."
+      "ultimaActualizacion": "14/04/2026 03:16 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 455,
-      "venta": 468,
+      "compra": 453,
+      "venta": 466,
       "diferencial": 13,
-      "ultimaActualizacion": "10/04/2026 02:28 p.m."
+      "ultimaActualizacion": "14/04/2026 02:46 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
