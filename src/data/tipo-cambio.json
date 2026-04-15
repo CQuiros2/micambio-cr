@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-15T19:58:31.750Z",
+  "ultimaActualizacion": "2026-04-15T20:51:29.647Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 453.5,
-      "venta": 466,
+      "compra": 451.5,
+      "venta": 464,
       "diferencial": 12.5,
-      "ultimaActualizacion": "14/04/2026 02:54 p.m."
+      "ultimaActualizacion": "15/04/2026 02:01 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 452,
-      "venta": 468,
+      "compra": 450,
+      "venta": 466,
       "diferencial": 16,
-      "ultimaActualizacion": "14/04/2026 01:40 p.m."
+      "ultimaActualizacion": "15/04/2026 02:50 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 453,
-      "venta": 466,
+      "compra": 452,
+      "venta": 465,
       "diferencial": 13,
-      "ultimaActualizacion": "14/04/2026 02:46 p.m."
+      "ultimaActualizacion": "15/04/2026 02:40 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
