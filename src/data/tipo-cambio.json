@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-15T20:51:29.647Z",
+  "ultimaActualizacion": "2026-04-15T21:44:06.911Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 451,
-      "venta": 466,
+      "compra": 450,
+      "venta": 465,
       "diferencial": 15,
-      "ultimaActualizacion": "14/04/2026 02:35 p.m."
+      "ultimaActualizacion": "15/04/2026 03:10 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -176,19 +176,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 453,
-      "venta": 467,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "14/04/2026 05:35 p.m."
+      "ultimaActualizacion": "15/04/2026 03:35 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "14/04/2026 06:57 p.m."
+      "ultimaActualizacion": "15/04/2026 03:18 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 377.76,
-      "venta": 543.24,
-      "diferencial": 165.48,
-      "ultimaActualizacion": "14/04/2026 05:02 p.m."
+      "compra": 376.56,
+      "venta": 541.51,
+      "diferencial": 164.95,
+      "ultimaActualizacion": "15/04/2026 03:02 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
