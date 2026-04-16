@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-16T16:12:07.660Z",
+  "ultimaActualizacion": "2026-04-16T17:45:57.910Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 12:08 p.m."
+      "ultimaActualizacion": "16/04/2026 08:56 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 08:28 a.m."
+      "ultimaActualizacion": "16/04/2026 08:17 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -96,8 +96,8 @@
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
       "compra": 446,
-      "venta": 466,
-      "diferencial": 20,
+      "venta": 464,
+      "diferencial": 18,
       "ultimaActualizacion": "16/04/2026 09:06 a.m."
     },
     {
@@ -116,7 +116,7 @@
       "compra": 448,
       "venta": 466,
       "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 09:15 a.m."
+      "ultimaActualizacion": "16/04/2026 09:02 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -194,10 +194,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 452,
-      "venta": 470,
+      "compra": 448,
+      "venta": 466,
       "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 12:29 a.m."
+      "ultimaActualizacion": "16/04/2026 08:40 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 450,
-      "venta": 468,
+      "compra": 448,
+      "venta": 466,
       "diferencial": 18,
-      "ultimaActualizacion": "14/04/2026 07:44 a.m."
+      "ultimaActualizacion": "16/04/2026 08:05 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,10 +239,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 456,
+      "compra": 457,
       "venta": 474,
-      "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 12:14 p.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "16/04/2026 10:17 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 454,
       "venta": 472,
       "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 12:14 p.m."
+      "ultimaActualizacion": "16/04/2026 12:55 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 12:40 p.m."
+      "ultimaActualizacion": "16/04/2026 08:19 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 04:57 p.m."
+      "ultimaActualizacion": "16/04/2026 07:26 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,7 +337,7 @@
   ],
   "mejorCompra": {
     "nombre": "Airpak Casa de Cambio",
-    "valor": 456
+    "valor": 457
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
