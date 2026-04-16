@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-16T14:49:36.039Z",
+  "ultimaActualizacion": "2026-04-16T16:12:07.660Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 450,
-      "venta": 464,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "16/04/2026 08:17 a.m."
+      "ultimaActualizacion": "15/04/2026 08:28 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 448,
+      "compra": 446,
       "venta": 466,
-      "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 08:57 a.m."
+      "diferencial": 20,
+      "ultimaActualizacion": "16/04/2026 09:06 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -194,10 +194,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 448,
-      "venta": 466,
+      "compra": 452,
+      "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "16/04/2026 08:40 a.m."
+      "ultimaActualizacion": "15/04/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 448,
-      "venta": 466,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "16/04/2026 08:05 a.m."
+      "ultimaActualizacion": "14/04/2026 07:44 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -278,7 +278,7 @@
       "compra": 454,
       "venta": 472,
       "diferencial": 18,
-      "ultimaActualizacion": "16/04/2026 12:55 a.m."
+      "ultimaActualizacion": "15/04/2026 12:14 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "16/04/2026 08:19 a.m."
+      "ultimaActualizacion": "15/04/2026 12:40 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,16 +314,16 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "16/04/2026 07:26 a.m."
+      "ultimaActualizacion": "15/04/2026 04:57 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 453,
-      "venta": 467,
+      "compra": 451,
+      "venta": 465,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 08:35 a.m."
+      "ultimaActualizacion": "16/04/2026 09:22 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
