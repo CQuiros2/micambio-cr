@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-16T17:45:57.910Z",
+  "ultimaActualizacion": "2026-04-16T18:49:10.776Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 453.5,
-      "venta": 468,
+      "compra": 452,
+      "venta": 466.5,
       "diferencial": 14.5,
-      "ultimaActualizacion": "15/04/2026 01:52 p.m."
+      "ultimaActualizacion": "16/04/2026 11:46 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,10 +239,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 457,
-      "venta": 474,
-      "diferencial": 17,
-      "ultimaActualizacion": "16/04/2026 10:17 a.m."
+      "compra": 454,
+      "venta": 473,
+      "diferencial": 19,
+      "ultimaActualizacion": "16/04/2026 12:09 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,8 +336,8 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Airpak Casa de Cambio",
-    "valor": 457
+    "nombre": "Cooperativa San Marcos R.L.",
+    "valor": 455
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
