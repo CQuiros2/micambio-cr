@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-16T18:49:10.776Z",
+  "ultimaActualizacion": "2026-04-16T19:50:53.028Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 451,
-      "venta": 465,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 01:22 p.m."
+      "ultimaActualizacion": "16/04/2026 01:17 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 12:44 p.m."
+      "ultimaActualizacion": "16/04/2026 01:21 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 452,
-      "venta": 465,
+      "compra": 451,
+      "venta": 464,
       "diferencial": 13,
-      "ultimaActualizacion": "15/04/2026 02:40 p.m."
+      "ultimaActualizacion": "16/04/2026 01:31 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
