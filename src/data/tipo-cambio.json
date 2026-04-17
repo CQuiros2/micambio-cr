@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-17T22:38:44.463Z",
+  "ultimaActualizacion": "2026-04-17T23:22:33.994Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 446,
-      "venta": 464,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "16/04/2026 05:07 p.m."
+      "ultimaActualizacion": "17/04/2026 05:14 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 453,
-      "venta": 461,
-      "diferencial": 8,
-      "ultimaActualizacion": "16/04/2026 05:36 p.m."
+      "compra": 452,
+      "venta": 462,
+      "diferencial": 10,
+      "ultimaActualizacion": "17/04/2026 05:17 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -329,10 +329,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "15/04/2026 04:56 p.m."
+      "ultimaActualizacion": "17/04/2026 05:19 p.m."
     }
   ],
   "mejorCompra": {
