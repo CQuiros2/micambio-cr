@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-20T20:41:00.394Z",
+  "ultimaActualizacion": "2026-04-20T21:33:35.632Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 446,
-      "venta": 464,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "16/04/2026 01:21 p.m."
+      "ultimaActualizacion": "20/04/2026 03:04 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 374.1,
-      "venta": 539.62,
-      "diferencial": 165.52,
-      "ultimaActualizacion": "17/04/2026 03:02 p.m."
+      "compra": 373.91,
+      "venta": 539.33,
+      "diferencial": 165.42,
+      "ultimaActualizacion": "20/04/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 446,
-      "venta": 464,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "16/04/2026 02:24 p.m."
+      "ultimaActualizacion": "20/04/2026 03:10 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
