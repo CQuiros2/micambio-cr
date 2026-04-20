@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-20T17:54:52.808Z",
+  "ultimaActualizacion": "2026-04-20T18:54:39.311Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 452.65,
-      "venta": 458.52,
+      "compra": 452.86,
+      "venta": 458.73,
       "diferencial": 5.87,
-      "ultimaActualizacion": "20/04/2026 11:29 a.m."
+      "ultimaActualizacion": "20/04/2026 12:46 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 448,
-      "venta": 466,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "15/04/2026 12:15 p.m."
+      "ultimaActualizacion": "20/04/2026 12:30 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 458.52
+    "valor": 458.73
   },
   "historico": [
     {
