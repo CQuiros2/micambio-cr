@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-21T20:11:55.016Z",
+  "ultimaActualizacion": "2026-04-21T21:07:02.697Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 446,
-      "venta": 464,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "20/04/2026 09:13 p.m."
+      "ultimaActualizacion": "21/04/2026 02:58 p.m."
     },
     {
       "tipoEntidad": "Financieras",
