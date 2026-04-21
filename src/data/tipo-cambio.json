@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-21T22:34:32.238Z",
+  "ultimaActualizacion": "2026-04-21T23:20:00.817Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 445,
-      "venta": 463,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "17/04/2026 05:14 p.m."
+      "ultimaActualizacion": "21/04/2026 05:06 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 453.1,
-      "venta": 458.97,
+      "compra": 453.61,
+      "venta": 459.48,
       "diferencial": 5.87,
-      "ultimaActualizacion": "21/04/2026 12:17 p.m."
+      "ultimaActualizacion": "21/04/2026 04:47 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.1
+    "valor": 453.61
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 458.97
+    "valor": 459.48
   },
   "historico": [
     {
