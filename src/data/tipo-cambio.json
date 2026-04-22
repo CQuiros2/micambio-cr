@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-22T20:12:43.045Z",
+  "ultimaActualizacion": "2026-04-22T21:10:53.567Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 444,
-      "venta": 462,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "21/04/2026 06:43 p.m."
+      "ultimaActualizacion": "22/04/2026 02:23 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 450,
-      "venta": 464.5,
+      "compra": 449,
+      "venta": 463.5,
       "diferencial": 14.5,
-      "ultimaActualizacion": "17/04/2026 05:49 p.m."
+      "ultimaActualizacion": "22/04/2026 02:52 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
