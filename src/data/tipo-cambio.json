@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-21T23:53:56.489Z",
+  "ultimaActualizacion": "2026-04-22T14:30:24.228Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "21/04/2026 01:04 p.m."
+      "ultimaActualizacion": "22/04/2026 08:18 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "21/04/2026 02:58 p.m."
+      "ultimaActualizacion": "21/04/2026 06:43 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -188,7 +188,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "17/04/2026 06:18 p.m."
+      "ultimaActualizacion": "21/04/2026 06:18 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -197,7 +197,7 @@
       "compra": 446,
       "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "21/04/2026 04:10 p.m."
+      "ultimaActualizacion": "22/04/2026 12:28 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 446,
-      "venta": 464,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "20/04/2026 08:02 a.m."
+      "ultimaActualizacion": "22/04/2026 07:57 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -242,7 +242,7 @@
       "compra": 453,
       "venta": 470,
       "diferencial": 17,
-      "ultimaActualizacion": "17/04/2026 11:35 a.m."
+      "ultimaActualizacion": "21/04/2026 11:05 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "21/04/2026 12:42 a.m."
+      "ultimaActualizacion": "22/04/2026 12:37 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "21/04/2026 08:42 a.m."
+      "ultimaActualizacion": "22/04/2026 08:22 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "21/04/2026 07:19 a.m."
+      "ultimaActualizacion": "22/04/2026 07:06 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -458,6 +458,11 @@
       "fecha": "2026-04-21",
       "compra": 451.72,
       "venta": 458.01
+    },
+    {
+      "fecha": "2026-04-22",
+      "compra": 452.95,
+      "venta": 457.14
     }
   ]
 }
