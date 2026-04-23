@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-23T15:09:00.458Z",
+  "ultimaActualizacion": "2026-04-23T16:52:00.977Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 445,
-      "venta": 463,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "20/04/2026 08:53 a.m."
+      "ultimaActualizacion": "23/04/2026 10:04 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "22/04/2026 09:01 a.m."
+      "ultimaActualizacion": "23/04/2026 09:31 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -231,9 +231,9 @@
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
       "compra": 449,
-      "venta": 459,
-      "diferencial": 10,
-      "ultimaActualizacion": "23/04/2026 08:57 a.m."
+      "venta": 462,
+      "diferencial": 13,
+      "ultimaActualizacion": "23/04/2026 09:09 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 445,
-      "venta": 463,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "20/04/2026 03:10 p.m."
+      "ultimaActualizacion": "23/04/2026 09:28 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -340,8 +340,8 @@
     "valor": 453.56
   },
   "mejorVenta": {
-    "nombre": "Cooperativa San Marcos R.L.",
-    "valor": 459
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 459.43
   },
   "historico": [
     {
