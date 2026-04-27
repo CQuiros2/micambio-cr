@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-25T00:01:04.256Z",
+  "ultimaActualizacion": "2026-04-27T14:59:38.247Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -8,7 +8,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "21/04/2026 02:03 p.m."
+      "ultimaActualizacion": "27/04/2026 08:33 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "24/04/2026 08:43 a.m."
+      "ultimaActualizacion": "27/04/2026 08:38 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "24/04/2026 08:17 a.m."
+      "ultimaActualizacion": "27/04/2026 08:28 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 446,
       "venta": 462,
       "diferencial": 16,
-      "ultimaActualizacion": "23/04/2026 11:20 p.m."
+      "ultimaActualizacion": "25/04/2026 04:28 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "24/04/2026 09:28 a.m."
+      "ultimaActualizacion": "27/04/2026 08:54 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "23/04/2026 09:48 p.m."
+      "ultimaActualizacion": "24/04/2026 09:33 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 446,
       "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "24/04/2026 12:29 a.m."
+      "ultimaActualizacion": "27/04/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 453.04,
-      "venta": 458.91,
+      "compra": 452.1,
+      "venta": 457.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "23/04/2026 12:45 p.m."
+      "ultimaActualizacion": "27/04/2026 08:44 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "24/04/2026 12:38 p.m."
+      "ultimaActualizacion": "27/04/2026 12:26 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "24/04/2026 08:28 a.m."
+      "ultimaActualizacion": "27/04/2026 08:51 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "24/04/2026 07:17 a.m."
+      "ultimaActualizacion": "27/04/2026 08:03 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.04
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 453
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 458.91
+    "valor": 457.97
   },
   "historico": [
     {
@@ -476,6 +476,16 @@
     },
     {
       "fecha": "2026-04-25",
+      "compra": 451.57,
+      "venta": 457.22
+    },
+    {
+      "fecha": "2026-04-26",
+      "compra": 451.57,
+      "venta": 457.22
+    },
+    {
+      "fecha": "2026-04-27",
       "compra": 451.57,
       "venta": 457.22
     }
