@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-28T22:12:49.461Z",
+  "ultimaActualizacion": "2026-04-28T23:11:22.709Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 448,
-      "venta": 462,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "28/04/2026 08:37 a.m."
+      "ultimaActualizacion": "28/04/2026 04:38 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -71,7 +71,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "27/04/2026 02:20 p.m."
+      "ultimaActualizacion": "28/04/2026 04:44 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 372.98,
-      "venta": 538,
-      "diferencial": 165.02,
-      "ultimaActualizacion": "28/04/2026 04:08 p.m."
+      "compra": 372.74,
+      "venta": 537.64,
+      "diferencial": 164.9,
+      "ultimaActualizacion": "28/04/2026 05:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
