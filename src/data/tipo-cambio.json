@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-04-29T15:05:05.175Z",
+  "ultimaActualizacion": "2026-04-29T16:50:15.134Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 445,
-      "venta": 463,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "28/04/2026 08:40 a.m."
+      "ultimaActualizacion": "29/04/2026 09:08 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -251,7 +251,7 @@
       "compra": 452.55,
       "venta": 458.42,
       "diferencial": 5.87,
-      "ultimaActualizacion": "29/04/2026 08:31 a.m."
+      "ultimaActualizacion": "29/04/2026 09:39 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
