@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-05-06T16:58:30.104Z",
+  "ultimaActualizacion": "2026-05-06T18:17:38.325Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 450,
-      "venta": 464,
+      "compra": 451,
+      "venta": 465,
       "diferencial": 14,
-      "ultimaActualizacion": "05/05/2026 12:54 p.m."
+      "ultimaActualizacion": "06/05/2026 11:39 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 455.11,
-      "venta": 460.98,
+      "compra": 456.09,
+      "venta": 461.96,
       "diferencial": 5.87,
-      "ultimaActualizacion": "06/05/2026 10:35 a.m."
+      "ultimaActualizacion": "06/05/2026 12:11 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -293,10 +293,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "06/05/2026 08:25 a.m."
+      "ultimaActualizacion": "06/05/2026 12:09 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.11
+    "valor": 456.09
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 460.98
+    "valor": 461.96
   },
   "historico": [
     {
