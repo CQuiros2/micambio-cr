@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-05-07T21:16:40.177Z",
+  "ultimaActualizacion": "2026-05-07T22:18:09.512Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 451,
-      "venta": 465,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "07/05/2026 12:24 p.m."
+      "ultimaActualizacion": "07/05/2026 04:14 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 455.1,
-      "venta": 460.97,
+      "compra": 454.46,
+      "venta": 460.33,
       "diferencial": 5.87,
-      "ultimaActualizacion": "07/05/2026 12:53 p.m."
+      "ultimaActualizacion": "07/05/2026 03:58 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 460.97
+    "valor": 460.33
   },
   "historico": [
     {
