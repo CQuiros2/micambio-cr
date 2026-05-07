@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-05-07T17:14:02.879Z",
+  "ultimaActualizacion": "2026-05-07T19:00:18.397Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 452,
-      "venta": 466,
+      "compra": 451,
+      "venta": 465,
       "diferencial": 14,
-      "ultimaActualizacion": "06/05/2026 01:27 p.m."
+      "ultimaActualizacion": "07/05/2026 12:24 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,19 +32,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 451,
-      "venta": 465,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "07/05/2026 08:18 a.m."
+      "ultimaActualizacion": "07/05/2026 12:57 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 447,
+      "venta": 465,
       "diferencial": 18,
-      "ultimaActualizacion": "05/05/2026 01:03 p.m."
+      "ultimaActualizacion": "07/05/2026 12:58 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -239,10 +239,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 454,
-      "venta": 471,
+      "compra": 456,
+      "venta": 473,
       "diferencial": 17,
-      "ultimaActualizacion": "05/05/2026 05:25 p.m."
+      "ultimaActualizacion": "07/05/2026 12:36 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -251,7 +251,7 @@
       "compra": 455.1,
       "venta": 460.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "07/05/2026 10:53 a.m."
+      "ultimaActualizacion": "07/05/2026 12:53 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,8 +336,8 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.1
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 456
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
