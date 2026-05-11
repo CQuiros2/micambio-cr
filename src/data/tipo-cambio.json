@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-11T22:07:41.529Z",
+  "ultimaActualizacion": "2026-05-11T23:09:09.005Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 375.88,
-      "venta": 542.18,
-      "diferencial": 166.3,
-      "ultimaActualizacion": "11/05/2026 12:08 p.m."
+      "compra": 373.73,
+      "venta": 539.07,
+      "diferencial": 165.34,
+      "ultimaActualizacion": "11/05/2026 05:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -329,10 +329,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 452,
-      "venta": 466,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "07/05/2026 08:06 a.m."
+      "ultimaActualizacion": "11/05/2026 04:46 p.m."
     }
   ],
   "mejorCompra": {
