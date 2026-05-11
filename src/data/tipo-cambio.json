@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-11T17:49:59.976Z",
+  "ultimaActualizacion": "2026-05-11T20:58:14.345Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 451,
-      "venta": 465,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "05/05/2026 01:23 p.m."
+      "ultimaActualizacion": "11/05/2026 01:33 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -41,19 +41,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 447,
-      "venta": 465,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "07/05/2026 12:58 p.m."
+      "ultimaActualizacion": "11/05/2026 01:32 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 452.5,
-      "venta": 465,
+      "compra": 448.5,
+      "venta": 461,
       "diferencial": 12.5,
-      "ultimaActualizacion": "06/05/2026 10:26 a.m."
+      "ultimaActualizacion": "11/05/2026 12:19 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 451,
-      "venta": 466,
+      "compra": 449,
+      "venta": 464,
       "diferencial": 15,
-      "ultimaActualizacion": "09/05/2026 04:36 p.m."
+      "ultimaActualizacion": "11/05/2026 12:41 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -131,19 +131,19 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 447,
-      "venta": 467,
+      "compra": 446,
+      "venta": 466,
       "diferencial": 20,
-      "ultimaActualizacion": "08/05/2026 10:15 a.m."
+      "ultimaActualizacion": "11/05/2026 02:31 p.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 454,
-      "venta": 462,
-      "diferencial": 8,
-      "ultimaActualizacion": "11/05/2026 09:04 a.m."
+      "compra": 452,
+      "venta": 461,
+      "diferencial": 9,
+      "ultimaActualizacion": "11/05/2026 12:44 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -176,19 +176,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 451,
-      "venta": 465,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "05/05/2026 03:39 p.m."
+      "ultimaActualizacion": "11/05/2026 02:54 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 451,
-      "venta": 465,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "08/05/2026 06:47 p.m."
+      "ultimaActualizacion": "11/05/2026 02:40 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 451,
-      "venta": 467,
+      "compra": 450,
+      "venta": 466,
       "diferencial": 16,
-      "ultimaActualizacion": "06/05/2026 01:28 p.m."
+      "ultimaActualizacion": "11/05/2026 02:16 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,19 +239,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 456,
-      "venta": 473,
+      "compra": 454,
+      "venta": 471,
       "diferencial": 17,
-      "ultimaActualizacion": "07/05/2026 12:36 p.m."
+      "ultimaActualizacion": "11/05/2026 12:17 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 454.6,
-      "venta": 460.47,
+      "compra": 454.1,
+      "venta": 459.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "11/05/2026 10:13 a.m."
+      "ultimaActualizacion": "11/05/2026 12:14 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 375.25,
-      "venta": 541.27,
-      "diferencial": 166.02,
-      "ultimaActualizacion": "07/05/2026 03:08 p.m."
+      "compra": 375.88,
+      "venta": 542.18,
+      "diferencial": 166.3,
+      "ultimaActualizacion": "11/05/2026 12:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -284,19 +284,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "05/05/2026 01:10 p.m."
+      "ultimaActualizacion": "11/05/2026 01:50 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 451,
-      "venta": 465,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 08:31 a.m."
+      "ultimaActualizacion": "11/05/2026 12:18 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Airpak Casa de Cambio",
-    "valor": 456
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 454.1
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 460.47
+    "valor": 459.97
   },
   "historico": [
     {
