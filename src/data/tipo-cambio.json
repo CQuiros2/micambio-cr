@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-12T19:20:33.987Z",
+  "ultimaActualizacion": "2026-05-12T20:57:17.348Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "12/05/2026 08:52 a.m."
+      "ultimaActualizacion": "12/05/2026 02:03 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -158,10 +158,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Mutual Cartago de Ahorro y Préstamo",
       "slug": "mutualcartago.fi.cr",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "05/05/2026 01:11 p.m."
+      "ultimaActualizacion": "12/05/2026 01:36 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 02:40 p.m."
+      "ultimaActualizacion": "12/05/2026 02:49 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,19 +239,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 454,
-      "venta": 471,
+      "compra": 453,
+      "venta": 470,
       "diferencial": 17,
-      "ultimaActualizacion": "11/05/2026 12:17 p.m."
+      "ultimaActualizacion": "12/05/2026 02:48 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 454.1,
-      "venta": 459.97,
+      "compra": 453.65,
+      "venta": 459.52,
       "diferencial": 5.87,
-      "ultimaActualizacion": "11/05/2026 12:14 p.m."
+      "ultimaActualizacion": "12/05/2026 02:43 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 454,
-      "venta": 472,
+      "compra": 452,
+      "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "12/05/2026 01:15 a.m."
+      "ultimaActualizacion": "12/05/2026 02:27 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.1
+    "valor": 453.65
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 459.97
+    "valor": 459.52
   },
   "historico": [
     {
