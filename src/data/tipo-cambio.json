@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-12T15:36:43.056Z",
+  "ultimaActualizacion": "2026-05-12T17:36:04.942Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 447,
-      "venta": 465,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "08/05/2026 05:13 p.m."
+      "ultimaActualizacion": "12/05/2026 10:30 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 446,
-      "venta": 466,
+      "compra": 447,
+      "venta": 467,
       "diferencial": 20,
-      "ultimaActualizacion": "11/05/2026 02:31 p.m."
+      "ultimaActualizacion": "12/05/2026 09:55 a.m."
     },
     {
       "tipoEntidad": "Financieras",
