@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-12T22:09:41.355Z",
+  "ultimaActualizacion": "2026-05-12T23:17:07.924Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 449,
-      "venta": 464,
+      "compra": 448,
+      "venta": 463,
       "diferencial": 15,
-      "ultimaActualizacion": "11/05/2026 03:07 p.m."
+      "ultimaActualizacion": "12/05/2026 04:58 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -257,19 +257,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Cambia con Wiz Limitada",
       "slug": "cambioswiz.com",
-      "compra": 377,
-      "venta": 542,
+      "compra": 375.5,
+      "venta": 540.5,
       "diferencial": 165,
-      "ultimaActualizacion": "06/05/2026 04:50 p.m."
+      "ultimaActualizacion": "12/05/2026 04:20 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 375.25,
-      "venta": 541.27,
-      "diferencial": 166.02,
-      "ultimaActualizacion": "12/05/2026 12:08 p.m."
+      "compra": 373.11,
+      "venta": 538.19,
+      "diferencial": 165.08,
+      "ultimaActualizacion": "12/05/2026 05:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
