@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-12T00:08:05.946Z",
+  "ultimaActualizacion": "2026-05-12T15:36:43.056Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 08:51 a.m."
+      "ultimaActualizacion": "12/05/2026 08:52 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 08:26 a.m."
+      "ultimaActualizacion": "12/05/2026 08:20 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 449,
       "venta": 464,
       "diferencial": 15,
-      "ultimaActualizacion": "11/05/2026 12:41 p.m."
+      "ultimaActualizacion": "11/05/2026 11:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 447,
-      "venta": 465,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "11/05/2026 09:06 a.m."
+      "ultimaActualizacion": "12/05/2026 09:04 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 447,
-      "venta": 465,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "11/05/2026 08:50 a.m."
+      "ultimaActualizacion": "12/05/2026 09:00 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 447,
       "venta": 465,
       "diferencial": 18,
-      "ultimaActualizacion": "10/05/2026 12:25 p.m."
+      "ultimaActualizacion": "11/05/2026 08:40 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 449,
       "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "11/05/2026 12:29 a.m."
+      "ultimaActualizacion": "12/05/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -278,7 +278,7 @@
       "compra": 454,
       "venta": 472,
       "diferencial": 18,
-      "ultimaActualizacion": "11/05/2026 09:26 a.m."
+      "ultimaActualizacion": "12/05/2026 01:15 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,10 +293,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 450,
+      "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 12:18 p.m."
+      "ultimaActualizacion": "12/05/2026 08:18 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,16 +314,16 @@
       "compra": 450,
       "venta": 464,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 09:11 a.m."
+      "ultimaActualizacion": "12/05/2026 07:36 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 451,
-      "venta": 465,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "06/05/2026 08:05 a.m."
+      "ultimaActualizacion": "12/05/2026 09:35 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
