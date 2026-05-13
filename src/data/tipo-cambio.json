@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-13T00:14:42.444Z",
+  "ultimaActualizacion": "2026-05-13T15:39:49.446Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "12/05/2026 02:03 p.m."
+      "ultimaActualizacion": "13/05/2026 08:35 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "12/05/2026 08:20 a.m."
+      "ultimaActualizacion": "13/05/2026 08:17 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 449,
       "venta": 464,
       "diferencial": 15,
-      "ultimaActualizacion": "11/05/2026 11:27 p.m."
+      "ultimaActualizacion": "12/05/2026 11:29 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,28 +95,28 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 446,
-      "venta": 464,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "12/05/2026 09:04 a.m."
+      "ultimaActualizacion": "13/05/2026 08:48 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 446,
-      "venta": 464,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "11/05/2026 05:21 p.m."
+      "ultimaActualizacion": "13/05/2026 09:34 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 446,
-      "venta": 464,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "12/05/2026 09:00 a.m."
+      "ultimaActualizacion": "13/05/2026 09:00 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 447,
       "venta": 465,
       "diferencial": 18,
-      "ultimaActualizacion": "11/05/2026 08:40 p.m."
+      "ultimaActualizacion": "12/05/2026 10:55 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 449,
       "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "12/05/2026 12:29 a.m."
+      "ultimaActualizacion": "13/05/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 447,
-      "venta": 465,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "07/05/2026 07:51 a.m."
+      "ultimaActualizacion": "13/05/2026 07:49 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 454.02,
-      "venta": 459.89,
+      "compra": 453.06,
+      "venta": 458.93,
       "diferencial": 5.87,
-      "ultimaActualizacion": "12/05/2026 06:07 p.m."
+      "ultimaActualizacion": "13/05/2026 08:13 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "12/05/2026 02:27 p.m."
+      "ultimaActualizacion": "13/05/2026 01:23 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,28 +293,28 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "12/05/2026 08:18 a.m."
+      "ultimaActualizacion": "13/05/2026 08:48 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 449,
-      "venta": 467,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "06/05/2026 02:35 p.m."
+      "ultimaActualizacion": "13/05/2026 07:53 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "12/05/2026 07:36 a.m."
+      "ultimaActualizacion": "13/05/2026 08:04 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.02
+    "valor": 453.06
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 459.89
+    "valor": 458.93
   },
   "historico": [
     {
