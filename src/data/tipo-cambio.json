@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-13T19:22:41.059Z",
+  "ultimaActualizacion": "2026-05-13T21:05:23.225Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -86,10 +86,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 447,
-      "venta": 465,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "05/05/2026 01:51 p.m."
+      "ultimaActualizacion": "13/05/2026 01:36 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 447,
-      "venta": 465,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "12/05/2026 10:55 p.m."
+      "ultimaActualizacion": "13/05/2026 02:04 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -141,18 +141,18 @@
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
       "compra": 452,
-      "venta": 461,
-      "diferencial": 9,
-      "ultimaActualizacion": "11/05/2026 12:44 p.m."
+      "venta": 460,
+      "diferencial": 8,
+      "ultimaActualizacion": "13/05/2026 01:29 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 448,
-      "venta": 463,
+      "compra": 447,
+      "venta": 462,
       "diferencial": 15,
-      "ultimaActualizacion": "12/05/2026 04:58 p.m."
+      "ultimaActualizacion": "13/05/2026 02:37 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 02:54 p.m."
+      "ultimaActualizacion": "13/05/2026 02:15 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -194,10 +194,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 449,
-      "venta": 467,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "13/05/2026 12:29 a.m."
+      "ultimaActualizacion": "13/05/2026 03:03 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
