@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-13T17:37:44.047Z",
+  "ultimaActualizacion": "2026-05-13T19:22:41.059Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 01:33 p.m."
+      "ultimaActualizacion": "13/05/2026 01:13 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 449,
-      "venta": 464,
+      "compra": 447,
+      "venta": 462,
       "diferencial": 15,
-      "ultimaActualizacion": "12/05/2026 11:29 p.m."
+      "ultimaActualizacion": "13/05/2026 12:17 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 452.33,
-      "venta": 458.2,
+      "compra": 452.08,
+      "venta": 457.95,
       "diferencial": 5.87,
-      "ultimaActualizacion": "13/05/2026 09:59 a.m."
+      "ultimaActualizacion": "13/05/2026 11:45 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 458.2
+    "valor": 457.95
   },
   "historico": [
     {
