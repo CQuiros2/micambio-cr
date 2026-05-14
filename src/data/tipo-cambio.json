@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-14T20:41:47.748Z",
+  "ultimaActualizacion": "2026-05-14T21:52:26.097Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 447,
-      "venta": 462,
+      "compra": 446,
+      "venta": 461,
       "diferencial": 15,
-      "ultimaActualizacion": "13/05/2026 02:37 p.m."
+      "ultimaActualizacion": "14/05/2026 03:03 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 448,
-      "venta": 464,
+      "compra": 446,
+      "venta": 462,
       "diferencial": 16,
-      "ultimaActualizacion": "12/05/2026 05:54 p.m."
+      "ultimaActualizacion": "14/05/2026 03:21 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 452.1,
-      "venta": 457.97,
+      "compra": 451.06,
+      "venta": 456.93,
       "diferencial": 5.87,
-      "ultimaActualizacion": "14/05/2026 01:50 p.m."
+      "ultimaActualizacion": "14/05/2026 03:33 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -329,19 +329,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "11/05/2026 04:46 p.m."
+      "ultimaActualizacion": "14/05/2026 02:43 p.m."
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 452.1
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 452
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 457.97
+    "valor": 456.93
   },
   "historico": [
     {
