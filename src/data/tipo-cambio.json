@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-14T21:52:26.097Z",
+  "ultimaActualizacion": "2026-05-14T22:50:23.295Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 448,
-      "venta": 462,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "12/05/2026 02:49 p.m."
+      "ultimaActualizacion": "14/05/2026 04:11 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 449,
-      "venta": 462,
+      "compra": 448,
+      "venta": 461,
       "diferencial": 13,
-      "ultimaActualizacion": "13/05/2026 04:46 p.m."
+      "ultimaActualizacion": "14/05/2026 03:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.06,
-      "venta": 456.93,
+      "compra": 450.1,
+      "venta": 455.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "14/05/2026 03:33 p.m."
+      "ultimaActualizacion": "14/05/2026 04:10 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.93
+    "valor": 455.97
   },
   "historico": [
     {
