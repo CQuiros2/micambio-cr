@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-15T22:12:49.327Z",
+  "ultimaActualizacion": "2026-05-15T23:13:27.069Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 448.5,
-      "venta": 461,
+      "compra": 447,
+      "venta": 459.5,
       "diferencial": 12.5,
-      "ultimaActualizacion": "11/05/2026 12:19 p.m."
+      "ultimaActualizacion": "15/05/2026 04:41 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "14/05/2026 04:11 p.m."
+      "ultimaActualizacion": "15/05/2026 04:42 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.3,
-      "venta": 457.17,
+      "compra": 450.1,
+      "venta": 455.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "15/05/2026 04:03 p.m."
+      "ultimaActualizacion": "15/05/2026 05:11 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.3
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 451
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 457.17
+    "valor": 455.97
   },
   "historico": [
     {
