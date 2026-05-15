@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-05-15T15:09:28.215Z",
+  "ultimaActualizacion": "2026-05-15T16:59:52.320Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 447,
-      "venta": 461,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "14/05/2026 10:02 a.m."
+      "ultimaActualizacion": "15/05/2026 09:17 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -80,7 +80,7 @@
       "compra": 447,
       "venta": 462,
       "diferencial": 15,
-      "ultimaActualizacion": "14/05/2026 11:36 p.m."
+      "ultimaActualizacion": "15/05/2026 10:09 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 449,
-      "venta": 463.5,
+      "compra": 448.5,
+      "venta": 463,
       "diferencial": 14.5,
-      "ultimaActualizacion": "13/05/2026 04:49 p.m."
+      "ultimaActualizacion": "15/05/2026 09:40 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,19 +239,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 452,
-      "venta": 469,
+      "compra": 451,
+      "venta": 468,
       "diferencial": 17,
-      "ultimaActualizacion": "14/05/2026 12:19 p.m."
+      "ultimaActualizacion": "15/05/2026 10:31 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.1,
-      "venta": 455.97,
+      "compra": 449.1,
+      "venta": 454.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "15/05/2026 07:57 a.m."
+      "ultimaActualizacion": "15/05/2026 10:01 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Airpak Casa de Cambio",
-    "valor": 452
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 451
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.97
+    "valor": 454.97
   },
   "historico": [
     {
