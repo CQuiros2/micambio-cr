@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-19T01:48:45.574Z",
+  "ultimaActualizacion": "2026-05-19T16:14:30.644Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "18/05/2026 08:31 a.m."
+      "ultimaActualizacion": "19/05/2026 08:28 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "18/05/2026 08:30 a.m."
+      "ultimaActualizacion": "19/05/2026 08:13 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -59,10 +59,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco CMB",
       "slug": "bancocmb.fi.cr",
-      "compra": 442,
-      "venta": 466,
+      "compra": 440,
+      "venta": 464,
       "diferencial": 24,
-      "ultimaActualizacion": "20/04/2026 09:20 a.m."
+      "ultimaActualizacion": "19/05/2026 09:24 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "16/05/2026 04:40 p.m."
+      "ultimaActualizacion": "18/05/2026 11:28 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 08:55 a.m."
+      "ultimaActualizacion": "19/05/2026 09:00 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 09:00 a.m."
+      "ultimaActualizacion": "19/05/2026 08:48 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 443,
-      "venta": 463,
+      "compra": 441,
+      "venta": 461,
       "diferencial": 20,
-      "ultimaActualizacion": "18/05/2026 03:31 p.m."
+      "ultimaActualizacion": "19/05/2026 09:52 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 12:29 a.m."
+      "ultimaActualizacion": "19/05/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -206,7 +206,7 @@
       "compra": 446,
       "venta": 462,
       "diferencial": 16,
-      "ultimaActualizacion": "14/05/2026 03:21 p.m."
+      "ultimaActualizacion": "19/05/2026 09:08 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.1,
-      "venta": 455.97,
+      "compra": 450.28,
+      "venta": 456.15,
       "diferencial": 5.87,
-      "ultimaActualizacion": "18/05/2026 03:52 p.m."
+      "ultimaActualizacion": "19/05/2026 05:35 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 448,
       "venta": 466,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 12:26 a.m."
+      "ultimaActualizacion": "19/05/2026 12:38 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "18/05/2026 08:24 a.m."
+      "ultimaActualizacion": "19/05/2026 08:51 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,16 +314,16 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "18/05/2026 07:54 a.m."
+      "ultimaActualizacion": "19/05/2026 07:28 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "15/05/2026 08:41 a.m."
+      "ultimaActualizacion": "19/05/2026 09:18 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 450.1
+    "valor": 450.28
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.97
+    "valor": 456.15
   },
   "historico": [
     {
