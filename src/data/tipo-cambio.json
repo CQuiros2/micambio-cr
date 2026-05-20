@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-20T20:37:23.449Z",
+  "ultimaActualizacion": "2026-05-20T22:13:15.098Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 441,
-      "venta": 461,
+      "compra": 444,
+      "venta": 464,
       "diferencial": 20,
-      "ultimaActualizacion": "19/05/2026 09:52 a.m."
+      "ultimaActualizacion": "20/05/2026 03:44 p.m."
     },
     {
       "tipoEntidad": "Financieras",
