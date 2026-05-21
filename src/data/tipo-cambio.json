@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-21T18:14:09.252Z",
+  "ultimaActualizacion": "2026-05-21T20:12:06.039Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "21/05/2026 08:46 a.m."
+      "ultimaActualizacion": "21/05/2026 12:43 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 444,
-      "venta": 459,
+      "compra": 445,
+      "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "20/05/2026 11:26 p.m."
+      "ultimaActualizacion": "21/05/2026 12:46 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -158,10 +158,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Mutual Cartago de Ahorro y Préstamo",
       "slug": "mutualcartago.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "18/05/2026 01:45 p.m."
+      "ultimaActualizacion": "21/05/2026 12:30 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,19 +248,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.07,
-      "venta": 455.94,
+      "compra": 450.82,
+      "venta": 456.69,
       "diferencial": 5.87,
-      "ultimaActualizacion": "21/05/2026 12:05 p.m."
+      "ultimaActualizacion": "21/05/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Cambia con Wiz Limitada",
       "slug": "cambioswiz.com",
-      "compra": 373,
-      "venta": 533,
+      "compra": 372,
+      "venta": 532,
       "diferencial": 160,
-      "ultimaActualizacion": "18/05/2026 09:02 a.m."
+      "ultimaActualizacion": "21/05/2026 01:29 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 449,
-      "venta": 466,
+      "compra": 451,
+      "venta": 468,
       "diferencial": 17,
-      "ultimaActualizacion": "21/05/2026 01:16 a.m."
+      "ultimaActualizacion": "21/05/2026 12:55 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,28 +293,28 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "21/05/2026 08:21 a.m."
+      "ultimaActualizacion": "21/05/2026 12:22 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 442,
-      "venta": 460,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 07:41 a.m."
+      "ultimaActualizacion": "21/05/2026 12:53 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "21/05/2026 08:45 a.m."
+      "ultimaActualizacion": "21/05/2026 12:52 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 450.07
+    "nombre": "Casa de Cambio Teledolar S. A.",
+    "valor": 451
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.94
+    "valor": 456.69
   },
   "historico": [
     {
