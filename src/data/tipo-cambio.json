@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-21T01:33:03.388Z",
+  "ultimaActualizacion": "2026-05-21T16:11:31.137Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/05/2026 08:37 a.m."
+      "ultimaActualizacion": "21/05/2026 08:46 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "20/05/2026 08:24 a.m."
+      "ultimaActualizacion": "21/05/2026 08:14 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 444,
       "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "19/05/2026 11:29 p.m."
+      "ultimaActualizacion": "20/05/2026 11:26 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "20/05/2026 09:15 a.m."
+      "ultimaActualizacion": "21/05/2026 08:56 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "20/05/2026 09:00 a.m."
+      "ultimaActualizacion": "21/05/2026 08:51 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "19/05/2026 09:50 p.m."
+      "ultimaActualizacion": "20/05/2026 08:30 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "20/05/2026 12:29 a.m."
+      "ultimaActualizacion": "21/05/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -230,10 +230,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 449,
-      "venta": 462,
+      "compra": 447,
+      "venta": 460,
       "diferencial": 13,
-      "ultimaActualizacion": "13/05/2026 10:22 a.m."
+      "ultimaActualizacion": "21/05/2026 08:33 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 374.73,
-      "venta": 540.52,
-      "diferencial": 165.79,
-      "ultimaActualizacion": "20/05/2026 12:08 p.m."
+      "compra": 371.5,
+      "venta": 535.86,
+      "diferencial": 164.36,
+      "ultimaActualizacion": "20/05/2026 09:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 449,
       "venta": 466,
       "diferencial": 17,
-      "ultimaActualizacion": "20/05/2026 01:11 p.m."
+      "ultimaActualizacion": "21/05/2026 01:16 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/05/2026 08:19 a.m."
+      "ultimaActualizacion": "21/05/2026 08:21 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/05/2026 07:32 a.m."
+      "ultimaActualizacion": "21/05/2026 08:45 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
