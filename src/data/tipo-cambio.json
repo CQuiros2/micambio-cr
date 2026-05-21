@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-21T21:50:06.049Z",
+  "ultimaActualizacion": "2026-05-21T22:55:10.161Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 440,
+      "compra": 442,
       "venta": 460,
-      "diferencial": 20,
-      "ultimaActualizacion": "21/05/2026 11:09 a.m."
+      "diferencial": 18,
+      "ultimaActualizacion": "21/05/2026 04:45 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
