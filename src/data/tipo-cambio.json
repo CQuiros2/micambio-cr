@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-22T22:51:12.106Z",
+  "ultimaActualizacion": "2026-05-22T23:58:42.323Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 449,
-      "venta": 457,
-      "diferencial": 8,
-      "ultimaActualizacion": "22/05/2026 12:38 p.m."
+      "compra": 448,
+      "venta": 458,
+      "diferencial": 10,
+      "ultimaActualizacion": "22/05/2026 05:25 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "21/05/2026 06:28 p.m."
+      "ultimaActualizacion": "22/05/2026 05:06 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 371.81,
-      "venta": 536.31,
-      "diferencial": 164.5,
-      "ultimaActualizacion": "21/05/2026 05:08 p.m."
+      "compra": 371.19,
+      "venta": 535.42,
+      "diferencial": 164.23,
+      "ultimaActualizacion": "22/05/2026 05:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
