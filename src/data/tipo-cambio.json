@@ -1,50 +1,50 @@
 {
-  "ultimaActualizacion": "2026-05-28T16:48:05.307Z",
+  "ultimaActualizacion": "2026-05-28T19:28:19.900Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 447,
-      "venta": 461,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "27/05/2026 01:09 p.m."
+      "ultimaActualizacion": "28/05/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 08:41 a.m."
+      "ultimaActualizacion": "28/05/2026 01:03 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "18/05/2026 01:07 p.m."
+      "ultimaActualizacion": "28/05/2026 01:21 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 08:15 a.m."
+      "ultimaActualizacion": "28/05/2026 01:00 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "28/05/2026 09:56 a.m."
+      "ultimaActualizacion": "28/05/2026 01:22 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -68,28 +68,28 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "21/05/2026 04:45 p.m."
+      "ultimaActualizacion": "28/05/2026 01:19 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 445,
-      "venta": 460,
+      "compra": 447,
+      "venta": 462,
       "diferencial": 15,
-      "ultimaActualizacion": "27/05/2026 11:33 p.m."
+      "ultimaActualizacion": "28/05/2026 01:05 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 446,
+      "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "15/05/2026 01:12 p.m."
+      "ultimaActualizacion": "28/05/2026 01:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "28/05/2026 09:06 a.m."
+      "ultimaActualizacion": "28/05/2026 01:25 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 449,
-      "venta": 457,
+      "compra": 450,
+      "venta": 458,
       "diferencial": 8,
-      "ultimaActualizacion": "25/05/2026 09:59 a.m."
+      "ultimaActualizacion": "28/05/2026 01:04 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 449.02,
-      "venta": 454.89,
+      "compra": 451.12,
+      "venta": 456.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "28/05/2026 09:50 a.m."
+      "ultimaActualizacion": "28/05/2026 01:21 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,37 +275,37 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 451,
-      "venta": 468,
+      "compra": 454,
+      "venta": 471,
       "diferencial": 17,
-      "ultimaActualizacion": "28/05/2026 08:51 a.m."
+      "ultimaActualizacion": "28/05/2026 01:24 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 01:22 p.m."
+      "ultimaActualizacion": "28/05/2026 01:08 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 10:10 a.m."
+      "ultimaActualizacion": "28/05/2026 12:45 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "25/05/2026 08:31 a.m."
+      "ultimaActualizacion": "28/05/2026 12:10 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "Casa de Cambio Teledolar S. A.",
-    "valor": 451
+    "valor": 454
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.89
+    "valor": 456.99
   },
   "historico": [
     {
