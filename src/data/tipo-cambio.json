@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-28T21:30:47.878Z",
+  "ultimaActualizacion": "2026-05-28T22:58:26.846Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 447,
-      "venta": 461.5,
+      "compra": 449,
+      "venta": 463.5,
       "diferencial": 14.5,
-      "ultimaActualizacion": "18/05/2026 09:40 a.m."
+      "ultimaActualizacion": "28/05/2026 04:25 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 446,
-      "venta": 460,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 08:47 a.m."
+      "ultimaActualizacion": "28/05/2026 04:29 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
