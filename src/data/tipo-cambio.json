@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-28T01:27:31.378Z",
+  "ultimaActualizacion": "2026-05-28T16:48:05.307Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "27/05/2026 08:24 a.m."
+      "ultimaActualizacion": "28/05/2026 08:41 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,16 +35,16 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "27/05/2026 08:14 a.m."
+      "ultimaActualizacion": "28/05/2026 08:15 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "18/05/2026 01:15 p.m."
+      "ultimaActualizacion": "28/05/2026 09:56 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "26/05/2026 11:30 p.m."
+      "ultimaActualizacion": "27/05/2026 11:33 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "27/05/2026 09:01 a.m."
+      "ultimaActualizacion": "28/05/2026 09:04 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "27/05/2026 09:08 a.m."
+      "ultimaActualizacion": "28/05/2026 09:06 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,16 +125,16 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "26/05/2026 06:45 p.m."
+      "ultimaActualizacion": "27/05/2026 07:45 p.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 444,
-      "venta": 464,
+      "compra": 443,
+      "venta": 463,
       "diferencial": 20,
-      "ultimaActualizacion": "27/05/2026 02:27 p.m."
+      "ultimaActualizacion": "28/05/2026 09:38 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "27/05/2026 12:29 a.m."
+      "ultimaActualizacion": "28/05/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.06,
-      "venta": 455.93,
+      "compra": 449.02,
+      "venta": 454.89,
       "diferencial": 5.87,
-      "ultimaActualizacion": "27/05/2026 12:10 p.m."
+      "ultimaActualizacion": "28/05/2026 09:50 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 450,
-      "venta": 467,
+      "compra": 451,
+      "venta": 468,
       "diferencial": 17,
-      "ultimaActualizacion": "27/05/2026 12:34 a.m."
+      "ultimaActualizacion": "28/05/2026 08:51 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "27/05/2026 08:13 a.m."
+      "ultimaActualizacion": "28/05/2026 10:10 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "27/05/2026 06:43 a.m."
+      "ultimaActualizacion": "28/05/2026 08:47 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 450.06
+    "nombre": "Casa de Cambio Teledolar S. A.",
+    "valor": 451
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.93
+    "valor": 454.89
   },
   "historico": [
     {
