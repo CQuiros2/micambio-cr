@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-27T23:49:55.195Z",
+  "ultimaActualizacion": "2026-05-28T01:27:31.378Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -188,7 +188,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "26/05/2026 06:38 p.m."
+      "ultimaActualizacion": "27/05/2026 06:18 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -638,6 +638,11 @@
       "fecha": "2026-05-27",
       "compra": 450.95,
       "venta": 454.32
+    },
+    {
+      "fecha": "2026-05-28",
+      "compra": 449.56,
+      "venta": 455.52
     }
   ]
 }
