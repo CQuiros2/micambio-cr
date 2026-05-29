@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-05-29T21:17:04.027Z",
+  "ultimaActualizacion": "2026-05-29T22:43:47.431Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,19 +176,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 01:51 p.m."
+      "ultimaActualizacion": "29/05/2026 03:30 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 06:51 p.m."
+      "ultimaActualizacion": "29/05/2026 04:21 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -329,10 +329,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 02:02 p.m."
+      "ultimaActualizacion": "29/05/2026 04:39 p.m."
     }
   ],
   "mejorCompra": {
