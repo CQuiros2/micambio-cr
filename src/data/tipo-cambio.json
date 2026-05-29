@@ -1,59 +1,59 @@
 {
-  "ultimaActualizacion": "2026-05-29T16:37:32.925Z",
+  "ultimaActualizacion": "2026-05-29T19:14:13.637Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 01:09 p.m."
+      "ultimaActualizacion": "29/05/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 08:32 a.m."
+      "ultimaActualizacion": "29/05/2026 12:24 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "28/05/2026 01:21 p.m."
+      "ultimaActualizacion": "29/05/2026 01:10 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 08:29 a.m."
+      "ultimaActualizacion": "29/05/2026 01:02 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 445,
-      "venta": 463,
+      "compra": 447,
+      "venta": 465,
       "diferencial": 18,
-      "ultimaActualizacion": "28/05/2026 01:22 p.m."
+      "ultimaActualizacion": "29/05/2026 12:57 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 446.35,
-      "venta": 458.85,
+      "compra": 450,
+      "venta": 462.5,
       "diferencial": 12.5,
-      "ultimaActualizacion": "26/05/2026 12:59 p.m."
+      "ultimaActualizacion": "29/05/2026 12:28 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,19 +77,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 447,
-      "venta": 462,
+      "compra": 450,
+      "venta": 465,
       "diferencial": 15,
-      "ultimaActualizacion": "28/05/2026 11:29 p.m."
+      "ultimaActualizacion": "29/05/2026 01:05 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 446,
+      "compra": 449,
       "venta": 464,
-      "diferencial": 18,
-      "ultimaActualizacion": "28/05/2026 01:15 p.m."
+      "diferencial": 15,
+      "ultimaActualizacion": "29/05/2026 01:11 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -158,10 +158,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Mutual Cartago de Ahorro y Préstamo",
       "slug": "mutualcartago.fi.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "21/05/2026 12:30 p.m."
+      "ultimaActualizacion": "29/05/2026 12:50 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -194,19 +194,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 447,
-      "venta": 465,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "29/05/2026 07:57 a.m."
+      "ultimaActualizacion": "29/05/2026 12:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 449,
-      "venta": 465,
+      "compra": 452,
+      "venta": 468,
       "diferencial": 16,
-      "ultimaActualizacion": "28/05/2026 02:11 p.m."
+      "ultimaActualizacion": "29/05/2026 12:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.02,
-      "venta": 455.89,
+      "compra": 453.06,
+      "venta": 458.93,
       "diferencial": 5.87,
-      "ultimaActualizacion": "29/05/2026 07:59 a.m."
+      "ultimaActualizacion": "29/05/2026 01:11 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,19 +266,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 371.09,
-      "venta": 538.53,
-      "diferencial": 167.44,
-      "ultimaActualizacion": "28/05/2026 05:07 p.m."
+      "compra": 374.05,
+      "venta": 542.83,
+      "diferencial": 168.78,
+      "ultimaActualizacion": "29/05/2026 12:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 454,
-      "venta": 471,
+      "compra": 457,
+      "venta": 474,
       "diferencial": 17,
-      "ultimaActualizacion": "29/05/2026 01:47 a.m."
+      "ultimaActualizacion": "29/05/2026 01:00 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,28 +293,28 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 08:07 a.m."
+      "ultimaActualizacion": "29/05/2026 12:33 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 447,
-      "venta": 465,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "29/05/2026 08:29 a.m."
+      "ultimaActualizacion": "29/05/2026 12:35 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 449,
-      "venta": 463,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 08:06 a.m."
+      "ultimaActualizacion": "29/05/2026 12:45 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "Casa de Cambio Teledolar S. A.",
-    "valor": 454
+    "valor": 457
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.89
+    "valor": 458.93
   },
   "historico": [
     {
