@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-01T18:33:26.473Z",
+  "ultimaActualizacion": "2026-06-01T21:52:25.229Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,28 +23,28 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 453,
+      "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 01:10 p.m."
+      "ultimaActualizacion": "01/06/2026 02:59 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 453,
+      "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "01/06/2026 08:23 a.m."
+      "ultimaActualizacion": "01/06/2026 01:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 10:52 a.m."
+      "ultimaActualizacion": "01/06/2026 01:12 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -68,19 +68,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "29/05/2026 01:22 p.m."
+      "ultimaActualizacion": "01/06/2026 01:30 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 450,
-      "venta": 465,
+      "compra": 451,
+      "venta": 466,
       "diferencial": 15,
-      "ultimaActualizacion": "30/05/2026 05:30 p.m."
+      "ultimaActualizacion": "01/06/2026 01:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 08:52 a.m."
+      "ultimaActualizacion": "01/06/2026 03:00 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 452,
-      "venta": 460,
-      "diferencial": 8,
-      "ultimaActualizacion": "01/06/2026 11:05 a.m."
+      "compra": 454,
+      "venta": 463,
+      "diferencial": 9,
+      "ultimaActualizacion": "01/06/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 452,
-      "venta": 466.5,
+      "compra": 453,
+      "venta": 467.5,
       "diferencial": 14.5,
-      "ultimaActualizacion": "29/05/2026 02:43 p.m."
+      "ultimaActualizacion": "01/06/2026 03:40 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,19 +239,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 454,
+      "compra": 455,
       "venta": 473,
-      "diferencial": 19,
-      "ultimaActualizacion": "29/05/2026 02:02 p.m."
+      "diferencial": 18,
+      "ultimaActualizacion": "01/06/2026 02:47 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 454.12,
-      "venta": 459.99,
+      "compra": 455.12,
+      "venta": 460.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "01/06/2026 12:14 p.m."
+      "ultimaActualizacion": "01/06/2026 12:54 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 448,
-      "venta": 466,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 11:19 a.m."
+      "ultimaActualizacion": "01/06/2026 01:19 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.12
+    "valor": 455.12
   },
   "mejorVenta": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 459.99
+    "nombre": "Cooperativa San Marcos R.L.",
+    "valor": 460
   },
   "historico": [
     {
