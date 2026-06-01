@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-01T21:52:25.229Z",
+  "ultimaActualizacion": "2026-06-01T23:21:59.436Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 452,
-      "venta": 464.5,
+      "compra": 453.2,
+      "venta": 465.7,
       "diferencial": 12.5,
-      "ultimaActualizacion": "29/05/2026 04:59 p.m."
+      "ultimaActualizacion": "01/06/2026 04:43 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 448,
-      "venta": 466,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "29/05/2026 01:39 p.m."
+      "ultimaActualizacion": "01/06/2026 05:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 453,
+      "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 03:30 p.m."
+      "ultimaActualizacion": "01/06/2026 05:00 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 453,
-      "venta": 466,
+      "compra": 454,
+      "venta": 467,
       "diferencial": 13,
-      "ultimaActualizacion": "29/05/2026 02:16 p.m."
+      "ultimaActualizacion": "01/06/2026 04:22 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 373.04,
-      "venta": 541.37,
-      "diferencial": 168.33,
-      "ultimaActualizacion": "29/05/2026 03:07 p.m."
+      "compra": 374.26,
+      "venta": 543.14,
+      "diferencial": 168.88,
+      "ultimaActualizacion": "01/06/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
