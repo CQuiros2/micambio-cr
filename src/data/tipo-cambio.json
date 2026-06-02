@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-02T01:43:22.695Z",
+  "ultimaActualizacion": "2026-06-02T17:14:29.922Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 452,
       "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "01/06/2026 08:29 a.m."
+      "ultimaActualizacion": "02/06/2026 08:39 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 453,
       "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "01/06/2026 01:15 p.m."
+      "ultimaActualizacion": "02/06/2026 08:19 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -59,10 +59,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco CMB",
       "slug": "bancocmb.fi.cr",
-      "compra": 440,
-      "venta": 464,
+      "compra": 444,
+      "venta": 468,
       "diferencial": 24,
-      "ultimaActualizacion": "19/05/2026 09:24 a.m."
+      "ultimaActualizacion": "02/06/2026 09:17 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 451,
       "venta": 466,
       "diferencial": 15,
-      "ultimaActualizacion": "01/06/2026 01:15 p.m."
+      "ultimaActualizacion": "01/06/2026 11:41 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 449,
       "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 08:44 a.m."
+      "ultimaActualizacion": "02/06/2026 09:08 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 449,
       "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 03:00 p.m."
+      "ultimaActualizacion": "02/06/2026 08:53 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 450,
       "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 12:29 a.m."
+      "ultimaActualizacion": "02/06/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 455.58,
-      "venta": 461.45,
+      "compra": 455.62,
+      "venta": 461.49,
       "diferencial": 5.87,
-      "ultimaActualizacion": "01/06/2026 06:04 p.m."
+      "ultimaActualizacion": "02/06/2026 08:25 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 454,
-      "venta": 473,
-      "diferencial": 19,
-      "ultimaActualizacion": "01/06/2026 12:27 a.m."
+      "compra": 455,
+      "venta": 472,
+      "diferencial": 17,
+      "ultimaActualizacion": "02/06/2026 12:41 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 452,
       "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "01/06/2026 08:13 a.m."
+      "ultimaActualizacion": "02/06/2026 08:08 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,16 +314,16 @@
       "compra": 452,
       "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "01/06/2026 08:27 a.m."
+      "ultimaActualizacion": "02/06/2026 07:17 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 453,
+      "venta": 467,
       "diferencial": 14,
-      "ultimaActualizacion": "01/06/2026 09:50 a.m."
+      "ultimaActualizacion": "02/06/2026 09:19 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,7 +337,7 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.58
+    "valor": 455.62
   },
   "mejorVenta": {
     "nombre": "Cooperativa San Marcos R.L.",
