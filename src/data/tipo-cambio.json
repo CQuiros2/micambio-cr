@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-02T22:30:43.800Z",
+  "ultimaActualizacion": "2026-06-03T00:14:39.198Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 453.2,
-      "venta": 465.7,
+      "compra": 455.25,
+      "venta": 467.75,
       "diferencial": 12.5,
-      "ultimaActualizacion": "01/06/2026 04:43 p.m."
+      "ultimaActualizacion": "02/06/2026 05:26 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 449,
-      "venta": 467,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "01/06/2026 05:15 p.m."
+      "ultimaActualizacion": "02/06/2026 05:19 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -185,19 +185,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 452,
-      "venta": 466,
+      "compra": 454,
+      "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 04:21 p.m."
+      "ultimaActualizacion": "02/06/2026 04:57 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 450,
-      "venta": 468,
+      "compra": 452,
+      "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "02/06/2026 12:29 a.m."
+      "ultimaActualizacion": "02/06/2026 04:37 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 456.12,
-      "venta": 461.99,
+      "compra": 457.12,
+      "venta": 462.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "02/06/2026 04:11 p.m."
+      "ultimaActualizacion": "02/06/2026 06:12 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 455,
-      "venta": 472,
+      "compra": 456,
+      "venta": 473,
       "diferencial": 17,
-      "ultimaActualizacion": "02/06/2026 12:41 a.m."
+      "ultimaActualizacion": "02/06/2026 04:35 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -329,19 +329,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 452,
-      "venta": 466,
+      "compra": 454,
+      "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "29/05/2026 04:39 p.m."
+      "ultimaActualizacion": "02/06/2026 05:01 p.m."
     }
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.12
+    "valor": 457.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 461.99
+    "valor": 462.99
   },
   "historico": [
     {
@@ -668,6 +668,11 @@
       "fecha": "2026-06-02",
       "compra": 454.82,
       "venta": 461.17
+    },
+    {
+      "fecha": "2026-06-03",
+      "compra": 456.9,
+      "venta": 462.56
     }
   ]
 }
