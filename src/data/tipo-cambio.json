@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-04T18:30:48.864Z",
+  "ultimaActualizacion": "2026-06-04T20:35:29.242Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 449,
-      "venta": 467,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "03/06/2026 01:16 p.m."
+      "ultimaActualizacion": "04/06/2026 12:58 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 457.7,
-      "venta": 463.57,
+      "compra": 458.02,
+      "venta": 463.89,
       "diferencial": 5.87,
-      "ultimaActualizacion": "04/06/2026 12:23 p.m."
+      "ultimaActualizacion": "04/06/2026 12:42 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 457.7
+    "valor": 458.02
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 463.57
+    "valor": 463.89
   },
   "historico": [
     {
