@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-05T19:22:30.865Z",
+  "ultimaActualizacion": "2026-06-05T21:03:02.692Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,28 +23,28 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 455,
-      "venta": 469,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "02/06/2026 01:41 p.m."
+      "ultimaActualizacion": "05/06/2026 01:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 454,
-      "venta": 468,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "05/06/2026 08:17 a.m."
+      "ultimaActualizacion": "05/06/2026 01:22 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 450,
-      "venta": 468,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "04/06/2026 12:58 p.m."
+      "ultimaActualizacion": "05/06/2026 01:23 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 453,
-      "venta": 468,
+      "compra": 451,
+      "venta": 466,
       "diferencial": 15,
-      "ultimaActualizacion": "04/06/2026 11:36 p.m."
+      "ultimaActualizacion": "05/06/2026 01:37 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 451,
-      "venta": 469,
+      "compra": 448,
+      "venta": 466,
       "diferencial": 18,
-      "ultimaActualizacion": "05/06/2026 08:56 a.m."
+      "ultimaActualizacion": "05/06/2026 01:49 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -122,19 +122,19 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 450,
-      "venta": 468,
+      "compra": 449,
+      "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "04/06/2026 09:11 p.m."
+      "ultimaActualizacion": "05/06/2026 01:41 p.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 451,
-      "venta": 471,
+      "compra": 449,
+      "venta": 469,
       "diferencial": 20,
-      "ultimaActualizacion": "03/06/2026 09:21 a.m."
+      "ultimaActualizacion": "05/06/2026 02:35 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -149,46 +149,46 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 453,
-      "venta": 468,
+      "compra": 451,
+      "venta": 466,
       "diferencial": 15,
-      "ultimaActualizacion": "02/06/2026 02:46 p.m."
+      "ultimaActualizacion": "05/06/2026 02:14 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Mutual Cartago de Ahorro y Préstamo",
       "slug": "mutualcartago.fi.cr",
-      "compra": 453,
-      "venta": 467,
+      "compra": 451,
+      "venta": 465,
       "diferencial": 14,
-      "ultimaActualizacion": "02/06/2026 12:59 p.m."
+      "ultimaActualizacion": "05/06/2026 02:00 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 455.25,
-      "venta": 469.75,
+      "compra": 455,
+      "venta": 469.5,
       "diferencial": 14.5,
-      "ultimaActualizacion": "03/06/2026 10:25 a.m."
+      "ultimaActualizacion": "05/06/2026 02:34 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 455,
-      "venta": 469,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "02/06/2026 03:30 p.m."
+      "ultimaActualizacion": "05/06/2026 02:52 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 454,
-      "venta": 468,
+      "compra": 452,
+      "venta": 466,
       "diferencial": 14,
-      "ultimaActualizacion": "02/06/2026 04:57 p.m."
+      "ultimaActualizacion": "05/06/2026 02:43 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 456,
-      "venta": 469,
+      "compra": 453,
+      "venta": 466,
       "diferencial": 13,
-      "ultimaActualizacion": "02/06/2026 02:13 p.m."
+      "ultimaActualizacion": "05/06/2026 01:46 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 456.02,
-      "venta": 461.89,
+      "compra": 455.12,
+      "venta": 460.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "05/06/2026 12:40 p.m."
+      "ultimaActualizacion": "05/06/2026 02:22 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -287,7 +287,7 @@
       "compra": 449,
       "venta": 467,
       "diferencial": 18,
-      "ultimaActualizacion": "03/06/2026 01:28 p.m."
+      "ultimaActualizacion": "05/06/2026 01:29 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 452,
-      "venta": 470,
+      "compra": 450,
+      "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "02/06/2026 02:19 p.m."
+      "ultimaActualizacion": "05/06/2026 01:23 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.02
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 456
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 461.89
+    "valor": 460.99
   },
   "historico": [
     {
