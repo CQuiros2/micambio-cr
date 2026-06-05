@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-05T21:03:02.692Z",
+  "ultimaActualizacion": "2026-06-05T22:24:47.378Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -239,19 +239,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 456,
+      "compra": 455,
       "venta": 473,
-      "diferencial": 17,
-      "ultimaActualizacion": "02/06/2026 04:06 p.m."
+      "diferencial": 18,
+      "ultimaActualizacion": "05/06/2026 03:22 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 455.12,
-      "venta": 460.99,
+      "compra": 455.45,
+      "venta": 461.32,
       "diferencial": 5.87,
-      "ultimaActualizacion": "05/06/2026 02:22 p.m."
+      "ultimaActualizacion": "05/06/2026 03:56 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 456,
+      "compra": 455,
       "venta": 473,
-      "diferencial": 17,
-      "ultimaActualizacion": "05/06/2026 12:33 a.m."
+      "diferencial": 18,
+      "ultimaActualizacion": "05/06/2026 03:37 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 460.99
+    "valor": 461.32
   },
   "historico": [
     {
