@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-05T15:48:45.504Z",
+  "ultimaActualizacion": "2026-06-05T17:32:59.556Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -116,7 +116,7 @@
       "compra": 450,
       "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "04/06/2026 09:00 a.m."
+      "ultimaActualizacion": "05/06/2026 10:10 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -230,10 +230,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 456,
-      "venta": 469,
+      "compra": 455,
+      "venta": 468,
       "diferencial": 13,
-      "ultimaActualizacion": "02/06/2026 04:00 p.m."
+      "ultimaActualizacion": "05/06/2026 11:06 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 458.6,
-      "venta": 464.47,
+      "compra": 458.12,
+      "venta": 463.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "04/06/2026 06:09 p.m."
+      "ultimaActualizacion": "05/06/2026 11:01 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 458.6
+    "valor": 458.12
   },
   "mejorVenta": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 464
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 463.99
   },
   "historico": [
     {
