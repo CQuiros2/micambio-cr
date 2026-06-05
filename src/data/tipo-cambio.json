@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-05T01:35:34.486Z",
+  "ultimaActualizacion": "2026-06-05T15:48:45.504Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "04/06/2026 08:47 a.m."
+      "ultimaActualizacion": "05/06/2026 08:33 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "04/06/2026 08:35 a.m."
+      "ultimaActualizacion": "05/06/2026 08:17 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 453,
       "venta": 468,
       "diferencial": 15,
-      "ultimaActualizacion": "03/06/2026 11:29 p.m."
+      "ultimaActualizacion": "04/06/2026 11:36 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 451,
       "venta": 469,
       "diferencial": 18,
-      "ultimaActualizacion": "04/06/2026 09:05 a.m."
+      "ultimaActualizacion": "05/06/2026 08:56 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 450,
       "venta": 468,
       "diferencial": 18,
-      "ultimaActualizacion": "03/06/2026 07:56 p.m."
+      "ultimaActualizacion": "04/06/2026 09:11 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 452,
       "venta": 470,
       "diferencial": 18,
-      "ultimaActualizacion": "04/06/2026 12:29 a.m."
+      "ultimaActualizacion": "05/06/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 377.17,
-      "venta": 544.03,
-      "diferencial": 166.86,
-      "ultimaActualizacion": "03/06/2026 05:07 p.m."
+      "compra": 378.1,
+      "venta": 545.38,
+      "diferencial": 167.28,
+      "ultimaActualizacion": "04/06/2026 09:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 456,
       "venta": 473,
       "diferencial": 17,
-      "ultimaActualizacion": "04/06/2026 12:40 a.m."
+      "ultimaActualizacion": "05/06/2026 12:33 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "04/06/2026 08:22 a.m."
+      "ultimaActualizacion": "05/06/2026 08:43 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "04/06/2026 07:13 a.m."
+      "ultimaActualizacion": "05/06/2026 08:01 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,7 +332,7 @@
       "compra": 454,
       "venta": 468,
       "diferencial": 14,
-      "ultimaActualizacion": "02/06/2026 05:01 p.m."
+      "ultimaActualizacion": "05/06/2026 09:14 a.m."
     }
   ],
   "mejorCompra": {
