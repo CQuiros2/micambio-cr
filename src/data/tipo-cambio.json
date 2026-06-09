@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-09T21:24:58.051Z",
+  "ultimaActualizacion": "2026-06-09T22:55:52.138Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -86,10 +86,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 447,
-      "venta": 465,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "08/06/2026 01:11 p.m."
+      "ultimaActualizacion": "09/06/2026 03:41 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -167,19 +167,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 451.5,
-      "venta": 466,
+      "compra": 449.5,
+      "venta": 464,
       "diferencial": 14.5,
-      "ultimaActualizacion": "09/06/2026 09:40 a.m."
+      "ultimaActualizacion": "09/06/2026 04:55 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 450,
-      "venta": 464,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "08/06/2026 01:51 p.m."
+      "ultimaActualizacion": "09/06/2026 03:45 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,28 +221,28 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 451,
-      "venta": 464,
+      "compra": 449,
+      "venta": 462,
       "diferencial": 13,
-      "ultimaActualizacion": "08/06/2026 02:07 p.m."
+      "ultimaActualizacion": "09/06/2026 03:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 455,
-      "venta": 468,
+      "compra": 451,
+      "venta": 464,
       "diferencial": 13,
-      "ultimaActualizacion": "05/06/2026 11:06 a.m."
+      "ultimaActualizacion": "09/06/2026 03:27 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 454,
-      "venta": 472,
+      "compra": 453,
+      "venta": 471,
       "diferencial": 18,
-      "ultimaActualizacion": "08/06/2026 04:11 p.m."
+      "ultimaActualizacion": "09/06/2026 04:53 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -329,15 +329,15 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 450,
-      "venta": 464,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "08/06/2026 04:40 p.m."
+      "ultimaActualizacion": "09/06/2026 04:32 p.m."
     }
   ],
   "mejorCompra": {
-    "nombre": "Cooperativa San Marcos R.L.",
-    "valor": 455
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 453
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
