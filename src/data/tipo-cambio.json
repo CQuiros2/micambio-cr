@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-10T21:28:33.146Z",
+  "ultimaActualizacion": "2026-06-10T23:08:02.197Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -258,8 +258,8 @@
       "nombre": "Casa de Cambio Cambia con Wiz Limitada",
       "slug": "cambioswiz.com",
       "compra": 373.5,
-      "venta": 544,
-      "diferencial": 170.5,
+      "venta": 538.5,
+      "diferencial": 165,
       "ultimaActualizacion": "10/06/2026 03:23 p.m."
     },
     {
