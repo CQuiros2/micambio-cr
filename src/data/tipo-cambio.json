@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-11T21:33:08.155Z",
+  "ultimaActualizacion": "2026-06-11T23:07:36.035Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,19 +176,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 447,
+      "compra": 449,
       "venta": 461,
-      "diferencial": 14,
-      "ultimaActualizacion": "10/06/2026 01:36 p.m."
+      "diferencial": 12,
+      "ultimaActualizacion": "11/06/2026 05:01 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "10/06/2026 06:24 p.m."
+      "ultimaActualizacion": "11/06/2026 04:24 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
