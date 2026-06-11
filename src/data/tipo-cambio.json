@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-11T19:26:02.435Z",
+  "ultimaActualizacion": "2026-06-11T21:33:08.155Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 449,
+      "venta": 463,
       "diferencial": 14,
-      "ultimaActualizacion": "10/06/2026 01:23 p.m."
+      "ultimaActualizacion": "11/06/2026 01:42 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -42,9 +42,9 @@
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
       "compra": 446,
-      "venta": 462,
-      "diferencial": 16,
-      "ultimaActualizacion": "11/06/2026 01:22 p.m."
+      "venta": 464,
+      "diferencial": 18,
+      "ultimaActualizacion": "11/06/2026 01:26 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 448,
-      "venta": 461,
+      "compra": 450,
+      "venta": 463,
       "diferencial": 13,
-      "ultimaActualizacion": "10/06/2026 02:52 p.m."
+      "ultimaActualizacion": "11/06/2026 02:19 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,10 +239,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 451,
-      "venta": 468,
+      "compra": 452,
+      "venta": 469,
       "diferencial": 17,
-      "ultimaActualizacion": "10/06/2026 02:39 p.m."
+      "ultimaActualizacion": "11/06/2026 01:36 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 447,
-      "venta": 461,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "11/06/2026 08:15 a.m."
+      "ultimaActualizacion": "11/06/2026 02:09 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
