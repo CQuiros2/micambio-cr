@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-12T22:07:55.683Z",
+  "ultimaActualizacion": "2026-06-12T23:45:02.681Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 449.5,
-      "venta": 462,
+      "compra": 447.4,
+      "venta": 459.9,
       "diferencial": 12.5,
-      "ultimaActualizacion": "09/06/2026 02:20 p.m."
+      "ultimaActualizacion": "12/06/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 452,
+      "compra": 450,
       "venta": 460,
-      "diferencial": 8,
-      "ultimaActualizacion": "11/06/2026 12:44 p.m."
+      "diferencial": 10,
+      "ultimaActualizacion": "12/06/2026 05:21 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 448,
-      "venta": 462,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "11/06/2026 06:29 p.m."
+      "ultimaActualizacion": "12/06/2026 04:51 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 374.68,
-      "venta": 540.44,
-      "diferencial": 165.76,
-      "ultimaActualizacion": "11/06/2026 09:08 p.m."
+      "compra": 373.98,
+      "venta": 539.43,
+      "diferencial": 165.45,
+      "ultimaActualizacion": "12/06/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
