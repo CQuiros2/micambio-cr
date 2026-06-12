@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-12T18:20:07.818Z",
+  "ultimaActualizacion": "2026-06-12T20:29:57.127Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -44,7 +44,7 @@
       "compra": 446,
       "venta": 464,
       "diferencial": 18,
-      "ultimaActualizacion": "11/06/2026 01:26 p.m."
+      "ultimaActualizacion": "12/06/2026 01:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.11,
-      "venta": 456.98,
+      "compra": 452.12,
+      "venta": 457.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "12/06/2026 12:12 p.m."
+      "ultimaActualizacion": "12/06/2026 01:10 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 450,
+      "compra": 452,
       "venta": 469,
-      "diferencial": 19,
-      "ultimaActualizacion": "12/06/2026 12:06 p.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "12/06/2026 01:03 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 452
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 452.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.98
+    "valor": 457.99
   },
   "historico": [
     {
