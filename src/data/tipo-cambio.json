@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-13T01:53:17.334Z",
+  "ultimaActualizacion": "2026-06-15T17:48:29.640Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "12/06/2026 03:04 p.m."
+      "ultimaActualizacion": "15/06/2026 08:34 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 448,
       "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "12/06/2026 08:25 a.m."
+      "ultimaActualizacion": "15/06/2026 08:11 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 448,
       "venta": 463,
       "diferencial": 15,
-      "ultimaActualizacion": "11/06/2026 11:32 p.m."
+      "ultimaActualizacion": "13/06/2026 04:37 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 445,
-      "venta": 463,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "12/06/2026 08:47 a.m."
+      "ultimaActualizacion": "15/06/2026 08:56 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "12/06/2026 10:38 a.m."
+      "ultimaActualizacion": "15/06/2026 08:53 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,16 +125,16 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "11/06/2026 08:21 p.m."
+      "ultimaActualizacion": "12/06/2026 09:36 p.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 445,
-      "venta": 465,
+      "compra": 443,
+      "venta": 463,
       "diferencial": 20,
-      "ultimaActualizacion": "12/06/2026 10:41 a.m."
+      "ultimaActualizacion": "15/06/2026 09:26 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "12/06/2026 12:29 a.m."
+      "ultimaActualizacion": "15/06/2026 12:28 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 452.12,
-      "venta": 457.99,
+      "compra": 450.1,
+      "venta": 455.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "12/06/2026 01:10 p.m."
+      "ultimaActualizacion": "15/06/2026 08:05 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 452,
+      "compra": 451,
       "venta": 469,
-      "diferencial": 17,
-      "ultimaActualizacion": "12/06/2026 01:03 p.m."
+      "diferencial": 18,
+      "ultimaActualizacion": "15/06/2026 12:27 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,28 +293,28 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 448,
-      "venta": 462,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "12/06/2026 08:22 a.m."
+      "ultimaActualizacion": "15/06/2026 08:32 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 446,
-      "venta": 464,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "11/06/2026 01:02 p.m."
+      "ultimaActualizacion": "15/06/2026 08:55 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 448,
-      "venta": 462,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "12/06/2026 06:55 a.m."
+      "ultimaActualizacion": "15/06/2026 06:38 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,16 +332,16 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "11/06/2026 10:02 a.m."
+      "ultimaActualizacion": "15/06/2026 09:08 a.m."
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 452.12
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 452
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 457.99
+    "valor": 455.97
   },
   "historico": [
     {
@@ -721,6 +721,16 @@
     },
     {
       "fecha": "2026-06-13",
+      "compra": 452.4,
+      "venta": 458.68
+    },
+    {
+      "fecha": "2026-06-14",
+      "compra": 452.4,
+      "venta": 458.68
+    },
+    {
+      "fecha": "2026-06-15",
       "compra": 452.4,
       "venta": 458.68
     }
