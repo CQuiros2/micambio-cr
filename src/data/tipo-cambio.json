@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-16T22:44:10.087Z",
+  "ultimaActualizacion": "2026-06-17T00:04:34.874Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "15/06/2026 05:09 p.m."
+      "ultimaActualizacion": "16/06/2026 05:20 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 450,
-      "venta": 458,
+      "compra": 448.5,
+      "venta": 456.5,
       "diferencial": 8,
-      "ultimaActualizacion": "15/06/2026 12:25 p.m."
+      "ultimaActualizacion": "16/06/2026 05:39 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -336,7 +336,7 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Financiera MultiMoney S.A.",
+    "nombre": "Airpak Casa de Cambio",
     "valor": 450
   },
   "mejorVenta": {
@@ -738,6 +738,11 @@
       "fecha": "2026-06-16",
       "compra": 451.13,
       "venta": 457.24
+    },
+    {
+      "fecha": "2026-06-17",
+      "compra": 450.02,
+      "venta": 455.9
     }
   ]
 }
