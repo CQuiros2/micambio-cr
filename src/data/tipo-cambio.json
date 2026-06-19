@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-19T19:27:35.771Z",
+  "ultimaActualizacion": "2026-06-19T20:51:15.641Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "16/06/2026 01:30 p.m."
+      "ultimaActualizacion": "19/06/2026 01:42 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
