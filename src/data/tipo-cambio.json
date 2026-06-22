@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-22T20:18:45.169Z",
+  "ultimaActualizacion": "2026-06-22T22:18:04.693Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -230,10 +230,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 449,
-      "venta": 462,
+      "compra": 447,
+      "venta": 460,
       "diferencial": 13,
-      "ultimaActualizacion": "10/06/2026 08:54 a.m."
+      "ultimaActualizacion": "22/06/2026 02:57 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 376.21,
-      "venta": 542.65,
-      "diferencial": 166.44,
-      "ultimaActualizacion": "22/06/2026 12:07 p.m."
+      "compra": 372.37,
+      "venta": 537.11,
+      "diferencial": 164.74,
+      "ultimaActualizacion": "22/06/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
