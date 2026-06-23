@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-06-23T01:47:42.295Z",
+  "ultimaActualizacion": "2026-06-23T15:43:44.908Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 446,
-      "venta": 460,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "22/06/2026 06:44 a.m."
+      "ultimaActualizacion": "23/06/2026 09:16 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "22/06/2026 08:29 a.m."
+      "ultimaActualizacion": "23/06/2026 08:54 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "22/06/2026 08:19 a.m."
+      "ultimaActualizacion": "23/06/2026 08:21 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "20/06/2026 05:59 p.m."
+      "ultimaActualizacion": "22/06/2026 11:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "22/06/2026 09:01 a.m."
+      "ultimaActualizacion": "23/06/2026 08:48 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "22/06/2026 08:49 a.m."
+      "ultimaActualizacion": "23/06/2026 08:52 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "22/06/2026 01:56 p.m."
+      "ultimaActualizacion": "22/06/2026 09:31 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "22/06/2026 12:28 a.m."
+      "ultimaActualizacion": "23/06/2026 12:28 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.66,
-      "venta": 457.53,
+      "compra": 452.04,
+      "venta": 457.91,
       "diferencial": 5.87,
-      "ultimaActualizacion": "22/06/2026 06:10 p.m."
+      "ultimaActualizacion": "23/06/2026 09:37 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 450,
       "venta": 467,
       "diferencial": 17,
-      "ultimaActualizacion": "22/06/2026 01:07 p.m."
+      "ultimaActualizacion": "23/06/2026 01:17 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "22/06/2026 07:58 a.m."
+      "ultimaActualizacion": "23/06/2026 07:54 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.66
+    "valor": 452.04
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 457.53
+    "valor": 457.91
   },
   "historico": [
     {
