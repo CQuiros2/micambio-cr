@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-24T17:27:29.491Z",
+  "ultimaActualizacion": "2026-06-24T19:09:14.647Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 447.4,
-      "venta": 459.9,
+      "compra": 449.5,
+      "venta": 462,
       "diferencial": 12.5,
-      "ultimaActualizacion": "12/06/2026 05:07 p.m."
+      "ultimaActualizacion": "24/06/2026 12:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "23/06/2026 11:27 p.m."
+      "ultimaActualizacion": "24/06/2026 01:07 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 450,
+      "compra": 448,
       "venta": 467,
-      "diferencial": 17,
-      "ultimaActualizacion": "24/06/2026 01:02 a.m."
+      "diferencial": 19,
+      "ultimaActualizacion": "24/06/2026 11:55 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
