@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-24T20:54:24.320Z",
+  "ultimaActualizacion": "2026-06-24T22:08:47.774Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 444,
-      "venta": 462,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "23/06/2026 10:16 p.m."
+      "ultimaActualizacion": "24/06/2026 02:56 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 445,
-      "venta": 460,
+      "compra": 446,
+      "venta": 461,
       "diferencial": 15,
-      "ultimaActualizacion": "15/06/2026 03:11 p.m."
+      "ultimaActualizacion": "24/06/2026 03:23 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
