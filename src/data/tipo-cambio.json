@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-24T01:29:03.853Z",
+  "ultimaActualizacion": "2026-06-24T15:29:17.677Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "23/06/2026 08:54 a.m."
+      "ultimaActualizacion": "24/06/2026 08:42 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "23/06/2026 08:21 a.m."
+      "ultimaActualizacion": "24/06/2026 08:28 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "22/06/2026 11:27 p.m."
+      "ultimaActualizacion": "23/06/2026 11:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 444,
-      "venta": 462,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "23/06/2026 08:48 a.m."
+      "ultimaActualizacion": "24/06/2026 09:02 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "23/06/2026 08:52 a.m."
+      "ultimaActualizacion": "24/06/2026 08:47 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "22/06/2026 09:31 p.m."
+      "ultimaActualizacion": "23/06/2026 10:16 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "23/06/2026 12:28 a.m."
+      "ultimaActualizacion": "24/06/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.12,
-      "venta": 456.99,
+      "compra": 450.1,
+      "venta": 455.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "23/06/2026 03:29 p.m."
+      "ultimaActualizacion": "24/06/2026 09:05 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 372.34,
-      "venta": 537.07,
-      "diferencial": 164.73,
-      "ultimaActualizacion": "22/06/2026 05:07 p.m."
+      "compra": 372,
+      "venta": 536.57,
+      "diferencial": 164.57,
+      "ultimaActualizacion": "23/06/2026 09:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 450,
       "venta": 467,
       "diferencial": 17,
-      "ultimaActualizacion": "23/06/2026 01:04 p.m."
+      "ultimaActualizacion": "24/06/2026 01:02 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,16 +296,16 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "23/06/2026 01:57 p.m."
+      "ultimaActualizacion": "24/06/2026 08:21 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 444,
-      "venta": 462,
+      "compra": 445,
+      "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "15/06/2026 08:55 a.m."
+      "ultimaActualizacion": "24/06/2026 09:29 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "23/06/2026 07:54 a.m."
+      "ultimaActualizacion": "24/06/2026 07:38 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,16 +332,16 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "22/06/2026 09:06 a.m."
+      "ultimaActualizacion": "24/06/2026 09:24 a.m."
     }
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.12
+    "valor": 450.1
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.99
+    "valor": 455.97
   },
   "historico": [
     {
