@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-24T15:29:17.677Z",
+  "ultimaActualizacion": "2026-06-24T17:27:29.491Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 446,
-      "venta": 460,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "24/06/2026 07:38 a.m."
+      "ultimaActualizacion": "24/06/2026 10:13 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
