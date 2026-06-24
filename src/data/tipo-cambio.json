@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-24T19:09:14.647Z",
+  "ultimaActualizacion": "2026-06-24T20:54:24.320Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "23/06/2026 06:34 p.m."
+      "ultimaActualizacion": "24/06/2026 02:13 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 448,
+      "compra": 450,
       "venta": 467,
-      "diferencial": 19,
-      "ultimaActualizacion": "24/06/2026 11:55 a.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "24/06/2026 01:34 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,10 +293,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 446,
-      "venta": 460,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "24/06/2026 08:21 a.m."
+      "ultimaActualizacion": "24/06/2026 01:18 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
