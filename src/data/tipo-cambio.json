@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-25T19:28:11.438Z",
+  "ultimaActualizacion": "2026-06-25T21:10:58.457Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "19/06/2026 01:10 p.m."
+      "ultimaActualizacion": "25/06/2026 02:21 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "24/06/2026 11:27 p.m."
+      "ultimaActualizacion": "25/06/2026 02:00 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 444,
-      "venta": 464,
+      "compra": 442,
+      "venta": 462,
       "diferencial": 20,
-      "ultimaActualizacion": "23/06/2026 10:00 a.m."
+      "ultimaActualizacion": "25/06/2026 02:14 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 446,
-      "venta": 461,
+      "compra": 444,
+      "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "24/06/2026 03:23 p.m."
+      "ultimaActualizacion": "25/06/2026 02:17 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 446,
-      "venta": 462,
+      "compra": 445,
+      "venta": 461,
       "diferencial": 16,
-      "ultimaActualizacion": "15/06/2026 05:41 p.m."
+      "ultimaActualizacion": "25/06/2026 02:09 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 447,
-      "venta": 460,
+      "compra": 446,
+      "venta": 459,
       "diferencial": 13,
-      "ultimaActualizacion": "16/06/2026 11:52 a.m."
+      "ultimaActualizacion": "25/06/2026 02:31 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -284,19 +284,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "19/06/2026 01:42 p.m."
+      "ultimaActualizacion": "25/06/2026 02:34 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 447,
-      "venta": 461,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "25/06/2026 08:21 a.m."
+      "ultimaActualizacion": "25/06/2026 01:33 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
