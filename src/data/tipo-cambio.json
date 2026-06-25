@@ -1,32 +1,32 @@
 {
-  "ultimaActualizacion": "2026-06-25T17:36:56.910Z",
+  "ultimaActualizacion": "2026-06-25T19:28:11.438Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 447,
-      "venta": 461,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "23/06/2026 09:16 a.m."
+      "ultimaActualizacion": "25/06/2026 01:16 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "25/06/2026 08:40 a.m."
+      "ultimaActualizacion": "25/06/2026 12:24 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "15/06/2026 02:37 p.m."
+      "ultimaActualizacion": "25/06/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 449.5,
-      "venta": 462,
+      "compra": 446.7,
+      "venta": 459.2,
       "diferencial": 12.5,
-      "ultimaActualizacion": "24/06/2026 12:15 p.m."
+      "ultimaActualizacion": "25/06/2026 12:10 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 450,
-      "venta": 458,
+      "compra": 449,
+      "venta": 457,
       "diferencial": 8,
-      "ultimaActualizacion": "25/06/2026 05:35 a.m."
+      "ultimaActualizacion": "25/06/2026 01:21 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.1,
-      "venta": 456.97,
+      "compra": 450.12,
+      "venta": 455.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "25/06/2026 10:40 a.m."
+      "ultimaActualizacion": "25/06/2026 12:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 450,
       "venta": 467,
       "diferencial": 17,
-      "ultimaActualizacion": "25/06/2026 12:56 a.m."
+      "ultimaActualizacion": "25/06/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 445,
-      "venta": 463,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "24/06/2026 09:29 a.m."
+      "ultimaActualizacion": "25/06/2026 12:40 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.1
+    "valor": 450.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.97
+    "valor": 455.99
   },
   "historico": [
     {
