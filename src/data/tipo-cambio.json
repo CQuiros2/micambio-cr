@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-26T20:51:33.383Z",
+  "ultimaActualizacion": "2026-06-26T22:04:10.987Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 444,
-      "venta": 459,
+      "compra": 446,
+      "venta": 461,
       "diferencial": 15,
-      "ultimaActualizacion": "25/06/2026 02:17 p.m."
+      "ultimaActualizacion": "26/06/2026 03:27 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 446,
-      "venta": 459,
+      "compra": 448,
+      "venta": 461,
       "diferencial": 13,
-      "ultimaActualizacion": "25/06/2026 02:31 p.m."
+      "ultimaActualizacion": "26/06/2026 03:10 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.06,
-      "venta": 456.93,
+      "compra": 450.44,
+      "venta": 456.31,
       "diferencial": 5.87,
-      "ultimaActualizacion": "26/06/2026 01:02 p.m."
+      "ultimaActualizacion": "26/06/2026 03:15 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.06
+    "nombre": "Casa de Cambio Teledolar S. A.",
+    "valor": 451
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.93
+    "valor": 456.31
   },
   "historico": [
     {
