@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-26T23:18:53.201Z",
+  "ultimaActualizacion": "2026-06-27T01:24:40.496Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 442,
-      "venta": 460,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "16/06/2026 05:20 p.m."
+      "ultimaActualizacion": "26/06/2026 05:22 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 449,
+      "compra": 447,
       "venta": 457,
-      "diferencial": 8,
-      "ultimaActualizacion": "25/06/2026 01:21 p.m."
+      "diferencial": 10,
+      "ultimaActualizacion": "26/06/2026 05:26 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "25/06/2026 03:26 p.m."
+      "ultimaActualizacion": "26/06/2026 05:46 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.44,
-      "venta": 456.31,
+      "compra": 449.1,
+      "venta": 454.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "26/06/2026 03:15 p.m."
+      "ultimaActualizacion": "26/06/2026 05:51 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.31
+    "valor": 454.97
   },
   "historico": [
     {
@@ -788,6 +788,11 @@
       "fecha": "2026-06-26",
       "compra": 450.59,
       "venta": 455.33
+    },
+    {
+      "fecha": "2026-06-27",
+      "compra": 450.46,
+      "venta": 456.01
     }
   ]
 }
