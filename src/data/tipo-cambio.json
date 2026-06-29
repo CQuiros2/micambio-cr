@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-06-27T01:24:40.496Z",
+  "ultimaActualizacion": "2026-06-29T16:33:37.260Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "26/06/2026 12:57 p.m."
+      "ultimaActualizacion": "29/06/2026 08:30 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 448,
+      "venta": 462,
       "diferencial": 14,
-      "ultimaActualizacion": "26/06/2026 12:48 p.m."
+      "ultimaActualizacion": "29/06/2026 08:26 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 450,
-      "venta": 462.5,
+      "compra": 447.2,
+      "venta": 459.7,
       "diferencial": 12.5,
-      "ultimaActualizacion": "26/06/2026 12:22 p.m."
+      "ultimaActualizacion": "29/06/2026 08:54 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 446,
       "venta": 461,
       "diferencial": 15,
-      "ultimaActualizacion": "26/06/2026 12:57 p.m."
+      "ultimaActualizacion": "27/06/2026 04:34 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 08:51 a.m."
+      "ultimaActualizacion": "29/06/2026 08:39 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 444,
       "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 04:20 p.m."
+      "ultimaActualizacion": "29/06/2026 08:55 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 01:48 p.m."
+      "ultimaActualizacion": "26/06/2026 08:11 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 447,
+      "compra": 449,
       "venta": 457,
-      "diferencial": 10,
-      "ultimaActualizacion": "26/06/2026 05:26 p.m."
+      "diferencial": 8,
+      "ultimaActualizacion": "29/06/2026 09:56 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -197,7 +197,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 12:29 a.m."
+      "ultimaActualizacion": "29/06/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 449.1,
-      "venta": 454.97,
+      "compra": 452.12,
+      "venta": 457.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "26/06/2026 05:51 p.m."
+      "ultimaActualizacion": "29/06/2026 10:32 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,19 +266,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 371.21,
-      "venta": 535.44,
-      "diferencial": 164.23,
-      "ultimaActualizacion": "25/06/2026 05:07 p.m."
+      "compra": 372.8,
+      "venta": 537.73,
+      "diferencial": 164.93,
+      "ultimaActualizacion": "26/06/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 451,
-      "venta": 468,
+      "compra": 450,
+      "venta": 467,
       "diferencial": 17,
-      "ultimaActualizacion": "26/06/2026 01:13 p.m."
+      "ultimaActualizacion": "29/06/2026 12:26 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "26/06/2026 12:19 p.m."
+      "ultimaActualizacion": "29/06/2026 08:21 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -311,19 +311,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "26/06/2026 06:22 a.m."
+      "ultimaActualizacion": "29/06/2026 06:36 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "26/06/2026 10:57 a.m."
+      "ultimaActualizacion": "29/06/2026 09:31 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Casa de Cambio Teledolar S. A.",
-    "valor": 451
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 452.12
   },
   "mejorVenta": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.97
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 457
   },
   "historico": [
     {
@@ -791,6 +791,16 @@
     },
     {
       "fecha": "2026-06-27",
+      "compra": 450.46,
+      "venta": 456.01
+    },
+    {
+      "fecha": "2026-06-28",
+      "compra": 450.46,
+      "venta": 456.01
+    },
+    {
+      "fecha": "2026-06-29",
       "compra": 450.46,
       "venta": 456.01
     }
