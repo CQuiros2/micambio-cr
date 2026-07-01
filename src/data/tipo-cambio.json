@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-01T20:59:55.780Z",
+  "ultimaActualizacion": "2026-07-01T22:20:34.054Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 447,
-      "venta": 461,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "26/06/2026 01:51 p.m."
+      "ultimaActualizacion": "01/07/2026 03:45 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 448,
-      "venta": 461,
+      "compra": 447,
+      "venta": 460,
       "diferencial": 13,
-      "ultimaActualizacion": "26/06/2026 03:10 p.m."
+      "ultimaActualizacion": "01/07/2026 03:34 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
