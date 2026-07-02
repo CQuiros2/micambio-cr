@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-02T18:26:08.415Z",
+  "ultimaActualizacion": "2026-07-02T19:59:31.634Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 448,
+      "compra": 450,
       "venta": 467,
-      "diferencial": 19,
-      "ultimaActualizacion": "02/07/2026 11:55 a.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "02/07/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 445,
-      "venta": 463,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 01:04 p.m."
+      "ultimaActualizacion": "02/07/2026 12:31 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
