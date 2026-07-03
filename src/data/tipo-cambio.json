@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-03T15:02:45.521Z",
+  "ultimaActualizacion": "2026-07-03T16:42:46.707Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "02/07/2026 09:06 a.m."
+      "ultimaActualizacion": "03/07/2026 09:03 a.m."
     },
     {
       "tipoEntidad": "Financieras",
