@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-03T22:44:19.911Z",
+  "ultimaActualizacion": "2026-07-03T23:44:30.126Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 05:22 p.m."
+      "ultimaActualizacion": "03/07/2026 05:18 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 448.5,
-      "venta": 456.5,
-      "diferencial": 8,
-      "ultimaActualizacion": "01/07/2026 02:36 p.m."
+      "compra": 448,
+      "venta": 458,
+      "diferencial": 10,
+      "ultimaActualizacion": "03/07/2026 05:44 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 371.96,
-      "venta": 536.52,
-      "diferencial": 164.56,
-      "ultimaActualizacion": "02/07/2026 03:07 p.m."
+      "compra": 371.77,
+      "venta": 536.25,
+      "diferencial": 164.48,
+      "ultimaActualizacion": "03/07/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "Financiera MultiMoney S.A.",
-    "valor": 456.5
+    "valor": 458
   },
   "historico": [
     {
