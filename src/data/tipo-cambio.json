@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-04T01:18:12.506Z",
+  "ultimaActualizacion": "2026-07-06T16:12:59.700Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/07/2026 08:43 a.m."
+      "ultimaActualizacion": "06/07/2026 08:46 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,16 +35,16 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "03/07/2026 08:38 a.m."
+      "ultimaActualizacion": "06/07/2026 08:20 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 12:32 p.m."
+      "ultimaActualizacion": "06/07/2026 09:41 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 446,
       "venta": 461,
       "diferencial": 15,
-      "ultimaActualizacion": "02/07/2026 11:31 p.m."
+      "ultimaActualizacion": "04/07/2026 04:39 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "03/07/2026 08:56 a.m."
+      "ultimaActualizacion": "06/07/2026 08:59 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "03/07/2026 09:03 a.m."
+      "ultimaActualizacion": "06/07/2026 08:45 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "02/07/2026 09:56 p.m."
+      "ultimaActualizacion": "03/07/2026 10:01 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 448,
-      "venta": 458,
-      "diferencial": 10,
-      "ultimaActualizacion": "03/07/2026 05:44 p.m."
+      "compra": 448.5,
+      "venta": 456.5,
+      "diferencial": 8,
+      "ultimaActualizacion": "06/07/2026 10:04 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -197,7 +197,7 @@
       "compra": 445,
       "venta": 463,
       "diferencial": 18,
-      "ultimaActualizacion": "03/07/2026 12:29 a.m."
+      "ultimaActualizacion": "06/07/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.12,
-      "venta": 456.99,
+      "compra": 450.12,
+      "venta": 455.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "03/07/2026 05:47 p.m."
+      "ultimaActualizacion": "06/07/2026 09:19 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,16 +278,16 @@
       "compra": 450,
       "venta": 467,
       "diferencial": 17,
-      "ultimaActualizacion": "03/07/2026 01:04 p.m."
+      "ultimaActualizacion": "06/07/2026 12:27 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "26/06/2026 12:58 p.m."
+      "ultimaActualizacion": "06/07/2026 09:59 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/07/2026 08:27 a.m."
+      "ultimaActualizacion": "06/07/2026 08:19 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/07/2026 07:20 a.m."
+      "ultimaActualizacion": "06/07/2026 07:02 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,16 +332,16 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "01/07/2026 09:29 a.m."
+      "ultimaActualizacion": "06/07/2026 09:42 a.m."
     }
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.12
+    "valor": 450.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.99
+    "valor": 455.99
   },
   "historico": [
     {
@@ -826,6 +826,16 @@
     },
     {
       "fecha": "2026-07-04",
+      "compra": 450.38,
+      "venta": 456.42
+    },
+    {
+      "fecha": "2026-07-05",
+      "compra": 450.38,
+      "venta": 456.42
+    },
+    {
+      "fecha": "2026-07-06",
       "compra": 450.38,
       "venta": 456.42
     }
