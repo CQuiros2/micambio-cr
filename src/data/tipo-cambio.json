@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-07T19:23:22.618Z",
+  "ultimaActualizacion": "2026-07-07T21:02:26.898Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "01/07/2026 03:45 p.m."
+      "ultimaActualizacion": "07/07/2026 02:16 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 447,
-      "venta": 460,
+      "compra": 446,
+      "venta": 459,
       "diferencial": 13,
-      "ultimaActualizacion": "01/07/2026 03:34 p.m."
+      "ultimaActualizacion": "07/07/2026 02:22 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.1,
-      "venta": 456.97,
+      "compra": 450.12,
+      "venta": 455.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "07/07/2026 12:18 p.m."
+      "ultimaActualizacion": "07/07/2026 02:54 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -287,7 +287,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "07/07/2026 12:51 p.m."
+      "ultimaActualizacion": "07/07/2026 01:59 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.1
+    "valor": 450.12
   },
   "mejorVenta": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 456.5
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 455.99
   },
   "historico": [
     {
