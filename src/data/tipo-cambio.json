@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-07T21:02:26.898Z",
+  "ultimaActualizacion": "2026-07-07T22:19:24.148Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 445,
-      "venta": 460,
+      "compra": 444,
+      "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "02/07/2026 02:41 p.m."
+      "ultimaActualizacion": "07/07/2026 03:18 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 371.06,
-      "venta": 535.23,
-      "diferencial": 164.17,
-      "ultimaActualizacion": "06/07/2026 09:08 p.m."
+      "compra": 370.68,
+      "venta": 534.68,
+      "diferencial": 164,
+      "ultimaActualizacion": "07/07/2026 03:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
