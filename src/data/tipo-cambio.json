@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-07T15:40:06.246Z",
+  "ultimaActualizacion": "2026-07-07T17:35:39.493Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 447,
-      "venta": 463,
+      "compra": 445,
+      "venta": 461,
       "diferencial": 16,
-      "ultimaActualizacion": "26/06/2026 01:04 p.m."
+      "ultimaActualizacion": "07/07/2026 10:53 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -251,7 +251,7 @@
       "compra": 451.6,
       "venta": 457.47,
       "diferencial": 5.87,
-      "ultimaActualizacion": "06/07/2026 04:38 p.m."
+      "ultimaActualizacion": "07/07/2026 10:30 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
