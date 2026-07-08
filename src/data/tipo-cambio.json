@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-08T19:56:08.042Z",
+  "ultimaActualizacion": "2026-07-08T21:00:13.336Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "07/07/2026 10:46 p.m."
+      "ultimaActualizacion": "08/07/2026 02:51 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -239,10 +239,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 448,
+      "compra": 450,
       "venta": 467,
-      "diferencial": 19,
-      "ultimaActualizacion": "08/07/2026 12:23 p.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "08/07/2026 02:17 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 450,
-      "venta": 467,
+      "compra": 448,
+      "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "08/07/2026 01:05 p.m."
+      "ultimaActualizacion": "08/07/2026 02:18 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
