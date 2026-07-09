@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-09T17:48:32.516Z",
+  "ultimaActualizacion": "2026-07-09T19:13:14.355Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,19 +41,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "07/07/2026 12:41 p.m."
+      "ultimaActualizacion": "09/07/2026 01:08 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 446.4,
-      "venta": 458.9,
+      "compra": 448.5,
+      "venta": 461,
       "diferencial": 12.5,
-      "ultimaActualizacion": "03/07/2026 04:03 p.m."
+      "ultimaActualizacion": "09/07/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 443,
-      "venta": 458,
+      "compra": 445,
+      "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "08/07/2026 11:30 p.m."
+      "ultimaActualizacion": "09/07/2026 12:52 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -158,10 +158,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Mutual Cartago de Ahorro y Préstamo",
       "slug": "mutualcartago.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "07/07/2026 01:12 p.m."
+      "ultimaActualizacion": "09/07/2026 12:41 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 450,
+      "compra": 448,
       "venta": 467,
-      "diferencial": 17,
-      "ultimaActualizacion": "09/07/2026 01:32 a.m."
+      "diferencial": 19,
+      "ultimaActualizacion": "09/07/2026 11:59 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
