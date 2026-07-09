@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-09T20:56:41.220Z",
+  "ultimaActualizacion": "2026-07-09T22:18:03.182Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 446,
-      "venta": 459,
+      "compra": 447,
+      "venta": 460,
       "diferencial": 13,
-      "ultimaActualizacion": "07/07/2026 02:22 p.m."
+      "ultimaActualizacion": "09/07/2026 03:55 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
