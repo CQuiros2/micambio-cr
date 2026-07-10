@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-10T01:14:15.333Z",
+  "ultimaActualizacion": "2026-07-10T15:26:50.762Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "09/07/2026 08:39 a.m."
+      "ultimaActualizacion": "10/07/2026 08:40 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 447,
       "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "09/07/2026 01:22 p.m."
+      "ultimaActualizacion": "10/07/2026 08:21 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "09/07/2026 12:52 p.m."
+      "ultimaActualizacion": "09/07/2026 11:34 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "09/07/2026 08:58 a.m."
+      "ultimaActualizacion": "10/07/2026 09:00 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "09/07/2026 11:27 a.m."
+      "ultimaActualizacion": "10/07/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "09/07/2026 08:06 a.m."
+      "ultimaActualizacion": "10/07/2026 07:48 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 451.1,
-      "venta": 456.97,
+      "compra": 451.06,
+      "venta": 456.93,
       "diferencial": 5.87,
-      "ultimaActualizacion": "09/07/2026 06:06 p.m."
+      "ultimaActualizacion": "10/07/2026 09:01 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 450,
       "venta": 467,
       "diferencial": 17,
-      "ultimaActualizacion": "09/07/2026 01:15 p.m."
+      "ultimaActualizacion": "10/07/2026 12:57 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "09/07/2026 08:30 a.m."
+      "ultimaActualizacion": "10/07/2026 08:16 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,16 +314,16 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "09/07/2026 07:41 a.m."
+      "ultimaActualizacion": "10/07/2026 06:50 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "08/07/2026 09:18 a.m."
+      "ultimaActualizacion": "10/07/2026 08:12 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,16 +332,16 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "07/07/2026 09:33 a.m."
+      "ultimaActualizacion": "10/07/2026 09:11 a.m."
     }
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.1
+    "valor": 451.06
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 456.97
+    "valor": 456.93
   },
   "historico": [
     {
