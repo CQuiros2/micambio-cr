@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-10T21:16:57.896Z",
+  "ultimaActualizacion": "2026-07-10T22:18:36.792Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "10/07/2026 08:40 a.m."
+      "ultimaActualizacion": "10/07/2026 04:07 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
