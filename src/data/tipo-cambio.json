@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-10T20:07:11.922Z",
+  "ultimaActualizacion": "2026-07-10T21:16:57.896Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "10/07/2026 09:48 a.m."
+      "ultimaActualizacion": "10/07/2026 03:14 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
