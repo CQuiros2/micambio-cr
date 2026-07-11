@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-10T23:15:57.115Z",
+  "ultimaActualizacion": "2026-07-11T00:11:19.801Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 449,
+      "compra": 447,
       "venta": 457,
-      "diferencial": 8,
-      "ultimaActualizacion": "09/07/2026 05:32 p.m."
+      "diferencial": 10,
+      "ultimaActualizacion": "10/07/2026 05:41 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "08/07/2026 06:25 p.m."
+      "ultimaActualizacion": "10/07/2026 05:45 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -858,6 +858,11 @@
       "fecha": "2026-07-10",
       "compra": 448.82,
       "venta": 455.1
+    },
+    {
+      "fecha": "2026-07-11",
+      "compra": 448.53,
+      "venta": 455.4
     }
   ]
 }
