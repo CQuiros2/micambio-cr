@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-13T15:38:30.642Z",
+  "ultimaActualizacion": "2026-07-13T17:34:31.528Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "09/07/2026 01:18 p.m."
+      "ultimaActualizacion": "13/07/2026 09:56 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "09/07/2026 05:15 p.m."
+      "ultimaActualizacion": "13/07/2026 10:15 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "02/07/2026 12:31 p.m."
+      "ultimaActualizacion": "13/07/2026 09:56 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
