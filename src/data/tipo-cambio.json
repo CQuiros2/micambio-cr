@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-13T20:21:58.100Z",
+  "ultimaActualizacion": "2026-07-13T21:26:12.051Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 446.5,
-      "venta": 459,
+      "compra": 444.5,
+      "venta": 457,
       "diferencial": 12.5,
-      "ultimaActualizacion": "10/07/2026 12:58 p.m."
+      "ultimaActualizacion": "13/07/2026 02:35 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 444,
-      "venta": 459,
+      "compra": 443,
+      "venta": 458,
       "diferencial": 15,
-      "ultimaActualizacion": "07/07/2026 03:18 p.m."
+      "ultimaActualizacion": "13/07/2026 02:23 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 447,
-      "venta": 460,
+      "compra": 445,
+      "venta": 458,
       "diferencial": 13,
-      "ultimaActualizacion": "09/07/2026 03:55 p.m."
+      "ultimaActualizacion": "13/07/2026 03:10 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
