@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-13T23:24:03.814Z",
+  "ultimaActualizacion": "2026-07-14T00:12:40.890Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "06/07/2026 05:19 p.m."
+      "ultimaActualizacion": "13/07/2026 05:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -873,6 +873,11 @@
       "fecha": "2026-07-13",
       "compra": 448.53,
       "venta": 455.4
+    },
+    {
+      "fecha": "2026-07-14",
+      "compra": 448.93,
+      "venta": 454.44
     }
   ]
 }
