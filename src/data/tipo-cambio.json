@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-15T14:42:25.558Z",
+  "ultimaActualizacion": "2026-07-15T16:08:46.989Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "14/07/2026 09:08 a.m."
+      "ultimaActualizacion": "15/07/2026 09:05 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -329,10 +329,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "13/07/2026 08:44 a.m."
+      "ultimaActualizacion": "15/07/2026 09:27 a.m."
     }
   ],
   "mejorCompra": {
