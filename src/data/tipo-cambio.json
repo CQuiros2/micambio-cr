@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-16T22:39:50.929Z",
+  "ultimaActualizacion": "2026-07-16T23:35:45.550Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "14/07/2026 10:36 a.m."
+      "ultimaActualizacion": "16/07/2026 05:28 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 362.55,
-      "venta": 532.63,
-      "diferencial": 170.08,
-      "ultimaActualizacion": "16/07/2026 10:16 a.m."
+      "compra": 362.26,
+      "venta": 532.2,
+      "diferencial": 169.94,
+      "ultimaActualizacion": "16/07/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
