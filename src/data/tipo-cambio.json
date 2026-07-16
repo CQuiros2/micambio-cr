@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-16T20:36:44.419Z",
+  "ultimaActualizacion": "2026-07-16T21:41:00.929Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -240,9 +240,9 @@
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
       "compra": 447,
-      "venta": 466,
-      "diferencial": 19,
-      "ultimaActualizacion": "14/07/2026 12:34 p.m."
+      "venta": 465,
+      "diferencial": 18,
+      "ultimaActualizacion": "16/07/2026 03:16 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
