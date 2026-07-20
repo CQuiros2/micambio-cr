@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-07-20T21:21:21.234Z",
+  "ultimaActualizacion": "2026-07-20T22:28:41.290Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 443,
-      "venta": 457,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "17/07/2026 12:29 p.m."
+      "ultimaActualizacion": "20/07/2026 03:59 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 441,
-      "venta": 456,
+      "compra": 443,
+      "venta": 458,
       "diferencial": 15,
-      "ultimaActualizacion": "17/07/2026 02:46 p.m."
+      "ultimaActualizacion": "20/07/2026 03:28 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "14/07/2026 04:40 p.m."
+      "ultimaActualizacion": "20/07/2026 04:15 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
