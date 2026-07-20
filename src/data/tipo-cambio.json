@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-20T15:03:12.139Z",
+  "ultimaActualizacion": "2026-07-20T16:40:37.958Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -116,7 +116,7 @@
       "compra": 439,
       "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "17/07/2026 09:46 a.m."
+      "ultimaActualizacion": "20/07/2026 09:42 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 445,
-      "venta": 458,
+      "compra": 444,
+      "venta": 457,
       "diferencial": 13,
-      "ultimaActualizacion": "13/07/2026 03:10 p.m."
+      "ultimaActualizacion": "20/07/2026 09:04 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -332,7 +332,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "17/07/2026 09:05 a.m."
+      "ultimaActualizacion": "20/07/2026 09:18 a.m."
     }
   ],
   "mejorCompra": {
