@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-07-21T20:17:26.794Z",
+  "ultimaActualizacion": "2026-07-21T21:34:38.838Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "20/07/2026 03:59 p.m."
+      "ultimaActualizacion": "21/07/2026 02:42 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "20/07/2026 01:27 p.m."
+      "ultimaActualizacion": "21/07/2026 03:23 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
