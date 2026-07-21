@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-21T01:02:46.202Z",
+  "ultimaActualizacion": "2026-07-21T14:57:01.111Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/07/2026 02:18 p.m."
+      "ultimaActualizacion": "21/07/2026 08:44 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/07/2026 01:22 p.m."
+      "ultimaActualizacion": "21/07/2026 08:25 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 442,
       "venta": 457,
       "diferencial": 15,
-      "ultimaActualizacion": "20/07/2026 01:42 p.m."
+      "ultimaActualizacion": "20/07/2026 11:30 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 439,
-      "venta": 457,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "20/07/2026 09:02 a.m."
+      "ultimaActualizacion": "21/07/2026 08:49 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 440,
       "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "20/07/2026 02:21 p.m."
+      "ultimaActualizacion": "20/07/2026 09:26 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -194,10 +194,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 443,
-      "venta": 461,
-      "diferencial": 18,
-      "ultimaActualizacion": "20/07/2026 03:05 p.m."
+      "compra": 496.24,
+      "venta": 502.76,
+      "diferencial": 6.52,
+      "ultimaActualizacion": "21/07/2026 08:27 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -230,10 +230,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 447,
-      "venta": 460,
+      "compra": 444,
+      "venta": 457,
       "diferencial": 13,
-      "ultimaActualizacion": "22/06/2026 02:57 p.m."
+      "ultimaActualizacion": "21/07/2026 08:33 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 448.1,
-      "venta": 453.97,
+      "compra": 449.12,
+      "venta": 454.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "20/07/2026 12:35 p.m."
+      "ultimaActualizacion": "21/07/2026 07:10 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 447,
       "venta": 465,
       "diferencial": 18,
-      "ultimaActualizacion": "20/07/2026 01:07 p.m."
+      "ultimaActualizacion": "21/07/2026 08:04 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -302,28 +302,28 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "14/07/2026 01:01 p.m."
+      "ultimaActualizacion": "21/07/2026 07:52 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 442,
-      "venta": 456,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/07/2026 07:23 a.m."
+      "ultimaActualizacion": "21/07/2026 07:56 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 443,
-      "venta": 457,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "20/07/2026 08:12 a.m."
+      "ultimaActualizacion": "21/07/2026 08:28 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 448.1
+    "nombre": "Cooperativa COOCIQUE R.L.",
+    "valor": 496.24
   },
   "mejorVenta": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.97
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 454
   },
   "historico": [
     {
