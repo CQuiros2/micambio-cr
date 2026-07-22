@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-22T17:43:58.729Z",
+  "ultimaActualizacion": "2026-07-22T18:48:20.076Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 444.5,
-      "venta": 457,
+      "compra": 447.5,
+      "venta": 460,
       "diferencial": 12.5,
-      "ultimaActualizacion": "13/07/2026 02:35 p.m."
+      "ultimaActualizacion": "22/07/2026 12:15 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -158,19 +158,19 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Mutual Cartago de Ahorro y Préstamo",
       "slug": "mutualcartago.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "21/07/2026 01:20 p.m."
+      "ultimaActualizacion": "22/07/2026 11:56 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 445,
-      "venta": 459.5,
+      "compra": 446.1,
+      "venta": 460.6,
       "diferencial": 14.5,
-      "ultimaActualizacion": "14/07/2026 11:43 a.m."
+      "ultimaActualizacion": "22/07/2026 12:01 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -275,28 +275,28 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 447,
+      "compra": 445,
       "venta": 465,
-      "diferencial": 18,
-      "ultimaActualizacion": "22/07/2026 01:00 a.m."
+      "diferencial": 20,
+      "ultimaActualizacion": "22/07/2026 11:56 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "22/07/2026 06:56 a.m."
+      "ultimaActualizacion": "22/07/2026 11:51 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "22/07/2026 08:25 a.m."
+      "ultimaActualizacion": "22/07/2026 12:15 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
