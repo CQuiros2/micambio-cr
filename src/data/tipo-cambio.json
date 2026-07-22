@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-22T16:18:45.481Z",
+  "ultimaActualizacion": "2026-07-22T17:43:58.729Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "22/07/2026 08:46 a.m."
+      "ultimaActualizacion": "22/07/2026 10:50 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "21/07/2026 05:31 p.m."
+      "ultimaActualizacion": "22/07/2026 11:38 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 441,
-      "venta": 461,
+      "compra": 443,
+      "venta": 463,
       "diferencial": 20,
-      "ultimaActualizacion": "20/07/2026 02:10 p.m."
+      "ultimaActualizacion": "22/07/2026 11:26 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 442,
-      "venta": 460,
+      "compra": 444,
+      "venta": 462,
       "diferencial": 18,
-      "ultimaActualizacion": "21/07/2026 07:52 a.m."
+      "ultimaActualizacion": "22/07/2026 11:25 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
