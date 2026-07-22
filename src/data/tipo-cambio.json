@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-22T21:18:10.099Z",
+  "ultimaActualizacion": "2026-07-22T22:18:03.582Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "21/07/2026 06:41 p.m."
+      "ultimaActualizacion": "22/07/2026 04:03 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
