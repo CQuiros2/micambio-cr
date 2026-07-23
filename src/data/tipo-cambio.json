@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-23T18:01:45.415Z",
+  "ultimaActualizacion": "2026-07-23T19:39:55.101Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 444,
-      "venta": 459,
+      "compra": 445,
+      "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "22/07/2026 11:27 p.m."
+      "ultimaActualizacion": "23/07/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 446,
-      "venta": 466,
-      "diferencial": 20,
-      "ultimaActualizacion": "23/07/2026 11:57 a.m."
+      "compra": 448,
+      "venta": 465,
+      "diferencial": 17,
+      "ultimaActualizacion": "23/07/2026 01:08 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
