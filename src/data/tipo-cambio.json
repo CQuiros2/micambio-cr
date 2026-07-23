@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-23T19:39:55.101Z",
+  "ultimaActualizacion": "2026-07-23T20:40:05.932Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 444,
-      "venta": 460,
+      "compra": 446,
+      "venta": 462,
       "diferencial": 16,
-      "ultimaActualizacion": "21/07/2026 08:57 a.m."
+      "ultimaActualizacion": "23/07/2026 02:02 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
