@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-24T22:43:46.038Z",
+  "ultimaActualizacion": "2026-07-24T23:44:37.437Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 447.5,
-      "venta": 460,
+      "compra": 446.8,
+      "venta": 459.3,
       "diferencial": 12.5,
-      "ultimaActualizacion": "22/07/2026 12:15 p.m."
+      "ultimaActualizacion": "24/07/2026 04:55 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 449,
-      "venta": 457,
-      "diferencial": 8,
-      "ultimaActualizacion": "21/07/2026 05:40 p.m."
+      "compra": 448,
+      "venta": 458,
+      "diferencial": 10,
+      "ultimaActualizacion": "24/07/2026 04:49 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 364.56,
-      "venta": 535.58,
-      "diferencial": 171.02,
-      "ultimaActualizacion": "22/07/2026 03:07 p.m."
+      "compra": 364.97,
+      "venta": 536.19,
+      "diferencial": 171.22,
+      "ultimaActualizacion": "24/07/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
