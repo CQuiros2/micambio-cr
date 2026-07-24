@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-24T01:01:57.318Z",
+  "ultimaActualizacion": "2026-07-24T14:46:28.784Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "23/07/2026 08:26 a.m."
+      "ultimaActualizacion": "24/07/2026 08:19 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "23/07/2026 01:01 p.m."
+      "ultimaActualizacion": "23/07/2026 11:26 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "22/07/2026 08:51 p.m."
+      "ultimaActualizacion": "23/07/2026 10:06 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "23/07/2026 12:29 a.m."
+      "ultimaActualizacion": "24/07/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -278,7 +278,7 @@
       "compra": 448,
       "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "23/07/2026 01:08 p.m."
+      "ultimaActualizacion": "24/07/2026 01:03 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "23/07/2026 08:17 a.m."
+      "ultimaActualizacion": "24/07/2026 08:26 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "23/07/2026 06:23 a.m."
+      "ultimaActualizacion": "24/07/2026 06:53 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
