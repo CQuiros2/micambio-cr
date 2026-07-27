@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-27T18:50:46.368Z",
+  "ultimaActualizacion": "2026-07-27T20:14:44.930Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "21/07/2026 03:23 p.m."
+      "ultimaActualizacion": "27/07/2026 01:14 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 448,
-      "venta": 458,
-      "diferencial": 10,
-      "ultimaActualizacion": "24/07/2026 04:49 p.m."
+      "compra": 448.5,
+      "venta": 456.5,
+      "diferencial": 8,
+      "ultimaActualizacion": "27/07/2026 01:14 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 447,
-      "venta": 466,
-      "diferencial": 19,
-      "ultimaActualizacion": "27/07/2026 11:58 a.m."
+      "compra": 448,
+      "venta": 465,
+      "diferencial": 17,
+      "ultimaActualizacion": "27/07/2026 01:19 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
