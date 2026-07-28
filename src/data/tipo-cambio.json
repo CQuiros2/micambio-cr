@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-28T19:47:51.060Z",
+  "ultimaActualizacion": "2026-07-28T20:50:36.820Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 445,
-      "venta": 460,
+      "compra": 444,
+      "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "22/07/2026 02:38 p.m."
+      "ultimaActualizacion": "28/07/2026 02:28 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 449.06,
-      "venta": 454.93,
+      "compra": 450.06,
+      "venta": 455.93,
       "diferencial": 5.87,
-      "ultimaActualizacion": "28/07/2026 12:47 p.m."
+      "ultimaActualizacion": "28/07/2026 02:26 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 449.06
+    "valor": 450.06
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.93
+    "valor": 455.93
   },
   "historico": [
     {
