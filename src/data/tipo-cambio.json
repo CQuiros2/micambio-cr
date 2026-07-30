@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-30T22:56:51.936Z",
+  "ultimaActualizacion": "2026-07-30T23:58:25.214Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 448.5,
-      "venta": 456.5,
+      "compra": 447.5,
+      "venta": 455.5,
       "diferencial": 8,
-      "ultimaActualizacion": "27/07/2026 01:14 p.m."
+      "ultimaActualizacion": "30/07/2026 05:38 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "29/07/2026 06:47 p.m."
+      "ultimaActualizacion": "30/07/2026 05:47 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -336,8 +336,8 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 448.5
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 448.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
