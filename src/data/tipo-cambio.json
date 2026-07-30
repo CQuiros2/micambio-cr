@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-30T00:12:16.442Z",
+  "ultimaActualizacion": "2026-07-30T15:03:31.528Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "29/07/2026 08:23 a.m."
+      "ultimaActualizacion": "30/07/2026 08:19 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "28/07/2026 11:28 p.m."
+      "ultimaActualizacion": "29/07/2026 11:29 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "29/07/2026 08:55 a.m."
+      "ultimaActualizacion": "30/07/2026 08:40 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "29/07/2026 08:46 a.m."
+      "ultimaActualizacion": "30/07/2026 09:02 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 441,
       "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "29/07/2026 01:51 p.m."
+      "ultimaActualizacion": "29/07/2026 09:31 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -188,7 +188,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "29/07/2026 11:25 a.m."
+      "ultimaActualizacion": "29/07/2026 06:47 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "29/07/2026 12:29 a.m."
+      "ultimaActualizacion": "30/07/2026 12:28 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 449.12,
-      "venta": 454.99,
+      "compra": 448.06,
+      "venta": 453.93,
       "diferencial": 5.87,
-      "ultimaActualizacion": "29/07/2026 12:04 p.m."
+      "ultimaActualizacion": "30/07/2026 08:18 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 448,
       "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "29/07/2026 01:04 p.m."
+      "ultimaActualizacion": "30/07/2026 12:54 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "29/07/2026 08:05 a.m."
+      "ultimaActualizacion": "30/07/2026 08:22 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,16 +314,16 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "29/07/2026 06:22 a.m."
+      "ultimaActualizacion": "30/07/2026 07:51 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "29/07/2026 07:38 a.m."
+      "ultimaActualizacion": "30/07/2026 08:16 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 449.12
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 448.5
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.99
+    "valor": 453.93
   },
   "historico": [
     {
