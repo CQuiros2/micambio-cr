@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-31T22:12:52.159Z",
+  "ultimaActualizacion": "2026-07-31T23:16:00.882Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "31/07/2026 08:34 a.m."
+      "ultimaActualizacion": "31/07/2026 04:20 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "28/07/2026 09:37 a.m."
+      "ultimaActualizacion": "31/07/2026 04:51 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "31/07/2026 08:26 a.m."
+      "ultimaActualizacion": "31/07/2026 04:50 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -329,10 +329,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 446,
-      "venta": 460,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "31/07/2026 08:39 a.m."
+      "ultimaActualizacion": "31/07/2026 05:05 p.m."
     }
   ],
   "mejorCompra": {
