@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-31T19:57:11.708Z",
+  "ultimaActualizacion": "2026-07-31T21:00:45.288Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "30/07/2026 07:26 p.m."
+      "ultimaActualizacion": "31/07/2026 02:52 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 445,
-      "venta": 461,
+      "compra": 443,
+      "venta": 459,
       "diferencial": 16,
-      "ultimaActualizacion": "29/07/2026 01:09 p.m."
+      "ultimaActualizacion": "31/07/2026 02:01 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 448.12,
-      "venta": 453.99,
+      "compra": 447.12,
+      "venta": 452.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "31/07/2026 12:02 p.m."
+      "ultimaActualizacion": "31/07/2026 02:27 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 448.12
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 448
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.99
+    "valor": 452.99
   },
   "historico": [
     {
