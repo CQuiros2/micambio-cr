@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-30T23:58:25.214Z",
+  "ultimaActualizacion": "2026-07-31T15:12:48.504Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "30/07/2026 04:38 p.m."
+      "ultimaActualizacion": "31/07/2026 08:34 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "30/07/2026 08:19 a.m."
+      "ultimaActualizacion": "31/07/2026 08:17 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "29/07/2026 11:29 p.m."
+      "ultimaActualizacion": "30/07/2026 11:37 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 441,
       "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "30/07/2026 08:40 a.m."
+      "ultimaActualizacion": "31/07/2026 09:04 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 441,
       "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "30/07/2026 09:02 a.m."
+      "ultimaActualizacion": "31/07/2026 08:52 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 441,
       "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "29/07/2026 09:31 p.m."
+      "ultimaActualizacion": "30/07/2026 07:26 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -188,7 +188,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "30/07/2026 05:47 p.m."
+      "ultimaActualizacion": "30/07/2026 06:50 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "30/07/2026 12:28 a.m."
+      "ultimaActualizacion": "31/07/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -251,7 +251,7 @@
       "compra": 448.12,
       "venta": 453.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "30/07/2026 04:12 p.m."
+      "ultimaActualizacion": "31/07/2026 08:39 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.69,
-      "venta": 534.31,
-      "diferencial": 170.62,
-      "ultimaActualizacion": "29/07/2026 05:07 p.m."
+      "compra": 363.41,
+      "venta": 533.91,
+      "diferencial": 170.5,
+      "ultimaActualizacion": "30/07/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 448,
       "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "30/07/2026 01:13 p.m."
+      "ultimaActualizacion": "31/07/2026 01:03 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,28 +293,28 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "30/07/2026 08:22 a.m."
+      "ultimaActualizacion": "31/07/2026 08:43 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "28/07/2026 09:50 a.m."
+      "ultimaActualizacion": "31/07/2026 08:26 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "30/07/2026 07:51 a.m."
+      "ultimaActualizacion": "31/07/2026 06:18 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,7 +332,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "27/07/2026 09:24 a.m."
+      "ultimaActualizacion": "31/07/2026 08:39 a.m."
     }
   ],
   "mejorCompra": {
@@ -958,6 +958,11 @@
       "fecha": "2026-07-30",
       "compra": 449.4,
       "venta": 454.75
+    },
+    {
+      "fecha": "2026-07-31",
+      "compra": 448.31,
+      "venta": 454.44
     }
   ]
 }
