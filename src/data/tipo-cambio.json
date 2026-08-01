@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-07-31T23:16:00.882Z",
+  "ultimaActualizacion": "2026-08-01T00:12:26.138Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "21/07/2026 05:20 p.m."
+      "ultimaActualizacion": "31/07/2026 05:19 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "29/07/2026 05:27 p.m."
+      "ultimaActualizacion": "31/07/2026 05:22 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 447.5,
+      "compra": 445.5,
       "venta": 455.5,
-      "diferencial": 8,
-      "ultimaActualizacion": "30/07/2026 05:38 p.m."
+      "diferencial": 10,
+      "ultimaActualizacion": "31/07/2026 05:42 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "30/07/2026 06:50 p.m."
+      "ultimaActualizacion": "31/07/2026 05:24 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -963,6 +963,11 @@
       "fecha": "2026-07-31",
       "compra": 448.31,
       "venta": 454.44
+    },
+    {
+      "fecha": "2026-08-01",
+      "compra": 448.22,
+      "venta": 453.59
     }
   ]
 }
