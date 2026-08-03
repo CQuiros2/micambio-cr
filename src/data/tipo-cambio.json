@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-03T22:42:23.061Z",
+  "ultimaActualizacion": "2026-08-03T23:49:11.430Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "31/07/2026 05:22 p.m."
+      "ultimaActualizacion": "03/08/2026 05:12 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 443,
-      "venta": 457,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "31/07/2026 07:33 p.m."
+      "ultimaActualizacion": "03/08/2026 04:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "31/07/2026 04:50 p.m."
+      "ultimaActualizacion": "03/08/2026 05:17 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
