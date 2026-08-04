@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-04T01:09:36.811Z",
+  "ultimaActualizacion": "2026-08-04T15:16:52.109Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/08/2026 03:26 p.m."
+      "ultimaActualizacion": "04/08/2026 08:31 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/08/2026 01:12 p.m."
+      "ultimaActualizacion": "04/08/2026 08:23 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "01/08/2026 04:37 p.m."
+      "ultimaActualizacion": "04/08/2026 02:58 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "03/08/2026 09:13 a.m."
+      "ultimaActualizacion": "04/08/2026 08:49 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 441,
       "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "03/08/2026 01:37 p.m."
+      "ultimaActualizacion": "03/08/2026 10:02 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "03/08/2026 12:29 a.m."
+      "ultimaActualizacion": "04/08/2026 12:28 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "03/08/2026 08:00 a.m."
+      "ultimaActualizacion": "04/08/2026 07:49 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.41,
-      "venta": 533.91,
-      "diferencial": 170.5,
-      "ultimaActualizacion": "30/07/2026 09:07 p.m."
+      "compra": 364.39,
+      "venta": 535.33,
+      "diferencial": 170.94,
+      "ultimaActualizacion": "03/08/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 448,
       "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "03/08/2026 01:05 p.m."
+      "ultimaActualizacion": "04/08/2026 01:25 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -293,10 +293,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 443,
-      "venta": 457,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/08/2026 08:28 a.m."
+      "ultimaActualizacion": "04/08/2026 08:17 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 443,
-      "venta": 457,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "03/08/2026 06:51 a.m."
+      "ultimaActualizacion": "04/08/2026 07:26 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,7 +332,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "03/08/2026 09:22 a.m."
+      "ultimaActualizacion": "04/08/2026 09:03 a.m."
     }
   ],
   "mejorCompra": {
