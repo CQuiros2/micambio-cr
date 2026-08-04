@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-04T20:12:44.443Z",
+  "ultimaActualizacion": "2026-08-04T21:37:32.700Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 447,
+      "venta": 461,
       "diferencial": 14,
-      "ultimaActualizacion": "03/08/2026 01:25 p.m."
+      "ultimaActualizacion": "04/08/2026 02:34 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "03/08/2026 10:02 p.m."
+      "ultimaActualizacion": "04/08/2026 02:22 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 449.1,
-      "venta": 454.97,
+      "compra": 450.12,
+      "venta": 455.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "04/08/2026 02:06 p.m."
+      "ultimaActualizacion": "04/08/2026 03:21 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 449.1
+    "valor": 450.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 454.97
+    "valor": 455.99
   },
   "historico": [
     {
