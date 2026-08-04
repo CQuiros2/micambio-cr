@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-04T21:37:32.700Z",
+  "ultimaActualizacion": "2026-08-04T22:40:20.137Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 443,
-      "venta": 459,
+      "compra": 445,
+      "venta": 461,
       "diferencial": 16,
-      "ultimaActualizacion": "31/07/2026 02:01 p.m."
+      "ultimaActualizacion": "04/08/2026 04:04 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 450.12,
-      "venta": 455.99,
+      "compra": 452.1,
+      "venta": 457.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "04/08/2026 03:21 p.m."
+      "ultimaActualizacion": "04/08/2026 04:38 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -329,19 +329,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "04/08/2026 09:03 a.m."
+      "ultimaActualizacion": "04/08/2026 04:12 p.m."
     }
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 450.12
+    "valor": 452.1
   },
   "mejorVenta": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 455.99
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 456
   },
   "historico": [
     {
