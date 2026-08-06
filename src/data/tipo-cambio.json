@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-06T00:13:33.183Z",
+  "ultimaActualizacion": "2026-08-06T15:07:01.603Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 446,
       "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "05/08/2026 08:26 a.m."
+      "ultimaActualizacion": "06/08/2026 08:33 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 445,
       "venta": 460,
       "diferencial": 15,
-      "ultimaActualizacion": "05/08/2026 02:45 a.m."
+      "ultimaActualizacion": "06/08/2026 03:37 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "05/08/2026 09:00 a.m."
+      "ultimaActualizacion": "06/08/2026 09:01 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "04/08/2026 06:37 p.m."
+      "ultimaActualizacion": "05/08/2026 08:37 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "05/08/2026 12:29 a.m."
+      "ultimaActualizacion": "06/08/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -278,7 +278,7 @@
       "compra": 448,
       "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "05/08/2026 01:05 p.m."
+      "ultimaActualizacion": "06/08/2026 12:57 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "05/08/2026 08:25 a.m."
+      "ultimaActualizacion": "06/08/2026 08:14 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "05/08/2026 07:35 a.m."
+      "ultimaActualizacion": "06/08/2026 07:43 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
