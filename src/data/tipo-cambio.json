@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-07T20:19:29.137Z",
+  "ultimaActualizacion": "2026-08-07T21:03:24.701Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 443.4,
-      "venta": 455.9,
+      "compra": 445.75,
+      "venta": 458.25,
       "diferencial": 12.5,
-      "ultimaActualizacion": "06/08/2026 05:09 p.m."
+      "ultimaActualizacion": "07/08/2026 02:51 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "06/08/2026 01:16 p.m."
+      "ultimaActualizacion": "07/08/2026 02:36 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
