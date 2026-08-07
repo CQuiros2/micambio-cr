@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-07T19:39:39.049Z",
+  "ultimaActualizacion": "2026-08-07T20:19:29.137Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "06/08/2026 01:37 p.m."
+      "ultimaActualizacion": "07/08/2026 01:44 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "06/08/2026 01:09 p.m."
+      "ultimaActualizacion": "07/08/2026 01:39 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "06/08/2026 08:52 p.m."
+      "ultimaActualizacion": "07/08/2026 01:57 p.m."
     },
     {
       "tipoEntidad": "Financieras",
