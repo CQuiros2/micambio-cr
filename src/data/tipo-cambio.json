@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-07T21:03:24.701Z",
+  "ultimaActualizacion": "2026-08-07T21:50:54.824Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "06/08/2026 04:12 p.m."
+      "ultimaActualizacion": "07/08/2026 03:45 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 362.8,
-      "venta": 533,
-      "diferencial": 170.2,
-      "ultimaActualizacion": "06/08/2026 09:07 p.m."
+      "compra": 363.58,
+      "venta": 534.16,
+      "diferencial": 170.58,
+      "ultimaActualizacion": "07/08/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
