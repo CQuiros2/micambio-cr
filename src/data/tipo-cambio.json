@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-08-10T18:00:45.718Z",
+  "ultimaActualizacion": "2026-08-10T19:10:07.921Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "07/08/2026 01:27 p.m."
+      "ultimaActualizacion": "10/08/2026 01:06 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,28 +32,28 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "10/08/2026 08:29 a.m."
+      "ultimaActualizacion": "10/08/2026 01:07 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "07/08/2026 01:39 p.m."
+      "ultimaActualizacion": "10/08/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 445.75,
-      "venta": 458.25,
+      "compra": 443.9,
+      "venta": 456.4,
       "diferencial": 12.5,
-      "ultimaActualizacion": "07/08/2026 02:51 p.m."
+      "ultimaActualizacion": "10/08/2026 01:06 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -141,9 +141,9 @@
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
       "compra": 446,
-      "venta": 456,
-      "diferencial": 10,
-      "ultimaActualizacion": "07/08/2026 04:52 p.m."
+      "venta": 454,
+      "diferencial": 8,
+      "ultimaActualizacion": "10/08/2026 01:05 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 448.12,
-      "venta": 453.99,
+      "compra": 447.1,
+      "venta": 452.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "07/08/2026 04:25 p.m."
+      "ultimaActualizacion": "10/08/2026 12:48 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,19 +275,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 446,
+      "compra": 448,
       "venta": 465,
-      "diferencial": 19,
-      "ultimaActualizacion": "10/08/2026 11:55 a.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "10/08/2026 01:06 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "07/08/2026 02:36 p.m."
+      "ultimaActualizacion": "10/08/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 448.12
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 448
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.99
+    "valor": 452.97
   },
   "historico": [
     {
