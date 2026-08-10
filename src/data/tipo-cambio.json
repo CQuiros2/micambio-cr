@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-10T22:05:17.874Z",
+  "ultimaActualizacion": "2026-08-10T22:51:17.257Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 446.1,
-      "venta": 460.6,
+      "compra": 445.1,
+      "venta": 459.6,
       "diferencial": 14.5,
-      "ultimaActualizacion": "03/08/2026 04:22 p.m."
+      "ultimaActualizacion": "10/08/2026 04:07 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 448.12,
-      "venta": 453.99,
+      "compra": 449.02,
+      "venta": 454.89,
       "diferencial": 5.87,
-      "ultimaActualizacion": "10/08/2026 02:21 p.m."
+      "ultimaActualizacion": "10/08/2026 04:34 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 448.12
+    "valor": 449.02
   },
   "mejorVenta": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.99
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 454
   },
   "historico": [
     {
