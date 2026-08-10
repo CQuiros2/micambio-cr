@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-10T22:51:17.257Z",
+  "ultimaActualizacion": "2026-08-10T23:26:18.275Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "07/08/2026 05:49 p.m."
+      "ultimaActualizacion": "10/08/2026 05:16 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.58,
-      "venta": 534.16,
-      "diferencial": 170.58,
-      "ultimaActualizacion": "07/08/2026 03:07 p.m."
+      "compra": 361.8,
+      "venta": 531.54,
+      "diferencial": 169.74,
+      "ultimaActualizacion": "10/08/2026 05:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
