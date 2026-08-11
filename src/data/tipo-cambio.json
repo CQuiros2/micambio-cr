@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-11T20:58:38.015Z",
+  "ultimaActualizacion": "2026-08-11T21:47:52.076Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -194,10 +194,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa COOCIQUE R.L.",
       "slug": "coocique.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "11/08/2026 12:29 a.m."
+      "ultimaActualizacion": "11/08/2026 03:39 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 361.8,
-      "venta": 531.54,
-      "diferencial": 169.74,
-      "ultimaActualizacion": "10/08/2026 05:08 p.m."
+      "compra": 362.3,
+      "venta": 532.28,
+      "diferencial": 169.98,
+      "ultimaActualizacion": "11/08/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
