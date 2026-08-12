@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-11T23:56:16.647Z",
+  "ultimaActualizacion": "2026-08-12T15:15:25.924Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "11/08/2026 08:36 a.m."
+      "ultimaActualizacion": "12/08/2026 08:53 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "11/08/2026 08:26 a.m."
+      "ultimaActualizacion": "12/08/2026 08:18 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 441,
       "venta": 456,
       "diferencial": 15,
-      "ultimaActualizacion": "11/08/2026 12:48 p.m."
+      "ultimaActualizacion": "11/08/2026 11:24 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 439,
       "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "11/08/2026 09:41 a.m."
+      "ultimaActualizacion": "12/08/2026 08:49 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 439,
       "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "11/08/2026 08:48 a.m."
+      "ultimaActualizacion": "12/08/2026 09:01 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 439,
       "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "11/08/2026 01:27 p.m."
+      "ultimaActualizacion": "11/08/2026 07:12 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -188,7 +188,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "10/08/2026 06:15 p.m."
+      "ultimaActualizacion": "11/08/2026 06:27 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -197,7 +197,7 @@
       "compra": 440,
       "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "11/08/2026 03:39 p.m."
+      "ultimaActualizacion": "12/08/2026 12:28 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "04/08/2026 07:49 a.m."
+      "ultimaActualizacion": "12/08/2026 07:48 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -242,7 +242,7 @@
       "compra": 447,
       "venta": 464,
       "diferencial": 17,
-      "ultimaActualizacion": "10/08/2026 04:00 p.m."
+      "ultimaActualizacion": "11/08/2026 10:10 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 447,
       "venta": 464,
       "diferencial": 17,
-      "ultimaActualizacion": "11/08/2026 01:10 p.m."
+      "ultimaActualizacion": "12/08/2026 01:03 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "11/08/2026 08:14 a.m."
+      "ultimaActualizacion": "12/08/2026 08:41 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "11/08/2026 07:02 a.m."
+      "ultimaActualizacion": "12/08/2026 06:06 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,7 +332,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "10/08/2026 09:21 a.m."
+      "ultimaActualizacion": "12/08/2026 09:11 a.m."
     }
   ],
   "mejorCompra": {
@@ -1018,6 +1018,11 @@
       "fecha": "2026-08-11",
       "compra": 447.79,
       "venta": 452.77
+    },
+    {
+      "fecha": "2026-08-12",
+      "compra": 445.92,
+      "venta": 451.57
     }
   ]
 }
