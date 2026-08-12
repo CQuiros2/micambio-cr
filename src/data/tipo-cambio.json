@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-12T20:57:31.316Z",
+  "ultimaActualizacion": "2026-08-12T21:41:28.498Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -185,10 +185,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 440,
+      "venta": 454,
       "diferencial": 14,
-      "ultimaActualizacion": "11/08/2026 06:27 p.m."
+      "ultimaActualizacion": "12/08/2026 02:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 362.3,
-      "venta": 532.28,
-      "diferencial": 169.98,
-      "ultimaActualizacion": "11/08/2026 03:07 p.m."
+      "compra": 361.62,
+      "venta": 531.26,
+      "diferencial": 169.64,
+      "ultimaActualizacion": "12/08/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
