@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-12T18:07:32.276Z",
+  "ultimaActualizacion": "2026-08-12T19:15:47.765Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -14,10 +14,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Nacional de Costa Rica",
       "slug": "bncr.fi.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 440,
+      "venta": 454,
       "diferencial": 14,
-      "ultimaActualizacion": "12/08/2026 08:53 a.m."
+      "ultimaActualizacion": "12/08/2026 12:53 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 447.12,
-      "venta": 452.99,
+      "compra": 446.12,
+      "venta": 451.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "12/08/2026 10:09 a.m."
+      "ultimaActualizacion": "12/08/2026 12:49 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "10/08/2026 02:15 p.m."
+      "ultimaActualizacion": "12/08/2026 12:59 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 447.12
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 447
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 452.99
+    "valor": 451.99
   },
   "historico": [
     {
