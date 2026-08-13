@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-13T20:00:19.299Z",
+  "ultimaActualizacion": "2026-08-13T20:49:03.272Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,10 +122,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 439,
-      "venta": 457,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "12/08/2026 09:02 p.m."
+      "ultimaActualizacion": "13/08/2026 02:07 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 446.12,
-      "venta": 451.99,
+      "compra": 446.1,
+      "venta": 451.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "13/08/2026 12:09 p.m."
+      "ultimaActualizacion": "13/08/2026 02:41 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 446.12
+    "valor": 446.1
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.99
+    "valor": 451.97
   },
   "historico": [
     {
