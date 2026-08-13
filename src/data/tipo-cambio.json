@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-13T15:17:17.409Z",
+  "ultimaActualizacion": "2026-08-13T16:11:26.065Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 439,
-      "venta": 457,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "12/08/2026 09:01 a.m."
+      "ultimaActualizacion": "13/08/2026 09:21 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -320,10 +320,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 443,
-      "venta": 457,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "11/08/2026 09:36 a.m."
+      "ultimaActualizacion": "13/08/2026 09:30 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
