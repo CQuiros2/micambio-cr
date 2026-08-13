@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-13T19:16:11.772Z",
+  "ultimaActualizacion": "2026-08-13T20:00:19.299Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -86,10 +86,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "06/08/2026 01:20 p.m."
+      "ultimaActualizacion": "13/08/2026 01:17 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
