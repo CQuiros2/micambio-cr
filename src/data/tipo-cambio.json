@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-13T18:08:32.012Z",
+  "ultimaActualizacion": "2026-08-13T19:16:11.772Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 439,
-      "venta": 457,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "10/08/2026 01:01 p.m."
+      "ultimaActualizacion": "13/08/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 442,
-      "venta": 458,
+      "compra": 440,
+      "venta": 456,
       "diferencial": 16,
-      "ultimaActualizacion": "10/08/2026 02:54 p.m."
+      "ultimaActualizacion": "13/08/2026 12:54 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 445.12,
-      "venta": 450.99,
+      "compra": 446.12,
+      "venta": 451.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "13/08/2026 12:07 p.m."
+      "ultimaActualizacion": "13/08/2026 12:09 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,19 +275,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 443,
+      "compra": 445,
       "venta": 462,
-      "diferencial": 19,
-      "ultimaActualizacion": "13/08/2026 11:55 a.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "13/08/2026 01:09 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 439,
-      "venta": 457,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "10/08/2026 01:09 p.m."
+      "ultimaActualizacion": "13/08/2026 01:14 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 446
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 446.12
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 450.99
+    "valor": 451.99
   },
   "historico": [
     {
