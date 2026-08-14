@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-14T17:04:30.376Z",
+  "ultimaActualizacion": "2026-08-14T17:59:47.622Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -230,10 +230,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa San Marcos R.L.",
       "slug": "cosanmarcos.fi.cr",
-      "compra": 446,
-      "venta": 459,
+      "compra": 443,
+      "venta": 456,
       "diferencial": 13,
-      "ultimaActualizacion": "06/08/2026 02:55 p.m."
+      "ultimaActualizacion": "14/08/2026 11:58 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 445,
+      "compra": 443,
       "venta": 462,
-      "diferencial": 17,
-      "ultimaActualizacion": "14/08/2026 12:43 a.m."
+      "diferencial": 19,
+      "ultimaActualizacion": "14/08/2026 11:57 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
