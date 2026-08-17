@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-17T19:07:48.569Z",
+  "ultimaActualizacion": "2026-08-17T19:36:25.768Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 441,
-      "venta": 453.5,
+      "compra": 443.5,
+      "venta": 456,
       "diferencial": 12.5,
-      "ultimaActualizacion": "12/08/2026 04:09 p.m."
+      "ultimaActualizacion": "17/08/2026 01:07 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -141,9 +141,9 @@
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
       "compra": 444,
-      "venta": 454,
-      "diferencial": 10,
-      "ultimaActualizacion": "14/08/2026 01:42 p.m."
+      "venta": 452,
+      "diferencial": 8,
+      "ultimaActualizacion": "17/08/2026 01:18 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
