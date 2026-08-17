@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-17T13:32:54.140Z",
+  "ultimaActualizacion": "2026-08-17T14:38:11.784Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 440,
       "venta": 454,
       "diferencial": 14,
-      "ultimaActualizacion": "14/08/2026 08:40 a.m."
+      "ultimaActualizacion": "17/08/2026 08:37 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 441,
       "venta": 455,
       "diferencial": 14,
-      "ultimaActualizacion": "14/08/2026 01:17 p.m."
+      "ultimaActualizacion": "17/08/2026 08:37 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -125,7 +125,7 @@
       "compra": 438,
       "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "13/08/2026 11:27 p.m."
+      "ultimaActualizacion": "17/08/2026 08:37 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 439,
-      "venta": 457,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "12/08/2026 07:48 a.m."
+      "ultimaActualizacion": "17/08/2026 08:03 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -296,7 +296,7 @@
       "compra": 440,
       "venta": 454,
       "diferencial": 14,
-      "ultimaActualizacion": "14/08/2026 08:02 a.m."
+      "ultimaActualizacion": "17/08/2026 08:25 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
