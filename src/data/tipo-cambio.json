@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-14T23:54:57.608Z",
+  "ultimaActualizacion": "2026-08-17T13:32:54.140Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -80,7 +80,7 @@
       "compra": 441,
       "venta": 456,
       "diferencial": 15,
-      "ultimaActualizacion": "13/08/2026 11:25 p.m."
+      "ultimaActualizacion": "15/08/2026 12:19 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -188,7 +188,7 @@
       "compra": 440,
       "venta": 454,
       "diferencial": 14,
-      "ultimaActualizacion": "13/08/2026 06:43 p.m."
+      "ultimaActualizacion": "14/08/2026 06:28 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -197,7 +197,7 @@
       "compra": 440,
       "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "14/08/2026 12:28 a.m."
+      "ultimaActualizacion": "17/08/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 361.36,
-      "venta": 530.88,
-      "diferencial": 169.52,
-      "ultimaActualizacion": "14/08/2026 12:07 p.m."
+      "compra": 361.2,
+      "venta": 530.66,
+      "diferencial": 169.46,
+      "ultimaActualizacion": "14/08/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 445,
       "venta": 462,
       "diferencial": 17,
-      "ultimaActualizacion": "14/08/2026 01:10 p.m."
+      "ultimaActualizacion": "17/08/2026 12:25 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 440,
       "venta": 454,
       "diferencial": 14,
-      "ultimaActualizacion": "14/08/2026 07:41 a.m."
+      "ultimaActualizacion": "17/08/2026 05:58 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -1033,6 +1033,21 @@
       "fecha": "2026-08-14",
       "compra": 446.12,
       "venta": 451.89
+    },
+    {
+      "fecha": "2026-08-15",
+      "compra": 444.65,
+      "venta": 451.28
+    },
+    {
+      "fecha": "2026-08-16",
+      "compra": 444.65,
+      "venta": 451.28
+    },
+    {
+      "fecha": "2026-08-17",
+      "compra": 444.65,
+      "venta": 451.28
     }
   ]
 }
