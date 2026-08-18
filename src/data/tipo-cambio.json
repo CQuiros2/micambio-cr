@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-18T22:42:44.421Z",
+  "ultimaActualizacion": "2026-08-18T23:01:44.168Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 448.1,
-      "venta": 453.97,
+      "compra": 447.1,
+      "venta": 452.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "18/08/2026 12:42 p.m."
+      "ultimaActualizacion": "18/08/2026 04:55 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -329,19 +329,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 440,
-      "venta": 455,
-      "diferencial": 15,
-      "ultimaActualizacion": "17/08/2026 08:54 a.m."
+      "compra": 442,
+      "venta": 456,
+      "diferencial": 14,
+      "ultimaActualizacion": "18/08/2026 05:01 p.m."
     }
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 448.1
+    "valor": 447.1
   },
   "mejorVenta": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 453
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 452.97
   },
   "historico": [
     {
