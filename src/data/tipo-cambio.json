@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-18T22:13:14.178Z",
+  "ultimaActualizacion": "2026-08-18T22:42:44.421Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 444,
-      "venta": 452,
+      "compra": 445,
+      "venta": 453,
       "diferencial": 8,
-      "ultimaActualizacion": "17/08/2026 01:18 p.m."
+      "ultimaActualizacion": "18/08/2026 04:21 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "Financiera MultiMoney S.A.",
-    "valor": 452
+    "valor": 453
   },
   "historico": [
     {
