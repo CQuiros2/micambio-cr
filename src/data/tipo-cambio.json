@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-18T18:51:54.475Z",
+  "ultimaActualizacion": "2026-08-18T19:21:22.181Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -8,7 +8,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 12:51 p.m."
+      "ultimaActualizacion": "18/08/2026 12:52 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,28 +23,28 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "12/08/2026 01:24 p.m."
+      "ultimaActualizacion": "18/08/2026 01:18 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 08:30 a.m."
+      "ultimaActualizacion": "18/08/2026 01:03 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 438,
-      "venta": 456,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "13/08/2026 01:09 p.m."
+      "ultimaActualizacion": "18/08/2026 12:59 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 441,
-      "venta": 456,
+      "compra": 443,
+      "venta": 458,
       "diferencial": 15,
-      "ultimaActualizacion": "17/08/2026 11:41 p.m."
+      "ultimaActualizacion": "18/08/2026 01:05 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -275,19 +275,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 443,
+      "compra": 445,
       "venta": 462,
-      "diferencial": 19,
-      "ultimaActualizacion": "18/08/2026 11:55 a.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "18/08/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 438,
-      "venta": 456,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "13/08/2026 01:14 p.m."
+      "ultimaActualizacion": "18/08/2026 01:05 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
