@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-18T14:49:02.355Z",
+  "ultimaActualizacion": "2026-08-18T15:15:10.369Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -98,7 +98,7 @@
       "compra": 438,
       "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "17/08/2026 08:52 a.m."
+      "ultimaActualizacion": "18/08/2026 08:50 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 438,
       "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "17/08/2026 08:46 a.m."
+      "ultimaActualizacion": "18/08/2026 08:52 a.m."
     },
     {
       "tipoEntidad": "Financieras",
