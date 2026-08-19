@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T17:44:46.733Z",
+  "ultimaActualizacion": "2026-08-19T17:59:52.243Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 446,
+      "compra": 444,
       "venta": 463,
-      "diferencial": 17,
-      "ultimaActualizacion": "19/08/2026 01:52 a.m."
+      "diferencial": 19,
+      "ultimaActualizacion": "19/08/2026 11:57 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
