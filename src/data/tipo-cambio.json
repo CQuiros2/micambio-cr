@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-08-19T19:05:48.527Z",
+  "ultimaActualizacion": "2026-08-19T19:34:08.016Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 12:52 p.m."
+      "ultimaActualizacion": "19/08/2026 01:06 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,19 +41,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "18/08/2026 12:59 p.m."
+      "ultimaActualizacion": "19/08/2026 01:19 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 443.5,
-      "venta": 456,
+      "compra": 445.5,
+      "venta": 458,
       "diferencial": 12.5,
-      "ultimaActualizacion": "17/08/2026 01:07 p.m."
+      "ultimaActualizacion": "19/08/2026 01:16 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -77,10 +77,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 443,
-      "venta": 458,
+      "compra": 444,
+      "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "18/08/2026 11:29 p.m."
+      "ultimaActualizacion": "19/08/2026 01:06 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 441,
-      "venta": 456,
+      "compra": 443,
+      "venta": 458,
       "diferencial": 15,
-      "ultimaActualizacion": "12/08/2026 02:13 p.m."
+      "ultimaActualizacion": "19/08/2026 01:21 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
