@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T19:53:58.182Z",
+  "ultimaActualizacion": "2026-08-19T20:17:00.885Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "19/08/2026 08:13 a.m."
+      "ultimaActualizacion": "19/08/2026 02:08 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "18/08/2026 01:05 p.m."
+      "ultimaActualizacion": "19/08/2026 02:15 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
