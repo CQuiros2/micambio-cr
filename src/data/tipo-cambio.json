@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T14:53:53.949Z",
+  "ultimaActualizacion": "2026-08-19T15:22:04.407Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 438,
-      "venta": 456,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "18/08/2026 08:50 a.m."
+      "ultimaActualizacion": "19/08/2026 08:52 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 441,
-      "venta": 461,
+      "compra": 439,
+      "venta": 459,
       "diferencial": 20,
-      "ultimaActualizacion": "18/08/2026 02:41 p.m."
+      "ultimaActualizacion": "19/08/2026 09:20 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -257,10 +257,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Cambia con Wiz Limitada",
       "slug": "cambioswiz.com",
-      "compra": 364.5,
-      "venta": 534.5,
+      "compra": 363.5,
+      "venta": 533.5,
       "diferencial": 170,
-      "ultimaActualizacion": "04/08/2026 01:59 p.m."
+      "ultimaActualizacion": "19/08/2026 09:14 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
