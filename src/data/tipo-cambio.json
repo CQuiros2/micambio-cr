@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T23:32:03.209Z",
+  "ultimaActualizacion": "2026-08-19T23:53:14.870Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -141,9 +141,9 @@
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
       "compra": 446.5,
-      "venta": 453,
-      "diferencial": 6.5,
-      "ultimaActualizacion": "19/08/2026 05:31 p.m."
+      "venta": 454.5,
+      "diferencial": 8,
+      "ultimaActualizacion": "19/08/2026 05:33 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -340,8 +340,8 @@
     "valor": 448.02
   },
   "mejorVenta": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 453
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 453.89
   },
   "historico": [
     {
