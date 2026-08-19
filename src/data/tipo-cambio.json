@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T22:17:40.933Z",
+  "ultimaActualizacion": "2026-08-19T22:44:38.846Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 442,
-      "venta": 458,
+      "compra": 444,
+      "venta": 460,
       "diferencial": 16,
-      "ultimaActualizacion": "18/08/2026 01:43 p.m."
+      "ultimaActualizacion": "19/08/2026 04:24 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "18/08/2026 12:35 p.m."
+      "ultimaActualizacion": "19/08/2026 04:17 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
