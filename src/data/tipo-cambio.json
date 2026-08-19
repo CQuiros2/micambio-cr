@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T13:37:11.819Z",
+  "ultimaActualizacion": "2026-08-19T14:53:53.949Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 12:27 p.m."
+      "ultimaActualizacion": "19/08/2026 08:41 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 01:03 p.m."
+      "ultimaActualizacion": "19/08/2026 08:13 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -296,7 +296,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 12:40 p.m."
+      "ultimaActualizacion": "19/08/2026 08:20 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -311,19 +311,19 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 440,
-      "venta": 454,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 06:53 a.m."
+      "ultimaActualizacion": "19/08/2026 07:57 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "13/08/2026 09:30 a.m."
+      "ultimaActualizacion": "19/08/2026 08:05 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,7 +332,7 @@
       "compra": 442,
       "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 05:01 p.m."
+      "ultimaActualizacion": "19/08/2026 08:17 a.m."
     }
   ],
   "mejorCompra": {
