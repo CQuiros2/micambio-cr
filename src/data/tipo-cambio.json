@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-19T20:47:30.525Z",
+  "ultimaActualizacion": "2026-08-19T21:10:16.487Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "18/08/2026 01:18 p.m."
+      "ultimaActualizacion": "19/08/2026 03:03 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.07,
-      "venta": 533.39,
-      "diferencial": 170.32,
-      "ultimaActualizacion": "18/08/2026 05:07 p.m."
+      "compra": 364.05,
+      "venta": 534.83,
+      "diferencial": 170.78,
+      "ultimaActualizacion": "19/08/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
