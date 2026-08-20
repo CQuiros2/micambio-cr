@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T23:17:11.257Z",
+  "ultimaActualizacion": "2026-08-20T23:42:57.713Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -329,10 +329,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PRIVAL Securities Puesto de Bolsa S.A",
       "slug": "prival.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 08:51 a.m."
+      "ultimaActualizacion": "20/08/2026 05:17 p.m."
     }
   ],
   "mejorCompra": {
