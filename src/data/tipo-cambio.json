@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T20:59:34.819Z",
+  "ultimaActualizacion": "2026-08-20T21:30:30.428Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -95,10 +95,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "20/08/2026 08:40 a.m."
+      "ultimaActualizacion": "20/08/2026 03:14 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "19/08/2026 04:54 p.m."
+      "ultimaActualizacion": "20/08/2026 03:15 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 444,
-      "venta": 460,
+      "compra": 443,
+      "venta": 459,
       "diferencial": 16,
-      "ultimaActualizacion": "19/08/2026 04:24 p.m."
+      "ultimaActualizacion": "20/08/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
