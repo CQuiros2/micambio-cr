@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T15:31:08.209Z",
+  "ultimaActualizacion": "2026-08-20T16:46:38.917Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -59,19 +59,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco CMB",
       "slug": "bancocmb.fi.cr",
-      "compra": 436,
-      "venta": 460,
+      "compra": 438,
+      "venta": 462,
       "diferencial": 24,
-      "ultimaActualizacion": "11/08/2026 09:26 a.m."
+      "ultimaActualizacion": "20/08/2026 10:29 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "18/08/2026 05:09 p.m."
+      "ultimaActualizacion": "20/08/2026 09:50 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 441,
-      "venta": 461,
+      "compra": 442,
+      "venta": 462,
       "diferencial": 20,
-      "ultimaActualizacion": "20/08/2026 08:37 a.m."
+      "ultimaActualizacion": "20/08/2026 10:32 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 06:07 a.m."
+      "ultimaActualizacion": "20/08/2026 10:40 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
