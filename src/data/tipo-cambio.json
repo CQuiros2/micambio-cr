@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T16:46:38.917Z",
+  "ultimaActualizacion": "2026-08-20T17:12:41.475Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 443,
-      "venta": 458,
+      "compra": 444,
+      "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "19/08/2026 01:21 p.m."
+      "ultimaActualizacion": "20/08/2026 11:07 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
