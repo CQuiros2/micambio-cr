@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T19:38:55.381Z",
+  "ultimaActualizacion": "2026-08-20T19:59:37.576Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -293,10 +293,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 09:12 a.m."
+      "ultimaActualizacion": "20/08/2026 01:49 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
