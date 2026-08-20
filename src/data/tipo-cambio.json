@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T13:38:43.769Z",
+  "ultimaActualizacion": "2026-08-20T14:18:29.323Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -212,10 +212,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 438,
-      "venta": 456,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "17/08/2026 08:03 a.m."
+      "ultimaActualizacion": "20/08/2026 07:55 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -239,10 +239,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
-      "compra": 446,
-      "venta": 463,
+      "compra": 448,
+      "venta": 465,
       "diferencial": 17,
-      "ultimaActualizacion": "18/08/2026 10:15 p.m."
+      "ultimaActualizacion": "20/08/2026 08:10 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
