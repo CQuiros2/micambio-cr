@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-08-20T18:13:37.127Z",
+  "ultimaActualizacion": "2026-08-20T19:00:50.373Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 446,
-      "venta": 460,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "19/08/2026 01:06 p.m."
+      "ultimaActualizacion": "20/08/2026 12:50 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 449.02,
-      "venta": 454.89,
+      "compra": 447.12,
+      "venta": 452.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "19/08/2026 06:00 p.m."
+      "ultimaActualizacion": "20/08/2026 12:57 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 449.02
+    "nombre": "Airpak Casa de Cambio",
+    "valor": 448
   },
   "mejorVenta": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 454.5
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 452.99
   },
   "historico": [
     {
