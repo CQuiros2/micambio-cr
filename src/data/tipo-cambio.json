@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T19:59:37.576Z",
+  "ultimaActualizacion": "2026-08-20T20:31:46.556Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -122,19 +122,19 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 440,
+      "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "19/08/2026 07:44 p.m."
+      "ultimaActualizacion": "20/08/2026 02:14 p.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 442,
-      "venta": 462,
+      "compra": 440,
+      "venta": 460,
       "diferencial": 20,
-      "ultimaActualizacion": "20/08/2026 10:32 a.m."
+      "ultimaActualizacion": "20/08/2026 02:07 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 446,
-      "venta": 459,
+      "compra": 445,
+      "venta": 458,
       "diferencial": 13,
-      "ultimaActualizacion": "19/08/2026 04:13 p.m."
+      "ultimaActualizacion": "20/08/2026 02:13 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "20/08/2026 08:54 a.m."
+      "ultimaActualizacion": "20/08/2026 02:05 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
