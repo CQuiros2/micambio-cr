@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-20T14:57:49.761Z",
+  "ultimaActualizacion": "2026-08-20T15:31:08.209Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "19/08/2026 09:39 a.m."
+      "ultimaActualizacion": "20/08/2026 09:30 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -293,10 +293,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BN Valores S.A., Puesto de Bolsa",
       "slug": "bnvalores.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 445,
+      "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 08:29 a.m."
+      "ultimaActualizacion": "20/08/2026 09:12 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
