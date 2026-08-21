@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-21T20:15:41.435Z",
+  "ultimaActualizacion": "2026-08-21T20:42:14.688Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 445.5,
-      "venta": 458,
+      "compra": 444.2,
+      "venta": 456.7,
       "diferencial": 12.5,
-      "ultimaActualizacion": "19/08/2026 01:16 p.m."
+      "ultimaActualizacion": "21/08/2026 02:36 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
