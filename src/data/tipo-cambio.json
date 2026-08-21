@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-21T13:37:58.220Z",
+  "ultimaActualizacion": "2026-08-21T14:55:19.028Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 01:35 p.m."
+      "ultimaActualizacion": "21/08/2026 08:44 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 01:01 p.m."
+      "ultimaActualizacion": "21/08/2026 08:16 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,10 +140,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 446.5,
-      "venta": 454.5,
+      "compra": 447.5,
+      "venta": 455.5,
       "diferencial": 8,
-      "ultimaActualizacion": "19/08/2026 05:33 p.m."
+      "ultimaActualizacion": "21/08/2026 08:39 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -296,7 +296,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 01:49 p.m."
+      "ultimaActualizacion": "21/08/2026 08:10 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
