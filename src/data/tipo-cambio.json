@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-24T20:52:09.745Z",
+  "ultimaActualizacion": "2026-08-24T21:20:23.194Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "24/08/2026 08:50 a.m."
+      "ultimaActualizacion": "24/08/2026 03:00 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 440,
-      "venta": 460,
+      "compra": 443,
+      "venta": 463,
       "diferencial": 20,
-      "ultimaActualizacion": "20/08/2026 02:07 p.m."
+      "ultimaActualizacion": "24/08/2026 02:58 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 362.86,
-      "venta": 533.1,
-      "diferencial": 170.24,
-      "ultimaActualizacion": "21/08/2026 05:07 p.m."
+      "compra": 364.34,
+      "venta": 535.26,
+      "diferencial": 170.92,
+      "ultimaActualizacion": "24/08/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "24/08/2026 01:38 p.m."
+      "ultimaActualizacion": "24/08/2026 03:01 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
