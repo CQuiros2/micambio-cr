@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-24T18:53:47.575Z",
+  "ultimaActualizacion": "2026-08-24T19:22:11.123Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "20/08/2026 01:15 p.m."
+      "ultimaActualizacion": "24/08/2026 01:18 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -41,19 +41,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "21/08/2026 01:09 p.m."
+      "ultimaActualizacion": "24/08/2026 01:12 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 444.2,
-      "venta": 456.7,
+      "compra": 447,
+      "venta": 459.5,
       "diferencial": 12.5,
-      "ultimaActualizacion": "21/08/2026 02:36 p.m."
+      "ultimaActualizacion": "24/08/2026 12:58 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 440,
-      "venta": 458,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "20/08/2026 05:09 p.m."
+      "ultimaActualizacion": "24/08/2026 01:20 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -203,10 +203,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Coopealianza R.L.",
       "slug": "coopealianza.fi.cr",
-      "compra": 443,
-      "venta": 459,
+      "compra": 445,
+      "venta": 461,
       "diferencial": 16,
-      "ultimaActualizacion": "20/08/2026 03:07 p.m."
+      "ultimaActualizacion": "24/08/2026 12:56 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -275,10 +275,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 446,
+      "compra": 448,
       "venta": 465,
-      "diferencial": 19,
-      "ultimaActualizacion": "24/08/2026 11:55 a.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "24/08/2026 01:00 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
