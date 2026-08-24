@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-24T20:19:41.558Z",
+  "ultimaActualizacion": "2026-08-24T20:52:09.745Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -41,10 +41,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BCT S.A.",
       "slug": "bancobct.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 442,
+      "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "24/08/2026 01:12 p.m."
+      "ultimaActualizacion": "24/08/2026 02:46 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -221,10 +221,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 445,
-      "venta": 458,
+      "compra": 447,
+      "venta": 460,
       "diferencial": 13,
-      "ultimaActualizacion": "20/08/2026 02:13 p.m."
+      "ultimaActualizacion": "24/08/2026 02:32 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 443,
+      "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "20/08/2026 02:05 p.m."
+      "ultimaActualizacion": "24/08/2026 02:20 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
