@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-24T13:42:35.530Z",
+  "ultimaActualizacion": "2026-08-24T15:51:42.863Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "21/08/2026 08:44 a.m."
+      "ultimaActualizacion": "24/08/2026 08:29 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 443,
-      "venta": 457,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "21/08/2026 08:16 a.m."
+      "ultimaActualizacion": "24/08/2026 08:19 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 440,
       "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "21/08/2026 09:06 a.m."
+      "ultimaActualizacion": "24/08/2026 09:28 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -116,7 +116,7 @@
       "compra": 440,
       "venta": 458,
       "diferencial": 18,
-      "ultimaActualizacion": "21/08/2026 09:00 a.m."
+      "ultimaActualizacion": "24/08/2026 08:50 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 447.7,
-      "venta": 453.57,
+      "compra": 447.12,
+      "venta": 452.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "24/08/2026 07:09 a.m."
+      "ultimaActualizacion": "24/08/2026 08:45 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -296,7 +296,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "21/08/2026 08:10 a.m."
+      "ultimaActualizacion": "24/08/2026 08:02 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -314,7 +314,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "21/08/2026 06:48 a.m."
+      "ultimaActualizacion": "24/08/2026 07:58 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -341,7 +341,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 453.57
+    "valor": 452.99
   },
   "historico": [
     {
