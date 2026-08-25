@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-25T13:41:02.959Z",
+  "ultimaActualizacion": "2026-08-25T14:28:05.202Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 446,
+      "venta": 460,
       "diferencial": 14,
-      "ultimaActualizacion": "24/08/2026 01:23 p.m."
+      "ultimaActualizacion": "25/08/2026 08:18 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "24/08/2026 12:52 p.m."
+      "ultimaActualizacion": "25/08/2026 08:05 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
