@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-25T20:02:35.452Z",
+  "ultimaActualizacion": "2026-08-25T20:39:17.006Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 443,
-      "venta": 463,
+      "compra": 442,
+      "venta": 462,
       "diferencial": 20,
-      "ultimaActualizacion": "24/08/2026 02:58 p.m."
+      "ultimaActualizacion": "25/08/2026 02:05 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -284,10 +284,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "BCT Valores, Puesto De Bolsa, S.A.",
       "slug": "bctvalores.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "24/08/2026 03:01 p.m."
+      "ultimaActualizacion": "25/08/2026 02:06 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
