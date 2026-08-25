@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-25T19:40:52.026Z",
+  "ultimaActualizacion": "2026-08-25T20:02:35.452Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 444.1,
-      "venta": 458.6,
+      "compra": 446.1,
+      "venta": 460.6,
       "diferencial": 14.5,
-      "ultimaActualizacion": "19/08/2026 12:22 p.m."
+      "ultimaActualizacion": "25/08/2026 01:49 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
