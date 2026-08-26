@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-26T13:46:26.018Z",
+  "ultimaActualizacion": "2026-08-26T15:58:32.067Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "25/08/2026 08:36 a.m."
+      "ultimaActualizacion": "26/08/2026 08:56 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -35,7 +35,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "25/08/2026 01:01 p.m."
+      "ultimaActualizacion": "26/08/2026 08:28 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 442,
       "venta": 460,
       "diferencial": 18,
-      "ultimaActualizacion": "25/08/2026 08:55 a.m."
+      "ultimaActualizacion": "26/08/2026 09:05 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 442,
-      "venta": 460,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "25/08/2026 08:50 a.m."
+      "ultimaActualizacion": "26/08/2026 09:16 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -296,7 +296,7 @@
       "compra": 445,
       "venta": 459,
       "diferencial": 14,
-      "ultimaActualizacion": "25/08/2026 08:05 a.m."
+      "ultimaActualizacion": "26/08/2026 08:02 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,7 +332,7 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "25/08/2026 05:26 p.m."
+      "ultimaActualizacion": "26/08/2026 08:41 a.m."
     }
   ],
   "mejorCompra": {
