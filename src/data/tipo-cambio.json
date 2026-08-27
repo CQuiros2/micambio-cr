@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-26T20:30:46.909Z",
+  "ultimaActualizacion": "2026-08-27T00:02:05.607Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,10 +23,10 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "24/08/2026 01:18 p.m."
+      "ultimaActualizacion": "26/08/2026 03:40 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 445.85,
-      "venta": 458.35,
+      "compra": 443,
+      "venta": 455.5,
       "diferencial": 12.5,
-      "ultimaActualizacion": "25/08/2026 01:04 p.m."
+      "ultimaActualizacion": "26/08/2026 04:03 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -104,10 +104,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "24/08/2026 01:31 p.m."
+      "ultimaActualizacion": "26/08/2026 05:10 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 444,
-      "venta": 459,
+      "compra": 442,
+      "venta": 457,
       "diferencial": 15,
-      "ultimaActualizacion": "24/08/2026 04:34 p.m."
+      "ultimaActualizacion": "26/08/2026 05:12 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -176,19 +176,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "24/08/2026 03:30 p.m."
+      "ultimaActualizacion": "26/08/2026 03:31 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
       "slug": "coopemep.fi.cr",
-      "compra": 445,
-      "venta": 459,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "24/08/2026 06:18 p.m."
+      "ultimaActualizacion": "26/08/2026 04:08 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.56,
-      "venta": 534.12,
-      "diferencial": 170.56,
-      "ultimaActualizacion": "25/08/2026 03:07 p.m."
+      "compra": 361.41,
+      "venta": 530.95,
+      "diferencial": 169.54,
+      "ultimaActualizacion": "26/08/2026 03:08 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -302,10 +302,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Mercado Valores de Costa Rica Puesto de Bolsa",
       "slug": "mercadovalores.fi.cr",
-      "compra": 443,
-      "venta": 461,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "24/08/2026 02:20 p.m."
+      "ultimaActualizacion": "26/08/2026 03:06 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -320,10 +320,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "Popular Valores, Puesto de Bolsa",
       "slug": "popularvalores.fi.cr",
-      "compra": 446,
-      "venta": 460,
+      "compra": 444,
+      "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "24/08/2026 03:59 p.m."
+      "ultimaActualizacion": "26/08/2026 04:10 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -1093,6 +1093,11 @@
       "fecha": "2026-08-26",
       "compra": 450.21,
       "venta": 453.5
+    },
+    {
+      "fecha": "2026-08-27",
+      "compra": 448.38,
+      "venta": 452.88
     }
   ]
 }
