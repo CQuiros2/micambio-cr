@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-27T00:02:05.607Z",
+  "ultimaActualizacion": "2026-08-27T22:42:14.055Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -17,7 +17,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "26/08/2026 12:53 p.m."
+      "ultimaActualizacion": "27/08/2026 08:38 a.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -32,10 +32,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 442,
-      "venta": 456,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "26/08/2026 12:58 p.m."
+      "ultimaActualizacion": "27/08/2026 01:55 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 443,
-      "venta": 455.5,
+      "compra": 444.5,
+      "venta": 457,
       "diferencial": 12.5,
-      "ultimaActualizacion": "26/08/2026 04:03 p.m."
+      "ultimaActualizacion": "27/08/2026 12:59 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -80,7 +80,7 @@
       "compra": 442,
       "venta": 457,
       "diferencial": 15,
-      "ultimaActualizacion": "26/08/2026 01:24 p.m."
+      "ultimaActualizacion": "26/08/2026 11:24 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -98,7 +98,7 @@
       "compra": 439,
       "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "26/08/2026 01:29 p.m."
+      "ultimaActualizacion": "27/08/2026 09:08 a.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -113,10 +113,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "DAVIBANK de Costa Rica S.A.",
       "slug": "davibank.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "26/08/2026 09:16 a.m."
+      "ultimaActualizacion": "27/08/2026 08:59 a.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -125,7 +125,7 @@
       "compra": 439,
       "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "26/08/2026 01:49 p.m."
+      "ultimaActualizacion": "26/08/2026 09:59 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -143,7 +143,7 @@
       "compra": 446,
       "venta": 454,
       "diferencial": 8,
-      "ultimaActualizacion": "26/08/2026 01:11 p.m."
+      "ultimaActualizacion": "27/08/2026 02:59 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -167,10 +167,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coope-ANDE N°1 R.L.",
       "slug": "coopeande.com",
-      "compra": 446.1,
-      "venta": 460.6,
+      "compra": 443.2,
+      "venta": 457.7,
       "diferencial": 14.5,
-      "ultimaActualizacion": "25/08/2026 01:49 p.m."
+      "ultimaActualizacion": "27/08/2026 09:01 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -197,7 +197,7 @@
       "compra": 443,
       "venta": 461,
       "diferencial": 18,
-      "ultimaActualizacion": "26/08/2026 12:28 a.m."
+      "ultimaActualizacion": "27/08/2026 12:29 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -212,19 +212,19 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa CREDECOOP R.L.",
       "slug": "credecoop.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "26/08/2026 07:46 a.m."
+      "ultimaActualizacion": "27/08/2026 07:51 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
       "slug": "coopenae.fi.cr",
-      "compra": 447,
-      "venta": 460,
+      "compra": 445,
+      "venta": 458,
       "diferencial": 13,
-      "ultimaActualizacion": "24/08/2026 02:32 p.m."
+      "ultimaActualizacion": "27/08/2026 08:40 a.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -240,18 +240,18 @@
       "nombre": "Airpak Casa de Cambio",
       "slug": "airpak.com",
       "compra": 446,
-      "venta": 465,
-      "diferencial": 19,
-      "ultimaActualizacion": "26/08/2026 12:16 p.m."
+      "venta": 463,
+      "diferencial": 17,
+      "ultimaActualizacion": "27/08/2026 08:08 a.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 446.1,
-      "venta": 451.97,
+      "compra": 446.48,
+      "venta": 452.35,
       "diferencial": 5.87,
-      "ultimaActualizacion": "26/08/2026 12:23 p.m."
+      "ultimaActualizacion": "27/08/2026 04:31 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -276,9 +276,9 @@
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
       "compra": 446,
-      "venta": 465,
-      "diferencial": 19,
-      "ultimaActualizacion": "26/08/2026 11:55 a.m."
+      "venta": 463,
+      "diferencial": 17,
+      "ultimaActualizacion": "27/08/2026 01:14 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -296,7 +296,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "26/08/2026 01:01 p.m."
+      "ultimaActualizacion": "27/08/2026 08:20 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -311,10 +311,10 @@
       "tipoEntidad": "Puestos de Bolsa",
       "nombre": "PB Inversiones SAMA",
       "slug": "pbisamacr.com",
-      "compra": 445,
-      "venta": 459,
+      "compra": 443,
+      "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "26/08/2026 07:46 a.m."
+      "ultimaActualizacion": "27/08/2026 07:47 a.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -332,16 +332,16 @@
       "compra": 444,
       "venta": 458,
       "diferencial": 14,
-      "ultimaActualizacion": "26/08/2026 08:41 a.m."
+      "ultimaActualizacion": "27/08/2026 08:32 a.m."
     }
   ],
   "mejorCompra": {
-    "nombre": "Cooperativa Nacional de Educadores R.L. (COOPENAE)",
-    "valor": 447
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 446.48
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 451.97
+    "valor": 452.35
   },
   "historico": [
     {
