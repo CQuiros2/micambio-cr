@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-08-31T23:14:12.781Z",
+  "ultimaActualizacion": "2026-09-01T01:50:09.279Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -1116,6 +1116,11 @@
     },
     {
       "fecha": "2026-08-31",
+      "compra": 446.47,
+      "venta": 452.93
+    },
+    {
+      "fecha": "2026-09-01",
       "compra": 446.47,
       "venta": 452.93
     }
