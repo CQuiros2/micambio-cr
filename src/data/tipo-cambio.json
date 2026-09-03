@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-09-03T21:48:40.452Z",
+  "ultimaActualizacion": "2026-09-03T23:33:18.905Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -80,7 +80,7 @@
       "compra": 444,
       "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "03/09/2026 12:54 p.m."
+      "ultimaActualizacion": "03/09/2026 12:55 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -188,7 +188,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "02/09/2026 06:23 p.m."
+      "ultimaActualizacion": "02/09/2026 04:49 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -206,7 +206,7 @@
       "compra": 443,
       "venta": 459,
       "diferencial": 16,
-      "ultimaActualizacion": "02/09/2026 04:57 p.m."
+      "ultimaActualizacion": "02/09/2026 04:55 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
