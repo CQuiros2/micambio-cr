@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-09-03T16:46:47.774Z",
+  "ultimaActualizacion": "2026-09-03T19:28:44.248Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -77,19 +77,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco General (Costa Rica) S.A.",
       "slug": "bgeneral.com",
-      "compra": 442,
-      "venta": 457,
+      "compra": 444,
+      "venta": 459,
       "diferencial": 15,
-      "ultimaActualizacion": "03/09/2026 08:23 a.m."
+      "ultimaActualizacion": "03/09/2026 12:55 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Improsa S.A.",
       "slug": "improsa.com",
-      "compra": 439,
-      "venta": 457,
+      "compra": 441,
+      "venta": 459,
       "diferencial": 18,
-      "ultimaActualizacion": "01/09/2026 08:27 a.m."
+      "ultimaActualizacion": "03/09/2026 01:26 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -140,19 +140,19 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
       "slug": "multimoney.fi.cr",
-      "compra": 445,
-      "venta": 453,
+      "compra": 446,
+      "venta": 454,
       "diferencial": 8,
-      "ultimaActualizacion": "01/09/2026 10:41 a.m."
+      "ultimaActualizacion": "03/09/2026 11:20 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 441,
-      "venta": 456,
+      "compra": 442,
+      "venta": 457,
       "diferencial": 15,
-      "ultimaActualizacion": "02/09/2026 09:00 a.m."
+      "ultimaActualizacion": "03/09/2026 11:04 a.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 448.02,
-      "venta": 453.89,
+      "compra": 448.12,
+      "venta": 453.99,
       "diferencial": 5.87,
-      "ultimaActualizacion": "02/09/2026 06:14 p.m."
+      "ultimaActualizacion": "03/09/2026 12:49 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -278,7 +278,7 @@
       "compra": 446,
       "venta": 463,
       "diferencial": 17,
-      "ultimaActualizacion": "03/09/2026 01:04 a.m."
+      "ultimaActualizacion": "03/09/2026 01:01 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 448.02
+    "valor": 448.12
   },
   "mejorVenta": {
-    "nombre": "Financiera MultiMoney S.A.",
-    "valor": 453
+    "nombre": "ARI Casa de Cambio Internacional S.A.",
+    "valor": 453.99
   },
   "historico": [
     {
