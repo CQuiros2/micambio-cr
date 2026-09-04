@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-09-04T19:07:56.638Z",
+  "ultimaActualizacion": "2026-09-04T21:24:06.216Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 444,
-      "venta": 458,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "02/09/2026 12:48 p.m."
+      "ultimaActualizacion": "04/09/2026 02:08 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -131,10 +131,10 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 440,
-      "venta": 460,
+      "compra": 439,
+      "venta": 459,
       "diferencial": 20,
-      "ultimaActualizacion": "03/09/2026 10:38 a.m."
+      "ultimaActualizacion": "04/09/2026 02:28 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -266,19 +266,19 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.41,
-      "venta": 533.91,
-      "diferencial": 170.5,
-      "ultimaActualizacion": "03/09/2026 09:07 p.m."
+      "compra": 363.16,
+      "venta": 533.52,
+      "diferencial": 170.36,
+      "ultimaActualizacion": "04/09/2026 03:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Teledolar S. A.",
       "slug": "teledolar.com",
-      "compra": 444,
+      "compra": 446,
       "venta": 463,
-      "diferencial": 19,
-      "ultimaActualizacion": "04/09/2026 12:03 p.m."
+      "diferencial": 17,
+      "ultimaActualizacion": "04/09/2026 01:08 p.m."
     },
     {
       "tipoEntidad": "Puestos de Bolsa",
