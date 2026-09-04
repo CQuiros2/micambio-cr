@@ -1,5 +1,5 @@
 {
-  "ultimaActualizacion": "2026-09-03T23:33:18.905Z",
+  "ultimaActualizacion": "2026-09-04T01:19:32.326Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -188,7 +188,7 @@
       "compra": 443,
       "venta": 457,
       "diferencial": 14,
-      "ultimaActualizacion": "02/09/2026 04:49 p.m."
+      "ultimaActualizacion": "03/09/2026 05:51 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -248,10 +248,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 447.1,
-      "venta": 452.97,
+      "compra": 446.1,
+      "venta": 451.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "03/09/2026 01:33 p.m."
+      "ultimaActualizacion": "03/09/2026 05:54 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -337,11 +337,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 447.1
+    "valor": 446.1
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 452.97
+    "valor": 451.97
   },
   "historico": [
     {
@@ -1133,6 +1133,11 @@
       "fecha": "2026-09-03",
       "compra": 447.49,
       "venta": 451.7
+    },
+    {
+      "fecha": "2026-09-04",
+      "compra": 448.67,
+      "venta": 453.79
     }
   ]
 }
