@@ -1,14 +1,14 @@
 {
-  "ultimaActualizacion": "2026-09-08T19:42:13.879Z",
+  "ultimaActualizacion": "2026-09-09T00:06:31.475Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco de Costa Rica",
       "slug": "bancobcr.com",
-      "compra": 443,
-      "venta": 457,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "08/09/2026 12:58 p.m."
+      "ultimaActualizacion": "08/09/2026 03:08 p.m."
     },
     {
       "tipoEntidad": "Bancos públicos",
@@ -23,19 +23,19 @@
       "tipoEntidad": "Bancos públicos",
       "nombre": "Banco Popular y de Desarrollo Comunal",
       "slug": "bancopopular.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "02/09/2026 04:22 p.m."
+      "ultimaActualizacion": "08/09/2026 02:25 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco BAC San José S.A.",
       "slug": "bac.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "08/09/2026 08:28 a.m."
+      "ultimaActualizacion": "08/09/2026 01:45 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -50,10 +50,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Cathay de Costa Rica S.A.",
       "slug": "cathay.fi.cr",
-      "compra": 444.3,
-      "venta": 456.8,
+      "compra": 443.35,
+      "venta": 455.85,
       "diferencial": 12.5,
-      "ultimaActualizacion": "04/09/2026 05:01 p.m."
+      "ultimaActualizacion": "08/09/2026 03:02 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -68,10 +68,10 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
       "slug": "davivienda.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "03/09/2026 09:17 a.m."
+      "ultimaActualizacion": "08/09/2026 01:51 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -95,19 +95,19 @@
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Lafise S.A.",
       "slug": "lafise.com",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "08/09/2026 09:16 a.m."
+      "ultimaActualizacion": "08/09/2026 02:27 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
       "slug": "promerica.fi.cr",
-      "compra": 440,
-      "venta": 458,
+      "compra": 438,
+      "venta": 456,
       "diferencial": 18,
-      "ultimaActualizacion": "02/09/2026 05:35 p.m."
+      "ultimaActualizacion": "08/09/2026 05:08 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -122,19 +122,19 @@
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Cafsa S.A.",
       "slug": "cafsa.fi.cr",
-      "compra": 441,
-      "venta": 459,
+      "compra": 439,
+      "venta": 457,
       "diferencial": 18,
-      "ultimaActualizacion": "07/09/2026 08:49 p.m."
+      "ultimaActualizacion": "08/09/2026 02:29 p.m."
     },
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera Comeca S.A.",
       "slug": "comeca.fi.cr",
-      "compra": 441,
-      "venta": 461,
+      "compra": 439,
+      "venta": 459,
       "diferencial": 20,
-      "ultimaActualizacion": "07/09/2026 02:16 p.m."
+      "ultimaActualizacion": "08/09/2026 02:36 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -149,10 +149,10 @@
       "tipoEntidad": "Mutuales de Vivienda",
       "nombre": "Grupo Mutual Alajuela - La Vivienda de Ahorro y Préstamo",
       "slug": "grupomutualalajuela.fi.cr",
-      "compra": 442,
-      "venta": 457,
+      "compra": 441,
+      "venta": 456,
       "diferencial": 15,
-      "ultimaActualizacion": "03/09/2026 11:04 a.m."
+      "ultimaActualizacion": "08/09/2026 02:56 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -176,10 +176,10 @@
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
       "slug": "coopecaja.fi.cr",
-      "compra": 444,
-      "venta": 458,
+      "compra": 442,
+      "venta": 456,
       "diferencial": 14,
-      "ultimaActualizacion": "02/09/2026 05:39 p.m."
+      "ultimaActualizacion": "08/09/2026 03:51 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -242,16 +242,16 @@
       "compra": 446,
       "venta": 463,
       "diferencial": 17,
-      "ultimaActualizacion": "01/09/2026 10:26 p.m."
+      "ultimaActualizacion": "08/09/2026 05:00 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A.",
       "slug": "ari.cr",
-      "compra": 447.02,
-      "venta": 452.89,
+      "compra": 446.1,
+      "venta": 451.97,
       "diferencial": 5.87,
-      "ultimaActualizacion": "08/09/2026 01:10 p.m."
+      "ultimaActualizacion": "08/09/2026 04:06 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -266,10 +266,10 @@
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
       "slug": "globalexchange.com",
-      "compra": 363.49,
-      "venta": 534.01,
-      "diferencial": 170.52,
-      "ultimaActualizacion": "07/09/2026 03:07 p.m."
+      "compra": 361.91,
+      "venta": 531.69,
+      "diferencial": 169.78,
+      "ultimaActualizacion": "08/09/2026 05:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -336,12 +336,12 @@
     }
   ],
   "mejorCompra": {
-    "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 447.02
+    "nombre": "Financiera MultiMoney S.A.",
+    "valor": 447
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A.",
-    "valor": 452.89
+    "valor": 451.97
   },
   "historico": [
     {
@@ -1158,6 +1158,11 @@
       "fecha": "2026-09-08",
       "compra": 446.5,
       "venta": 453.38
+    },
+    {
+      "fecha": "2026-09-09",
+      "compra": 447.83,
+      "venta": 452.56
     }
   ]
 }
