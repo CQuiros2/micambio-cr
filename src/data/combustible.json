@@ -1,25 +1,25 @@
 {
-  "ultimaActualizacion": "2026-09-18T17:31:06.396Z",
+  "ultimaActualizacion": "2026-10-08T19:40:43.470Z",
   "precios": {
     "super": {
       "label": "Gasolina Super",
-      "precio": 756,
-      "variacion": 52
+      "precio": 764,
+      "variacion": 8
     },
     "regular": {
       "label": "Gasolina Regular",
-      "precio": 755,
-      "variacion": -3
+      "precio": 719,
+      "variacion": -36
     },
     "diesel": {
       "label": "Diésel",
-      "precio": 683,
-      "variacion": 77
+      "precio": 785,
+      "variacion": 102
     },
     "gaslp": {
       "label": "Gas LP",
-      "precio": 275,
-      "variacion": 21
+      "precio": 263,
+      "variacion": -12
     }
   },
   "historico": [
@@ -309,6 +309,13 @@
       "regular": 755,
       "diesel": 683,
       "gaslp": 275
+    },
+    {
+      "fecha": "2026-10-02",
+      "super": 764,
+      "regular": 719,
+      "diesel": 785,
+      "gaslp": 263
     }
   ]
 }
