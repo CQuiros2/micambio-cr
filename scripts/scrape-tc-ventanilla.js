@@ -1,25 +1,36 @@
 /**
  * scrape-tc-ventanilla.js
- * Scrapea el tipo de cambio anunciado en ventanilla del BCCR.
- * Fuente: https://gee.bccr.fi.cr/IndicadoresEconomicos/Cuadros/frmConsultaTCVentanilla.aspx
+ * Tipo de cambio anunciado en ventanilla por cada intermediario cambiario.
+ * Fuente: cuadro "Lista de intermediarios cambiarios autorizados y sus tipos de
+ * cambio vigentes de ventanilla" del sitio del BCCR
+ * (https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/2039).
  *
- * Extrae todas las entidades (bancos, financieras, cooperativas, casas de cambio,
- * puestos de bolsa y mutuales) con sus tipos de compra, venta y diferencial.
+ * gee.bccr.fi.cr dejó de responder en septiembre de 2026; el sitio nuevo es una
+ * SPA que consume la API interna de apim.bccr.fi.cr, que es la que usamos aquí.
  *
  * Uso: node scripts/scrape-tc-ventanilla.js
  * npm:  npm run scrape:tc
  */
 
 import { getConReintentos } from "./lib/http.js";
-import * as cheerio from "cheerio";
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const URL_VENTANILLA =
-  "https://gee.bccr.fi.cr/IndicadoresEconomicos/Cuadros/frmConsultaTCVentanilla.aspx";
+const API_BASE = "https://apim.bccr.fi.cr/SDDE/api/Bccr.GE.SDDE.IndicadoresSitioExterno";
+const URL_TOKEN = `${API_BASE}.ServiciosUsuario.API/Token/GenereCSRF`;
+const URL_CUADRO = `${API_BASE}.GrupoVariables.API/CuadroPersonalizadoGrupoVariables/ObtenerDatosCuadroPersonalizado`;
+const ID_GRUPO_VENTANILLA = 1015;
+
+// La API responde 500 si no se envían los mismos encabezados que manda el sitio.
+const HEADERS_BCCR = {
+  Origin: "https://sdd.bccr.fi.cr",
+  Referer: "https://sdd.bccr.fi.cr/",
+  Accept: "application/json, text/plain, */*",
+  "User-Agent": "Mozilla/5.0 (compatible; micambio-cr)",
+};
 
 const DATA_PATH = join(__dirname, "../src/data/tipo-cambio.json");
 
@@ -78,27 +89,7 @@ const SLUG_MAP = {
   "prival securities puesto de bolsa s.a":                    "prival.com",
 };
 
-// Palabras que identifican una fila como encabezado de categoría
-const PREFIJOS_CATEGORIA = [
-  "Bancos públicos",
-  "Bancos privados",
-  "Financieras",
-  "Mutuales",
-  "Cooperativas",
-  "Casas de Cambio",
-  "Puestos de Bolsa",
-];
-
 // ── Helpers ───────────────────────────────────────────────────────────────────
-
-/** Texto limpio de una celda: sin &nbsp;, sin espacios múltiples */
-function texto(el, $) {
-  return $(el)
-    .text()
-    .replace(/\u00a0/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
 
 /** Parsea "456,00" → 456 */
 function parsePrecio(str) {
@@ -128,96 +119,67 @@ function resolverSlug(nombre) {
   );
 }
 
-/** Detecta si un texto corresponde a una categoría de entidad */
-function esCategoria(str) {
-  return PREFIJOS_CATEGORIA.some((p) => str.startsWith(p));
+
+// ── Consulta a la API del BCCR ────────────────────────────────────────────────
+
+/** Fecha de hoy en Costa Rica (UTC-6, sin horario de verano) como aaaa-mm-dd */
+function hoyCostaRica() {
+  return new Date(Date.now() - 6 * 3_600_000).toISOString().slice(0, 10);
 }
 
-// ── Scraping ──────────────────────────────────────────────────────────────────
+async function obtenerTokenCsrf() {
+  const { data } = await getConReintentos(URL_TOKEN, {
+    headers: HEADERS_BCCR,
+    responseType: "text",
+    timeout: 20_000,
+  });
+  const token = String(data).trim().replace(/^"|"$/g, "");
+  if (!token.includes(".")) throw new Error("El BCCR no devolvió un token CSRF válido.");
+  return token;
+}
 
 async function scrapeVentanilla() {
-  const response = await getConReintentos(URL_VENTANILLA, {
-    responseType: "arraybuffer",
-    timeout: 20_000,
-    headers: { "Accept-Language": "es-CR,es;q=0.9" },
-  }, { intentos: 2 });
+  const token = await obtenerTokenCsrf();
+  const { data } = await getConReintentos(URL_CUADRO, {
+    params: { idGrupoVariable: ID_GRUPO_VENTANILLA, fechaAConsultar: hoyCostaRica() },
+    headers: { ...HEADERS_BCCR, token_csrf: token },
+    timeout: 30_000,
+  });
 
-  // La página sirve UTF-8 (a pesar de ser ASP.NET clásico)
-  const html = Buffer.from(response.data).toString("utf8");
-  const $ = cheerio.load(html, { decodeEntities: true });
+  if (!data?.estado || !Array.isArray(data?.datos?.indicadores)) {
+    throw new Error(`Respuesta inesperada del BCCR: ${JSON.stringify(data).slice(0, 200)}`);
+  }
 
+  // Cada fila es una lista de celdas. Las filas de una sola celda son el tipo de
+  // entidad ("Bancos públicos", …); las de cinco son: entidad, compra, venta,
+  // diferencial y última actualización. La primera fila es el encabezado.
   const entidades = [];
   let tipoActual = "";
 
-  // Buscar la tabla que contiene el encabezado "Tipo de Entidad" / "Entidad Autorizada"
-  // Usamos children("td") en cada fila para NO capturar TDs de tablas anidadas
-  let tablaVentanilla = null;
+  for (const fila of data.datos.indicadores) {
+    const celdas = fila.map((c) => String(c.valorEspanol ?? "").replace(/\s+/g, " ").trim());
 
-  $("table").each((_, tabla) => {
-    const txt = $(tabla).children("tbody, tr").first().text();
-    if (
-      $(tabla).text().includes("Tipo de Entidad") &&
-      $(tabla).text().includes("Entidad Autorizada") &&
-      $(tabla).text().includes("Compra")
-    ) {
-      // Preferir la tabla más interna (la que tiene filas con 6 celdas directas)
-      $(tabla)
-        .find("tr")
-        .each((_, fila) => {
-          if ($(fila).children("td").length === 6) {
-            tablaVentanilla = tabla;
-            return false;
-          }
-        });
+    if (celdas.length === 1) {
+      tipoActual = celdas[0];
+      continue;
     }
-  });
+    if (celdas.length < 5 || celdas[0] === "Entidad autorizada") continue;
 
-  if (!tablaVentanilla) {
-    throw new Error("No se encontró la tabla de ventanilla en la página del BCCR.");
-  }
+    const [nombre, txtCompra, txtVenta, txtDiferencial, ultimaActualizacion] = celdas;
+    const compra = parsePrecio(txtCompra);
+    const venta = parsePrecio(txtVenta);
+    if (!nombre || compra === null || venta === null) continue;
 
-  $(tablaVentanilla)
-    .find("tr")
-    .each((_, fila) => {
-      // CLAVE: children("td") — solo celdas directas, ignora tablas anidadas
-      const celdas = $(fila).children("td");
-      if (celdas.length !== 6) return;
-
-      const celda0 = texto(celdas[0], $);
-      const celda1 = texto(celdas[1], $);
-      const celda2 = texto(celdas[2], $);
-      const celda3 = texto(celdas[3], $);
-      const celda4 = texto(celdas[4], $);
-      const celda5 = texto(celdas[5], $);
-
-      // Encabezado de columnas
-      if (celda0 === "Tipo de Entidad") return;
-
-      // Si celda0 tiene un tipo de entidad, actualizamos el tipo actual
-      if (esCategoria(celda0)) tipoActual = celda0;
-
-      // Validar nombre de entidad
-      const nombre = celda1;
-      if (!nombre || nombre === "Entidad Autorizada") return;
-
-      const compra = parsePrecio(celda2);
-      const venta = parsePrecio(celda3);
-      if (compra === null || venta === null) return;
-
-      const diferencial =
-        parsePrecio(celda4) ?? Math.round((venta - compra) * 100) / 100;
-      const ultimaActualizacion = celda5;
-
-      entidades.push({
-        tipoEntidad: tipoActual,
-        nombre,
-        slug: resolverSlug(nombre),
-        compra,
-        venta,
-        diferencial,
-        ultimaActualizacion,
-      });
+    entidades.push({
+      tipoEntidad: tipoActual,
+      nombre,
+      slug: resolverSlug(nombre),
+      compra,
+      venta,
+      diferencial: parsePrecio(txtDiferencial) ?? Math.round((venta - compra) * 100) / 100,
+      ultimaActualizacion,
     });
+  }
 
   return entidades;
 }
@@ -230,7 +192,7 @@ async function main() {
   const entidades = await scrapeVentanilla();
 
   if (entidades.length === 0) {
-    throw new Error("No se encontraron entidades en la página.");
+    throw new Error("El BCCR no devolvió entidades de ventanilla.");
   }
 
   // Mejor compra: paga MÁS colones al comprar dólares del cliente
