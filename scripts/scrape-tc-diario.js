@@ -28,7 +28,7 @@ const DATA_PATH = join(__dirname, "../src/data/tipo-cambio.json");
 
 function loadExistingData() {
   if (!existsSync(DATA_PATH)) {
-    return { ultimaActualizacion: null, bancos: [], historico: [] };
+    return { ultimaActualizacion: null, entidades: [], historico: [] };
   }
 
   return JSON.parse(readFileSync(DATA_PATH, "utf-8"));

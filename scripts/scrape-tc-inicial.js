@@ -41,7 +41,7 @@ function buildHistorico(compraData, ventaData) {
 
 function loadExistingData(outPath) {
   if (!existsSync(outPath)) {
-    return { ultimaActualizacion: null, bancos: [], historico: [] };
+    return { ultimaActualizacion: null, entidades: [], historico: [] };
   }
 
   return JSON.parse(readFileSync(outPath, "utf-8"));
