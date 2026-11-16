@@ -1,71 +1,18 @@
+import { useI18n } from "../lib/i18n";
+
+const externo = { target: "_blank", rel: "noopener noreferrer" };
+
 export default function Footer() {
-  const year = new Date().getFullYear();
-  const githubUrl = "https://github.com/CQuiros2";
-
+  const { t } = useI18n();
   return (
-    <footer className="section-divider">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-        <div className="terminal-panel rounded-2xl px-5 py-5 sm:px-6 sm:py-6">
-          <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-3">
-              <div
-                className="w-9 h-9 rounded-xl flex items-center justify-center text-white text-sm font-bold"
-                style={{ background: "linear-gradient(135deg, var(--accent) 0%, var(--blue) 100%)" }}
-              >
-                ₡
-              </div>
-              <div>
-                <p className="font-bold tracking-tight" style={{ color: "var(--text-1)" }}>
-                  MICAMBIO<span style={{ color: "var(--accent)" }}>.CR</span>
-                </p>
-                <p className="text-sm" style={{ color: "var(--text-2)" }}>
-                  Monitor diario de referencia para tipo de cambio y combustibles.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-1 text-sm lg:text-right" style={{ color: "var(--text-2)" }}>
-              <p>
-                Datos oficiales:
-                {" "}
-                <a
-                  href="https://www.bccr.fi.cr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                  style={{ color: "var(--accent)" }}
-                >
-                  BCCR
-                </a>
-                {" · "}
-                <a
-                  href="https://aresep.go.cr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                  style={{ color: "var(--accent)" }}
-                >
-                  ARESEP
-                </a>
-              </p>
-              <p className="text-xs" style={{ color: "var(--text-3)" }}>
-                Desarrollado por{" "}
-                <a
-                  href={githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                  style={{ color: "var(--text-2)" }}
-                >
-                  Cristian Quirós
-                </a>
-              </p>
-              <p className="text-xs" style={{ color: "var(--text-3)" }}>
-                © {year}. Uso informativo. No sustituye confirmación directa con la entidad.
-              </p>
-            </div>
-          </div>
-        </div>
+    <footer style={{ borderTop: "1px solid var(--line)" }}>
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 pt-6 pb-8 flex flex-wrap justify-between gap-4 text-[13px]" style={{ color: "var(--faint)" }}>
+        <p className="m-0">
+          {t.pieDatos} <a href="https://www.bccr.fi.cr" {...externo}>BCCR</a> {t.pieY} <a href="https://aresep.go.cr" {...externo}>ARESEP</a>. {t.pieUso}
+        </p>
+        <p className="m-0">
+          {t.pieHecho} <a href="https://github.com/CQuiros2" {...externo}>Cristian Quirós</a>
+        </p>
       </div>
     </footer>
   );

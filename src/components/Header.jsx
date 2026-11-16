@@ -1,87 +1,81 @@
 import tcData from "../data/tipo-cambio.json";
 import { estadoTipoCambio } from "../lib/frescura";
+import { useI18n } from "../lib/i18n";
+import Logo from "./Logo";
 
-const conRetraso = estadoTipoCambio(tcData).ventanilla.vieja;
+const { ventanilla } = estadoTipoCambio(tcData);
 
-/* ── Iconos inline SVG para evitar dependencias ──────────────────────────── */
-function SunIcon() {
+function IconoLuna() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="12" r="5" />
-      <line x1="12" y1="1" x2="12" y2="3" />
-      <line x1="12" y1="21" x2="12" y2="23" />
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
-      <line x1="1" y1="12" x2="3" y2="12" />
-      <line x1="21" y1="12" x2="23" y2="12" />
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
-    </svg>
-  );
-}
-
-function MoonIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
     </svg>
   );
 }
 
-export default function Header({ isDark, toggleTheme }) {
+function IconoSol() {
   return (
-    <header
-      className="sticky top-0 z-50 backdrop-blur-md"
-      style={{
-        backgroundColor: isDark ? "rgba(10,10,15,0.85)" : "rgba(248,249,251,0.9)",
-        borderBottom: "1px solid var(--border)",
-      }}
-    >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-        {/* Logo + nombre */}
-        <div className="flex items-center gap-3">
-          <div
-            className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-sm flex-shrink-0 select-none"
-            style={{ background: "linear-gradient(135deg, var(--accent) 0%, #3b82f6 100%)" }}
-          >
-            ₡
-          </div>
-          <span
-            className="text-base font-bold tracking-tight"
-            style={{ color: "var(--text-1)" }}
-          >
-            MiCambio
-            <span style={{ color: "var(--accent)" }}>.cr</span>
-          </span>
-        </div>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="4.5" />
+      <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+    </svg>
+  );
+}
 
-        {/* Derecha: badge + toggle */}
-        <div className="flex items-center gap-4">
-          {/* Badge "En vivo" / "Con retraso" según la frescura de ventanilla */}
-          <div
-            className="hidden sm:flex items-center gap-2 text-xs font-medium"
-            style={{ color: conRetraso ? "var(--warning)" : "var(--text-2)" }}
-          >
-            <span
-              className={`w-1.5 h-1.5 rounded-full${conRetraso ? "" : " animate-pulse"}`}
-              style={{ backgroundColor: conRetraso ? "var(--warning)" : "var(--accent)" }}
-            />
-            {conRetraso ? "Datos con retraso" : "En vivo"}
-          </div>
+function IconoIdioma() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" />
+    </svg>
+  );
+}
 
-          {/* Toggle dark/light */}
-          <button
-            onClick={toggleTheme}
-            aria-label={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
-            className="w-8 h-8 rounded-lg flex items-center justify-center transition-opacity hover:opacity-70 focus:outline-none focus-visible:ring-2"
-            style={{
-              color: "var(--text-2)",
-              backgroundColor: "var(--surface)",
-              border: "1px solid var(--border)",
-            }}
-          >
-            {isDark ? <SunIcon /> : <MoonIcon />}
-          </button>
+/** "Ventanilla al día · lunes 16 nov, 3:34 p.m." o el aviso de retraso. */
+export function EstadoVentanilla({ className = "" }) {
+  const { t, f } = useI18n();
+  if (!ventanilla.fecha) return null;
+  const vieja = ventanilla.vieja;
+  return (
+    <p className={`m-0 flex items-center gap-2 text-sm ${className}`} style={{ color: vieja ? "var(--warn)" : "var(--muted)" }}>
+      <span aria-hidden="true" className="inline-block w-2 h-2 rounded-full shrink-0" style={{ background: vieja ? "var(--warn)" : "var(--ok)" }} />
+      {vieja ? t.estadoRetraso(f.diaMes(ventanilla.fecha)) : t.estadoAlDia(f.fechaLarga(ventanilla.fecha))}
+    </p>
+  );
+}
+
+const estiloBoton = { border: "1px solid var(--line)", background: "var(--surface)", color: "var(--ink)" };
+
+export default function Header({ oscuro, alternarTema }) {
+  const { t, alternarIdioma } = useI18n();
+  return (
+    <header style={{ borderBottom: "1px solid var(--line)" }}>
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-8 py-3 sm:py-4 flex items-center justify-between gap-3">
+        <Logo />
+        <div className="flex items-center gap-2 sm:gap-5">
+          <EstadoVentanilla className="hidden lg:flex" />
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={alternarIdioma}
+              aria-label={t.aOtroIdioma}
+              className="min-h-[44px] min-w-[44px] px-3 rounded-lg flex items-center justify-center gap-2 text-sm font-bold"
+              style={estiloBoton}
+            >
+              <IconoIdioma />
+              <span aria-hidden="true">{t.botonIdioma}</span>
+            </button>
+            <button
+              type="button"
+              onClick={alternarTema}
+              aria-label={oscuro ? t.aModoClaro : t.aModoOscuro}
+              className="min-h-[44px] min-w-[44px] px-3 rounded-lg flex items-center justify-center gap-2 text-sm font-semibold"
+              style={estiloBoton}
+            >
+              {oscuro ? <IconoSol /> : <IconoLuna />}
+              <span aria-hidden="true" className="hidden sm:inline">{oscuro ? t.botonClaro : t.botonOscuro}</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>

@@ -1,36 +1,23 @@
-import { fechaCorta } from "../lib/frescura";
+import { useI18n } from "../lib/i18n";
 
-const fmt = (n) =>
-  new Intl.NumberFormat("es-CR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
-
-/** Aviso cuando los precios de ventanilla no son de hoy. Ofrece el oficial como referencia. */
+/** Aviso cuando los precios de ventanilla no son recientes. Ofrece el oficial como referencia. */
 export default function AvisoDatos({ estado }) {
+  const { t, f } = useI18n();
   const { ventanilla, oficial } = estado;
   const oficialUtil = !oficial.vieja && oficial.compra && oficial.venta;
 
   return (
-    <div
-      role="status"
-      className="mt-4 rounded-2xl px-4 py-3 text-sm flex gap-3 items-start"
-      style={{
-        color: "var(--text-1)",
-        backgroundColor: "color-mix(in srgb, var(--warning) 10%, transparent)",
-        border: "1px solid color-mix(in srgb, var(--warning) 35%, transparent)",
-      }}
-    >
-      <span aria-hidden className="leading-5" style={{ color: "var(--warning)" }}>●</span>
+    <div role="status" className="rounded-[10px] px-4 py-3 text-sm flex gap-3 items-start" style={{ background: "var(--warn-bg)", border: "1px solid var(--warn)" }}>
+      <span aria-hidden="true" className="mt-1.5 inline-block w-2 h-2 rounded-full shrink-0" style={{ background: "var(--warn)" }} />
       <div className="min-w-0">
-        <p className="font-semibold leading-5">
-          Los precios de ventanilla son del {fechaCorta(ventanilla.fecha)} y pueden no estar vigentes.
-        </p>
-        <p className="mt-0.5 leading-5" style={{ color: "var(--text-2)" }}>
-          No se han podido actualizar desde esa fecha. Confirmá con la entidad antes de ir.
+        <p className="m-0 font-semibold">{t.avisoTitulo(f.diaMes(ventanilla.fecha))}</p>
+        <p className="m-0 mt-0.5" style={{ color: "var(--muted)" }}>
+          {t.avisoCuerpo}
           {oficialUtil && (
             <>
-              {" "}Tipo de cambio oficial del {fechaCorta(oficial.fecha)}: compra{" "}
-              <strong className="metric-value" style={{ color: "var(--text-1)" }}>₡{fmt(oficial.compra)}</strong>
-              {" "}· venta{" "}
-              <strong className="metric-value" style={{ color: "var(--text-1)" }}>₡{fmt(oficial.venta)}</strong>.
+              {" "}{t.avisoOficial(f.diaMes(oficial.fecha))} {t.compra}{" "}
+              <strong className="num" style={{ color: "var(--ink)" }}>{f.colones(oficial.compra)}</strong> · {t.venta}{" "}
+              <strong className="num" style={{ color: "var(--ink)" }}>{f.colones(oficial.venta)}</strong>.
             </>
           )}
         </p>

@@ -2,20 +2,87 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MiCambio.cr — Tipo de cambio y combustibles en Costa Rica</title>
-    <!-- Evitar flash de tema: aplica dark antes de que React monte -->
+    <title>Tipo de cambio hoy en Costa Rica · micambio.cr</title>
+    <meta name="description" content="Compra y venta del dólar en ventanilla de 37 entidades autorizadas por el BCCR, calculadora y precios de combustibles de ARESEP." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F2F3EF" />
+
+    <!--
+      Tema antes del primer pintado: lo que eligió la persona (botón) y, si nunca
+      eligió, lo que tiene configurado el dispositivo. Sin preferencia: claro.
+      Va en el <head> y es síncrono para que ni la pantalla de carga encandile.
+    -->
     <script>
       (function () {
-        var s = localStorage.getItem("theme");
-        if (s === "light") return;
-        document.documentElement.classList.add("dark");
+        var html = document.documentElement;
+        var elegido = null;
+        try { elegido = localStorage.getItem("micambio-tema"); } catch (e) {}
+        var oscuro = elegido
+          ? elegido === "oscuro"
+          : !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        html.classList.add("js");
+        if (oscuro) html.classList.add("dark");
+        html.style.colorScheme = oscuro ? "dark" : "light";
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute("content", oscuro ? "#0A101C" : "#F2F3EF");
+
+        // Idioma: el elegido o, si no, el del navegador (inglés → en; si no, es).
+        var idioma = null;
+        try { idioma = localStorage.getItem("micambio-idioma"); } catch (e) {}
+        if (idioma !== "es" && idioma !== "en") {
+          var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
+          idioma = /^en\b/i.test(nav) ? "en" : "es";
+        }
+        html.lang = idioma;
       })();
     </script>
+
+    <!-- Estilos mínimos de la pantalla de carga: no dependen del bundle. -->
+    <style>
+      html { background: #F2F3EF; color: #0D1B2A; }
+      html.dark { background: #0A101C; color: #E9EDF3; }
+      /* Sin JavaScript no corre el script de arriba: se sigue al sistema. */
+      @media (prefers-color-scheme: dark) {
+        html:not(.js) { background: #0A101C; color: #E9EDF3; }
+      }
+      body { margin: 0; }
+      .carga {
+        min-height: 100vh; display: flex; flex-direction: column;
+        align-items: center; justify-content: center; gap: 18px;
+        font-family: Archivo, system-ui, -apple-system, "Segoe UI", sans-serif;
+        opacity: 0; animation: carga-aparece 0.3s ease 0.35s forwards;
+      }
+      .carga-texto { font-size: 15px; opacity: 0.7; }
+      html[lang="en"] .carga-texto[lang="es"], html:not([lang="en"]) .carga-texto[lang="en"] { display: none; }
+      .carga-barra { width: 120px; height: 3px; border-radius: 3px; overflow: hidden; background: rgba(127, 127, 127, 0.25); }
+      .carga-barra::after {
+        content: ""; display: block; width: 40%; height: 100%; background: #C8102E;
+        animation: carga-avanza 1.1s ease-in-out infinite;
+      }
+      @keyframes carga-aparece { to { opacity: 1; } }
+      @keyframes carga-avanza { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+      @media (prefers-reduced-motion: reduce) {
+        .carga { animation: none; opacity: 1; }
+        .carga-barra::after { animation: none; width: 100%; }
+      }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- React reemplaza esto al montar. Solo se ve si la carga tarda. -->
+      <div class="carga" role="status" aria-live="polite">
+        <img src="/favicon.svg" width="56" height="56" alt="" />
+        <div class="carga-barra" aria-hidden="true"></div>
+        <span class="carga-texto" lang="es">Cargando tipo de cambio…</span>
+        <span class="carga-texto" lang="en">Loading exchange rates…</span>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
