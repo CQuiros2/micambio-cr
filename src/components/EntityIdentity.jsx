@@ -27,7 +27,9 @@ export function EntityIdentity({ name, size = 28, showName = true, compact = fal
 
   const localLogos = Array.isArray(metadata.localLogo) ? metadata.localLogo : [];
   const remoteIcons = Array.isArray(metadata.iconCandidates) ? metadata.iconCandidates : [];
-  const logoSources = [...localLogos, ...remoteIcons].filter(Boolean);
+  // Sin repetidos: si una URL se repite, React no recarga el mismo src, no llega
+  // un nuevo onError y el logo queda roto en vez de pasar al siguiente.
+  const logoSources = [...new Set([...localLogos, ...remoteIcons].filter(Boolean))];
   const currentLogo = logoSources[logoSourceIndex] ?? null;
   const borderRadius = size <= 24 ? 7 : 8;
   const imageSize = Math.max(12, size - (size <= 24 ? 7 : 8));

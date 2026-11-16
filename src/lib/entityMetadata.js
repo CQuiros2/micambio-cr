@@ -224,7 +224,6 @@ const ENTITY_METADATA_RAW = {
     iconCandidates: [
       "https://teledolar.com/wp-content/uploads/2020/11/IconoTLD-150x150.png",
       "https://teledolar.com/wp-content/uploads/2020/11/IconoTLD-300x300.png",
-      "https://teledolar.com/wp-content/uploads/2020/11/IconoTLD-300x300.png",
     ],
   },
   "BN Valores S.A., Puesto de Bolsa": {
@@ -328,10 +327,16 @@ export function getEntityMetadata(name) {
   };
 }
 
+// Palabras genéricas que no sirven para las iniciales ("Casa de Cambio X" → "X").
+const PALABRAS_GENERICAS = new Set([
+  "banco", "casa", "cambio", "financiera", "cooperativa", "mutual", "grupo",
+  "puesto", "bolsa", "valores", "s.a.", "s.a", "r.l.", "limitada", "internacional",
+]);
+
 export function getEntityInitials(name) {
-  return name
-    .split(" ")
-    .filter((word) => word.length > 2)
+  const palabras = name.split(" ").filter((word) => word.length > 2);
+  const utiles = palabras.filter((word) => !PALABRAS_GENERICAS.has(word.toLowerCase().replace(/,$/, "")));
+  return (utiles.length > 0 ? utiles : palabras)
     .slice(0, 2)
     .map((word) => word[0].toUpperCase())
     .join("");
