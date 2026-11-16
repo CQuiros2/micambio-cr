@@ -4,11 +4,12 @@ import { esHoyIsoCR, mejorCompra, mejorVenta } from "../lib/entidades";
 import { nombreCorto } from "../lib/formato";
 import { useI18n } from "../lib/i18n";
 import AvisoDatos from "./AvisoDatos";
+import EntidadLogo from "./EntidadLogo";
 
 const estado = estadoTipoCambio(tcData);
 const ultimoOficial = tcData.historico?.at(-1) ?? null;
 
-function Tarjeta({ titulo, tituloCorto, nota, valor, color, entidad, pie }) {
+function Tarjeta({ titulo, tituloCorto, nota, valor, color, entidad, nombreCompleto, pie }) {
   return (
     <section className="tarjeta p-3.5 sm:px-6 sm:py-[22px] flex flex-col gap-2 sm:gap-3.5 min-w-0">
       <div className="flex justify-between items-baseline gap-3">
@@ -21,8 +22,11 @@ function Tarjeta({ titulo, tituloCorto, nota, valor, color, entidad, pie }) {
       <p className="num m-0 font-extrabold leading-[0.92] text-[clamp(30px,8.6vw,64px)]" style={{ letterSpacing: "-0.02em", color }}>
         {valor}
       </p>
-      <div className="flex flex-wrap justify-between items-baseline gap-x-3 gap-y-0.5 sm:pt-3 sm:border-t" style={{ borderColor: "var(--line)" }}>
-        <span className="text-[13px] sm:text-[15px] font-semibold">{entidad}</span>
+      <div className="flex flex-wrap justify-between items-center gap-x-3 gap-y-0.5 sm:pt-3 sm:border-t" style={{ borderColor: "var(--line)" }}>
+        <span className="flex items-center gap-2 min-w-0">
+          <EntidadLogo nombre={nombreCompleto} size={24} />
+          <span className="text-[13px] sm:text-[15px] font-semibold">{entidad}</span>
+        </span>
         <span className="hidden sm:inline text-[13px]" style={{ color: "var(--faint)" }}>{pie}</span>
       </div>
     </section>
@@ -47,6 +51,7 @@ export default function MejoresPrecios() {
           valor={f.colones(mejorCompra.compra)}
           color="var(--blue)"
           entidad={nombreCorto(mejorCompra.nombre)}
+          nombreCompleto={mejorCompra.nombre}
           pie={t.compraA(cuando(mejorCompra))}
         />
         <Tarjeta
@@ -56,6 +61,7 @@ export default function MejoresPrecios() {
           valor={f.colones(mejorVenta.venta)}
           color="var(--red)"
           entidad={nombreCorto(mejorVenta.nombre)}
+          nombreCompleto={mejorVenta.nombre}
           pie={t.ventaA(cuando(mejorVenta))}
         />
       </div>

@@ -3,6 +3,7 @@ import { entidades, FILTROS, mejorCompra, mejorVenta } from "../lib/entidades";
 import { entidadVieja } from "../lib/frescura";
 import { nombreCorto } from "../lib/formato";
 import { useI18n } from "../lib/i18n";
+import EntidadLogo from "./EntidadLogo";
 
 const FUENTE = "https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/Inicio/Contenedor/2039";
 
@@ -89,8 +90,13 @@ export default function TablaEntidades() {
             {datos.map((d) => (
               <tr key={d.e.nombre} style={{ borderBottom: "1px solid var(--line)" }}>
                 <td className="px-5 py-[11px]">
-                  <div className="font-semibold">{d.nombre}</div>
-                  <div className="text-[13px]" style={{ color: "var(--faint)" }}>{t.tipoEntidad(d.e.tipoEntidad)}</div>
+                  <div className="flex items-center gap-3">
+                    <EntidadLogo nombre={d.e.nombre} size={32} />
+                    <div className="min-w-0">
+                      <div className="font-semibold">{d.nombre}</div>
+                      <div className="text-[13px]" style={{ color: "var(--faint)" }}>{t.tipoEntidad(d.e.tipoEntidad)}</div>
+                    </div>
+                  </div>
                 </td>
                 <td className="num text-right text-[17px] pl-3 pr-6 py-[11px]" style={d.compraEstilo}>{f.colones(d.e.compra)}</td>
                 <td className="num text-right text-[17px] pl-3 pr-6 py-[11px]" style={d.ventaEstilo}>{f.colones(d.e.venta)}</td>
@@ -112,9 +118,12 @@ export default function TablaEntidades() {
         <ul className="tarjeta m-0 p-0 list-none">
           {datos.map((d, i) => (
             <li key={d.e.nombre} className="grid grid-cols-[minmax(0,1fr)_84px_84px] gap-2 items-center px-3.5 py-[11px]" style={{ borderBottom: i < datos.length - 1 ? "1px solid var(--line)" : "none" }}>
-              <div className="min-w-0">
-                <div className="text-sm font-semibold truncate">{d.nombre}</div>
-                <div className="text-xs" style={{ color: d.actColor }}>{d.act}</div>
+              <div className="min-w-0 flex items-center gap-2.5">
+                <EntidadLogo nombre={d.e.nombre} size={26} />
+                <div className="min-w-0">
+                  <div className="text-sm font-semibold truncate">{d.nombre}</div>
+                  <div className="text-xs" style={{ color: d.actColor }}>{d.act}</div>
+                </div>
               </div>
               <span className="num text-right text-base" style={d.compraEstilo}>{f.colones(d.e.compra)}</span>
               <span className="num text-right text-base" style={d.ventaEstilo}>{f.colones(d.e.venta)}</span>

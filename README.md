@@ -4,8 +4,8 @@ Tipo de cambio del dólar y precios de combustibles en Costa Rica, en una sola
 página.
 
 - **Ventanilla:** compra y venta de las 37 entidades autorizadas por el BCCR,
-  con la mejor para vender y la mejor para comprar.
-- **Calculadora:** cuánto recibís o pagás en la mejor entidad y cuánto ganás
+  cada una con su logo, con la mejor para vender y la mejor para comprar.
+- **Calculadora:** cuánto recibe o paga en la mejor entidad y cuánto gana
   frente a las otras del top 5.
 - **Combustibles:** precios vigentes de ARESEP y cuánto subieron o bajaron en el
   último ajuste.
@@ -41,6 +41,7 @@ src/
   components/
     Header.jsx             logo, estado de ventanilla, botones de idioma y tema
     Logo.jsx               marca (mismo dibujo que el favicon)
+    EntidadLogo.jsx        logo pequeño de cada entidad
     MejoresPrecios.jsx     las dos cifras principales y el tipo oficial
     AvisoDatos.jsx         aviso cuando la ventanilla está vieja
     Calculadora.jsx
@@ -52,8 +53,10 @@ src/
     entidades.js           entidades válidas, mejor compra/venta, filtros
     formato.js             números, colones, fechas y horas por idioma
     frescura.js            ¿está vieja cada fuente? (lo usan la web y los scripts)
-    i18n.js                textos en español e inglés
+    i18n.js                textos en español (ustedeo) e inglés
+    logos.js               qué logo le toca a cada entidad
     useTema.js             modo claro/oscuro
+  assets/logos/            logos de las entidades (ver docs/DISENO.md)
   data/
     tipo-cambio.json       lo escriben los scripts de tipo de cambio
     combustible.json       lo escriben los scripts de combustibles
@@ -159,18 +162,18 @@ Ventanilla y combustibles no necesitan token.
 
 ## Si algo falla
 
-1. Corré `npm run validate:data` y leé el mensaje exacto.
-2. Volvé a correr el scraper de la fuente afectada.
+1. Corra `npm run validate:data` y lea el mensaje exacto.
+2. Vuelva a correr el scraper de la fuente afectada.
 
 Por fuente:
 
-- **Ventanilla:** revisá que la API responda con los headers de arriba y que el
-  token CSRF salga bien. Si el BCCR cambia el cuadro, revisá la forma de
+- **Ventanilla:** revise que la API responda con los headers de arriba y que el
+  token CSRF salga bien. Si el BCCR cambia el cuadro, revise la forma de
   `datos.indicadores`: filas de una celda son el tipo de entidad; filas de cinco
   son entidad, compra, venta, diferencial y fecha.
-- **Tipo oficial:** verificá `BCCR_API_TOKEN` (si expira, el histórico deja de
+- **Tipo oficial:** verifique `BCCR_API_TOKEN` (si expira, el histórico deja de
   actualizar) y la conectividad a `apim.bccr.fi.cr`.
-- **Combustibles:** revisá que la API de ARESEP responda y que no hayan
+- **Combustibles:** revise que la API de ARESEP responda y que no hayan
   cambiado los nombres de productos o campos.
 
 Una entidad con fecha vieja no siempre es un error: el dato puede venir así desde

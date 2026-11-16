@@ -2,6 +2,7 @@ import { useState } from "react";
 import { entidades } from "../lib/entidades";
 import { nombreCorto } from "../lib/formato";
 import { useI18n } from "../lib/i18n";
+import EntidadLogo from "./EntidadLogo";
 
 const TOP_VENDER = [...entidades].sort((a, b) => b.compra - a.compra).slice(0, 5);
 const TOP_COMPRAR = [...entidades].sort((a, b) => a.venta - b.venta).slice(0, 5);
@@ -106,9 +107,12 @@ export default function Calculadora() {
           <p className="m-0 mb-2 text-[13px] font-bold" style={{ color: "var(--muted)" }}>{vender ? t.topVender : t.topComprar}</p>
           <ol className="m-0 p-0 list-none">
             {top.map((e, i) => (
-              <li key={e.nombre} className="grid grid-cols-[22px_minmax(0,1fr)_auto] gap-2.5 items-baseline py-2.5" style={{ borderBottom: i < top.length - 1 ? "1px solid var(--line)" : "none" }}>
+              <li key={e.nombre} className="grid grid-cols-[16px_minmax(0,1fr)_auto] gap-2.5 items-center py-2" style={{ borderBottom: i < top.length - 1 ? "1px solid var(--line)" : "none" }}>
                 <span className="num text-[13px]" style={{ color: "var(--faint)" }}>{i + 1}</span>
-                <span className={`text-sm truncate ${i === 0 ? "font-bold" : "font-medium"}`}>{nombreCorto(e.nombre)}</span>
+                <span className="flex items-center gap-2 min-w-0">
+                  <EntidadLogo nombre={e.nombre} size={22} />
+                  <span className={`text-sm truncate ${i === 0 ? "font-bold" : "font-medium"}`}>{nombreCorto(e.nombre)}</span>
+                </span>
                 <span className="num text-sm font-bold text-right">
                   {hayMonto ? fmtSalida(salida(e)) : ""}{" "}
                   <span className="font-normal" style={{ color: "var(--faint)" }}>{t.aTasa} {f.colones(tasa(e))}</span>

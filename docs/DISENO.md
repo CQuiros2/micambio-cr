@@ -1,7 +1,7 @@
 # Diseño de micambio.cr
 
 Guía visual del sitio: qué se buscó, cómo está armado y qué reglas seguir al
-cambiarlo. Si algo de aquí choca con el código, manda el código; actualizá este
+cambiarlo. Si algo de aquí choca con el código, manda el código; actualice este
 documento.
 
 ## Principios
@@ -26,7 +26,7 @@ documento.
 │ logo                     estado de ventanilla   [🌐 EN] [☾ Oscuro]   │
 ├───────────────────────────────────────────────┬──────────────────────┤
 │ Tipo de cambio hoy                            │ Combustibles         │
-│ ┌─ Si vendés dólares ─┐ ┌─ Si comprás ─────┐  │  Súper  ▲₡41   805   │
+│ ┌─ Si vende dólares ──┐ ┌─ Si compra ──────┐  │  Súper  ▲₡41   805   │
 │ │ ₡444,06 (azul)      │ │ ₡449,00 (rojo)   │  │  …                   │
 │ └─────────────────────┘ └──────────────────┘  ├──────────────────────┤
 │ Tipo de cambio oficial BCCR                   │ Dólar oficial (venta)│
@@ -54,7 +54,7 @@ columnas (entidad, compra, venta) y los filtros se desplazan en horizontal.
 - **Favicon:** [`public/favicon.svg`](../public/favicon.svg). El ₡ está dibujado
   con trazos (no es texto) para que se vea igual en cualquier dispositivo. El
   mismo dibujo está en [`src/components/Logo.jsx`](../src/components/Logo.jsx);
-  si cambia uno, cambiá el otro.
+  si cambia uno, cambie el otro.
 - **Franja de la bandera:** proporciones reales 1 : 1 : 2 : 1 : 1 (azul, blanco,
   rojo, blanco, azul). 18 px de alto en escritorio, 12 px en móvil
   (clase `.bandera`).
@@ -63,7 +63,8 @@ columnas (entidad, compra, venta) y los filtros se desplazan en horizontal.
 
 Todos los colores son variables CSS en [`src/index.css`](../src/index.css);
 el modo oscuro las redefine bajo `.dark`. Nunca uses un color suelto en un
-componente si existe la variable.
+componente si existe la variable (la excepción son los cuadros blancos de los
+logos de entidades, que no cambian con el modo).
 
 | Variable    | Claro     | Oscuro    | Uso |
 |-------------|-----------|-----------|-----|
@@ -74,8 +75,8 @@ componente si existe la variable.
 | `--muted`   | `#475160` | `#A9B3C2` | Texto secundario |
 | `--faint`   | `#5C6470` | `#8D99AA` | Notas, fechas, fuentes |
 | `--line`    | `#D8DBD3` | `#233049` | Bordes y separadores |
-| `--blue`    | `#002B7F` | `#9DB8FF` | **Compra** (te conviene si vendés dólares), enlaces |
-| `--red`     | `#C8102E` | `#FF8592` | **Venta** (te conviene si comprás dólares), `.cr` del logo |
+| `--blue`    | `#002B7F` | `#9DB8FF` | **Compra** (le conviene a quien vende dólares), enlaces |
+| `--red`     | `#C8102E` | `#FF8592` | **Venta** (le conviene a quien compra dólares), `.cr` del logo |
 | `--up` / `--up-bg` | `#B4321F` / `#FBE6E1` | `#FF9A7A` / `#3A1D16` | Subió (combustible), dato viejo |
 | `--ok` / `--ok-bg` | `#23683F` / `#E0F0E6` | `#6BD39A` / `#11301F` | Bajó (combustible), ventanilla al día |
 | `--warn` / `--warn-bg` | `#8A5300` / `#FBF1DE` | `#F0B860` / `#2A2112` | Aviso de datos con retraso |
@@ -85,7 +86,7 @@ Reglas:
 - **Azul y rojo son los de la bandera** y tienen un solo significado cada uno:
   azul = compra, rojo = venta. No los uses para otra cosa.
 - En oscuro se aclaran para mantener **contraste de texto de al menos 4.5:1**.
-  Si agregás un color, verificá el contraste en los dos modos.
+  Si agrega un color, verifique el contraste en los dos modos.
 - Los colores de los combustibles (cuadritos) son fijos en los dos modos:
   Súper `#3F659C`, Regular `#B53E36`, Diésel `#2D7A5B`, Gas LP `#9A5B34`.
 - Subir/bajar nunca se comunica solo con color: siempre va la flecha ▲/▼.
@@ -96,7 +97,7 @@ Reglas:
   respaldo. Se carga desde [`index.html`](../index.html).
 - **Cifras:** clase `.num` → números tabulares (todos del mismo ancho) y un poco
   angostos (`font-stretch: 88%`), para que las columnas de precios queden
-  alineadas. Usala en todo número que se compare.
+  alineadas. Úsela en todo número que se compare.
 - Escala usada: títulos 30/40 px (móvil/escritorio), cifra principal hasta
   64 px, cifras de tabla 16–17 px, texto 14–16 px, notas 12–13 px. Títulos con
   `letter-spacing` negativo (−0.02 a −0.03 em).
@@ -111,6 +112,29 @@ Reglas:
 | `.ajuste` | `index.css` | Pastilla ▲/▼ con el ajuste del combustible (`-sube`, `-baja`, `-igual`). |
 | `.bandera` | `index.css` | Franja superior. |
 | `MarcaLogo` / `Logo` | `components/Logo.jsx` | Marca sola o con el nombre. |
+| `EntidadLogo` | `components/EntidadLogo.jsx` | Logo de una entidad sobre un cuadro blanco (o sus iniciales si no hay). |
+
+## Logos de las entidades
+
+Ayudan a reconocer cada entidad de un vistazo. Viven en
+[`src/assets/logos/`](../src/assets/logos/) y se asocian por palabras clave del
+nombre en [`src/lib/logos.js`](../src/lib/logos.js).
+
+- **Se usa el logo oficial cuando se puede**: el ícono del sitio de la entidad,
+  descargado una vez y guardado en el repo (no se cargan en vivo desde sitios
+  ajenos). Se normalizan a PNG de 96×96, recortando el margen blanco; los que
+  son un cuadro de color se dejan enteros.
+- **Si no se pudo obtener**, va una versión propia lo más parecida posible
+  (SVG): Coopemep (su forma y colores, redibujada nítida), Improsa y Banco CMB
+  (monograma).
+- Las filiales usan la marca del grupo: BN Valores → BN, Popular Valores → BP,
+  BCT Valores → BCT.
+- Se muestran siempre sobre un cuadro blanco con borde, también en modo oscuro,
+  porque los logos están pensados para fondo claro. Son decorativos
+  (`alt=""`): el nombre va siempre al lado como texto.
+- Para una entidad nueva: guarde el logo como `src/assets/logos/<clave>.png`
+  (96×96) y agregue la regla en `REGLAS`. Si no hay regla, se muestran las
+  iniciales.
 
 Botones e interactivos: mínimo 44 px de alto (36 px en chips y orden de tabla)
 y foco visible (`:focus-visible`, contorno azul).
@@ -148,12 +172,13 @@ idioma, y `prefers-reduced-motion`.
   (inglés → `en`; cualquier otro → `es`). Se guarda en `localStorage` con la
   clave `micambio-idioma`.
 - **Textos:** todos están en [`src/lib/i18n.js`](../src/lib/i18n.js), en
-  `TEXTOS.es` y `TEXTOS.en`. Al agregar un texto, agregalo en los dos. Los
+  `TEXTOS.es` y `TEXTOS.en`. Al agregar un texto, agréguelo en los dos. Los
   componentes los leen con `const { t, f } = useI18n()`.
 - **Formatos:** `f` (de [`src/lib/formato.js`](../src/lib/formato.js)) formatea
   números, colones, horas y fechas según el idioma: `₡444,06` / `₡444.06`,
   `1:15 p.m.` / `1:15 PM`. Las horas siempre se muestran en hora de Costa Rica.
-- El español usa voseo ("vendés", "comprás", "confirmá").
+- El español usa **ustedeo**, como se habla en Costa Rica ("Si vende dólares",
+  "Ingrese un monto", "Confirme con la entidad"). Nada de voseo ni tuteo.
 
 ## Qué evitar
 

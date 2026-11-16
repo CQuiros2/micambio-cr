@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Versión propia (simplificada) del isotipo de Coopemep: rombo amarillo y "V" azul. -->
+  <rect width="64" height="64" fill="#fff"/>
+  <path d="M8 20 16 12l8 8-8 8z" fill="#E8D400"/>
+  <path d="M15 32h13l9 20-7 6z" fill="#8FA9CC"/>
+  <path d="M30 58l7-6 14-40h-11z" fill="#123A7A"/>
+  <path d="M40 12h11l6-6H46z" fill="#BCC931"/>
+</svg>
