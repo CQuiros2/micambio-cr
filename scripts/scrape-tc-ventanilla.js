@@ -10,7 +10,7 @@
  * npm:  npm run scrape:tc
  */
 
-import axios from "axios";
+import { getConReintentos } from "./lib/http.js";
 import * as cheerio from "cheerio";
 import { writeFileSync, readFileSync, existsSync, mkdirSync } from "fs";
 import { join, dirname } from "path";
@@ -136,11 +136,11 @@ function esCategoria(str) {
 // ── Scraping ──────────────────────────────────────────────────────────────────
 
 async function scrapeVentanilla() {
-  const response = await axios.get(URL_VENTANILLA, {
+  const response = await getConReintentos(URL_VENTANILLA, {
     responseType: "arraybuffer",
     timeout: 20_000,
     headers: { "Accept-Language": "es-CR,es;q=0.9" },
-  });
+  }, { intentos: 2 });
 
   // La página sirve UTF-8 (a pesar de ser ASP.NET clásico)
   const html = Buffer.from(response.data).toString("utf8");

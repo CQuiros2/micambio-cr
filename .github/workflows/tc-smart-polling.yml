@@ -33,6 +33,9 @@ jobs:
         run: npm ci
 
       - name: Actualizar ventanilla BCCR
+        # Si la fuente de ventanilla falla, igual se actualiza el tipo oficial
+        # (queda un aviso amarillo en el run en vez de un correo de falla).
+        continue-on-error: true
         run: node scripts/scrape-tc-ventanilla.js
 
       - name: Actualizar tipo oficial diario BCCR

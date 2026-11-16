@@ -68,7 +68,14 @@ function mergeHistorico(existingHistorico, compraData, ventaData) {
 }
 
 async function main() {
-  const { inicio, fin } = getRecentRange(7);
+  // Pide desde la última fecha guardada para rellenar huecos (máx. 400 días);
+  // si el histórico está al día, basta con los últimos 7 días.
+  const data = loadExistingData();
+  const ultimaFecha = data.historico?.at(-1)?.fecha;
+  const diasDesdeUltima = ultimaFecha
+    ? Math.ceil((Date.now() - new Date(`${ultimaFecha}T00:00:00Z`).getTime()) / 86_400_000)
+    : 7;
+  const { inicio, fin } = getRecentRange(Math.min(Math.max(diasDesdeUltima + 1, 7), 400));
   console.log(`Consultando API SDDE del BCCR (${inicio} -> ${fin})...`);
 
   const [compraData, ventaData] = await Promise.all([
@@ -81,7 +88,6 @@ async function main() {
     return;
   }
 
-  const data = loadExistingData();
   const { historico, cambios } = mergeHistorico(data.historico ?? [], compraData, ventaData);
 
   if (cambios === 0) {

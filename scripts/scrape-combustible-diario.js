@@ -9,7 +9,7 @@
  * Uso: node scripts/scrape-combustible-diario.js
  */
 
-import axios from "axios";
+import { getConReintentos } from "./lib/http.js";
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
@@ -82,7 +82,7 @@ function calcularPrecios(historico) {
 
 async function main() {
   console.log("Consultando API de ARESEP…");
-  const response = await axios.get(API_URL, { timeout: 60_000 });
+  const response = await getConReintentos(API_URL, { timeout: 60_000 });
 
   const filas = response.data?.value;
   if (!Array.isArray(filas) || filas.length === 0) {
