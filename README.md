@@ -16,9 +16,30 @@ npm run dev
 - Tipo oficial `317/318`: API SDDE del BCCR
   - Base URL: `https://apim.bccr.fi.cr/SDDE/api/Bccr.GE.SDDE.Publico.Indicadores.API`
 - Tipo de cambio en ventanilla: cuadro público del BCCR
-  - Fuente: `https://gee.bccr.fi.cr/IndicadoresEconomicos/Cuadros/frmConsultaTCVentanilla.aspx`
+  - Fuente vieja: `https://gee.bccr.fi.cr/IndicadoresEconomicos/Cuadros/frmConsultaTCVentanilla.aspx`
+  - ⚠️ **Fuera de servicio desde el 10/09/2026** (responde 503). El BCCR migró sus indicadores
+    a `https://sdd.bccr.fi.cr/es/IndicadoresEconomicos/`, donde el cuadro es el
+    "Lista de intermediarios cambiarios autorizados y sus tipos de cambio vigentes de ventanilla"
+    (`/Inicio/Contenedor/2039`). Falta migrar `scrape-tc-ventanilla.js` a una fuente nueva;
+    mientras tanto la web muestra los últimos datos con un aviso de que no están vigentes.
 - Combustibles: API abierta de ARESEP usada por el proyecto
   - Fuente: `https://datos.aresep.go.cr/ws.datosabiertos/Services/IE/TarifaCombustible.svc/ObtenerHistoricoTarifasHidrocarburos`
+
+## Estructura de `src/data/tipo-cambio.json`
+
+Lo escriben dos scripts distintos; cada uno tiene su propia fecha para que uno no
+haga parecer fresco al otro:
+
+| Campo | Lo escribe | Contenido |
+|---|---|---|
+| `entidades`, `mejorCompra`, `mejorVenta` | `scrape-tc-ventanilla.js` | Ventanilla por entidad |
+| `ventanillaActualizada` | `scrape-tc-ventanilla.js` | Cuándo corrió con éxito |
+| `historico` | `scrape-tc-diario.js` / `-inicial.js` | Tipo oficial 317/318 por día |
+| `oficialActualizado` | `scrape-tc-diario.js` / `-inicial.js` | Cuándo corrió con éxito |
+| `ultimaActualizacion` | ambos | Último cambio de cualquier tipo (compatibilidad) |
+
+La lógica de "¿está vieja esta fuente?" vive en `src/lib/frescura.js` y la comparten
+la web (aviso, badge "Datos con retraso"), `validate-data.js` y `revisar-salud.js`.
 
 ## Scripts de datos
 
@@ -64,7 +85,7 @@ Al finalizar imprime cuántos registros se obtuvieron y la fecha del más recien
 
 ### `scripts/scrape-tc-diario.js`
 
-Actualiza solo el histórico oficial reciente de `tipo-cambio.json` usando la API nueva del SDDE y el mismo `BCCR_API_TOKEN`.
+Actualiza el histórico oficial de `tipo-cambio.json` usando la API nueva del SDDE y el mismo `BCCR_API_TOKEN`. Pide desde la última fecha guardada (mínimo 7 días, máximo 400), así rellena solo los huecos si el workflow estuvo caído.
 
 ```bash
 npm run scrape:tc:diario
@@ -102,6 +123,14 @@ Consulta la API de ARESEP y solo agrega una nueva publicación si detecta una fe
 npm run scrape:combustible
 ```
 
+### `scripts/revisar-salud.js`
+
+Revisa la frescura de las tres fuentes, escribe `salud.md` y sale con código 1 si alguna está vieja (ventanilla > 72 h, oficial > 96 h, combustibles > 45 días).
+
+```bash
+npm run revisar:salud
+```
+
 ### `scripts/validate-data.js`
 
 Smoke check de confiabilidad sobre los JSON que consume la app.
@@ -116,7 +145,7 @@ Valida:
 - shape básico de `src/data/combustible.json`
 - consistencia de `mejorCompra` y `mejorVenta`
 - consistencia de `diferencial` respecto a `venta - compra`
-- frescura razonable de `ultimaActualizacion`
+- frescura razonable de `ultimaActualizacion` (ventanilla vieja solo da aviso, no falla, para que el oficial se siga publicando)
 - frescura del último dato oficial del BCCR
 - coherencia entre `precios` actuales de combustibles y el último histórico
 
@@ -124,13 +153,15 @@ También emite avisos si encuentra timestamps individuales de entidades demasiad
 
 ## Workflows
 
+Todos los scrapers reintentan con espera creciente ante caídas momentáneas (5xx, 429, timeouts).
+
 ### Tipo de cambio
 
-Workflow: [`.github/workflows/tc-smart-polling.yml`](./.github/workflows/tc-smart-polling.yml)
+Workflow: [`.github/workflows/tc-smart-polling.yml`](./.github/workflows/tc-smart-polling.yml) — cada 10 minutos, lunes a viernes, 7:00 a. m.–5:50 p. m. hora CR.
 
 Ejecuta:
 
-1. `node scripts/scrape-tc-ventanilla.js`
+1. `node scripts/scrape-tc-ventanilla.js` (con `continue-on-error`: si falla, el oficial se actualiza igual)
 2. `node scripts/scrape-tc-diario.js`
 3. `node scripts/validate-data.js tc`
 
@@ -138,7 +169,7 @@ Si `src/data/tipo-cambio.json` cambia, hace commit y push automático.
 
 ### Combustibles
 
-Workflow: [`.github/workflows/combustible-polling.yml`](./.github/workflows/combustible-polling.yml)
+Workflow: [`.github/workflows/combustible-polling.yml`](./.github/workflows/combustible-polling.yml) — lunes a viernes, 8:00 a. m. hora CR. Solo hace commit si ARESEP publicó algo nuevo.
 
 Ejecuta:
 
@@ -146,6 +177,12 @@ Ejecuta:
 2. `node scripts/validate-data.js combustible`
 
 Si `src/data/combustible.json` cambia, hace commit y push automático.
+
+### Salud de datos
+
+Workflow: [`.github/workflows/salud-datos.yml`](./.github/workflows/salud-datos.yml) — lunes a viernes, 9:00 a. m. hora CR.
+
+Corre `revisar-salud.js`. Si alguna fuente está vieja, abre un issue con la etiqueta `datos-desactualizados` (o comenta en el que ya está abierto). Cuando todo vuelve a estar al día, lo cierra solo.
 
 ## Variables de entorno y secrets
 
@@ -193,6 +230,7 @@ Después revisá el JSON afectado y el mensaje exacto del validador.
   - revisar si la API SDDE cambió shape o devolvió error de autorización
 
 - `scrape-tc-ventanilla.js`
+  - ver primero si `gee.bccr.fi.cr` responde (desde el 10/09/2026 está fuera de servicio)
   - revisar si cambió el HTML del cuadro del BCCR
   - confirmar que la tabla siga incluyendo encabezados como `Tipo de Entidad`, `Entidad Autorizada`, `Compra`
   - este es el flujo más frágil del sistema

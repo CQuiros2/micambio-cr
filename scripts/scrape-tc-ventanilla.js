@@ -238,19 +238,20 @@ async function main() {
   // Mejor venta: cobra MENOS colones al vender dólares al cliente
   const mejorVenta = entidades.reduce((a, b) => (b.venta < a.venta ? b : a));
 
-  // Preservar histórico existente
-  let historicoExistente = [];
-  if (existsSync(DATA_PATH)) {
-    const existing = JSON.parse(readFileSync(DATA_PATH, "utf-8"));
-    historicoExistente = existing.historico ?? [];
-  }
+  // Preservar lo que escribe el script del tipo oficial (histórico y su fecha)
+  const existente = existsSync(DATA_PATH)
+    ? JSON.parse(readFileSync(DATA_PATH, "utf-8"))
+    : { historico: [] };
 
+  const ahora = new Date().toISOString();
   const output = {
-    ultimaActualizacion: new Date().toISOString(),
+    ...existente,
+    ultimaActualizacion: ahora,
+    ventanillaActualizada: ahora,
     entidades,
     mejorCompra: { nombre: mejorCompra.nombre, valor: mejorCompra.compra },
     mejorVenta:  { nombre: mejorVenta.nombre,  valor: mejorVenta.venta  },
-    historico: historicoExistente,
+    historico: existente.historico ?? [],
   };
 
   mkdirSync(join(__dirname, "../src/data"), { recursive: true });

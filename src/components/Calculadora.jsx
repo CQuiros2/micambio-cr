@@ -1,8 +1,11 @@
 import { useState, useMemo } from "react";
 import tcData from "../data/tipo-cambio.json";
 import { EntityIdentity } from "./EntityIdentity";
+import AvisoDatos from "./AvisoDatos";
+import { estadoTipoCambio, tiempoDesde, fechaCorta } from "../lib/frescura";
 
-const { entidades, mejorCompra, mejorVenta, historico, ultimaActualizacion } = tcData;
+const { entidades, mejorCompra, mejorVenta, historico } = tcData;
+const estado = estadoTipoCambio(tcData);
 
 const fmtCRC = (n) =>
   new Intl.NumberFormat("es-CR", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n);
@@ -44,16 +47,6 @@ const TOP_COMPRAR = [...entidades]
 const MOCK_TC = [514, 511, 509, 513, 507, 502, 498, 500, 495, 491, 488, 485, 482, 479, 476, 473, 470, 468, 465, 463, 461, 460, 458, 456];
 const sparkValues =
   historico.length > 0 ? historico.map((d) => d.compra).filter(Boolean) : MOCK_TC;
-
-function tiempoDesde(isoStr) {
-  if (!isoStr) return null;
-  const diff = Date.now() - new Date(isoStr).getTime();
-  const min = Math.floor(diff / 60_000);
-  if (min < 1) return "Actualizado hace menos de un minuto";
-  if (min < 60) return `Actualizado hace ${min} minuto${min !== 1 ? "s" : ""}`;
-  const h = Math.floor(min / 60);
-  return `Actualizado hace ${h} hora${h !== 1 ? "s" : ""}`;
-}
 
 function Sparkline({ values }) {
   if (!values || values.length < 2) return null;
@@ -281,13 +274,17 @@ export default function Calculadora() {
   const top5 = isVender ? TOP_VENDER : TOP_COMPRAR;
   const bestBanco = top5[0];
   const numValor = parseMonto(rawValor);
-  const updatedLabel = tiempoDesde(ultimaActualizacion);
+  const ventanillaVieja = estado.ventanilla.vieja;
+  const updatedLabel = estado.ventanilla.fecha
+    ? `Ventanilla actualizada ${tiempoDesde(estado.ventanilla.fecha)}`
+    : null;
+  const alDia = ventanillaVieja ? `al ${fechaCorta(estado.ventanilla.fecha)}` : "hoy";
   const scenario = getScenario({ isVender, inputCurrency: monedaEntrada });
 
   const cards = [
     {
       label: "Mayor compra",
-      sublabel: "Mejor para vender dólares hoy",
+      sublabel: `Mejor para vender dólares ${alDia}`,
       valor: mejorCompra.valor,
       nombre: mejorCompra.nombre,
       accent: "var(--accent)",
@@ -305,7 +302,7 @@ export default function Calculadora() {
     },
     {
       label: "Menor venta",
-      sublabel: "Mejor para comprar dólares hoy",
+      sublabel: `Mejor para comprar dólares ${alDia}`,
       valor: mejorVenta.valor,
       nombre: mejorVenta.nombre,
       accent: "var(--blue)",
@@ -369,11 +366,15 @@ export default function Calculadora() {
               </p>
             </div>
             {updatedLabel && (
-              <p className="text-xs sm:text-sm" style={{ color: "var(--text-3)" }}>
+              <p
+                className="text-xs sm:text-sm"
+                style={{ color: ventanillaVieja ? "var(--warning)" : "var(--text-3)" }}
+              >
                 {updatedLabel}
               </p>
             )}
           </div>
+          {ventanillaVieja && <AvisoDatos estado={estado} />}
         </div>
 
         <div className="p-4 sm:p-5 xl:p-6">

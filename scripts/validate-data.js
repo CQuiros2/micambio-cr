@@ -1,4 +1,5 @@
 import { readFileSync } from "fs";
+import { parseFechaEntidad, estadoTipoCambio, LIMITES_HORAS, fechaCorta } from "../src/lib/frescura.js";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -27,33 +28,11 @@ function parseIsoDate(value, fieldName) {
   return date;
 }
 
-function parseEntityTimestamp(value) {
-  if (typeof value !== "string") return null;
-  const match = value.match(
-    /^(\d{2})\/(\d{2})\/(\d{4})\s+(\d{2}):(\d{2})\s+(a\.m\.|p\.m\.)$/i
-  );
-  if (!match) return null;
-
-  const [, dd, mm, yyyy, hh, min, meridiem] = match;
-  let hours = Number(hh);
-  if (meridiem.toLowerCase() === "p.m." && hours !== 12) hours += 12;
-  if (meridiem.toLowerCase() === "a.m." && hours === 12) hours = 0;
-
-  return new Date(
-    Number(yyyy),
-    Number(mm) - 1,
-    Number(dd),
-    hours,
-    Number(min),
-    0,
-    0
-  );
-}
-
 function validateTipoCambio() {
   const data = loadJson(TC_PATH);
   const updatedAt = parseIsoDate(data.ultimaActualizacion, "tipo-cambio.ultimaActualizacion");
   const updatedDays = daysBetween(updatedAt);
+  const estado = estadoTipoCambio(data);
 
   assert(Array.isArray(data.entidades) && data.entidades.length > 0, "tipo-cambio.json no tiene entidades.");
   assert(Array.isArray(data.historico) && data.historico.length > 0, "tipo-cambio.json no tiene histórico oficial.");
@@ -75,7 +54,7 @@ function validateTipoCambio() {
     const delta = Math.abs(entity.diferencial - (entity.venta - entity.compra));
     assert(delta < 0.02, `Diferencial inconsistente en ${entity.nombre}`);
 
-    const entityDate = parseEntityTimestamp(entity.ultimaActualizacion);
+    const entityDate = parseFechaEntidad(entity.ultimaActualizacion);
     if (!entityDate) {
       invalidEntityDates++;
       continue;
@@ -99,6 +78,11 @@ function validateTipoCambio() {
   console.log(`[tc] OK: ${data.entidades.length} entidades, histórico hasta ${latestOfficial.fecha}, actualizado hace ${updatedDays} día(s).`);
   if (staleEntities > 0 || invalidEntityDates > 0) {
     console.log(`[tc] Aviso: ${staleEntities} entidad(es) con timestamp > 14 días y ${invalidEntityDates} timestamp(s) no parseables.`);
+  }
+  // Ventanilla vieja no hace fallar el polling (el oficial debe seguir publicándose);
+  // el aviso lo da el workflow "Salud de datos".
+  if (estado.ventanilla.vieja) {
+    console.log(`::warning::Ventanilla sin actualizar desde ${fechaCorta(estado.ventanilla.fecha)} (límite ${LIMITES_HORAS.ventanilla} h).`);
   }
 }
 

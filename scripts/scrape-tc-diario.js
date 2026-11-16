@@ -99,6 +99,7 @@ async function main() {
     ...data,
     historico,
     ultimaActualizacion: new Date().toISOString(),
+    oficialActualizado: new Date().toISOString(),
   };
 
   writeFileSync(DATA_PATH, JSON.stringify(output, null, 2), "utf-8");

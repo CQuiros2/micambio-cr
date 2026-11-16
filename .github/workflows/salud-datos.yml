@@ -1,0 +1,63 @@
+name: Salud de datos
+
+# Un solo aviso (issue) cuando alguna fuente lleva días sin actualizarse,
+# en vez de un correo de falla por cada run del polling.
+on:
+  schedule:
+    # Lunes a viernes 15:00 UTC (9:00 a. m. hora Costa Rica)
+    - cron: "0 15 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  revisar:
+    name: Revisar frescura de los datos
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "24"
+
+      - name: Revisar fuentes
+        id: salud
+        run: |
+          if node scripts/revisar-salud.js; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Abrir o actualizar el issue de aviso
+        if: steps.salud.outputs.ok == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create datos-desactualizados --color D93F0B \
+            --description "Aviso automático de Salud de datos" 2>/dev/null || true
+          numero=$(gh issue list --label datos-desactualizados --state open --json number --jq '.[0].number // empty')
+          if [ -n "$numero" ]; then
+            gh issue comment "$numero" --body-file salud.md
+          else
+            gh issue create --title "Datos desactualizados en micambio.cr" \
+              --label datos-desactualizados --body-file salud.md
+          fi
+
+      - name: Cerrar el aviso si todo está al día
+        if: steps.salud.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for numero in $(gh issue list --label datos-desactualizados --state open --json number --jq '.[].number'); do
+            gh issue close "$numero" --comment "$(cat salud.md)"
+          done

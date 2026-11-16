@@ -1,3 +1,8 @@
+import tcData from "../data/tipo-cambio.json";
+import { estadoTipoCambio } from "../lib/frescura";
+
+const conRetraso = estadoTipoCambio(tcData).ventanilla.vieja;
+
 /* ── Iconos inline SVG para evitar dependencias ──────────────────────────── */
 function SunIcon() {
   return (
@@ -52,16 +57,16 @@ export default function Header({ isDark, toggleTheme }) {
 
         {/* Derecha: badge + toggle */}
         <div className="flex items-center gap-4">
-          {/* Badge "En vivo" */}
+          {/* Badge "En vivo" / "Con retraso" según la frescura de ventanilla */}
           <div
             className="hidden sm:flex items-center gap-2 text-xs font-medium"
-            style={{ color: "var(--text-2)" }}
+            style={{ color: conRetraso ? "var(--warning)" : "var(--text-2)" }}
           >
             <span
-              className="w-1.5 h-1.5 rounded-full animate-pulse"
-              style={{ backgroundColor: "var(--accent)" }}
+              className={`w-1.5 h-1.5 rounded-full${conRetraso ? "" : " animate-pulse"}`}
+              style={{ backgroundColor: conRetraso ? "var(--warning)" : "var(--accent)" }}
             />
-            En vivo
+            {conRetraso ? "Datos con retraso" : "En vivo"}
           </div>
 
           {/* Toggle dark/light */}

@@ -1,8 +1,11 @@
 {
-  "name": "micambio-temp",
+  "name": "micambio-cr",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -12,7 +15,8 @@
     "scrape:tc": "node scripts/scrape-tc-ventanilla.js",
     "scrape:tc:diario": "node --env-file=.env.local scripts/scrape-tc-diario.js",
     "scrape:tc:inicial": "node --env-file=.env.local scripts/scrape-tc-inicial.js",
-    "scrape:combustible": "node scripts/scrape-combustible-diario.js"
+    "scrape:combustible": "node scripts/scrape-combustible-diario.js",
+    "revisar:salud": "node scripts/revisar-salud.js"
   },
   "dependencies": {
     "axios": "^1.14.0",

@@ -1,10 +1,13 @@
-name: Combustibles – Polling Mensual
+name: Combustibles – Polling
 
 on:
   schedule:
-    # Segundo viernes de cada mes a las 14:00 UTC (8:00am hora Costa Rica, UTC-6)
-    # El 2do viernes siempre cae en los días 8–14 del mes.
-    - cron: "0 14 8-14 * 5"
+    # Lunes a viernes 14:00 UTC (8:00 a. m. hora Costa Rica, UTC-6).
+    # ARESEP ajusta precios cada mes y a veces de forma extraordinaria; el script
+    # solo hace commit si hay una publicación nueva, así que correr a diario es gratis.
+    # (Antes "0 14 8-14 * 5": en cron, día del mes y día de la semana se suman
+    # con OR, así que no era "el segundo viernes" sino días 8–14 + todos los viernes.)
+    - cron: "0 14 * * 1-5"
   workflow_dispatch: # permite ejecución manual desde GitHub
 
 permissions:
@@ -25,7 +28,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: "20"
+          node-version: "24"
           cache: "npm"
 
       - name: Instalar dependencias

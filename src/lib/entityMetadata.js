@@ -1,3 +1,11 @@
+// Logos locales que existen de verdad (Vite los resuelve al compilar).
+// Para agregar uno: guardar src/assets/logos/<logoKey>.(svg|png|webp|jpg).
+const LOGOS_LOCALES = Object.fromEntries(
+  Object.entries(
+    import.meta.glob("../assets/logos/*.{svg,png,webp,jpg}", { eager: true, import: "default" })
+  ).map(([ruta, url]) => [ruta.split("/").pop().replace(/\.[^.]+$/, ""), url])
+);
+
 const ENTITY_METADATA_RAW = {
   "Banco de Costa Rica": {
     website: "https://www.bancobcr.com/wps/portal/bcr",
@@ -307,12 +315,7 @@ export function getEntityMetadata(name) {
     };
   }
 
-  const localLogo = metadata.logoKey ? [
-    `/logos/entities/${metadata.logoKey}.svg`,
-    `/logos/entities/${metadata.logoKey}.png`,
-    `/logos/entities/${metadata.logoKey}.webp`,
-    `/logos/entities/${metadata.logoKey}.jpg`,
-  ] : [];
+  const localLogo = LOGOS_LOCALES[metadata.logoKey] ? [LOGOS_LOCALES[metadata.logoKey]] : [];
   const iconCandidates = [
     ...(metadata.iconCandidates ?? []),
     getFaviconUrl(metadata.website),

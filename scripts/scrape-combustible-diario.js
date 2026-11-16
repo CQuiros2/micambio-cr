@@ -3,7 +3,7 @@
  * Versión liviana: consulta la API de ARESEP y actualiza src/data/combustible.json
  * solo si hay una nueva fecha de publicación.
  *
- * Se ejecuta el 2do viernes de cada mes vía GitHub Actions.
+ * Se ejecuta de lunes a viernes vía GitHub Actions (combustible-polling.yml).
  * No escribe el archivo si no hubo cambio → git diff queda limpio → no hay commit.
  *
  * Uso: node scripts/scrape-combustible-diario.js

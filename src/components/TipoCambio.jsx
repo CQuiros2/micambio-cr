@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import tcData from "../data/tipo-cambio.json";
 import { EntityIdentity } from "./EntityIdentity";
+import { entidadVieja } from "../lib/frescura";
 
 const { entidades, mejorCompra, mejorVenta } = tcData;
 
@@ -194,7 +195,10 @@ function TablaEntidades() {
                   </td>
 
                   <td className="px-4 sm:px-5 py-3.5 text-right hidden lg:table-cell">
-                    <span style={{ color: "var(--text-3)", fontSize: 12 }}>
+                    <span
+                      style={{ color: entidadVieja(e) ? "var(--warning)" : "var(--text-3)", fontSize: 12 }}
+                      title={entidadVieja(e) ? "Dato con más de 3 días" : undefined}
+                    >
                       {e.ultimaActualizacion}
                     </span>
                   </td>
@@ -274,7 +278,10 @@ function TablaEntidades() {
                         {formatCurrency(e.diferencial)}
                       </p>
                     </div>
-                    <p className="text-[11px] leading-none whitespace-nowrap" style={{ color: "var(--text-3)" }}>
+                    <p
+                      className="text-[11px] leading-none whitespace-nowrap"
+                      style={{ color: entidadVieja(e) ? "var(--warning)" : "var(--text-3)" }}
+                    >
                       {formatMobileUpdate(e.ultimaActualizacion)}
                     </p>
                   </div>
