@@ -18,6 +18,8 @@ workflows de GitHub Actions. No hay servidor ni base de datos.
 **Diseño:** colores, tipografía, componentes y reglas en
 [`docs/DISENO.md`](docs/DISENO.md).
 
+**Pendientes y sugerencias:** [`docs/PENDIENTES.md`](docs/PENDIENTES.md).
+
 ## Desarrollo
 
 Requiere Node 20.19 o más reciente.
@@ -64,6 +66,7 @@ src/
 scripts/                   scrapers, validación y revisión de salud (Node)
 .github/workflows/         actualización automática de datos
 docs/DISENO.md             guía de diseño
+docs/PENDIENTES.md         ideas y detalles menores pendientes
 ```
 
 ## Fuentes de datos
