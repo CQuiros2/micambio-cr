@@ -17,8 +17,12 @@ export const fechaDeIso = (iso) => new Date(`${iso}T12:00:00-06:00`);
 export function crearFormato(idioma) {
   const loc = LOCALES[idioma] ?? LOCALES.es;
 
-  const numero = (n, decimales = 2) =>
-    n.toLocaleString(loc, { minimumFractionDigits: decimales, maximumFractionDigits: decimales });
+  // En español, como el BCCR: punto para miles y coma para decimales (₡44.406,10).
+  // "es-CR" usa un espacio fino para los miles; se cambia por punto.
+  const numero = (n, decimales = 2) => {
+    const s = n.toLocaleString(loc, { minimumFractionDigits: decimales, maximumFractionDigits: decimales });
+    return idioma === "es" ? s.replace(/[\s\u00a0\u202f]/g, ".") : s;
+  };
 
   const hora = (d) => {
     const h = d.toLocaleTimeString(loc, { hour: "numeric", minute: "2-digit", hour12: true, timeZone: TZ }).replace(/\s+/g, " ");

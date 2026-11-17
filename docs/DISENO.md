@@ -195,7 +195,8 @@ idioma, y `prefers-reduced-motion`.
   `TEXTOS.es` y `TEXTOS.en`. Al agregar un texto, agréguelo en los dos. Los
   componentes los leen con `const { t, f } = useI18n()`.
 - **Formatos:** `f` (de [`src/lib/formato.js`](../src/lib/formato.js)) formatea
-  números, colones, horas y fechas según el idioma: `₡444,06` / `₡444.06`,
+  números, colones, horas y fechas según el idioma: `₡44.406,10` / `₡44,406.10`
+  (en español, punto para miles y coma para decimales, como el BCCR),
   `1:15 p.m.` / `1:15 PM`. Las horas siempre se muestran en hora de Costa Rica.
 - El español usa **ustedeo**, como se habla en Costa Rica ("Si vende dólares",
   "Ingrese un monto", "Confirme con la entidad"). Nada de voseo ni tuteo.
