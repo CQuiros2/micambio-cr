@@ -187,9 +187,10 @@ idioma, y `prefers-reduced-motion`.
 
 ## Idioma (español / inglés)
 
-- **Al entrar:** el idioma elegido con el botón o, si no, el del navegador
-  (inglés → `en`; cualquier otro → `es`). Se guarda en `localStorage` con la
-  clave `micambio-idioma`.
+- **Al entrar:** el idioma elegido con el botón o, si no, el del navegador:
+  español → `es`; **cualquier otro** (inglés, alemán, francés…) → `en`, porque
+  un extranjero entiende mejor el inglés que el español. Se guarda en
+  `localStorage` con la clave `micambio-idioma`.
 - **Textos:** todos están en [`src/lib/i18n.js`](../src/lib/i18n.js), en
   `TEXTOS.es` y `TEXTOS.en`. Al agregar un texto, agréguelo en los dos. Los
   componentes los leen con `const { t, f } = useI18n()`.

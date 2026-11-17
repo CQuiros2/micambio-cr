@@ -28,12 +28,13 @@
         var meta = document.querySelector('meta[name="theme-color"]');
         if (meta) meta.setAttribute("content", oscuro ? "#0A101C" : "#F2F3EF");
 
-        // Idioma: el elegido o, si no, el del navegador (inglés → en; si no, es).
+        // Idioma: el elegido o, si no, el del navegador: español → es; cualquier
+        // otro (inglés, alemán, francés…) → en, que un extranjero entiende mejor.
         var idioma = null;
         try { idioma = localStorage.getItem("micambio-idioma"); } catch (e) {}
         if (idioma !== "es" && idioma !== "en") {
           var nav = (navigator.languages && navigator.languages[0]) || navigator.language || "";
-          idioma = /^en\b/i.test(nav) ? "en" : "es";
+          idioma = !nav || /^es\b/i.test(nav) ? "es" : "en";
         }
         html.lang = idioma;
       })();

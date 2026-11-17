@@ -3,7 +3,8 @@ import { crearFormato } from "./formato.js";
 
 /*
  * Idioma: lo que eligió la persona con el botón (se guarda) y, si nunca eligió,
- * el del navegador: inglés → "en", cualquier otro → "es".
+ * el del navegador: español → "es"; cualquier otro (inglés, alemán, francés…)
+ * → "en", que un extranjero entiende mejor que el español. Sin dato: "es".
  * index.html aplica lo mismo a <html lang> antes de cargar.
  */
 const CLAVE = "micambio-idioma";
@@ -16,7 +17,7 @@ function idiomaInicial() {
     /* sin almacenamiento */
   }
   const nav = typeof navigator !== "undefined" ? navigator.languages?.[0] ?? navigator.language ?? "" : "";
-  return /^en\b/i.test(nav) ? "en" : "es";
+  return !nav || /^es\b/i.test(nav) ? "es" : "en";
 }
 
 const TIPOS_ENTIDAD_EN = {
@@ -31,6 +32,7 @@ const TIPOS_ENTIDAD_EN = {
 
 export const TEXTOS = {
   es: {
+    tituloPestana: "Tipo de cambio hoy en Costa Rica · micambio.cr",
     estadoAlDia: (f) => `Ventanilla al día · ${f}`,
     estadoRetraso: (f) => `Ventanilla con retraso · datos del ${f}`,
     aModoOscuro: "Cambiar a modo oscuro",
@@ -120,6 +122,7 @@ export const TEXTOS = {
   },
 
   en: {
+    tituloPestana: "Costa Rica dollar exchange rate today · micambio.cr",
     estadoAlDia: (f) => `Rates up to date · ${f}`,
     estadoRetraso: (f) => `Rates delayed · last data from ${f}`,
     aModoOscuro: "Switch to dark mode",
@@ -216,6 +219,7 @@ export function I18nProvider({ children }) {
 
   useEffect(() => {
     document.documentElement.lang = idioma;
+    document.title = TEXTOS[idioma].tituloPestana;
   }, [idioma]);
 
   const valor = useMemo(
