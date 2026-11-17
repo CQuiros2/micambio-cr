@@ -165,7 +165,18 @@ ajuste mensual**: el último registro del histórico con al menos 20 días de
 antigüedad respecto del vigente. ARESEP a veces publica una corrección de ₡1
 días después del ajuste grande; comparar con el registro inmediato anterior
 mostraría "−₡1" cuando lo que pasó en el mes fue, por ejemplo, "▲₡41". La
-lógica está en [`Combustible.jsx`](../src/components/Combustible.jsx).
+lógica está en [`src/lib/combustibles.js`](../src/lib/combustibles.js).
+
+## Combustibles: la calculadora
+
+"¿Cuánto le sale?" calcula en los dos sentidos, porque en la bomba se pide de
+las dos formas: por litros ("60 litros de diésel" → ₡48.420) o por monto
+("póngame 20 mil" → 24,8 litros). En escritorio va dentro del panel de
+combustibles, que se queda fijo al hacer scroll; en móvil es una tarjeta debajo
+de la calculadora de dólares (la franja de arriba se deja solo para leer).
+
+El precio de Gas LP de ARESEP es **por litro, para vehículos**; una nota lo
+aclara para que nadie calcule con él un cilindro de uso doméstico.
 
 ## Modo oscuro
 
