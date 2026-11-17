@@ -44,6 +44,7 @@ export default function TablaEntidades() {
     return {
       e,
       nombre: nombreCorto(e.nombre),
+      hoy: c.hoy,
       act: c.hoy ? t.hoyA(c.hora) : c.fecha,
       actColor: entidadVieja(e) ? "var(--up)" : c.hoy ? "var(--muted)" : "var(--faint)",
       compraEstilo: { color: esCompra ? "var(--blue)" : "var(--ink)", fontWeight: esCompra ? 800 : 500 },
@@ -132,6 +133,15 @@ export default function TablaEntidades() {
         </ul>
       </div>
 
+      {datos.some((d) => !d.hoy) && (
+        <p className="m-0 flex gap-2 items-start text-[13px]" style={{ color: "var(--muted)" }}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" className="shrink-0 mt-px">
+            <circle cx="12" cy="12" r="9.5" />
+            <path d="M12 11v6M12 7.5v.01" />
+          </svg>
+          <span>{t.notaAtrasadas}</span>
+        </p>
+      )}
       <p className="m-0 text-[13px]" style={{ color: "var(--faint)" }}>
         {t.glosario} <a href={FUENTE} target="_blank" rel="noopener noreferrer">BCCR</a>.
       </p>

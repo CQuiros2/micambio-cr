@@ -61,3 +61,37 @@ jobs:
           for numero in $(gh issue list --label datos-desactualizados --state open --json number --jq '.[].number'); do
             gh issue close "$numero" --comment "$(cat salud.md)"
           done
+
+      # Aviso aparte cuando el BCCR agrega una entidad que todavía no tiene logo.
+      - name: Revisar logos de entidades
+        id: logos
+        run: |
+          if node scripts/revisar-logos.js; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Abrir o actualizar el issue de logos
+        if: steps.logos.outputs.ok == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create logo-faltante --color 0E5A8A \
+            --description "Entidad sin logo en micambio.cr" 2>/dev/null || true
+          numero=$(gh issue list --label logo-faltante --state open --json number --jq '.[0].number // empty')
+          if [ -n "$numero" ]; then
+            gh issue comment "$numero" --body-file logos.md
+          else
+            gh issue create --title "Entidad nueva sin logo en micambio.cr" \
+              --label logo-faltante --body-file logos.md
+          fi
+
+      - name: Cerrar el aviso de logos si ya están todos
+        if: steps.logos.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for numero in $(gh issue list --label logo-faltante --state open --json number --jq '.[].number'); do
+            gh issue close "$numero" --comment "$(cat logos.md)"
+          done

@@ -25,6 +25,7 @@ dist-ssr
 .env.local
 .env.*.local
 salud.md
+logos.md
 
 # Configuración local de Claude Code (permisos de cada máquina)
 .claude/settings.local.json

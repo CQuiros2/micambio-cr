@@ -26,9 +26,10 @@ documento.
 │ logo                     estado de ventanilla   [🌐 EN] [☾ Oscuro]   │
 ├───────────────────────────────────────────────┬──────────────────────┤
 │ Tipo de cambio hoy                            │ Combustibles         │
-│ ┌─ Si vende dólares ──┐ ┌─ Si compra ──────┐  │  Súper  ▲₡41   805   │
-│ │ ₡444,06 (azul)      │ │ ₡449,00 (rojo)   │  │  …                   │
-│ └─────────────────────┘ └──────────────────┘  ├──────────────────────┤
+│ ┌ ¿Va a vender dólares?┐ ┌ ¿Va a comprar…? ┐  │  Súper  ▲₡41   805   │
+│ │ Le conviene [logo] X │ │ Le conviene  Y  │  │  …                   │
+│ │ ₡444,06 (azul)       │ │ ₡449,00 (rojo)  │  │                      │
+│ └──────────────────────┘ └─────────────────┘  ├──────────────────────┤
 │ Tipo de cambio oficial BCCR                   │ Dólar oficial (venta)│
 │ Calculadora (monto · resultado · top 5)       │  gráfico desde marzo │
 │ Todas las entidades (filtros · tabla)         │                      │
@@ -37,6 +38,13 @@ documento.
 
 La columna derecha es `sticky`: los combustibles siguen a la vista mientras se
 recorre la tabla.
+
+Las dos tarjetas de arriba responden en una frase lo que la persona quiere
+hacer ("¿Va a vender dólares? Le conviene X, ₡444,06 por cada dólar"), en vez
+de mostrar datos sueltos como "compra" o "venta" que hay que interpretar. Se
+habla siempre de vender o comprar **dólares**, nunca de "comprar colones",
+para no mezclar las dos formas de decir lo mismo. Si la ventanilla está
+atrasada, el pie no dice "hoy".
 
 ### Móvil
 
@@ -125,16 +133,27 @@ nombre en [`src/lib/logos.js`](../src/lib/logos.js).
   ajenos). Se normalizan a PNG de 96×96, recortando el margen blanco; los que
   son un cuadro de color se dejan enteros.
 - **Si no se pudo obtener**, va una versión propia lo más parecida posible
-  (SVG): Coopemep (su forma y colores, redibujada nítida), Improsa y Banco CMB
-  (monograma).
+  (SVG). Hoy solo Coopemep: su sitio bloquea descargas y el único ícono era de
+  16 px, así que se redibujó nítido con su forma y colores.
+- **DAVIbank** (antes Scotiabank) solo tiene logotipo horizontal; su cuadro se
+  armó con piezas del logo oficial de davibank.cr ("DAVI" arriba, "bank"
+  abajo). Ojo: su sitio todavía sirve imágenes de Scotiabank; no usarlas.
 - Las filiales usan la marca del grupo: BN Valores → BN, Popular Valores → BP,
-  BCT Valores → BCT.
+  BCT Valores → BCT, Banco CMB → Citi (es la filial de Citi en Costa Rica).
+- **Verificar siempre el origen**: que el archivo venga del dominio oficial de
+  la entidad (y que ese dominio sea de verdad el suyo). Un logo de otra entidad
+  confunde más que unas iniciales.
+- Las reglas están en [`src/lib/logos-reglas.js`](../src/lib/logos-reglas.js)
+  (sin dependencias de Vite, para que también las use el aviso automático).
+- **Aviso automático**: el workflow "Salud de datos" corre
+  `scripts/revisar-logos.js` y, si una entidad no tiene logo, abre un issue
+  con la etiqueta `logo-faltante`; se cierra solo cuando se le agrega.
 - Se muestran siempre sobre un cuadro blanco con borde, también en modo oscuro,
   porque los logos están pensados para fondo claro. Son decorativos
   (`alt=""`): el nombre va siempre al lado como texto.
 - Para una entidad nueva: guarde el logo como `src/assets/logos/<clave>.png`
-  (96×96) y agregue la regla en `REGLAS`. Si no hay regla, se muestran las
-  iniciales.
+  (96×96) y agregue la regla en `REGLAS` de `logos-reglas.js`. Si no hay
+  regla, se muestran las iniciales.
 
 Botones e interactivos: mínimo 44 px de alto (36 px en chips y orden de tabla)
 y foco visible (`:focus-visible`, contorno azul).

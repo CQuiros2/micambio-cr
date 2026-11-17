@@ -9,35 +9,39 @@ import EntidadLogo from "./EntidadLogo";
 const estado = estadoTipoCambio(tcData);
 const ultimoOficial = tcData.historico?.at(-1) ?? null;
 
-function Tarjeta({ titulo, tituloCorto, nota, valor, color, entidad, nombreCompleto, pie }) {
+/**
+ * Responde en una frase lo que la persona quiere hacer:
+ * "¿Va a vender dólares? Le conviene X · ₡444,06 por cada dólar".
+ */
+function Tarjeta({ pregunta, entidad, valor, color, pie }) {
+  const { t } = useI18n();
   return (
-    <section className="tarjeta p-3.5 sm:px-6 sm:py-[22px] flex flex-col gap-2 sm:gap-3.5 min-w-0">
-      <div className="flex justify-between items-baseline gap-3">
-        <h2 className="m-0 text-[13px] sm:text-[15px] font-bold">
-          <span className="sm:hidden">{tituloCorto}</span>
-          <span className="hidden sm:inline">{titulo}</span>
-        </h2>
-        <span className="hidden sm:inline text-[13px]" style={{ color: "var(--muted)" }}>{nota}</span>
+    <section className="tarjeta p-3.5 sm:px-6 sm:py-[22px] flex flex-col gap-2.5 sm:gap-3.5 min-w-0">
+      <h2 className="m-0 text-[13px] sm:text-[15px] font-bold">{pregunta}</h2>
+      <div className="min-w-0">
+        <p className="m-0 text-xs sm:text-[13px]" style={{ color: "var(--muted)" }}>{t.leConviene}</p>
+        <p className="m-0 mt-1 flex items-center gap-2 min-w-0">
+          <EntidadLogo nombre={entidad} size={26} />
+          <span className="text-[13px] sm:text-base font-semibold leading-snug">{nombreCorto(entidad)}</span>
+        </p>
       </div>
-      <p className="num m-0 font-extrabold leading-[0.92] text-[clamp(30px,8.6vw,64px)]" style={{ letterSpacing: "-0.02em", color }}>
-        {valor}
-      </p>
-      <div className="flex flex-wrap justify-between items-center gap-x-3 gap-y-0.5 sm:pt-3 sm:border-t" style={{ borderColor: "var(--line)" }}>
-        <span className="flex items-center gap-2 min-w-0">
-          <EntidadLogo nombre={nombreCompleto} size={24} />
-          <span className="text-[13px] sm:text-[15px] font-semibold">{entidad}</span>
-        </span>
-        <span className="hidden sm:inline text-[13px]" style={{ color: "var(--faint)" }}>{pie}</span>
+      <div>
+        <p className="num m-0 font-extrabold leading-[0.92] text-[clamp(30px,8.6vw,60px)]" style={{ letterSpacing: "-0.02em", color }}>
+          {valor}
+        </p>
+        <p className="m-0 mt-1 text-xs sm:text-sm" style={{ color: "var(--muted)" }}>{t.porDolar}</p>
       </div>
+      <p className="m-0 pt-2.5 sm:pt-3 text-xs sm:text-[13px] border-t" style={{ borderColor: "var(--line)", color: "var(--faint)" }}>{pie}</p>
     </section>
   );
 }
 
 export default function MejoresPrecios() {
   const { t, f } = useI18n();
-  const cuando = (e) => {
+  const alDia = !estado.ventanilla.vieja;
+  const actualizado = (e) => {
     const c = f.cuandoEntidad(e);
-    return c.hoy ? c.hora : c.fecha;
+    return t.actualizado(c.hoy ? c.hora : c.fecha);
   };
 
   return (
@@ -45,24 +49,18 @@ export default function MejoresPrecios() {
       {estado.ventanilla.vieja && <AvisoDatos estado={estado} />}
       <div className="grid grid-cols-2 gap-2.5 sm:gap-4">
         <Tarjeta
-          titulo={t.siVendes}
-          tituloCorto={t.siVendesCorto}
-          nota={t.masPaga}
+          pregunta={t.preguntaVender}
+          entidad={mejorCompra.nombre}
           valor={f.colones(mejorCompra.compra)}
           color="var(--blue)"
-          entidad={nombreCorto(mejorCompra.nombre)}
-          nombreCompleto={mejorCompra.nombre}
-          pie={t.compraA(cuando(mejorCompra))}
+          pie={`${alDia ? t.masPagaHoy : t.masPaga} · ${actualizado(mejorCompra)}`}
         />
         <Tarjeta
-          titulo={t.siCompras}
-          tituloCorto={t.siComprasCorto}
-          nota={t.menosCobra}
+          pregunta={t.preguntaComprar}
+          entidad={mejorVenta.nombre}
           valor={f.colones(mejorVenta.venta)}
           color="var(--red)"
-          entidad={nombreCorto(mejorVenta.nombre)}
-          nombreCompleto={mejorVenta.nombre}
-          pie={t.ventaA(cuando(mejorVenta))}
+          pie={`${alDia ? t.menosCobraHoy : t.menosCobra} · ${actualizado(mejorVenta)}`}
         />
       </div>
       {ultimoOficial && (

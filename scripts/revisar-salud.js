@@ -63,7 +63,7 @@ const filas = fuentes
   .join("\n");
 
 const reporte = `${viejas.length > 0
-  ? `Hay **${viejas.length}** fuente(s) sin actualizar. Revisá los últimos runs de ${[...new Set(viejas.map((f) => `\`${f.workflow}\``))].join(" y ")} en la pestaña Actions.`
+  ? `Hay **${viejas.length}** fuente(s) sin actualizar. Revise los últimos runs de ${[...new Set(viejas.map((f) => `\`${f.workflow}\``))].join(" y ")} en la pestaña Actions.`
   : "Todas las fuentes están al día."}
 
 | | Fuente | Último dato | Límite |

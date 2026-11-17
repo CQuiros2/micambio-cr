@@ -54,7 +54,8 @@ src/
     formato.js             números, colones, fechas y horas por idioma
     frescura.js            ¿está vieja cada fuente? (lo usan la web y los scripts)
     i18n.js                textos en español (ustedeo) e inglés
-    logos.js               qué logo le toca a cada entidad
+    logos-reglas.js        qué logo le toca a cada entidad (lo usan web y scripts)
+    logos.js               resuelve esas reglas a los archivos de assets/logos
     useTema.js             modo claro/oscuro
   assets/logos/            logos de las entidades (ver docs/DISENO.md)
   data/
@@ -130,6 +131,7 @@ parecer fresco al otro.
 | `node scripts/scrape-combustible-inicial.js` | Histórico reciente de combustibles |
 | `npm run validate:data` | Revisa forma y coherencia de los JSON |
 | `npm run revisar:salud` | Revisa la frescura de las tres fuentes y escribe `salud.md` |
+| `npm run revisar:logos` | Revisa que cada entidad tenga logo y escribe `logos.md` |
 
 `validate-data.js` revisa la forma de los dos JSON, que `mejorCompra`/`mejorVenta`
 coincidan con las entidades, que `diferencial` sea `venta − compra`, la frescura
@@ -151,7 +153,7 @@ Todos los scrapers reintentan con espera creciente ante caídas momentáneas
 |---|---|---|
 | [`tc-smart-polling.yml`](.github/workflows/tc-smart-polling.yml) | Cada 10 min, lun–vie, 7:00 a.m.–5:50 p.m. (CR) | Ventanilla (si falla, sigue), tipo oficial y validación. Commit si cambió `tipo-cambio.json`. |
 | [`combustible-polling.yml`](.github/workflows/combustible-polling.yml) | Lun–vie, 8:00 a.m. (CR) | Combustibles y validación. Commit solo si ARESEP publicó algo nuevo. |
-| [`salud-datos.yml`](.github/workflows/salud-datos.yml) | Lun–vie, 9:00 a.m. (CR) | Si alguna fuente está vieja, abre (o comenta) un issue con la etiqueta `datos-desactualizados`; lo cierra solo cuando todo vuelve a estar al día. |
+| [`salud-datos.yml`](.github/workflows/salud-datos.yml) | Lun–vie, 9:00 a.m. (CR) | Si alguna fuente está vieja, abre (o comenta) un issue con la etiqueta `datos-desactualizados`. Si el BCCR agregó una entidad sin logo, abre otro con la etiqueta `logo-faltante`. Cada uno se cierra solo cuando se resuelve. |
 
 ## Variables de entorno
 
