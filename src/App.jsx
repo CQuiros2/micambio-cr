@@ -6,6 +6,7 @@ import MejoresPrecios from "./components/MejoresPrecios";
 import Calculadora from "./components/Calculadora";
 import TablaEntidades from "./components/TablaEntidades";
 import Combustible, { CombustibleFranja } from "./components/Combustible";
+import CalculadoraCombustible from "./components/CalculadoraCombustible";
 import DolarOficial from "./components/DolarOficial";
 import Footer from "./components/Footer";
 
@@ -28,6 +29,10 @@ export default function App() {
           </div>
           <MejoresPrecios />
           <Calculadora />
+          {/* En escritorio esta calculadora vive dentro del panel de combustibles. */}
+          <div className="lg:hidden">
+            <CalculadoraCombustible tarjeta />
+          </div>
           <TablaEntidades />
         </div>
 

@@ -1,33 +1,6 @@
-import combustibleData from "../data/combustible.json";
-import { fechaDeIso } from "../lib/formato";
+import { combustibles as items, referencia, vigente } from "../lib/combustibles";
 import { useI18n } from "../lib/i18n";
-
-const { precios, historico = [] } = combustibleData;
-
-const TIPOS = [
-  { clave: "super", color: "#3F659C" },
-  { clave: "regular", color: "#B53E36" },
-  { clave: "diesel", color: "#2D7A5B" },
-  { clave: "gaslp", color: "#9A5B34" },
-];
-
-/*
- * Contra qué precio se mide el ajuste. ARESEP hace un ajuste grande al mes y a
- * veces una corrección de ₡1 días después; comparar con el registro inmediato
- * anterior mostraría "−₡1". Se compara con el último registro de al menos 20
- * días antes del vigente, que es el precio antes del ajuste mensual.
- */
-const DIAS_MIN = 20;
-const vigente = historico.at(-1) ?? null;
-const referencia = vigente
-  ? [...historico].reverse().find((h) => (fechaDeIso(vigente.fecha) - fechaDeIso(h.fecha)) / 86_400_000 >= DIAS_MIN) ?? historico.at(-2) ?? null
-  : null;
-
-const items = TIPOS.filter((c) => precios[c.clave]).map((c) => {
-  const precio = precios[c.clave].precio;
-  const anterior = typeof referencia?.[c.clave] === "number" ? referencia[c.clave] : null;
-  return { ...c, precio, anterior, ajuste: anterior === null ? precios[c.clave].variacion ?? null : precio - anterior };
-});
+import CalculadoraCombustible from "./CalculadoraCombustible";
 
 function Cuadro({ color, size = 10 }) {
   return <span aria-hidden="true" className="inline-block shrink-0" style={{ width: size, height: size, borderRadius: 2, background: color }} />;
@@ -105,6 +78,9 @@ export default function Combustible() {
           </li>
         ))}
       </ul>
+      <div className="px-5 py-4" style={{ borderTop: "1px solid var(--line)", background: "var(--sunk)" }}>
+        <CalculadoraCombustible />
+      </div>
       <p className="m-0 px-5 pt-3 pb-4 text-[13px]" style={{ borderTop: "1px solid var(--line)", color: "var(--faint)" }}>
         {vigente && t.vigentes(f.fechaIso(vigente.fecha))}
         <a href="https://aresep.go.cr" target="_blank" rel="noopener noreferrer">ARESEP</a>.{" "}

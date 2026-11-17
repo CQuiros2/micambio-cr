@@ -8,6 +8,19 @@ export function nombreCorto(nombre) {
   return nombre.replace(/,?\s*(S\.\s?A\.?|R\.\s?L\.?|Limitada)\s*$/i, "").trim();
 }
 
+/**
+ * Monto escrito por la persona → número: "1.234,5", "1,234.5", "100.000" o
+ * "100,50". El último separador es decimal si le siguen 1 o 2 dígitos; si no,
+ * todos son de miles. Lo usan las dos calculadoras.
+ */
+export function parseMonto(texto) {
+  const s = String(texto).replace(/\s/g, "");
+  const m = s.match(/[.,](\d{1,2})$/);
+  const entero = (m ? s.slice(0, m.index) : s).replace(/[.,]/g, "");
+  const n = parseFloat(m ? `${entero}.${m[1]}` : entero);
+  return Number.isFinite(n) ? n : 0;
+}
+
 /** Día calendario en Costa Rica, "aaaa-mm-dd". */
 export const diaCR = (d) => d.toLocaleDateString("en-CA", { timeZone: TZ });
 

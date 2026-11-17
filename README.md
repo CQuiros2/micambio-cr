@@ -7,8 +7,9 @@ página.
   cada una con su logo, con la mejor para vender y la mejor para comprar.
 - **Calculadora:** cuánto recibe o paga en la mejor entidad y cuánto gana
   frente a las otras del top 5.
-- **Combustibles:** precios vigentes de ARESEP y cuánto subieron o bajaron en el
-  último ajuste.
+- **Combustibles:** precios vigentes de ARESEP, cuánto subieron o bajaron en el
+  último ajuste y una calculadora de cuánto sale cargar (por litros o por
+  colones, como "póngame 20 mil").
 - **Dólar oficial:** tipo de cambio de referencia del BCCR y su evolución.
 - Español e inglés, modo claro y oscuro según el dispositivo.
 
@@ -49,10 +50,12 @@ src/
     Calculadora.jsx
     TablaEntidades.jsx     todas las entidades, con filtros y orden
     Combustible.jsx        panel (escritorio) y franja (móvil), con el ajuste
+    CalculadoraCombustible.jsx  cuánto sale cargar: litros ↔ colones
     DolarOficial.jsx       gráfico de la venta oficial
     Footer.jsx
   lib/
     entidades.js           entidades válidas, mejor compra/venta, filtros
+    combustibles.js        precios vigentes y ajuste contra el mes anterior
     formato.js             números, colones, fechas y horas por idioma
     frescura.js            ¿está vieja cada fuente? (lo usan la web y los scripts)
     i18n.js                textos en español (ustedeo) e inglés
