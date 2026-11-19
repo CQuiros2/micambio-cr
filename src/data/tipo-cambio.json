@@ -1,7 +1,7 @@
 {
-  "ultimaActualizacion": "2026-11-18T21:01:02.715Z",
-  "ventanillaActualizada": "2026-11-18T21:01:02.715Z",
-  "oficialActualizado": "2026-11-18T03:01:03.795Z",
+  "ultimaActualizacion": "2026-11-19T02:28:53.272Z",
+  "ventanillaActualizada": "2026-11-19T02:28:52.646Z",
+  "oficialActualizado": "2026-11-19T02:28:53.272Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -62,10 +62,10 @@
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Davivienda (Costa Rica) S.A",
-      "compra": 436,
-      "venta": 454,
+      "compra": 434,
+      "venta": 452,
       "diferencial": 18,
-      "ultimaActualizacion": "11/11/2026 02:50 p.m."
+      "ultimaActualizacion": "18/11/2026 03:08 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -94,10 +94,10 @@
     {
       "tipoEntidad": "Bancos privados",
       "nombre": "Banco Promérica S.A.",
-      "compra": 436,
-      "venta": 454,
+      "compra": 434,
+      "venta": 452,
       "diferencial": 18,
-      "ultimaActualizacion": "16/11/2026 01:52 p.m."
+      "ultimaActualizacion": "18/11/2026 05:14 p.m."
     },
     {
       "tipoEntidad": "Bancos privados",
@@ -158,18 +158,18 @@
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopecaja R.L.",
-      "compra": 439,
-      "venta": 453,
+      "compra": 436,
+      "venta": 450,
       "diferencial": 14,
-      "ultimaActualizacion": "16/11/2026 04:45 p.m."
+      "ultimaActualizacion": "18/11/2026 03:21 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
       "nombre": "Coopemep R.L.",
-      "compra": 438,
-      "venta": 452,
+      "compra": 436,
+      "venta": 450,
       "diferencial": 14,
-      "ultimaActualizacion": "18/11/2026 12:07 p.m."
+      "ultimaActualizacion": "18/11/2026 04:58 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -222,10 +222,10 @@
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A",
-      "compra": 442.04,
-      "venta": 447.91,
+      "compra": 441.52,
+      "venta": 447.39,
       "diferencial": 5.87,
-      "ultimaActualizacion": "18/11/2026 12:14 p.m."
+      "ultimaActualizacion": "18/11/2026 04:00 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -306,7 +306,7 @@
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A",
-    "valor": 447.91
+    "valor": 447.39
   },
   "historico": [
     {
@@ -1478,6 +1478,11 @@
       "fecha": "2026-11-18",
       "compra": 444.77,
       "venta": 449.04
+    },
+    {
+      "fecha": "2026-11-19",
+      "compra": 443.93,
+      "venta": 447.54
     }
   ]
 }
