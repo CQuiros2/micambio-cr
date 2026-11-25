@@ -1,7 +1,7 @@
 {
-  "ultimaActualizacion": "2026-11-24T22:50:48.964Z",
-  "ventanillaActualizada": "2026-11-24T22:50:48.964Z",
-  "oficialActualizado": "2026-11-24T00:29:28.749Z",
+  "ultimaActualizacion": "2026-11-25T05:09:19.300Z",
+  "ventanillaActualizada": "2026-11-25T05:09:18.495Z",
+  "oficialActualizado": "2026-11-25T05:09:19.300Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,7 +113,7 @@
       "compra": 432,
       "venta": 450,
       "diferencial": 18,
-      "ultimaActualizacion": "24/11/2026 02:34 p.m."
+      "ultimaActualizacion": "24/11/2026 07:59 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -169,7 +169,7 @@
       "compra": 436,
       "venta": 450,
       "diferencial": 14,
-      "ultimaActualizacion": "24/11/2026 03:27 p.m."
+      "ultimaActualizacion": "24/11/2026 06:25 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -222,10 +222,10 @@
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "ARI Casa de Cambio Internacional S.A",
-      "compra": 441.04,
-      "venta": 446.91,
+      "compra": 440.45,
+      "venta": 446.32,
       "diferencial": 5.87,
-      "ultimaActualizacion": "24/11/2026 12:37 p.m."
+      "ultimaActualizacion": "24/11/2026 04:52 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -238,10 +238,10 @@
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
-      "compra": 356.16,
-      "venta": 534.24,
-      "diferencial": 178.08,
-      "ultimaActualizacion": "23/11/2026 09:07 p.m."
+      "compra": 357.04,
+      "venta": 535.56,
+      "diferencial": 178.52,
+      "ultimaActualizacion": "24/11/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -302,11 +302,11 @@
   ],
   "mejorCompra": {
     "nombre": "ARI Casa de Cambio Internacional S.A",
-    "valor": 441.04
+    "valor": 440.45
   },
   "mejorVenta": {
     "nombre": "ARI Casa de Cambio Internacional S.A",
-    "valor": 446.91
+    "valor": 446.32
   },
   "historico": [
     {
@@ -1508,6 +1508,11 @@
       "fecha": "2026-11-24",
       "compra": 440.9,
       "venta": 445.2
+    },
+    {
+      "fecha": "2026-11-25",
+      "compra": 441.1,
+      "venta": 446.3
     }
   ]
 }
