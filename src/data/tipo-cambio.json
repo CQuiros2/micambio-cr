@@ -1,7 +1,7 @@
 {
-  "ultimaActualizacion": "2026-11-25T22:03:24.445Z",
-  "ventanillaActualizada": "2026-11-25T22:03:24.445Z",
-  "oficialActualizado": "2026-11-25T05:09:19.300Z",
+  "ultimaActualizacion": "2026-11-26T04:05:26.332Z",
+  "ventanillaActualizada": "2026-11-26T04:05:25.434Z",
+  "oficialActualizado": "2026-11-26T04:05:26.332Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,7 +113,7 @@
       "compra": 432,
       "venta": 450,
       "diferencial": 18,
-      "ultimaActualizacion": "24/11/2026 07:59 p.m."
+      "ultimaActualizacion": "25/11/2026 09:39 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -169,7 +169,7 @@
       "compra": 436,
       "venta": 450,
       "diferencial": 14,
-      "ultimaActualizacion": "24/11/2026 06:25 p.m."
+      "ultimaActualizacion": "25/11/2026 06:17 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -238,10 +238,10 @@
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
-      "compra": 356.16,
-      "venta": 534.24,
-      "diferencial": 178.08,
-      "ultimaActualizacion": "25/11/2026 12:07 p.m."
+      "compra": 356.76,
+      "venta": 535.14,
+      "diferencial": 178.38,
+      "ultimaActualizacion": "25/11/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -1513,6 +1513,11 @@
       "fecha": "2026-11-25",
       "compra": 441.1,
       "venta": 446.3
+    },
+    {
+      "fecha": "2026-11-26",
+      "compra": 440.9,
+      "venta": 445.95
     }
   ]
 }
