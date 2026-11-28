@@ -1,7 +1,7 @@
 {
-  "ultimaActualizacion": "2026-11-27T21:44:41.306Z",
-  "ventanillaActualizada": "2026-11-27T21:44:41.306Z",
-  "oficialActualizado": "2026-11-27T04:08:22.305Z",
+  "ultimaActualizacion": "2026-11-28T03:32:58.773Z",
+  "ventanillaActualizada": "2026-11-28T03:32:57.936Z",
+  "oficialActualizado": "2026-11-28T03:32:58.773Z",
   "entidades": [
     {
       "tipoEntidad": "Bancos públicos",
@@ -113,7 +113,7 @@
       "compra": 432,
       "venta": 450,
       "diferencial": 18,
-      "ultimaActualizacion": "27/11/2026 12:24 a.m."
+      "ultimaActualizacion": "27/11/2026 08:19 p.m."
     },
     {
       "tipoEntidad": "Financieras",
@@ -126,10 +126,10 @@
     {
       "tipoEntidad": "Financieras",
       "nombre": "Financiera MultiMoney S.A.",
-      "compra": 439,
-      "venta": 447,
-      "diferencial": 8,
-      "ultimaActualizacion": "23/11/2026 05:25 p.m."
+      "compra": 438,
+      "venta": 448,
+      "diferencial": 10,
+      "ultimaActualizacion": "27/11/2026 04:13 p.m."
     },
     {
       "tipoEntidad": "Mutuales de Vivienda",
@@ -169,7 +169,7 @@
       "compra": 436,
       "venta": 450,
       "diferencial": 14,
-      "ultimaActualizacion": "26/11/2026 06:09 p.m."
+      "ultimaActualizacion": "27/11/2026 06:29 p.m."
     },
     {
       "tipoEntidad": "Cooperativas",
@@ -238,10 +238,10 @@
     {
       "tipoEntidad": "Casas de Cambio",
       "nombre": "Casa de Cambio Global Exchange",
-      "compra": 356.7,
-      "venta": 535.06,
-      "diferencial": 178.36,
-      "ultimaActualizacion": "26/11/2026 09:07 p.m."
+      "compra": 357.93,
+      "venta": 536.89,
+      "diferencial": 178.96,
+      "ultimaActualizacion": "27/11/2026 09:07 p.m."
     },
     {
       "tipoEntidad": "Casas de Cambio",
@@ -1523,6 +1523,11 @@
       "fecha": "2026-11-27",
       "compra": 440.56,
       "venta": 445.88
+    },
+    {
+      "fecha": "2026-11-28",
+      "compra": 440.18,
+      "venta": 447.41
     }
   ]
 }
